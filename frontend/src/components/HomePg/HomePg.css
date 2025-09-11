@@ -1,0 +1,76 @@
+/* ------------------------------------------------------------ */
+/* placement of lotiie animation */
+/* ------------------------------------------------------------ */
+.stock-animation{
+    position: fixed;   /* always stays in viewport */
+    bottom: 3px;      /* distance from bottom */
+    left:780px ;    /* distance from right */
+    width: 900px;      /* control size */
+    height: 600px;
+    z-index: 1000;     /* ensure it appears above other content */
+}
+/* ------------------------------------------------------------ */
+/* background image */
+/* ------------------------------------------------------------ */
+.bg-img{
+    background-image:linear-gradient(
+    rgb(106, 106, 109), 
+    rgba(10, 10, 10, 0.36)), 
+    url("../../assets/trading-2.png");
+    box-shadow: inset 0 0 80px rgb(198, 253, 239); /* Shadow effect */
+    background-size: cover;          /* make it fill */
+    background-repeat: no-repeat;    /* prevent tiling */
+    background-position: center;     /* center it */
+    background-attachment: fixed;    /* stays fixed while scrolling */
+    width: 100vw;
+    height: 100vh;
+}
+/* ------------------------------------------------------------ */
+/* content container */
+/* ------------------------------------------------------------ */
+.content{
+    position: relative;
+    width: 595px;
+    height: 390px;
+    left: 230px;
+    top: 200px;
+    z-index: 1;
+    border: 3px solid;
+    border-radius: 55px;
+    border-color: rgba(0, 255, 255, 0.248);
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    background: linear-gradient(
+    45deg, 
+    rgba(87, 236, 209, 0.8),  /* seagreen */
+    rgba(0, 0, 0, 0.874),      /* black */
+    rgba(255, 255, 255, 0.253) /* white */);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgb(113, 114, 114);
+}
+/* ------------------------------------------------------------ */
+/* content container heading */
+/* ------------------------------------------------------------ */
+.content h1{
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    left: 170px;
+    top: 15px;
+    color: aliceblue;
+}
+/* ------------------------------------------------------------ */
+/* content container para */
+/* ------------------------------------------------------------ */
+.content p {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 560px;
+    left:20px ;
+    top: 15px;
+    color: aliceblue;
+}

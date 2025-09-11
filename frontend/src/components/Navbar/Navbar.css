@@ -1,0 +1,76 @@
+.single-line{
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 15px;
+    border-radius: 1px;
+    z-index: 1000; /* ensures it stays on top of other elements */
+}
+.nav-bar{
+    position: fixed;
+    border-radius: 2px;
+    border-right:3px solid ;
+    background-color: rgb(0, 0, 0);
+    padding: 15px 10px; /* t-b,  l-r*/
+    width: 200px;
+    height: 100vh;
+     z-index: 1000; /* ensures it stays on top of other elements */
+}
+/* ------------------------------------------------------- */
+/*target <ul> element of class nav-links*/
+/* ------------------------------------------------------- */
+ul.nav-links{
+    margin: 0;
+    list-style: none; /* remove bullets */
+    padding: 35px 15px; /* t-b,  l-r*/
+    background-color: rgb(24, 24, 24);
+    height: 100vh;
+    width: 190px;
+    border-top: 3px solid;
+    border-left: 3px solid;
+    border-radius: 3px;
+    align-items: center;
+    position: fixed;
+}
+/* ------------------------------------------------------- */
+/*target <ul> element of class nav-links then select all <li> inside <ul>*/
+/* ------------------------------------------------------- */
+ul.nav-links li {
+  margin-bottom: 15px; /* spacing between items */
+}
+/* ------------------------------------------------------- */
+/*Target all <a> (anchor links) that are inside a <li>*/
+/* ------------------------------------------------------- */
+ul.nav-links li a{
+    cursor: pointer;
+    text-decoration: none; /* remove underline from texts*/
+    display: inline-flex; /* jo underline show hogi wo text se lambi ni hogi*/
+    align-items: center;
+    gap: 5px; /* gap b/w text & icons*/
+    color: rgb(255, 255, 255); /* default text color */
+    font-size: 18px;
+    position: relative; /* needed for ::after positioning */
+}
+/* ------------------------------------------------------- */
+/*::before → adds content before the element’s content.
+::after → adds content after the element’s content.*/
+/* ------------------------------------------------------- */
+ul.nav-links li a::after {
+    content: " ";
+    position: absolute;       /* place relative to link */
+    left: 0;                 /* line start hidden */
+    bottom: -2px;             /* line just below text */
+    width: 0;                 /* line start hidden */
+    height: 2px;              /* line thickness */
+    background: white;        /* underline color */
+    transition: width 0.3s ease-in-out;
+}
+
+ul.nav-links li a:hover{
+    color: rgb(184, 27, 27);   /* text color on hover */
+}
+
+ul.nav-links li a:hover::after {
+    background: rgb(9, 170, 87); /* underline color on hover */
+    width: 100%;   /* expands underline on hover */
+}

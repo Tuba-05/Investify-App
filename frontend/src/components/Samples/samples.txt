@@ -1,0 +1,55 @@
+{/* simple plain html css & bootstrap */}
+    <div className="p-4">
+      <h2 className="text-center mb-4">Top Companies</h2>
+      {/* Bootstrap styling */}
+      <table className="table table-striped table-bordered"> 
+        <thead> {/* table head section */}
+          <tr> {/* table row */}
+            <th>ID</th>  {/* table header cell */}
+            <th>Company</th>
+            <th>Symbol</th>
+            <th>Country</th>
+            <th>Price (USD)</th>
+            <th>Market Cap</th>
+            <th>Sector</th>
+          </tr>
+        </thead>
+        <tbody> {/* table body */}
+        {/* Table rendering */}
+          {companies.map((c) => (
+            <tr key={c.id}>
+              <td>{c.id}</td> {/* table data */}
+              <td>{c.c_name}</td>
+              <td>{c.symbol}</td>
+              <td>{c.country}</td>
+              <td>{c["price in USD"]}</td>
+              <td>{c["market capitalaization"].toLocaleString()}</td>
+              <td>{c.sector}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+-----------------------------------------------------------------------------------------------------------------------
+#######################################################################################################################
+-----------------------------------------------------------------------------------------------------------------------
+<Route path='/' element={<LoginSignUp/>}></Route> {/*it will appear first*/}
+          <Route element={<Layout />}> {/* Pages after login (all have Navbar) */}
+              {/* pages accessible after login/ signup */}
+              <Route path='/HmPg' element={<HomePg/>}></Route> {/*it will appear after successful SignUp/In attempt*/}
+              <Route path='/StockList' element={<StockList/>}></Route>
+          </Route>
+-----------------------------------------------------------------------------------------------------------------------
+#######################################################################################################################
+-----------------------------------------------------------------------------------------------------------------------
+{/* as we are navigating b/w pages we cant direct use jsx component outside BrowserRouter, Routes, Route*/}
+      <BrowserRouter>
+        <Routes>
+        <Route path="/" element={<LoginSignUp />} />  
+        <Route path="HmPg" element={<HomePg />} />  
+
+          {/* fallback for any unknown route */}
+        <Route path="*" element={<LoginSignUp />} />
+        </Routes>    
+      </BrowserRouter>
