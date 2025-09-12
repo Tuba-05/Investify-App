@@ -8,18 +8,23 @@ from werkzeug.security import generate_password_hash, check_password_hash # to p
 from flask_cors import CORS # in order to resolve different server ports(frontend&backend) connection problems 
 import pandas as pd # for showing DB in better tabular format
 from tabulate import tabulate # showing pandas in a table format
+
+
+
 app = Flask(__name__)  # createing flask web application
 
 CORS(app, origins=["http://localhost:5173",  "http://localhost:3000"]) # frontend server 
 
-# ---------------Database Configuration----------------------------------------------------------------------------------------
+
+# ============================ Database Configuration ================================================================
 DB_URI = f"postgresql://postgres.ltjvcxpuxcrnoomavhre:tubanaushad@aws-1-ap-south-1.pooler.supabase.com:6543/postgres"
 app.config['SQLALCHEMY_DATABASE_URI'] = DB_URI  # Assign the database URI to Flask's configuration
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False  # Disable unnecessary tracking to save memory
 
 db = SQLAlchemy(app)  # db obj connected to flask app via SQL Alchemy
 
-# ----------------MODELS (blueprints of tables)---------------------------------------------------------------------------------
+
+# ==================== MODELS (blueprints of tables) =======================
 class User(db.Model):
     __tablename__ = 'users'   # table name in database
     id = db.Column(db.Integer, primary_key=True)
@@ -68,7 +73,8 @@ with app.app_context():
     # df = pd.DataFrame(data, columns=["id", "c_name", "symbol", "country", "price in USD", "market capitalaization", "sector"])
     # print(tabulate(df, headers="keys", tablefmt="psql")) # data in pretty table format
 
-# ---------------- AUTH ROUTES --------------------------------------------------------------------------------------------
+# =============================== AUTH ROUTES ====================================================
+
 # ================== SIGNUP ROUTE ==================
 @app.route("/signup", methods=["POST"])
 def signup():
@@ -91,6 +97,7 @@ def signup():
 
     return jsonify({"success": True, "message": "Signup successful!"}) # Send signup success response to frontend
 
+
 # ================== LOGIN ROUTE ==================
 @app.route("/login", methods=["POST"]) 
 def login():
@@ -110,9 +117,12 @@ def login():
     print("User logged in") # add for checking purposes
     return jsonify({"success": True, "message": "Login successful!"}) # Send login success response to frontend
 
+
+# ================== COMPANIES ROUTE ==================
 @app.route("/companies", methods=["GET"])
 def stocklist():
     rows = Company.query.all()   # fetch all rows from "users" table
+    # convert to list of dicts
     data = [
             {
                 "id": row.id,
@@ -124,14 +134,62 @@ def stocklist():
                 "sector": row.sector,
             }
     for row in rows ]
-    return jsonify(data)
-    
+    # for checking purposes
+    try: 
+        if data: 
+            print("Successfully fetched companies data from DB(companies)")
+            return jsonify(data)
+        
+    except Exception as e: print("Error fetching companies data from DB:", e)
+
+
+# ================== COMPANY DETAILS ROUTE ==================
 @app.route('/company/<int:id>', methods=['GET'])
-# ----------------- TEST ROUTE ------------------------------------------------------------------------------------
+def get_company_details(id):
+    company = db.session.get(Company, id) # get company by ID
+    if not company: # if company not found in DB
+        return jsonify({"success": False, "message": "Company not found"}), 404
+
+    # Fetch financial statements related to the company
+    financials = FinancialStatement.query.filter_by(company_id=id).all()
+    # Convert financial statements to list of dicts
+    financial_data = [
+        {
+            "revenue": fs.revenue,
+            "profit": fs.profit,
+            "income": fs.income,
+            "equity": fs.equity,
+            "assets": fs.assets,
+            "liabilities": fs.liabilities,
+            "date": fs.date.isoformat(),
+        }
+        for fs in financials
+    ]
+    # Combine company and financial data
+    company_data = {
+        "id": company.id,
+        "c_name": company.name,
+        "symbol": company.symbol,
+        "country": company.country,
+        "price_usd": company.price_usd,
+        "market_cap": company.marketcap,
+        "sector": company.sector,
+        "financials": financial_data,
+    }
+    # for checking purposes
+    try:
+      if company_data:
+          print("Successfully fetched company details from DB(FinancialStatement)")
+          return jsonify(company_data)
+      
+    except Exception as e: print("Error fetching company details from DB:", e)
+
+
+# ================== HOME ROUTE ==================
 @app.route("/")
 def home():
     return {"status": "ok", "message": "Investify backend is running!"}
 
-# ----------------- RUN FLASK APP ---------------------------------------------------------------------------------
+# ================== Run the Flask app ===================
 if __name__ == "__main__":
     app.run(debug=True)
