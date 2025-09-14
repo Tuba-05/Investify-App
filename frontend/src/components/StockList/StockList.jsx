@@ -1,29 +1,90 @@
 import React, { useEffect, useState } from 'react'; // for fetching data from Flask API and storing in state
 import { useNavigate } from "react-router-dom" // for navigation on row click(C-name)
 import { DataGrid } from "@mui/x-data-grid"; // react table library better than simple plain html css
-
+import { IoStarSharp } from "react-icons/io5"; // star icon to add favourites in watchlist
 
 
 const StockList = () => {
     const navigate = useNavigate(); // for navigation on row click(C-name)
+    const [starredRows, setStarredRows] = useState([]); // store company IDs that are starred
     const [companies, setCompanies] = useState([]); // Stores fetched company data
     // Fetching data from Flask API
     useEffect(() => {
-        fetch("http://127.0.0.1:5000/companies")  // Flask API returning JSON
-        .then((res) => res.json()) // Waits for server response then res.json()converts raw response into JSON format
-        // data is array of companies, setCompanies(data) saves it into React state so table can update
-        .then((data) => { 
-            console.log("Fetched companies:", data);
-            setCompanies(data);
-        })
-        .catch((err) => console.error("Error fetching companies:", err)); // handle errors
+      const userId = localStorage.getItem("userId");
+      // Fetch all companies + user's watchlist to mark starred companies
+      fetch("http://127.0.0.1:5000/companies")  
+      .then((res) => res.json()) // Waits for server response then res.json()converts raw response into JSON format
+      // data is array of companies, setCompanies(data) saves it into React state so table can update
+      .then((data) => { 
+          console.log("Fetched companies:", data); // log fetched data for debugging
+          setCompanies(data); 
+      })
+      .catch((err) => console.error("Error fetching companies:", err)); // handle errors
+
+      // Fetch user's watchlist
+      fetch(`http://127.0.0.1:5000/watchlist/${userId}`)
+      .then((res) => res.json())
+      .then((data) => {
+        console.log("User watchlist:", data); // log watchlist data for debugging
+        // If fetch successful and companies array exists
+        if (data.success && Array.isArray(data.companies)) {
+        // extract company IDs from watchlist
+        const watchlistIds = data.companies.map((c) => c.id);
+        setStarredRows(watchlistIds);
+        }
+      })
+      .catch((err) => console.error("Error fetching watchlist:", err)); // handle errors
     }, []);
 
     // Columns definition for DataGrid
     const columns = [
-    { field: "id", headerName: "Rank", width: 115 },
+    { field: "favourites", headerName: "Favourites", width: 105,
+      sortable: false, filterable: false,
+      renderCell: (params) => {
+        const isStarred = starredRows.includes(params.row.id); // check if this row's company ID is in starredRows
+        // Toggle watchlist status on star icon click
+        const handleToggleWatchlist = () => {
+          const userId = localStorage.getItem("userId"); // get logged-in user ID
+          const companyId = params.row.id; // company ID from the row
+          // Call backend to add/remove from watchlist
+          fetch(`http://127.0.0.1:5000/watchlist/${userId}/${companyId}`, {
+            method: "POST",
+          })
+            .then((res) => res.json())
+            .then((data) => {
+              // If backend confirms success
+              if (data.success) {
+                // If added to watchlist, show alert and update starredRows state
+                if (data.action === "added") {
+                  alert(`${params.row.c_name} successfully added to your watchlist`);
+                  setStarredRows((prev) => [...prev, companyId]);
+                } // If removed from watchlist, show alert and update starredRows state 
+                else if (data.action === "removed") {
+                  alert(`${params.row.c_name} removed from your watchlist`);
+                  setStarredRows((prev) => prev.filter((id) => id !== companyId));
+                }
+              } // If backend returns an error message 
+              else {
+                alert(data.message);
+              }
+            })
+            .catch((err) => console.error("Error toggling watchlist:", err));
+        };
+        return (
+          <span onClick={handleToggleWatchlist} style={{ cursor: "pointer" }}>
+            <IoStarSharp
+              style={{
+                color: isStarred ? "#f5c518ff" : "#ccc",
+                fontSize: 22,
+              }}
+            />
+          </span>
+        );
+      }, 
+    },
+    { field: "id", headerName: "Rank", width: 110 },
     // Clickable company name to navigate to CmpFS page
-    { field: "c_name", headerName: "Company", width: 205, 
+    { field: "c_name", headerName: "Company", width: 215, 
       renderCell: (params) => {
         return(
             <span
@@ -44,9 +105,9 @@ const StockList = () => {
 
     return (
     <>
-    <div  style={{ height: 640, width: 1150, position:'fixed',
+    <div  style={{ height: 640, width: 1260, position:'fixed',
           /*m-l for not mixing with navbar, t&l for placing of DataGrid div*/
-          marginLeft: "160px",top:'20px', left:'120px', padding:'10px', overflow: 'hidden',
+          marginLeft: "160px",top:'22px', left:'65px', padding:'10px', overflow: 'hidden',
           /*styling of DataGrid div*/
           border:'5px solid #1cb5abff', borderRadius:'19px', boxSizing:'border-box', 
           /* Glassmorphism effect */

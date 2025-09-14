@@ -47,6 +47,10 @@ const LoginSignUp = () => {
         });
         const data = await response.json();
         if (data.success) {
+          // save user info in localStorage for session persistence later used in watchlist page
+          localStorage.setItem("userId", data.user.id); // user ID 
+          localStorage.setItem("userName", data.user.name); // user name 
+          localStorage.setItem("userEmail", data.user.email); // user email 
           alert(data.message); // login sucessful
           navigate("/HmPg"); // navigate to HmPg
         } else {
@@ -72,6 +76,10 @@ const LoginSignUp = () => {
         });
         const data = await response.json();
         if (data.success) {
+          // save user info in localStorage for session persistence later used in watchlist page
+          localStorage.setItem("userId", data.user.id); // user ID 
+          localStorage.setItem("userName", data.user.name); // user name 
+          localStorage.setItem("userEmail", data.user.email); // user email 
           alert(data.message); // signup sucessful
           navigate("/HmPg"); // navigate to HmPg
         } 

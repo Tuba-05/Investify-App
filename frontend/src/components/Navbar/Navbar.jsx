@@ -21,14 +21,14 @@ const Navbar = () => {
         <ul className='nav-links'>
             <li><NavLink to="/HmPg"><IoHome /> Home</NavLink></li>
             <li><NavLink to="/StockList"><AiOutlineStock /> StockList</NavLink></li>
-            <li><NavLink ><IoStarSharp /> Watch List</NavLink></li>
+            <li><NavLink to="/WatchList"><IoStarSharp /> Watch List</NavLink></li>
             <li><NavLink ><IoInformationCircleSharp /> About Us</NavLink></li>
             <li><NavLink ><IoMdHelpCircle /> Help</NavLink></li>
         </ul>
     </div>
     <Outlet /> {/* This is where HomePg, StockList, etc. will appear */}
     </>
-  )
-}
+  );
+};
 
 export default Navbar;

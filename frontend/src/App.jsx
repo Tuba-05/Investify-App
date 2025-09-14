@@ -7,6 +7,8 @@ import HomePg from './components/HomePg/HomePg.jsx'
 import StockList from './components/StockList/StockList.jsx';
 import Navbar from './components/Navbar/Navbar.jsx';
 import CmpFs from './components/CmpFS/CmpFs.jsx';
+import WatchList from './components/WatchList/WatchList.jsx';
+
 function App() {
   return (
     <>
@@ -19,6 +21,7 @@ function App() {
               <Route path='/HmPg' element={<HomePg/>}></Route> {/*it will appear after successful SignUp/In attempt*/}
               <Route path='/StockList' element={<StockList/>}></Route> {/* StockList page */}
               <Route path='/CmpFS/:id' element={<CmpFs/>}></Route> {/* Company Financial Statements page with dynamic ID */}
+              <Route path='/WatchList' element={<WatchList/>}></Route> {/* WatchList page */}
         </Route>  
         {/* fallback for any unknown route */}
         {/* <Route path="*" element={<LoginSignUp />} /> */}

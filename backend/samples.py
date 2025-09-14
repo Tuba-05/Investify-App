@@ -39,7 +39,7 @@
 #                     print(f"Company with symbol {symbol} not found in companies table")
 #                     continue
                 
-#                 # ✅ CHECK IF FINANCIAL STATEMENT ALREADY EXISTS
+#                 # CHECK IF FINANCIAL STATEMENT ALREADY EXISTS
 #                 existing_statement = FinancialStatement.query.filter_by(company_id=company.id).first()
 #                 if existing_statement:
 #                     print(f"Financial statement for {symbol} already exists, skipping...")
