@@ -38,7 +38,7 @@ const StockList = () => {
 
     // Columns definition for DataGrid
     const columns = [
-    { field: "favourites", headerName: "Favourites", width: 105,
+    { field: "favourite", headerName: "Favourites", width: 105,
       sortable: false, filterable: false,
       renderCell: (params) => {
         const isStarred = starredRows.includes(params.row.id); // check if this row's company ID is in starredRows

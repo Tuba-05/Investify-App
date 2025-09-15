@@ -2,12 +2,11 @@ from flask import Flask  # to create flask web app
 from flask_sqlalchemy import SQLAlchemy  # to make Flask talk to database using Python code instead of SQL
 from sqlalchemy import text  #used in line49 unless db connection failed
 # for fetching external data (1.e frontend, APIs) & send proper JSON responses to frontend 
-# if json (flask will return it in plain string format), if jsonify (frameworks (like React) expect proper JSON headers)
+# if json (flask will return it in plain string format), if jsonify (frameworks [like React] expect proper JSON headers)
 from flask import request, jsonify
 from werkzeug.security import generate_password_hash, check_password_hash # to protect passwords (py library builtin in flask)
 from flask_cors import CORS # in order to resolve different server ports(frontend&backend) connection problems 
-import pandas as pd # for showing DB in better tabular format
-from tabulate import tabulate # showing pandas in a table format
+import requests, base64 # to fetch company logos from Clearbit API & convert to base64 string
 
 
 
@@ -153,7 +152,7 @@ def stocklist():
 # ================== COMPANY DETAILS ROUTE ==================
 @app.route('/company/<int:id>', methods=['GET'])
 def get_company_details(id):
-    ''' Fetch company details along with its financial statements '''
+    ''' Fetch company details along with its logo & financial statements '''
     
     company = db.session.get(Company, id) # get company by ID
     
@@ -174,9 +173,21 @@ def get_company_details(id):
         }
         for fs in financials
     ]
+
+    # Getting company logo using Clearbit API (free for non-commercial use)
+    url = f"https://logo.clearbit.com/{company.name.lower()}.com" 
+    try: # fetch logo image from Clearbit
+        resp = requests.get(url, stream=True)
+        # if logo found
+        if resp.status_code == 200: logo_base64 = base64.b64encode(resp.content).decode("utf-8")
+        # if logo not found (404)
+        else: logo_base64 = None
+    except Exception: logo_base64 = None  # if any error occurs (like network issues, invalid URL)
+
     # Combine company and financial data
     company_data = {
         "id": company.id,
+        "logo": logo_base64, # company logo in base64 format
         "c_name": company.name,
         "symbol": company.symbol,
         "country": company.country,
