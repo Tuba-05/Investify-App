@@ -12,7 +12,7 @@ import WatchList from './components/WatchList/WatchList.jsx';
 function App() {
   return (
     <>
-    <BrowserRouter>
+    <BrowserRouter style={{ fontFamily: "Montserrat" }}>
         <Routes>
         <Route path='/' element={<LoginSignUp/>}></Route> {/*it will appear first*/}
         {/* Pages after login/signup have Navbar, is the parent layout (contains Outlet) */}

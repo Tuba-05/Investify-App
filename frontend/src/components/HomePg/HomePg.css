@@ -1,3 +1,6 @@
+*{
+    font-family: 'Montserrat';
+}
 /* ------------------------------------------------------------ */
 /* placement of lotiie animation */
 /* ------------------------------------------------------------ */
@@ -53,6 +56,7 @@
 /* content container heading */
 /* ------------------------------------------------------------ */
 .content h1{
+    font-size: 42px;
     z-index: 1;
     position: relative;
     display: flex;
@@ -65,6 +69,7 @@
 /* content container para */
 /* ------------------------------------------------------------ */
 .content p {
+    font-size: 17px;
     z-index: 1;
     position: relative;
     display: flex;

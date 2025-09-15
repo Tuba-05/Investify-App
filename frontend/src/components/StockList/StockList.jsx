@@ -105,7 +105,7 @@ const StockList = () => {
 
     return (
     <>
-    <div  style={{ height: 640, width: 1260, position:'fixed',
+    <div  style={{ height: 640, width: 1260, position:'fixed', fontfamily: 'Montserrat',
           /*m-l for not mixing with navbar, t&l for placing of DataGrid div*/
           marginLeft: "160px",top:'22px', left:'65px', padding:'10px', overflow: 'hidden',
           /*styling of DataGrid div*/

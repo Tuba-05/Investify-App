@@ -30,7 +30,7 @@ function CmpFS() {
       {latest // if financial data available, show details
       ? (
         <>
-        <div style={{ listStyleType: "none", lineHeight: "2", fontStyle: "" }}> 
+        <div style={{ listStyleType: "none", lineHeight: "2", fontfamily: 'Montserrat' }}> 
           <h2 style={{fontSize: "35px"}}>
             Details</h2>
           <li><b><MdArrowRight />Symbol:</b> {data.symbol}</li>

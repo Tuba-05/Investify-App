@@ -72,7 +72,7 @@ const WatchList = () => {
   ];
 
   return (
-    <div style={{ marginLeft: "230px", width: "95%", height: 560, top: "20px", position: "fixed" }}>
+    <div style={{ marginLeft: "230px", width: "95%", height: 560, top: "20px", position: "fixed", fontfamily: 'Montserrat' }}>
         <h2 style={{ marginBottom: 10 }}>📊 My Watchlist</h2>
 
         {userName && (
