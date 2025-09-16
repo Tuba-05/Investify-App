@@ -227,7 +227,7 @@ def get_watchlist(user_id):
         if not companies: # if watchlist is empty
             return jsonify({ "success": True, "username": user.name, "companies": [] }) 
         
-        company_list = [{"id": c[0], "c_name": c[1]} for c in companies] # convert to list of dicts 
+        company_list = [{ "id": c[0], "c_name": c[1] } for c in companies] # convert to list of dicts 
         print("Successfully fetched watchlist data from DB") # for checking purposes
         return jsonify({ "success": True, "username": user.name, "companies": company_list})
 

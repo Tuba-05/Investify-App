@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from "react"; 
+import React, { useEffect, useState,  } from "react"; 
 import { DataGrid } from "@mui/x-data-grid"; // react table library better than simple plain html css
 import { IoStarSharp } from "react-icons/io5";
+import { useNavigate } from "react-router-dom"
 
 const WatchList = () => {
+  const navigate = useNavigate(); // for navigation on row click(C-name) 
   const [rows, setRows] = useState([]); // Stores fetched watchlist data
   const [loading, setLoading] = useState(true); // Loading state
   const [userName, setUserName] = useState("");
@@ -48,7 +50,7 @@ const WatchList = () => {
       .then((data) => {
         if (data.success) {
           alert(`${companyName} removed from watchlist`);
-          setRows((prev) => prev.filter((row) => row.c_name !== companyName));
+          setRows((prev) => prev.filter((row) => row.c_name !== companyName)); // remove from local state
         } else {
           alert(data.message);
         }
@@ -57,9 +59,20 @@ const WatchList = () => {
   };
   // Columns definition for DataGrid (User's watchlist only company name and star icon)
   const columns = [
-    { field: "c_name", headerName: "Company", width: 300 },
-    { field: "favourite", headerName: "Favourites", width: 130,
-      sortable: false, filterable: false,
+    { field: "c_name", headerName: "Marked Companies", width: 200 , sortable: false, filterable: false,
+      renderCell: (params) => {
+        return(
+            <span
+            style={{ color: "#033e3aff", cursor: "pointer" }} 
+            onClick={() => navigate(`/CmpFS/${params.row.id}`)} // Navigate to CmpFS page with company ID
+            >
+            {params.value}
+            </span>
+        );
+      }
+
+    },
+    { field: "favourite", headerName: "", width: 80, sortable: false, filterable: false,
       renderCell: (params) =>(
         <span
           onClick={() => handleToggleWatchlist(params.row.id, params.row.c_name)}
@@ -72,8 +85,9 @@ const WatchList = () => {
   ];
 
   return (
-    <div style={{ marginLeft: "230px", width: "95%", height: 560, top: "20px", position: "fixed", fontfamily: 'Montserrat' }}>
-        <h2 style={{ marginBottom: 10 }}>📊 My Watchlist</h2>
+    <div style={{ marginLeft: "210px", width: "95%", height: 560, top: "20px", position: "fixed", 
+    fontfamily: 'Montserrat', padding: '20px', fontSize: '22px',}}>
+        <h2 style={{ marginBottom: 10,  fontSize: '42px'  }} >📊 Your Watchlist</h2>
 
         {userName && (
             <p style={{ fontWeight: "600", marginBottom: "15px" }}>
@@ -88,13 +102,14 @@ const WatchList = () => {
         ) : (
 
         <DataGrid
-            style={{ width:"700px"}}
+            style={{ width:"290px", border: '3px solid #34c9b3ff', boxShadow: '0 4px 8px rgba(0, 0, 0, 1)'}}
             rows={rows}
             columns={columns}
             getRowId={(row) => row._rowId || row.id} // use unique _rowId if exists, else fallback to id
-            pageSizeOptions={[5, 10]}
-            initialState={{ pagination: { paginationModel: { pageSize: 5 } } }}
-            rowHeight={54}
+            hideFooterPagination
+            autoHeight
+            // rowHeight={54}
+            hideFooter
             sx={{
                 fontSize: 14,
                 "& .MuiDataGrid-columnHeaders": { fontWeight: "600" },
