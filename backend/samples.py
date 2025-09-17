@@ -95,28 +95,29 @@
 ##____________________________________________________________________________________
 # TO GET COMPANY LOGO USING CLEARBIT API
 #____________________________________________________________________________________
-import requests
+# import requests
 
-# Example company domain
-domain = "microsoft"
-url = f"https://logo.clearbit.com/{domain}.com"
+# # Example company domain
+# domain = "microsoft"
+# url = f"https://logo.clearbit.com/{domain}.com"
 
-# Where to save the logo
-save_path = f"{domain}_logo.png"
+# # Where to save the logo
+# save_path = f"{domain}_logo.png"
 
-try:
-    response = requests.get(url, stream=True)
+# try:
+#     response = requests.get(url, stream=True)
 
-    if response.status_code == 200:
-        with open(save_path, "wb") as f:
-            for chunk in response.iter_content(1024):
-                f.write(chunk)
-        print(f"✅ Logo downloaded successfully: {save_path}")
-    else:
-        print(f"❌ Failed to fetch logo, status code: {response.status_code}")
+#     if response.status_code == 200:
+#         with open(save_path, "wb") as f:
+#             for chunk in response.iter_content(1024):
+#                 f.write(chunk)
+#         print(f"✅ Logo downloaded successfully: {save_path}")
+#     else:
+#         print(f"❌ Failed to fetch logo, status code: {response.status_code}")
 
-except Exception as e:
-    print("⚠️ Error:", str(e))
+# except Exception as e:
+#     print("⚠️ Error:", str(e))
+
 
 #
 #

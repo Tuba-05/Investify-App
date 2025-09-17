@@ -38,7 +38,7 @@ function CmpFS() {
           <table>
             <thead> <tr> <th>
               <h2 style={{fontSize: "35px"}}>
-                Details</h2>
+                 Details  </h2>
                 </th> </tr> </thead>
             <tbody>
               <tr>
@@ -48,7 +48,7 @@ function CmpFS() {
               </tr>   <tr>
                 <td><b><MdArrowRight /> Price USD:</b></td>   <td>{data.price_usd} $</td>
               </tr>   <tr>
-                <td><b><MdArrowRight /> Market Capitalization:</b></td>   <td>{data.market_cap} $</td>
+                <td><b><MdArrowRight /> Market Capitalization: </b></td>   <td>{data.market_cap} $</td>
               </tr>   <tr>
                 <td><b><MdArrowRight /> Sector:</b></td>  <td>{data.sector}</td>
               </tr>   <tr>
