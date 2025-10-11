@@ -15,8 +15,8 @@ const WatchList = () => {
   const [userName, setUserName] = useState("");
   const userId = localStorage.getItem("userId"); // get logged-in user ID
   // State for daily news and current headline index
-    const [dailyNews, setDailyNews] = useState([]);
-    const [index, setIndex] = useState(0);
+  const [dailyNews, setDailyNews] = useState([]);
+  const [index, setIndex] = useState(0);
   
     // Fetching watchlist & daily news data from Flask API on component mount
     useEffect(() => {
@@ -30,13 +30,13 @@ const WatchList = () => {
       fetch('http://127.0.0.1:5000/fetch-daily-news', {method: "GET"})
         .then((res) => res.json()) // Waits for server response then res.json()converts raw response into JSON format
         .then((data)=>{
-          if(data.success){
+          if (data.success && Array.isArray(data.articles)) {
             const mappedNews = data.articles.map((item) => ({
-              source: item.source,
+              source: item.source || "Unknown",
               author: item.author || "Unknown",
-              description: item.description,
-              title: item.title,
-              url: item.url,
+              description: item.description || "No description available",
+              title: item.title || "Untitled",
+              url: item.url || "#",
             }));
             setDailyNews(mappedNews);
             console.log("Daily news fetched successfully", data); // for checking purposes
@@ -71,12 +71,13 @@ const WatchList = () => {
   
     // Effect to change news headline every 4 seconds
     useEffect(() => {
-      if (dailyNews.length === 0) return;
-      const interval = setInterval(() => {
-        setIndex((prev) => (prev + 1) % dailyNews.length);
-      }, 4000);
-      return () => clearInterval(interval);
+      if (dailyNews.length === 0) return; // if daily news array is empty
+      const interval = setInterval(() => {  
+        setIndex((prev) => (prev + 1) % dailyNews.length); // move to next news (loop back if at end)/
+      }, 5000); // 5 mili secs
+      return () => clearInterval(interval); // Stop timer when component updates/ remove from screen to prevent memory leaks or duplicate timers
     }, [dailyNews]);
+    const current = dailyNews[index] || {}; // Current news item or empty object
 
   // Remove company from watchlist
   const handleToggleWatchlist = (companyId, companyName) => {
@@ -109,7 +110,7 @@ const WatchList = () => {
       }
 
     },
-    { field: "favourite", headerName: "", width: 120, sortable: false, filterable: false,
+    { field: "favourite", headerName: "", width: 50, sortable: false, filterable: false,
       renderCell: (params) =>(
         <span
           onClick={() => handleToggleWatchlist(params.row.id, params.row.c_name)}
@@ -122,70 +123,111 @@ const WatchList = () => {
   ];
 
   return (
-    <>
-    <div style={{ marginLeft: "210px", width: "105%", height: 600, top: "20px", position: "fixed", 
-    fontfamily: 'Montserrat', padding: '20px', fontSize: '25px',}}>
-        <h2 style={{ marginBottom: 10,  fontSize: '45px'  }} >📊 Your Watchlist</h2>
+  <>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "flex-start",
+        padding: "80px",
+        marginLeft: "150px",
+        flexWrap: "wrap", // allows stacking on smaller screens
+      }}
+    >
+      {/* ====================================== WATCH-LIST TABLE ============================================ */}
+      <div
+        style={{
+          width: "45%",
+          minWidth: "340px",
+          fontFamily: "Montserrat",
+          fontSize: "25px",
+        }}
+      >
+        <h2 style={{ marginBottom: 10, fontSize: "45px" }}>📊 Your Watchlist</h2>
 
         {userName && (
-            <p style={{ fontWeight: "600", marginBottom: "15px" }}>
+          <p style={{ fontWeight: "600", marginBottom: "15px" }}>
             👤 Logged in as: {userName}
-            </p>
+          </p>
         )}
-        
-        {loading ? (
-            <p style={{ textAlign: "center" }}>Loading watchlist...</p>
-        ) : rows.length === 0 ? (
-            <p style={{ textAlign: "center" }}>No companies in your watchlist yet.</p>
-        ) : (
 
-        <DataGrid
-            style={{ width:"475px", border: '3px solid #34c9b3ff', boxShadow: '0 4px 8px rgba(0, 0, 0, 1)'}}
+        {loading ? (
+          <p style={{ textAlign: "center" }}>Loading watchlist...</p>
+        ) : rows.length === 0 ? (
+          <p style={{ textAlign: "center" }}>
+            No companies in your watchlist yet.
+          </p>
+        ) : (
+          <DataGrid
+            style={{
+              width: "450px",
+              border: "3px solid #34c9b3ff",
+              boxShadow: "0 4px 8px rgba(0, 0, 0, 1)",
+            }}
             rows={rows}
             columns={columns}
-            getRowId={(row) => row._rowId || row.id} // use unique _rowId if exists, else fallback to id
+            getRowId={(row) => row._rowId || row.id}
             hideFooterPagination
             autoHeight
             rowHeight={55}
             hideFooter
             sx={{
-                fontSize: 22,
-                "& .MuiDataGrid-columnHeaders": { fontWeight: "600" },
-                "& .MuiDataGrid-row": { backgroundColor: "white" },
+              fontSize: 22,
+              "& .MuiDataGrid-columnHeaders": { fontWeight: "600" },
+              "& .MuiDataGrid-row": { backgroundColor: "white" },
             }}
-        />
-      )}
+          />
+        )}
+      </div>
+
+      {/* ====================================== DAILY NEWS ============================================ */}
+      <div
+        style={{
+          width: "45%",
+          minWidth: "350px",
+          background: "white",
+          border: "5px solid #34c9b3",
+          borderRadius: "12px",
+          boxShadow: "0 4px 10px rgba(0, 0, 0, 0.83)",
+          padding: "20px",
+          textAlign: "center",
+        }}
+      >
+        <h2 style={{ fontSize: "42px", marginBottom: "35px" }}>📰 News Feed</h2>
+
+        <AnimatePresence mode="wait">
+          {current && (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 2.0 }}
+            >
+              <h4>{current.title}</h4>
+              <p>
+                <strong>Source:</strong> {current.source}
+              </p>
+              <p>
+                <strong>Author:</strong> {current.author}
+              </p>
+              <p>{current.description}</p>
+              <a
+                href={current.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "#890202ff", textDecoration: "none" }}
+              >
+                Read more
+              </a>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
     </div>
-    {/* ====================================== Daily NEWS ============================================ */}
-    <h2 style={{ padding: "40px", marginLeft: 900,  fontSize: '42px'  }} >📊 News Feed </h2>
-    <div
-      style={{
-        position: "absolute", right: "100px", top: "120px", width: "500px", height: "450px", overflow: "hidden",
-        display: "flex", alignItems: "center", justifyContent: "center", border: "5px solid #34c9b3",
-        borderRadius: "12px", background: "white", boxShadow: "0 4px 10px rgba(0,0,0,0.2)",
-      }}
-    > 
-      <AnimatePresence mode="wait"> // ensures only one child is rendered at a time
-        <motion.p // animated paragraph for news headlines
-          key={index}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -20 }}
-          transition={{ duration: 0.6 }}
-          style={{
-            fontSize: "18px",
-            fontWeight: "500",
-            textAlign: "center",
-            padding: "10px",
-            color: "#033e3a",
-          }}
-        >
-          {dailyNews[index]} {/* Display current news */}
-        </motion.p>
-      </AnimatePresence>
-    </div>
-    </>
-  );
+  </>
+);
+
 };
 
 export default WatchList;

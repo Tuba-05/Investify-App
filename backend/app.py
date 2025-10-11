@@ -262,12 +262,13 @@ def toggle_watchlist(user_id, company_id):
 
 
 # ======================= DAILY NEWS ROUTE =======================
-app.route("/fetch-daily-news", methods=["GET"])    
+@app.route("/fetch-daily-news", methods=["GET"])    
 def fetch_news_from_file():
     """ Function to read news from news.json file and return as JSON response """
     try:
         with open("news.json", "r", encoding="utf-8") as f: # read from news.json file
             news_data = json.load(f) # load JSON data
+        print("Successfully fetched daily news from news.json file") # for checking purposes
         return jsonify({"success": True, "articles": news_data})
     except Exception as e:
         print("Error reading news file:", str(e))
