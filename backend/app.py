@@ -7,7 +7,9 @@ from flask import request, jsonify
 from werkzeug.security import generate_password_hash, check_password_hash # to protect passwords (py library builtin in flask)
 from flask_cors import CORS # in order to resolve different server ports(frontend&backend) connection problems 
 import requests, base64 # to fetch company logos from Clearbit API & convert to base64 string
-
+import json  # to read news.json file
+import threading  # to run background tasks (like fetching daily news)
+import sv_daily_news # sv_news.py file (in same folder) for fetching daily news 
 
 
 app = Flask(__name__)  # createing flask web application
@@ -205,7 +207,7 @@ def get_company_details(id):
 
 
 # ================== WATCH-LIST ROUTES ==================
-# 1. ************* Get watchlist for a user *************
+# 1. ************* Get watchlist for a user & displaying daily news *************
 @app.route('/watchlist/<int:user_id>', methods=['GET'])
 def get_watchlist(user_id):
     ''' Fetch a user's watchlist with user and company details '''
@@ -239,7 +241,7 @@ def get_watchlist(user_id):
 # 2. *************** Add/ Remove company from user's watchlist ***************
 @app.route('/watchlist/<int:user_id>/<int:company_id>', methods=['POST'])
 def toggle_watchlist(user_id, company_id):
-    """ Toggle company in user's watchlist (add/remove) """
+    """ Toggle company in user's watchlist (add/remove) & also shows daily NEWS current headlines"""
 
     existing_entry = Watchlist.query.filter_by(user_id=user_id, company_id=company_id).first() # check if entry already exists
 
@@ -259,13 +261,38 @@ def toggle_watchlist(user_id, company_id):
         return jsonify({"success": True, "action": "added", "message": "Company added to watchlist"})
 
 
+# ======================= DAILY NEWS ROUTE =======================
+app.route("/fetch-daily-news", methods=["GET"])    
+def fetch_news_from_file():
+    """ Function to read news from news.json file and return as JSON response """
+    try:
+        with open("news.json", "r", encoding="utf-8") as f: # read from news.json file
+            news_data = json.load(f) # load JSON data
+        return jsonify({"success": True, "articles": news_data})
+    except Exception as e:
+        print("Error reading news file:", str(e))
+        return jsonify({"success": False, "message": "Error reading news file"}), 500        
+
+
 # ================== HOME ROUTE ==================
 @app.route("/")
 def home():
     ''' Home route to check if backend is running '''
     return {"status": "ok", "message": "Investify backend is running!"}
 
+
+# ================== DAILY NEWS FETCHING IN BACKGROUND ===================
+def run_background_task():
+    """ Function to run the background task for fetching daily news """
+    sv_daily_news.start_scheduler()   # call a function inside sv_daily_news.py
+
+
 # ================== Run the Flask app ===================
 if __name__ == "__main__":
     ''' Run the Flask app '''
+    # Start background thread for news fetching
+    thread = threading.Thread(target=run_background_task) # create a background thread
+    thread.daemon = True  # ensures it stops when Flask stops
+    thread.start() # start the background thread
+    
     app.run(debug=True)

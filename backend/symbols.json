@@ -1,0 +1,5532 @@
+[
+    {
+        "symbol": "NVDA",
+        "country": "United States",
+        "symbol_country": "NVDA.US"
+    },
+    {
+        "symbol": "MSFT",
+        "country": "United States",
+        "symbol_country": "MSFT.US"
+    },
+    {
+        "symbol": "AAPL",
+        "country": "United States",
+        "symbol_country": "AAPL.US"
+    },
+    {
+        "symbol": "GOOG",
+        "country": "United States",
+        "symbol_country": "GOOG.US"
+    },
+    {
+        "symbol": "AMZN",
+        "country": "United States",
+        "symbol_country": "AMZN.US"
+    },
+    {
+        "symbol": "META",
+        "country": "United States",
+        "symbol_country": "META.US"
+    },
+    {
+        "symbol": "AVGO",
+        "country": "United States",
+        "symbol_country": "AVGO.US"
+    },
+    {
+        "symbol": "TSM",
+        "country": "Taiwan",
+        "symbol_country": "TSM.TW"
+    },
+    {
+        "symbol": "TSLA",
+        "country": "United States",
+        "symbol_country": "TSLA.US"
+    },
+    {
+        "symbol": "TCEHY",
+        "country": "China",
+        "symbol_country": "TCEHY.CN"
+    },
+    {
+        "symbol": "ORCL",
+        "country": "United States",
+        "symbol_country": "ORCL.US"
+    },
+    {
+        "symbol": "NFLX",
+        "country": "United States",
+        "symbol_country": "NFLX.US"
+    },
+    {
+        "symbol": "PLTR",
+        "country": "United States",
+        "symbol_country": "PLTR.US"
+    },
+    {
+        "symbol": "005930.KS",
+        "country": "South Korea",
+        "symbol_country": "005930.KS.KR"
+    },
+    {
+        "symbol": "SAP",
+        "country": "Germany",
+        "symbol_country": "SAP.DE"
+    },
+    {
+        "symbol": "ASML",
+        "country": "Netherlands",
+        "symbol_country": "ASML.NL"
+    },
+    {
+        "symbol": "BABA",
+        "country": "China",
+        "symbol_country": "BABA.CN"
+    },
+    {
+        "symbol": "AMD",
+        "country": "United States",
+        "symbol_country": "AMD.US"
+    },
+    {
+        "symbol": "CSCO",
+        "country": "United States",
+        "symbol_country": "CSCO.US"
+    },
+    {
+        "symbol": "CRM",
+        "country": "United States",
+        "symbol_country": "CRM.US"
+    },
+    {
+        "symbol": "IBM",
+        "country": "United States",
+        "symbol_country": "IBM.US"
+    },
+    {
+        "symbol": "UBER",
+        "country": "United States",
+        "symbol_country": "UBER.US"
+    },
+    {
+        "symbol": "TXN",
+        "country": "United States",
+        "symbol_country": "TXN.US"
+    },
+    {
+        "symbol": "INTU",
+        "country": "United States",
+        "symbol_country": "INTU.US"
+    },
+    {
+        "symbol": "NOW",
+        "country": "United States",
+        "symbol_country": "NOW.US"
+    },
+    {
+        "symbol": "BKNG",
+        "country": "United States",
+        "symbol_country": "BKNG.US"
+    },
+    {
+        "symbol": "SHOP",
+        "country": "Canada",
+        "symbol_country": "SHOP.CA"
+    },
+    {
+        "symbol": "XIACF",
+        "country": "China",
+        "symbol_country": "XIACF.CN"
+    },
+    {
+        "symbol": "PDD",
+        "country": "China",
+        "symbol_country": "PDD.CN"
+    },
+    {
+        "symbol": "QCOM",
+        "country": "United States",
+        "symbol_country": "QCOM.US"
+    },
+    {
+        "symbol": "ANET",
+        "country": "United States",
+        "symbol_country": "ANET.US"
+    },
+    {
+        "symbol": "SONY",
+        "country": "Japan",
+        "symbol_country": "SONY.JP"
+    },
+    {
+        "symbol": "APP",
+        "country": "United States",
+        "symbol_country": "APP.US"
+    },
+    {
+        "symbol": "ADBE",
+        "country": "United States",
+        "symbol_country": "ADBE.US"
+    },
+    {
+        "symbol": "ARM",
+        "country": "United Kingdom",
+        "symbol_country": "ARM.GB"
+    },
+    {
+        "symbol": "SPOT",
+        "country": "Sweden",
+        "symbol_country": "SPOT.SE"
+    },
+    {
+        "symbol": "SU.PA",
+        "country": "France",
+        "symbol_country": "SU.PA.FR"
+    },
+    {
+        "symbol": "000660.KS",
+        "country": "South Korea",
+        "symbol_country": "000660.KS.KR"
+    },
+    {
+        "symbol": "MU",
+        "country": "United States",
+        "symbol_country": "MU.US"
+    },
+    {
+        "symbol": "LRCX",
+        "country": "United States",
+        "symbol_country": "LRCX.US"
+    },
+    {
+        "symbol": "AMAT",
+        "country": "United States",
+        "symbol_country": "AMAT.US"
+    },
+    {
+        "symbol": "ADI",
+        "country": "United States",
+        "symbol_country": "ADI.US"
+    },
+    {
+        "symbol": "PANW",
+        "country": "United States",
+        "symbol_country": "PANW.US"
+    },
+    {
+        "symbol": "ADP",
+        "country": "United States",
+        "symbol_country": "ADP.US"
+    },
+    {
+        "symbol": "MELI",
+        "country": "Argentina",
+        "symbol_country": "MELI.AR"
+    },
+    {
+        "symbol": "KLAC",
+        "country": "United States",
+        "symbol_country": "KLAC.US"
+    },
+    {
+        "symbol": "SNPS",
+        "country": "United States",
+        "symbol_country": "SNPS.US"
+    },
+    {
+        "symbol": "INTC",
+        "country": "United States",
+        "symbol_country": "INTC.US"
+    },
+    {
+        "symbol": "SE",
+        "country": "Singapore",
+        "symbol_country": "SE.SG"
+    },
+    {
+        "symbol": "7974.T",
+        "country": "Japan",
+        "symbol_country": "7974.T.JP"
+    },
+    {
+        "symbol": "CRWD",
+        "country": "United States",
+        "symbol_country": "CRWD.US"
+    },
+    {
+        "symbol": "DASH",
+        "country": "United States",
+        "symbol_country": "DASH.US"
+    },
+    {
+        "symbol": "MSTR",
+        "country": "United States",
+        "symbol_country": "MSTR.US"
+    },
+    {
+        "symbol": "CDNS",
+        "country": "United States",
+        "symbol_country": "CDNS.US"
+    },
+    {
+        "symbol": "6861.T",
+        "country": "Japan",
+        "symbol_country": "6861.T.JP"
+    },
+    {
+        "symbol": "2317.TW",
+        "country": "Taiwan",
+        "symbol_country": "2317.TW.TW"
+    },
+    {
+        "symbol": "688256.SS",
+        "country": "China",
+        "symbol_country": "688256.SS.CN"
+    },
+    {
+        "symbol": "HOOD",
+        "country": "United States",
+        "symbol_country": "HOOD.US"
+    },
+    {
+        "symbol": "DELL",
+        "country": "United States",
+        "symbol_country": "DELL.US"
+    },
+    {
+        "symbol": "NTES",
+        "country": "China",
+        "symbol_country": "NTES.CN"
+    },
+    {
+        "symbol": "3690.HK",
+        "country": "China",
+        "symbol_country": "3690.HK.CN"
+    },
+    {
+        "symbol": "ABNB",
+        "country": "United States",
+        "symbol_country": "ABNB.US"
+    },
+    {
+        "symbol": "COIN",
+        "country": "United States",
+        "symbol_country": "COIN.US"
+    },
+    {
+        "symbol": "0981.HK",
+        "country": "China",
+        "symbol_country": "0981.HK.CN"
+    },
+    {
+        "symbol": "EQIX",
+        "country": "United States",
+        "symbol_country": "EQIX.US"
+    },
+    {
+        "symbol": "FI",
+        "country": "United States",
+        "symbol_country": "FI.US"
+    },
+    {
+        "symbol": "2454.TW",
+        "country": "Taiwan",
+        "symbol_country": "2454.TW.TW"
+    },
+    {
+        "symbol": "NET",
+        "country": "United States",
+        "symbol_country": "NET.US"
+    },
+    {
+        "symbol": "CSU.TO",
+        "country": "Canada",
+        "symbol_country": "CSU.TO.CA"
+    },
+    {
+        "symbol": "SNOW",
+        "country": "United States",
+        "symbol_country": "SNOW.US"
+    },
+    {
+        "symbol": "PYPL",
+        "country": "United States",
+        "symbol_country": "PYPL.US"
+    },
+    {
+        "symbol": "8035.T",
+        "country": "Japan",
+        "symbol_country": "8035.T.JP"
+    },
+    {
+        "symbol": "MRVL",
+        "country": "United States",
+        "symbol_country": "MRVL.US"
+    },
+    {
+        "symbol": "TEL",
+        "country": "Switzerland",
+        "symbol_country": "TEL.CH"
+    },
+    {
+        "symbol": "WDAY",
+        "country": "United States",
+        "symbol_country": "WDAY.US"
+    },
+    {
+        "symbol": "ADSK",
+        "country": "United States",
+        "symbol_country": "ADSK.US"
+    },
+    {
+        "symbol": "2308.TW",
+        "country": "Taiwan",
+        "symbol_country": "2308.TW.TW"
+    },
+    {
+        "symbol": "NXPI",
+        "country": "Netherlands",
+        "symbol_country": "NXPI.NL"
+    },
+    {
+        "symbol": "FTNT",
+        "country": "United States",
+        "symbol_country": "FTNT.US"
+    },
+    {
+        "symbol": "DELTA.BK",
+        "country": "Thailand",
+        "symbol_country": "DELTA.BK.TH"
+    },
+    {
+        "symbol": "6857.T",
+        "country": "Japan",
+        "symbol_country": "6857.T.JP"
+    },
+    {
+        "symbol": "ROP",
+        "country": "United States",
+        "symbol_country": "ROP.US"
+    },
+    {
+        "symbol": "IFX.DE",
+        "country": "Germany",
+        "symbol_country": "IFX.DE.DE"
+    },
+    {
+        "symbol": "ADYEN.AS",
+        "country": "Netherlands",
+        "symbol_country": "ADYEN.AS.NL"
+    },
+    {
+        "symbol": "CPNG",
+        "country": "United States",
+        "symbol_country": "CPNG.US"
+    },
+    {
+        "symbol": "DCII.JK",
+        "country": "Indonesia",
+        "symbol_country": "DCII.JK.ID"
+    },
+    {
+        "symbol": "XYZ",
+        "country": "United States",
+        "symbol_country": "XYZ.US"
+    },
+    {
+        "symbol": "VEEV",
+        "country": "United States",
+        "symbol_country": "VEEV.US"
+    },
+    {
+        "symbol": "CRWV",
+        "country": "United States",
+        "symbol_country": "CRWV.US"
+    },
+    {
+        "symbol": "DDOG",
+        "country": "United States",
+        "symbol_country": "DDOG.US"
+    },
+    {
+        "symbol": "GRMN",
+        "country": "Switzerland",
+        "symbol_country": "GRMN.CH"
+    },
+    {
+        "symbol": "JD",
+        "country": "China",
+        "symbol_country": "JD.CN"
+    },
+    {
+        "symbol": "TEAM",
+        "country": "Australia",
+        "symbol_country": "TEAM.AU"
+    },
+    {
+        "symbol": "EA",
+        "country": "United States",
+        "symbol_country": "EA.US"
+    },
+    {
+        "symbol": "TCOM",
+        "country": "China",
+        "symbol_country": "TCOM.CN"
+    },
+    {
+        "symbol": "EBAY",
+        "country": "United States",
+        "symbol_country": "EBAY.US"
+    },
+    {
+        "symbol": "TTWO",
+        "country": "United States",
+        "symbol_country": "TTWO.US"
+    },
+    {
+        "symbol": "ZS",
+        "country": "United States",
+        "symbol_country": "ZS.US"
+    },
+    {
+        "symbol": "1024.HK",
+        "country": "China",
+        "symbol_country": "1024.HK.CN"
+    },
+    {
+        "symbol": "DSY.PA",
+        "country": "France",
+        "symbol_country": "DSY.PA.FR"
+    },
+    {
+        "symbol": "MPWR",
+        "country": "United States",
+        "symbol_country": "MPWR.US"
+    },
+    {
+        "symbol": "6701.T",
+        "country": "Japan",
+        "symbol_country": "6701.T.JP"
+    },
+    {
+        "symbol": "002371.SZ",
+        "country": "China",
+        "symbol_country": "002371.SZ.CN"
+    },
+    {
+        "symbol": "RDDT",
+        "country": "United States",
+        "symbol_country": "RDDT.US"
+    },
+    {
+        "symbol": "CSGP",
+        "country": "United States",
+        "symbol_country": "CSGP.US"
+    },
+    {
+        "symbol": "AMS.MC",
+        "country": "Spain",
+        "symbol_country": "AMS.MC.ES"
+    },
+    {
+        "symbol": "FIS",
+        "country": "United States",
+        "symbol_country": "FIS.US"
+    },
+    {
+        "symbol": "MCHP",
+        "country": "United States",
+        "symbol_country": "MCHP.US"
+    },
+    {
+        "symbol": "STX",
+        "country": "Ireland",
+        "symbol_country": "STX.IE"
+    },
+    {
+        "symbol": "FICO",
+        "country": "United States",
+        "symbol_country": "FICO.US"
+    },
+    {
+        "symbol": "FIG",
+        "country": "United States",
+        "symbol_country": "FIG.US"
+    },
+    {
+        "symbol": "2382.TW",
+        "country": "Taiwan",
+        "symbol_country": "2382.TW.TW"
+    },
+    {
+        "symbol": "ETERNAL.NS",
+        "country": "India",
+        "symbol_country": "ETERNAL.NS.IN"
+    },
+    {
+        "symbol": "IQV",
+        "country": "United States",
+        "symbol_country": "IQV.US"
+    },
+    {
+        "symbol": "CRCL",
+        "country": "United States",
+        "symbol_country": "CRCL.US"
+    },
+    {
+        "symbol": "BIDU",
+        "country": "China",
+        "symbol_country": "BIDU.CN"
+    },
+    {
+        "symbol": "6981.T",
+        "country": "Japan",
+        "symbol_country": "6981.T.JP"
+    },
+    {
+        "symbol": "6146.T",
+        "country": "Japan",
+        "symbol_country": "6146.T.JP"
+    },
+    {
+        "symbol": "WKL.AS",
+        "country": "Netherlands",
+        "symbol_country": "WKL.AS.NL"
+    },
+    {
+        "symbol": "SOFI",
+        "country": "United States",
+        "symbol_country": "SOFI.US"
+    },
+    {
+        "symbol": "HPE",
+        "country": "United States",
+        "symbol_country": "HPE.US"
+    },
+    {
+        "symbol": "ALAB",
+        "country": "United States",
+        "symbol_country": "ALAB.US"
+    },
+    {
+        "symbol": "KEYS",
+        "country": "United States",
+        "symbol_country": "KEYS.US"
+    },
+    {
+        "symbol": "SYM",
+        "country": "United States",
+        "symbol_country": "SYM.US"
+    },
+    {
+        "symbol": "7751.T",
+        "country": "Japan",
+        "symbol_country": "7751.T.JP"
+    },
+    {
+        "symbol": "SMCI",
+        "country": "United States",
+        "symbol_country": "SMCI.US"
+    },
+    {
+        "symbol": "ERIC",
+        "country": "Sweden",
+        "symbol_country": "ERIC.SE"
+    },
+    {
+        "symbol": "EXPE",
+        "country": "United States",
+        "symbol_country": "EXPE.US"
+    },
+    {
+        "symbol": "DIDIY",
+        "country": "China",
+        "symbol_country": "DIDIY.CN"
+    },
+    {
+        "symbol": "PTC",
+        "country": "United States",
+        "symbol_country": "PTC.US"
+    },
+    {
+        "symbol": "TTD",
+        "country": "United States",
+        "symbol_country": "TTD.US"
+    },
+    {
+        "symbol": "FUTU",
+        "country": "Hong Kong",
+        "symbol_country": "FUTU.HK"
+    },
+    {
+        "symbol": "TOST",
+        "country": "United States",
+        "symbol_country": "TOST.US"
+    },
+    {
+        "symbol": "6618.HK",
+        "country": "China",
+        "symbol_country": "6618.HK.CN"
+    },
+    {
+        "symbol": "HPQ",
+        "country": "United States",
+        "symbol_country": "HPQ.US"
+    },
+    {
+        "symbol": "HUBS",
+        "country": "United States",
+        "symbol_country": "HUBS.US"
+    },
+    {
+        "symbol": "6752.T",
+        "country": "Japan",
+        "symbol_country": "6752.T.JP"
+    },
+    {
+        "symbol": "TYL",
+        "country": "United States",
+        "symbol_country": "TYL.US"
+    },
+    {
+        "symbol": "STM",
+        "country": "Switzerland",
+        "symbol_country": "STM.CH"
+    },
+    {
+        "symbol": "ZM",
+        "country": "United States",
+        "symbol_country": "ZM.US"
+    },
+    {
+        "symbol": "MDB",
+        "country": "United States",
+        "symbol_country": "MDB.US"
+    },
+    {
+        "symbol": "LDOS",
+        "country": "United States",
+        "symbol_country": "LDOS.US"
+    },
+    {
+        "symbol": "ASM.AS",
+        "country": "Netherlands",
+        "symbol_country": "ASM.AS.NL"
+    },
+    {
+        "symbol": "035420.KS",
+        "country": "South Korea",
+        "symbol_country": "035420.KS.KR"
+    },
+    {
+        "symbol": "NOK",
+        "country": "Finland",
+        "symbol_country": "NOK.FI"
+    },
+    {
+        "symbol": "7832.T",
+        "country": "Japan",
+        "symbol_country": "7832.T.JP"
+    },
+    {
+        "symbol": "CYBR",
+        "country": "Israel",
+        "symbol_country": "CYBR.IL"
+    },
+    {
+        "symbol": "NTAP",
+        "country": "United States",
+        "symbol_country": "NTAP.US"
+    },
+    {
+        "symbol": "6723.T",
+        "country": "Japan",
+        "symbol_country": "6723.T.JP"
+    },
+    {
+        "symbol": "SSNC",
+        "country": "United States",
+        "symbol_country": "SSNC.US"
+    },
+    {
+        "symbol": "ASX",
+        "country": "Taiwan",
+        "symbol_country": "ASX.TW"
+    },
+    {
+        "symbol": "WTC.AX",
+        "country": "Australia",
+        "symbol_country": "WTC.AX.AU"
+    },
+    {
+        "symbol": "GPN",
+        "country": "United States",
+        "symbol_country": "GPN.US"
+    },
+    {
+        "symbol": "CRDO",
+        "country": "United States",
+        "symbol_country": "CRDO.US"
+    },
+    {
+        "symbol": "ON",
+        "country": "United States",
+        "symbol_country": "ON.US"
+    },
+    {
+        "symbol": "9766.T",
+        "country": "Japan",
+        "symbol_country": "9766.T.JP"
+    },
+    {
+        "symbol": "GDDY",
+        "country": "United States",
+        "symbol_country": "GDDY.US"
+    },
+    {
+        "symbol": "CHKP",
+        "country": "Israel",
+        "symbol_country": "CHKP.IL"
+    },
+    {
+        "symbol": "PME.AX",
+        "country": "Australia",
+        "symbol_country": "PME.AX.AU"
+    },
+    {
+        "symbol": "IOT",
+        "country": "United States",
+        "symbol_country": "IOT.US"
+    },
+    {
+        "symbol": "Z",
+        "country": "United States",
+        "symbol_country": "Z.US"
+    },
+    {
+        "symbol": "GRAB",
+        "country": "Singapore",
+        "symbol_country": "GRAB.SG"
+    },
+    {
+        "symbol": "035720.KS",
+        "country": "South Korea",
+        "symbol_country": "035720.KS.KR"
+    },
+    {
+        "symbol": "PSTG",
+        "country": "United States",
+        "symbol_country": "PSTG.US"
+    },
+    {
+        "symbol": "688012.SS",
+        "country": "China",
+        "symbol_country": "688012.SS.CN"
+    },
+    {
+        "symbol": "TRMB",
+        "country": "United States",
+        "symbol_country": "TRMB.US"
+    },
+    {
+        "symbol": "GEN",
+        "country": "United States",
+        "symbol_country": "GEN.US"
+    },
+    {
+        "symbol": "GFS",
+        "country": "United States",
+        "symbol_country": "GFS.US"
+    },
+    {
+        "symbol": "NTNX",
+        "country": "United States",
+        "symbol_country": "NTNX.US"
+    },
+    {
+        "symbol": "FFIV",
+        "country": "United States",
+        "symbol_country": "FFIV.US"
+    },
+    {
+        "symbol": "3659.T",
+        "country": "Japan",
+        "symbol_country": "3659.T.JP"
+    },
+    {
+        "symbol": "GWRE",
+        "country": "United States",
+        "symbol_country": "GWRE.US"
+    },
+    {
+        "symbol": "6669.TW",
+        "country": "Taiwan",
+        "symbol_country": "6669.TW.TW"
+    },
+    {
+        "symbol": "0992.HK",
+        "country": "Hong Kong",
+        "symbol_country": "0992.HK.HK"
+    },
+    {
+        "symbol": "XRO.AX",
+        "country": "New Zealand",
+        "symbol_country": "XRO.AX.NZ"
+    },
+    {
+        "symbol": "KKS.F",
+        "country": "Kazakhstan",
+        "symbol_country": "KKS.F.KZ"
+    },
+    {
+        "symbol": "002230.SZ",
+        "country": "China",
+        "symbol_country": "002230.SZ.CN"
+    },
+    {
+        "symbol": "ASTS",
+        "country": "United States",
+        "symbol_country": "ASTS.US"
+    },
+    {
+        "symbol": "U",
+        "country": "United States",
+        "symbol_country": "U.US"
+    },
+    {
+        "symbol": "RBRK",
+        "country": "United States",
+        "symbol_country": "RBRK.US"
+    },
+    {
+        "symbol": "UMC",
+        "country": "Taiwan",
+        "symbol_country": "UMC.TW"
+    },
+    {
+        "symbol": "NBIS",
+        "country": "Netherlands",
+        "symbol_country": "NBIS.NL"
+    },
+    {
+        "symbol": "CHWY",
+        "country": "United States",
+        "symbol_country": "CHWY.US"
+    },
+    {
+        "symbol": "BSY",
+        "country": "United States",
+        "symbol_country": "BSY.US"
+    },
+    {
+        "symbol": "ZBRA",
+        "country": "United States",
+        "symbol_country": "ZBRA.US"
+    },
+    {
+        "symbol": "OKTA",
+        "country": "United States",
+        "symbol_country": "OKTA.US"
+    },
+    {
+        "symbol": "NEM.F",
+        "country": "Germany",
+        "symbol_country": "NEM.F.DE"
+    },
+    {
+        "symbol": "TWLO",
+        "country": "United States",
+        "symbol_country": "TWLO.US"
+    },
+    {
+        "symbol": "2357.TW",
+        "country": "Taiwan",
+        "symbol_country": "2357.TW.TW"
+    },
+    {
+        "symbol": "603986.SS",
+        "country": "China",
+        "symbol_country": "603986.SS.CN"
+    },
+    {
+        "symbol": "LOGI",
+        "country": "Switzerland",
+        "symbol_country": "LOGI.CH"
+    },
+    {
+        "symbol": "DT",
+        "country": "United States",
+        "symbol_country": "DT.US"
+    },
+    {
+        "symbol": "DOCU",
+        "country": "United States",
+        "symbol_country": "DOCU.US"
+    },
+    {
+        "symbol": "FDS",
+        "country": "United States",
+        "symbol_country": "FDS.US"
+    },
+    {
+        "symbol": "SGE.L",
+        "country": "United Kingdom",
+        "symbol_country": "SGE.L.GB"
+    },
+    {
+        "symbol": "ROKU",
+        "country": "United States",
+        "symbol_country": "ROKU.US"
+    },
+    {
+        "symbol": "COHR",
+        "country": "United States",
+        "symbol_country": "COHR.US"
+    },
+    {
+        "symbol": "QXO",
+        "country": "United States",
+        "symbol_country": "QXO.US"
+    },
+    {
+        "symbol": "000977.SZ",
+        "country": "China",
+        "symbol_country": "000977.SZ.CN"
+    },
+    {
+        "symbol": "688036.SS",
+        "country": "China",
+        "symbol_country": "688036.SS.CN"
+    },
+    {
+        "symbol": "4716.T",
+        "country": "Japan",
+        "symbol_country": "4716.T.JP"
+    },
+    {
+        "symbol": "MANH",
+        "country": "United States",
+        "symbol_country": "MANH.US"
+    },
+    {
+        "symbol": "4755.T",
+        "country": "Japan",
+        "symbol_country": "4755.T.JP"
+    },
+    {
+        "symbol": "PAYC",
+        "country": "United States",
+        "symbol_country": "PAYC.US"
+    },
+    {
+        "symbol": "DOCS",
+        "country": "United States",
+        "symbol_country": "DOCS.US"
+    },
+    {
+        "symbol": "TEM",
+        "country": "United States",
+        "symbol_country": "TEM.US"
+    },
+    {
+        "symbol": "ENTG",
+        "country": "United States",
+        "symbol_country": "ENTG.US"
+    },
+    {
+        "symbol": "IONQ",
+        "country": "United States",
+        "symbol_country": "IONQ.US"
+    },
+    {
+        "symbol": "JKHY",
+        "country": "United States",
+        "symbol_country": "JKHY.US"
+    },
+    {
+        "symbol": "SNAP",
+        "country": "United States",
+        "symbol_country": "SNAP.US"
+    },
+    {
+        "symbol": "601360.SS",
+        "country": "China",
+        "symbol_country": "601360.SS.CN"
+    },
+    {
+        "symbol": "CART",
+        "country": "United States",
+        "symbol_country": "CART.US"
+    },
+    {
+        "symbol": "MBLY",
+        "country": "Israel",
+        "symbol_country": "MBLY.IL"
+    },
+    {
+        "symbol": "SAIL",
+        "country": "United States",
+        "symbol_country": "SAIL.US"
+    },
+    {
+        "symbol": "GTM",
+        "country": "United States",
+        "symbol_country": "GTM.US"
+    },
+    {
+        "symbol": "SWKS",
+        "country": "United States",
+        "symbol_country": "SWKS.US"
+    },
+    {
+        "symbol": "688521.SS",
+        "country": "China",
+        "symbol_country": "688521.SS.CN"
+    },
+    {
+        "symbol": "AKAM",
+        "country": "United States",
+        "symbol_country": "AKAM.US"
+    },
+    {
+        "symbol": "0241.HK",
+        "country": "Hong Kong",
+        "symbol_country": "0241.HK.HK"
+    },
+    {
+        "symbol": "BESI.AS",
+        "country": "Netherlands",
+        "symbol_country": "BESI.AS.NL"
+    },
+    {
+        "symbol": "DAY",
+        "country": "United States",
+        "symbol_country": "DAY.US"
+    },
+    {
+        "symbol": "ALE.WA",
+        "country": "Poland",
+        "symbol_country": "ALE.WA.PL"
+    },
+    {
+        "symbol": "600703.SS",
+        "country": "China",
+        "symbol_country": "600703.SS.CN"
+    },
+    {
+        "symbol": "259960.KS",
+        "country": "South Korea",
+        "symbol_country": "259960.KS.KR"
+    },
+    {
+        "symbol": "3661.TW",
+        "country": "Taiwan",
+        "symbol_country": "3661.TW.TW"
+    },
+    {
+        "symbol": "AUR",
+        "country": "United States",
+        "symbol_country": "AUR.US"
+    },
+    {
+        "symbol": "0020.HK",
+        "country": "China",
+        "symbol_country": "0020.HK.CN"
+    },
+    {
+        "symbol": "ALGN",
+        "country": "United States",
+        "symbol_country": "ALGN.US"
+    },
+    {
+        "symbol": "PCOR",
+        "country": "United States",
+        "symbol_country": "PCOR.US"
+    },
+    {
+        "symbol": "TOI.V",
+        "country": "Canada",
+        "symbol_country": "TOI.V.CA"
+    },
+    {
+        "symbol": "2413.T",
+        "country": "Japan",
+        "symbol_country": "2413.T.JP"
+    },
+    {
+        "symbol": "2395.TW",
+        "country": "Taiwan",
+        "symbol_country": "2395.TW.TW"
+    },
+    {
+        "symbol": "688396.SS",
+        "country": "China",
+        "symbol_country": "688396.SS.CN"
+    },
+    {
+        "symbol": "PCTY",
+        "country": "United States",
+        "symbol_country": "PCTY.US"
+    },
+    {
+        "symbol": "HIMS",
+        "country": "United States",
+        "symbol_country": "HIMS.US"
+    },
+    {
+        "symbol": "CAR.AX",
+        "country": "Australia",
+        "symbol_country": "CAR.AX.AU"
+    },
+    {
+        "symbol": "MMYT",
+        "country": "India",
+        "symbol_country": "MMYT.IN"
+    },
+    {
+        "symbol": "6920.T",
+        "country": "Japan",
+        "symbol_country": "6920.T.JP"
+    },
+    {
+        "symbol": "301269.SZ",
+        "country": "China",
+        "symbol_country": "301269.SZ.CN"
+    },
+    {
+        "symbol": "2301.TW",
+        "country": "Taiwan",
+        "symbol_country": "2301.TW.TW"
+    },
+    {
+        "symbol": "EPAM",
+        "country": "United States",
+        "symbol_country": "EPAM.US"
+    },
+    {
+        "symbol": "W",
+        "country": "United States",
+        "symbol_country": "W.US"
+    },
+    {
+        "symbol": "MTSI",
+        "country": "United States",
+        "symbol_country": "MTSI.US"
+    },
+    {
+        "symbol": "KVYO",
+        "country": "United States",
+        "symbol_country": "KVYO.US"
+    },
+    {
+        "symbol": "DOX",
+        "country": "United States",
+        "symbol_country": "DOX.US"
+    },
+    {
+        "symbol": "TTAN",
+        "country": "United States",
+        "symbol_country": "TTAN.US"
+    },
+    {
+        "symbol": "POLICYBZR.NS",
+        "country": "India",
+        "symbol_country": "POLICYBZR.NS.IN"
+    },
+    {
+        "symbol": "MNDY",
+        "country": "Israel",
+        "symbol_country": "MNDY.IL"
+    },
+    {
+        "symbol": "BILI",
+        "country": "China",
+        "symbol_country": "BILI.CN"
+    },
+    {
+        "symbol": "066570.KS",
+        "country": "South Korea",
+        "symbol_country": "066570.KS.KR"
+    },
+    {
+        "symbol": "2379.TW",
+        "country": "Taiwan",
+        "symbol_country": "2379.TW.TW"
+    },
+    {
+        "symbol": "LMN.V",
+        "country": "Canada",
+        "symbol_country": "LMN.V.CA"
+    },
+    {
+        "symbol": "PEGA",
+        "country": "United States",
+        "symbol_country": "PEGA.US"
+    },
+    {
+        "symbol": "LSCC",
+        "country": "United States",
+        "symbol_country": "LSCC.US"
+    },
+    {
+        "symbol": "MTCH",
+        "country": "United States",
+        "symbol_country": "MTCH.US"
+    },
+    {
+        "symbol": "PAYTM.NS",
+        "country": "India",
+        "symbol_country": "PAYTM.NS.IN"
+    },
+    {
+        "symbol": "LITE",
+        "country": "United States",
+        "symbol_country": "LITE.US"
+    },
+    {
+        "symbol": "ESTC",
+        "country": "United States",
+        "symbol_country": "ESTC.US"
+    },
+    {
+        "symbol": "3064.T",
+        "country": "Japan",
+        "symbol_country": "3064.T.JP"
+    },
+    {
+        "symbol": "3034.TW",
+        "country": "Taiwan",
+        "symbol_country": "3034.TW.TW"
+    },
+    {
+        "symbol": "NICE",
+        "country": "Israel",
+        "symbol_country": "NICE.IL"
+    },
+    {
+        "symbol": "DSGX",
+        "country": "Canada",
+        "symbol_country": "DSGX.CA"
+    },
+    {
+        "symbol": "QRVO",
+        "country": "United States",
+        "symbol_country": "QRVO.US"
+    },
+    {
+        "symbol": "OTEX",
+        "country": "Canada",
+        "symbol_country": "OTEX.CA"
+    },
+    {
+        "symbol": "3092.T",
+        "country": "Japan",
+        "symbol_country": "3092.T.JP"
+    },
+    {
+        "symbol": "TNE.AX",
+        "country": "Australia",
+        "symbol_country": "TNE.AX.AU"
+    },
+    {
+        "symbol": "VIPS",
+        "country": "China",
+        "symbol_country": "VIPS.CN"
+    },
+    {
+        "symbol": "CVLT",
+        "country": "United States",
+        "symbol_country": "CVLT.US"
+    },
+    {
+        "symbol": "688126.SS",
+        "country": "China",
+        "symbol_country": "688126.SS.CN"
+    },
+    {
+        "symbol": "DHER.F",
+        "country": "Germany",
+        "symbol_country": "DHER.F.DE"
+    },
+    {
+        "symbol": "VENDA.OL",
+        "country": "Norway",
+        "symbol_country": "VENDA.OL.NO"
+    },
+    {
+        "symbol": "600588.SS",
+        "country": "China",
+        "symbol_country": "600588.SS.CN"
+    },
+    {
+        "symbol": "G",
+        "country": "Bermuda",
+        "symbol_country": "G.BM"
+    },
+    {
+        "symbol": "GTLB",
+        "country": "United States",
+        "symbol_country": "GTLB.US"
+    },
+    {
+        "symbol": "DBX",
+        "country": "United States",
+        "symbol_country": "DBX.US"
+    },
+    {
+        "symbol": "ENT.L",
+        "country": "Isle of Man",
+        "symbol_country": "ENT.L.IM"
+    },
+    {
+        "symbol": "NVMI",
+        "country": "Israel",
+        "symbol_country": "NVMI.IL"
+    },
+    {
+        "symbol": "600460.SS",
+        "country": "China",
+        "symbol_country": "600460.SS.CN"
+    },
+    {
+        "symbol": "WIX",
+        "country": "Israel",
+        "symbol_country": "WIX.IL"
+    },
+    {
+        "symbol": "NYKAA.NS",
+        "country": "India",
+        "symbol_country": "NYKAA.NS.IN"
+    },
+    {
+        "symbol": "INFA",
+        "country": "United States",
+        "symbol_country": "INFA.US"
+    },
+    {
+        "symbol": "3037.TW",
+        "country": "Taiwan",
+        "symbol_country": "3037.TW.TW"
+    },
+    {
+        "symbol": "300454.SZ",
+        "country": "China",
+        "symbol_country": "300454.SZ.CN"
+    },
+    {
+        "symbol": "ZAL.DE",
+        "country": "Germany",
+        "symbol_country": "ZAL.DE.DE"
+    },
+    {
+        "symbol": "7735.T",
+        "country": "Japan",
+        "symbol_country": "7735.T.JP"
+    },
+    {
+        "symbol": "688608.SS",
+        "country": "China",
+        "symbol_country": "688608.SS.CN"
+    },
+    {
+        "symbol": "CDR.WA",
+        "country": "Poland",
+        "symbol_country": "CDR.WA.PL"
+    },
+    {
+        "symbol": "LIF",
+        "country": "United States",
+        "symbol_country": "LIF.US"
+    },
+    {
+        "symbol": "4704.T",
+        "country": "Japan",
+        "symbol_country": "4704.T.JP"
+    },
+    {
+        "symbol": "BULL",
+        "country": "United States",
+        "symbol_country": "BULL.US"
+    },
+    {
+        "symbol": "IDCC",
+        "country": "United States",
+        "symbol_country": "IDCC.US"
+    },
+    {
+        "symbol": "SECT-B.ST",
+        "country": "Sweden",
+        "symbol_country": "SECT-B.ST.SE"
+    },
+    {
+        "symbol": "300661.SZ",
+        "country": "China",
+        "symbol_country": "300661.SZ.CN"
+    },
+    {
+        "symbol": "TSEM",
+        "country": "Israel",
+        "symbol_country": "TSEM.IL"
+    },
+    {
+        "symbol": "UPST",
+        "country": "United States",
+        "symbol_country": "UPST.US"
+    },
+    {
+        "symbol": "LYFT",
+        "country": "United States",
+        "symbol_country": "LYFT.US"
+    },
+    {
+        "symbol": "CWAN",
+        "country": "United States",
+        "symbol_country": "CWAN.US"
+    },
+    {
+        "symbol": "VRNS",
+        "country": "United States",
+        "symbol_country": "VRNS.US"
+    },
+    {
+        "symbol": "CFLT",
+        "country": "United States",
+        "symbol_country": "CFLT.US"
+    },
+    {
+        "symbol": "WAY",
+        "country": "United States",
+        "symbol_country": "WAY.US"
+    },
+    {
+        "symbol": "688728.SS",
+        "country": "China",
+        "symbol_country": "688728.SS.CN"
+    },
+    {
+        "symbol": "688120.SS",
+        "country": "China",
+        "symbol_country": "688120.SS.CN"
+    },
+    {
+        "symbol": "CCCS",
+        "country": "United States",
+        "symbol_country": "CCCS.US"
+    },
+    {
+        "symbol": "688213.SS",
+        "country": "China",
+        "symbol_country": "688213.SS.CN"
+    },
+    {
+        "symbol": "TEMN.SW",
+        "country": "Switzerland",
+        "symbol_country": "TEMN.SW.CH"
+    },
+    {
+        "symbol": "IOS.DE",
+        "country": "Germany",
+        "symbol_country": "IOS.DE.DE"
+    },
+    {
+        "symbol": "SANM",
+        "country": "United States",
+        "symbol_country": "SANM.US"
+    },
+    {
+        "symbol": "SITM",
+        "country": "United States",
+        "symbol_country": "SITM.US"
+    },
+    {
+        "symbol": "3888.HK",
+        "country": "China",
+        "symbol_country": "3888.HK.CN"
+    },
+    {
+        "symbol": "4751.T",
+        "country": "Japan",
+        "symbol_country": "4751.T.JP"
+    },
+    {
+        "symbol": "AMKR",
+        "country": "United States",
+        "symbol_country": "AMKR.US"
+    },
+    {
+        "symbol": "042700.KS",
+        "country": "South Korea",
+        "symbol_country": "042700.KS.KR"
+    },
+    {
+        "symbol": "CRUS",
+        "country": "United States",
+        "symbol_country": "CRUS.US"
+    },
+    {
+        "symbol": "PATH",
+        "country": "United States",
+        "symbol_country": "PATH.US"
+    },
+    {
+        "symbol": "3443.TW",
+        "country": "Taiwan",
+        "symbol_country": "3443.TW.TW"
+    },
+    {
+        "symbol": "MARA",
+        "country": "United States",
+        "symbol_country": "MARA.US"
+    },
+    {
+        "symbol": "NXT.AX",
+        "country": "Australia",
+        "symbol_country": "NXT.AX.AU"
+    },
+    {
+        "symbol": "6488.TWO",
+        "country": "Taiwan",
+        "symbol_country": "6488.TWO.TW"
+    },
+    {
+        "symbol": "377300.KS",
+        "country": "South Korea",
+        "symbol_country": "377300.KS.KR"
+    },
+    {
+        "symbol": "ALGM",
+        "country": "United States",
+        "symbol_country": "ALGM.US"
+    },
+    {
+        "symbol": "6963.T",
+        "country": "Japan",
+        "symbol_country": "6963.T.JP"
+    },
+    {
+        "symbol": "FNOX.ST",
+        "country": "Sweden",
+        "symbol_country": "FNOX.ST.SE"
+    },
+    {
+        "symbol": "FROG",
+        "country": "United States",
+        "symbol_country": "FROG.US"
+    },
+    {
+        "symbol": "S",
+        "country": "United States",
+        "symbol_country": "S.US"
+    },
+    {
+        "symbol": "9880.HK",
+        "country": "China",
+        "symbol_country": "9880.HK.CN"
+    },
+    {
+        "symbol": "5347.TWO",
+        "country": "Taiwan",
+        "symbol_country": "5347.TWO.TW"
+    },
+    {
+        "symbol": "GLBE",
+        "country": "Israel",
+        "symbol_country": "GLBE.IL"
+    },
+    {
+        "symbol": "UTDI.F",
+        "country": "Germany",
+        "symbol_country": "UTDI.F.DE"
+    },
+    {
+        "symbol": "PRESIGHT.AE",
+        "country": "United Arab Emirates",
+        "symbol_country": "PRESIGHT.AE.AE"
+    },
+    {
+        "symbol": "PI",
+        "country": "United States",
+        "symbol_country": "PI.US"
+    },
+    {
+        "symbol": "LUMN",
+        "country": "United States",
+        "symbol_country": "LUMN.US"
+    },
+    {
+        "symbol": "IREN",
+        "country": "Australia",
+        "symbol_country": "IREN.AU"
+    },
+    {
+        "symbol": "ETSY",
+        "country": "United States",
+        "symbol_country": "ETSY.US"
+    },
+    {
+        "symbol": "ONTO",
+        "country": "United States",
+        "symbol_country": "ONTO.US"
+    },
+    {
+        "symbol": "QBTS",
+        "country": "Canada",
+        "symbol_country": "QBTS.CA"
+    },
+    {
+        "symbol": "3529.TWO",
+        "country": "Taiwan",
+        "symbol_country": "3529.TWO.TW"
+    },
+    {
+        "symbol": "PONY",
+        "country": "China",
+        "symbol_country": "PONY.CN"
+    },
+    {
+        "symbol": "TPRO.MI",
+        "country": "Italy",
+        "symbol_country": "TPRO.MI.IT"
+    },
+    {
+        "symbol": "SMTC",
+        "country": "United States",
+        "symbol_country": "SMTC.US"
+    },
+    {
+        "symbol": "RIOT",
+        "country": "United States",
+        "symbol_country": "RIOT.US"
+    },
+    {
+        "symbol": "ACIW",
+        "country": "United States",
+        "symbol_country": "ACIW.US"
+    },
+    {
+        "symbol": "RGTI",
+        "country": "United States",
+        "symbol_country": "RGTI.US"
+    },
+    {
+        "symbol": "OS",
+        "country": "United States",
+        "symbol_country": "OS.US"
+    },
+    {
+        "symbol": "ENPH",
+        "country": "United States",
+        "symbol_country": "ENPH.US"
+    },
+    {
+        "symbol": "688018.SS",
+        "country": "China",
+        "symbol_country": "688018.SS.CN"
+    },
+    {
+        "symbol": "COMP",
+        "country": "United States",
+        "symbol_country": "COMP.US"
+    },
+    {
+        "symbol": "QTWO",
+        "country": "United States",
+        "symbol_country": "QTWO.US"
+    },
+    {
+        "symbol": "QLYS",
+        "country": "United States",
+        "symbol_country": "QLYS.US"
+    },
+    {
+        "symbol": "YOU",
+        "country": "United States",
+        "symbol_country": "YOU.US"
+    },
+    {
+        "symbol": "SOUN",
+        "country": "United States",
+        "symbol_country": "SOUN.US"
+    },
+    {
+        "symbol": "8046.TW",
+        "country": "Taiwan",
+        "symbol_country": "8046.TW.TW"
+    },
+    {
+        "symbol": "JUBLFOOD.NS",
+        "country": "India",
+        "symbol_country": "JUBLFOOD.NS.IN"
+    },
+    {
+        "symbol": "ZETA",
+        "country": "United States",
+        "symbol_country": "ZETA.US"
+    },
+    {
+        "symbol": "2408.TW",
+        "country": "Taiwan",
+        "symbol_country": "2408.TW.TW"
+    },
+    {
+        "symbol": "BOX",
+        "country": "United States",
+        "symbol_country": "BOX.US"
+    },
+    {
+        "symbol": "TKWY.AS",
+        "country": "Netherlands",
+        "symbol_country": "TKWY.AS.NL"
+    },
+    {
+        "symbol": "SLAB",
+        "country": "United States",
+        "symbol_country": "SLAB.US"
+    },
+    {
+        "symbol": "6525.T",
+        "country": "Japan",
+        "symbol_country": "6525.T.JP"
+    },
+    {
+        "symbol": "TOTS3.SA",
+        "country": "Brazil",
+        "symbol_country": "TOTS3.SA.BR"
+    },
+    {
+        "symbol": "WK",
+        "country": "United States",
+        "symbol_country": "WK.US"
+    },
+    {
+        "symbol": "002624.SZ",
+        "country": "China",
+        "symbol_country": "002624.SZ.CN"
+    },
+    {
+        "symbol": "6460.T",
+        "country": "Japan",
+        "symbol_country": "6460.T.JP"
+    },
+    {
+        "symbol": "APLD",
+        "country": "United States",
+        "symbol_country": "APLD.US"
+    },
+    {
+        "symbol": "CORZ",
+        "country": "United States",
+        "symbol_country": "CORZ.US"
+    },
+    {
+        "symbol": "SCT.L",
+        "country": "United Kingdom",
+        "symbol_country": "SCT.L.GB"
+    },
+    {
+        "symbol": "SPSC",
+        "country": "United States",
+        "symbol_country": "SPSC.US"
+    },
+    {
+        "symbol": "DLO",
+        "country": "Uruguay",
+        "symbol_country": "DLO.UY"
+    },
+    {
+        "symbol": "3350.T",
+        "country": "Japan",
+        "symbol_country": "3350.T.JP"
+    },
+    {
+        "symbol": "VU.PA",
+        "country": "France",
+        "symbol_country": "VU.PA.FR"
+    },
+    {
+        "symbol": "QFIN",
+        "country": "China",
+        "symbol_country": "QFIN.CN"
+    },
+    {
+        "symbol": "VERX",
+        "country": "United States",
+        "symbol_country": "VERX.US"
+    },
+    {
+        "symbol": "CLBT",
+        "country": "Israel",
+        "symbol_country": "CLBT.IL"
+    },
+    {
+        "symbol": "600060.SS",
+        "country": "China",
+        "symbol_country": "600060.SS.CN"
+    },
+    {
+        "symbol": "6415.TW",
+        "country": "China",
+        "symbol_country": "6415.TW.CN"
+    },
+    {
+        "symbol": "LMND",
+        "country": "United States",
+        "symbol_country": "LMND.US"
+    },
+    {
+        "symbol": "FRSH",
+        "country": "United States",
+        "symbol_country": "FRSH.US"
+    },
+    {
+        "symbol": "NINOY",
+        "country": "Japan",
+        "symbol_country": "NINOY.JP"
+    },
+    {
+        "symbol": "INTA",
+        "country": "United States",
+        "symbol_country": "INTA.US"
+    },
+    {
+        "symbol": "SOP.PA",
+        "country": "France",
+        "symbol_country": "SOP.PA.FR"
+    },
+    {
+        "symbol": "CALX",
+        "country": "United States",
+        "symbol_country": "CALX.US"
+    },
+    {
+        "symbol": "KXS.TO",
+        "country": "Canada",
+        "symbol_country": "KXS.TO.CA"
+    },
+    {
+        "symbol": "0522.HK",
+        "country": "Hong Kong",
+        "symbol_country": "0522.HK.HK"
+    },
+    {
+        "symbol": "GOTO.JK",
+        "country": "Indonesia",
+        "symbol_country": "GOTO.JK.ID"
+    },
+    {
+        "symbol": "TATAELXSI.NS",
+        "country": "India",
+        "symbol_country": "TATAELXSI.NS.IN"
+    },
+    {
+        "symbol": "OCDO.L",
+        "country": "United Kingdom",
+        "symbol_country": "OCDO.L.GB"
+    },
+    {
+        "symbol": "RELY",
+        "country": "United States",
+        "symbol_country": "RELY.US"
+    },
+    {
+        "symbol": "NCNO",
+        "country": "United States",
+        "symbol_country": "NCNO.US"
+    },
+    {
+        "symbol": "ETOR",
+        "country": "Israel",
+        "symbol_country": "ETOR.IL"
+    },
+    {
+        "symbol": "KPITTECH.NS",
+        "country": "India",
+        "symbol_country": "KPITTECH.NS.IN"
+    },
+    {
+        "symbol": "ACP.WA",
+        "country": "Poland",
+        "symbol_country": "ACP.WA.PL"
+    },
+    {
+        "symbol": "TENB",
+        "country": "United States",
+        "symbol_country": "TENB.US"
+    },
+    {
+        "symbol": "ROO.L",
+        "country": "United Kingdom",
+        "symbol_country": "ROO.L.GB"
+    },
+    {
+        "symbol": "WULF",
+        "country": "United States",
+        "symbol_country": "WULF.US"
+    },
+    {
+        "symbol": "ATHM",
+        "country": "China",
+        "symbol_country": "ATHM.CN"
+    },
+    {
+        "symbol": "NXSN.TA",
+        "country": "Israel",
+        "symbol_country": "NXSN.TA.IL"
+    },
+    {
+        "symbol": "6526.T",
+        "country": "Japan",
+        "symbol_country": "6526.T.JP"
+    },
+    {
+        "symbol": "HSAI",
+        "country": "China",
+        "symbol_country": "HSAI.CN"
+    },
+    {
+        "symbol": "ZIP.AX",
+        "country": "Australia",
+        "symbol_country": "ZIP.AX.AU"
+    },
+    {
+        "symbol": "BL",
+        "country": "United States",
+        "symbol_country": "BL.US"
+    },
+    {
+        "symbol": "ODD",
+        "country": "Israel",
+        "symbol_country": "ODD.IL"
+    },
+    {
+        "symbol": "ASAN",
+        "country": "United States",
+        "symbol_country": "ASAN.US"
+    },
+    {
+        "symbol": "AVPT",
+        "country": "United States",
+        "symbol_country": "AVPT.US"
+    },
+    {
+        "symbol": "BLKB",
+        "country": "United States",
+        "symbol_country": "BLKB.US"
+    },
+    {
+        "symbol": "MELE.BR",
+        "country": "Belgium",
+        "symbol_country": "MELE.BR.BE"
+    },
+    {
+        "symbol": "NOD.OL",
+        "country": "Norway",
+        "symbol_country": "NOD.OL.NO"
+    },
+    {
+        "symbol": "AGYS",
+        "country": "United States",
+        "symbol_country": "AGYS.US"
+    },
+    {
+        "symbol": "GENI",
+        "country": "United Kingdom",
+        "symbol_country": "GENI.GB"
+    },
+    {
+        "symbol": "AMBA",
+        "country": "United States",
+        "symbol_country": "AMBA.US"
+    },
+    {
+        "symbol": "CLVT",
+        "country": "United Kingdom",
+        "symbol_country": "CLVT.GB"
+    },
+    {
+        "symbol": "GRND",
+        "country": "United States",
+        "symbol_country": "GRND.US"
+    },
+    {
+        "symbol": "3436.T",
+        "country": "Japan",
+        "symbol_country": "3436.T.JP"
+    },
+    {
+        "symbol": "GLOB",
+        "country": "Luxembourg",
+        "symbol_country": "GLOB.LU"
+    },
+    {
+        "symbol": "NATL",
+        "country": "United States",
+        "symbol_country": "NATL.US"
+    },
+    {
+        "symbol": "2353.TW",
+        "country": "Taiwan",
+        "symbol_country": "2353.TW.TW"
+    },
+    {
+        "symbol": "DOCN",
+        "country": "United States",
+        "symbol_country": "DOCN.US"
+    },
+    {
+        "symbol": "BTDR",
+        "country": "Singapore",
+        "symbol_country": "BTDR.SG"
+    },
+    {
+        "symbol": "036570.KS",
+        "country": "South Korea",
+        "symbol_country": "036570.KS.KR"
+    },
+    {
+        "symbol": "MQ",
+        "country": "United States",
+        "symbol_country": "MQ.US"
+    },
+    {
+        "symbol": "BRZE",
+        "country": "United States",
+        "symbol_country": "BRZE.US"
+    },
+    {
+        "symbol": "DAVE",
+        "country": "United States",
+        "symbol_country": "DAVE.US"
+    },
+    {
+        "symbol": "RNG",
+        "country": "United States",
+        "symbol_country": "RNG.US"
+    },
+    {
+        "symbol": "HUT",
+        "country": "Canada",
+        "symbol_country": "HUT.CA"
+    },
+    {
+        "symbol": "JOYY",
+        "country": "China",
+        "symbol_country": "JOYY.CN"
+    },
+    {
+        "symbol": "6789.TW",
+        "country": "Taiwan",
+        "symbol_country": "6789.TW.TW"
+    },
+    {
+        "symbol": "WB",
+        "country": "China",
+        "symbol_country": "WB.CN"
+    },
+    {
+        "symbol": "4385.T",
+        "country": "Japan",
+        "symbol_country": "4385.T.JP"
+    },
+    {
+        "symbol": "CIFR",
+        "country": "United States",
+        "symbol_country": "CIFR.US"
+    },
+    {
+        "symbol": "SYNA",
+        "country": "United States",
+        "symbol_country": "SYNA.US"
+    },
+    {
+        "symbol": "WRD",
+        "country": "China",
+        "symbol_country": "WRD.CN"
+    },
+    {
+        "symbol": "CLSK",
+        "country": "United States",
+        "symbol_country": "CLSK.US"
+    },
+    {
+        "symbol": "SIMO",
+        "country": "Hong Kong",
+        "symbol_country": "SIMO.HK"
+    },
+    {
+        "symbol": "DV",
+        "country": "United States",
+        "symbol_country": "DV.US"
+    },
+    {
+        "symbol": "PGY",
+        "country": "Israel",
+        "symbol_country": "PGY.IL"
+    },
+    {
+        "symbol": "HEM.ST",
+        "country": "Sweden",
+        "symbol_country": "HEM.ST.SE"
+    },
+    {
+        "symbol": "ALKT",
+        "country": "United States",
+        "symbol_country": "ALKT.US"
+    },
+    {
+        "symbol": "POWI",
+        "country": "United States",
+        "symbol_country": "POWI.US"
+    },
+    {
+        "symbol": "LU",
+        "country": "China",
+        "symbol_country": "LU.CN"
+    },
+    {
+        "symbol": "ACLS",
+        "country": "United States",
+        "symbol_country": "ACLS.US"
+    },
+    {
+        "symbol": "RUM",
+        "country": "United States",
+        "symbol_country": "RUM.US"
+    },
+    {
+        "symbol": "PAYO",
+        "country": "United States",
+        "symbol_country": "PAYO.US"
+    },
+    {
+        "symbol": "3994.T",
+        "country": "Japan",
+        "symbol_country": "3994.T.JP"
+    },
+    {
+        "symbol": "SPNS",
+        "country": "Israel",
+        "symbol_country": "SPNS.IL"
+    },
+    {
+        "symbol": "PHX.AE",
+        "country": "United Arab Emirates",
+        "symbol_country": "PHX.AE.AE"
+    },
+    {
+        "symbol": "AI",
+        "country": "United States",
+        "symbol_country": "AI.US"
+    },
+    {
+        "symbol": "NN",
+        "country": "United States",
+        "symbol_country": "NN.US"
+    },
+    {
+        "symbol": "QUBT",
+        "country": "United States",
+        "symbol_country": "QUBT.US"
+    },
+    {
+        "symbol": "1686.HK",
+        "country": "Hong Kong",
+        "symbol_country": "1686.HK.HK"
+    },
+    {
+        "symbol": "DBD",
+        "country": "United States",
+        "symbol_country": "DBD.US"
+    },
+    {
+        "symbol": "BB",
+        "country": "Canada",
+        "symbol_country": "BB.CA"
+    },
+    {
+        "symbol": "IQ",
+        "country": "China",
+        "symbol_country": "IQ.CN"
+    },
+    {
+        "symbol": "FORM",
+        "country": "United States",
+        "symbol_country": "FORM.US"
+    },
+    {
+        "symbol": "TIETO.HE",
+        "country": "Finland",
+        "symbol_country": "TIETO.HE.FI"
+    },
+    {
+        "symbol": "CXM",
+        "country": "United States",
+        "symbol_country": "CXM.US"
+    },
+    {
+        "symbol": "8454.TW",
+        "country": "Taiwan",
+        "symbol_country": "8454.TW.TW"
+    },
+    {
+        "symbol": "6770.TW",
+        "country": "Taiwan",
+        "symbol_country": "6770.TW.TW"
+    },
+    {
+        "symbol": "6323.T",
+        "country": "Japan",
+        "symbol_country": "6323.T.JP"
+    },
+    {
+        "symbol": "APPN",
+        "country": "United States",
+        "symbol_country": "APPN.US"
+    },
+    {
+        "symbol": "ALIT",
+        "country": "United States",
+        "symbol_country": "ALIT.US"
+    },
+    {
+        "symbol": "EXA.PA",
+        "country": "France",
+        "symbol_country": "EXA.PA.FR"
+    },
+    {
+        "symbol": "LFST",
+        "country": "United States",
+        "symbol_country": "LFST.US"
+    },
+    {
+        "symbol": "PAR",
+        "country": "United States",
+        "symbol_country": "PAR.US"
+    },
+    {
+        "symbol": "VSH",
+        "country": "United States",
+        "symbol_country": "VSH.US"
+    },
+    {
+        "symbol": "5483.TWO",
+        "country": "Taiwan",
+        "symbol_country": "5483.TWO.TW"
+    },
+    {
+        "symbol": "KFINTECH.NS",
+        "country": "India",
+        "symbol_country": "KFINTECH.NS.IN"
+    },
+    {
+        "symbol": "FIVN",
+        "country": "United States",
+        "symbol_country": "FIVN.US"
+    },
+    {
+        "symbol": "EMBRAC-B.ST",
+        "country": "Sweden",
+        "symbol_country": "EMBRAC-B.ST.SE"
+    },
+    {
+        "symbol": "EVCM",
+        "country": "United States",
+        "symbol_country": "EVCM.US"
+    },
+    {
+        "symbol": "AVDX",
+        "country": "United States",
+        "symbol_country": "AVDX.US"
+    },
+    {
+        "symbol": "TIGR",
+        "country": "China",
+        "symbol_country": "TIGR.CN"
+    },
+    {
+        "symbol": "8313.SR",
+        "country": "Saudi Arabia",
+        "symbol_country": "8313.SR.SA"
+    },
+    {
+        "symbol": "PRGS",
+        "country": "United States",
+        "symbol_country": "PRGS.US"
+    },
+    {
+        "symbol": "LZ",
+        "country": "United States",
+        "symbol_country": "LZ.US"
+    },
+    {
+        "symbol": "TDC",
+        "country": "United States",
+        "symbol_country": "TDC.US"
+    },
+    {
+        "symbol": "ANIP",
+        "country": "United States",
+        "symbol_country": "ANIP.US"
+    },
+    {
+        "symbol": "YELP",
+        "country": "United States",
+        "symbol_country": "YELP.US"
+    },
+    {
+        "symbol": "PDX.ST",
+        "country": "Sweden",
+        "symbol_country": "PDX.ST.SE"
+    },
+    {
+        "symbol": "AIY.SI",
+        "country": "Singapore",
+        "symbol_country": "AIY.SI.SG"
+    },
+    {
+        "symbol": "KLIC",
+        "country": "Singapore",
+        "symbol_country": "KLIC.SG"
+    },
+    {
+        "symbol": "PXA.AX",
+        "country": "Australia",
+        "symbol_country": "PXA.AX.AU"
+    },
+    {
+        "symbol": "PLUS",
+        "country": "United States",
+        "symbol_country": "PLUS.US"
+    },
+    {
+        "symbol": "LC",
+        "country": "United States",
+        "symbol_country": "LC.US"
+    },
+    {
+        "symbol": "AOF.F",
+        "country": "Germany",
+        "symbol_country": "AOF.F.DE"
+    },
+    {
+        "symbol": "PHR",
+        "country": "United States",
+        "symbol_country": "PHR.US"
+    },
+    {
+        "symbol": "BBAI",
+        "country": "United States",
+        "symbol_country": "BBAI.US"
+    },
+    {
+        "symbol": "VYX",
+        "country": "United States",
+        "symbol_country": "VYX.US"
+    },
+    {
+        "symbol": "OVH.PA",
+        "country": "France",
+        "symbol_country": "OVH.PA.FR"
+    },
+    {
+        "symbol": "COUR",
+        "country": "United States",
+        "symbol_country": "COUR.US"
+    },
+    {
+        "symbol": "CSGS",
+        "country": "United States",
+        "symbol_country": "CSGS.US"
+    },
+    {
+        "symbol": "SWON.SW",
+        "country": "Switzerland",
+        "symbol_country": "SWON.SW.CH"
+    },
+    {
+        "symbol": "ARLO",
+        "country": "United States",
+        "symbol_country": "ARLO.US"
+    },
+    {
+        "symbol": "ACMR",
+        "country": "United States",
+        "symbol_country": "ACMR.US"
+    },
+    {
+        "symbol": "DHG.AX",
+        "country": "Australia",
+        "symbol_country": "DHG.AX.AU"
+    },
+    {
+        "symbol": "RAMP",
+        "country": "United States",
+        "symbol_country": "RAMP.US"
+    },
+    {
+        "symbol": "NTCT",
+        "country": "United States",
+        "symbol_country": "NTCT.US"
+    },
+    {
+        "symbol": "PTEC.L",
+        "country": "Isle of Man",
+        "symbol_country": "PTEC.L.IM"
+    },
+    {
+        "symbol": "INDIAMART.NS",
+        "country": "India",
+        "symbol_country": "INDIAMART.NS.IN"
+    },
+    {
+        "symbol": "CERT",
+        "country": "United States",
+        "symbol_country": "CERT.US"
+    },
+    {
+        "symbol": "OUST",
+        "country": "United States",
+        "symbol_country": "OUST.US"
+    },
+    {
+        "symbol": "ONE.TA",
+        "country": "Israel",
+        "symbol_country": "ONE.TA.IL"
+    },
+    {
+        "symbol": "OLO",
+        "country": "United States",
+        "symbol_country": "OLO.US"
+    },
+    {
+        "symbol": "TUYA",
+        "country": "China",
+        "symbol_country": "TUYA.CN"
+    },
+    {
+        "symbol": "KTN.F",
+        "country": "Austria",
+        "symbol_country": "KTN.F.AT"
+    },
+    {
+        "symbol": "MP1.AX",
+        "country": "Australia",
+        "symbol_country": "MP1.AX.AU"
+    },
+    {
+        "symbol": "COTN.SW",
+        "country": "Switzerland",
+        "symbol_country": "COTN.SW.CH"
+    },
+    {
+        "symbol": "PRCH",
+        "country": "United States",
+        "symbol_country": "PRCH.US"
+    },
+    {
+        "symbol": "ELG.DE",
+        "country": "Germany",
+        "symbol_country": "ELG.DE.DE"
+    },
+    {
+        "symbol": "AIXA.F",
+        "country": "Germany",
+        "symbol_country": "AIXA.F.DE"
+    },
+    {
+        "symbol": "2432.T",
+        "country": "Japan",
+        "symbol_country": "2432.T.JP"
+    },
+    {
+        "symbol": "TMV.DE",
+        "country": "Germany",
+        "symbol_country": "TMV.DE.DE"
+    },
+    {
+        "symbol": "LSPD",
+        "country": "Canada",
+        "symbol_country": "LSPD.CA"
+    },
+    {
+        "symbol": "BAYANAT.AE",
+        "country": "United Arab Emirates",
+        "symbol_country": "BAYANAT.AE.AE"
+    },
+    {
+        "symbol": "RVLV",
+        "country": "United States",
+        "symbol_country": "RVLV.US"
+    },
+    {
+        "symbol": "TRUE-B.ST",
+        "country": "Sweden",
+        "symbol_country": "TRUE-B.ST.SE"
+    },
+    {
+        "symbol": "FLYW",
+        "country": "United States",
+        "symbol_country": "FLYW.US"
+    },
+    {
+        "symbol": "TTALO.HE",
+        "country": "Finland",
+        "symbol_country": "TTALO.HE.FI"
+    },
+    {
+        "symbol": "KARO",
+        "country": "Singapore",
+        "symbol_country": "KARO.SG"
+    },
+    {
+        "symbol": "VIT-B.ST",
+        "country": "Sweden",
+        "symbol_country": "VIT-B.ST.SE"
+    },
+    {
+        "symbol": "PD",
+        "country": "United States",
+        "symbol_country": "PD.US"
+    },
+    {
+        "symbol": "DFIN",
+        "country": "United States",
+        "symbol_country": "DFIN.US"
+    },
+    {
+        "symbol": "CMPR",
+        "country": "Ireland",
+        "symbol_country": "CMPR.IE"
+    },
+    {
+        "symbol": "SPT.L",
+        "country": "United Kingdom",
+        "symbol_country": "SPT.L.GB"
+    },
+    {
+        "symbol": "OMCL",
+        "country": "United States",
+        "symbol_country": "OMCL.US"
+    },
+    {
+        "symbol": "MNTN",
+        "country": "United States",
+        "symbol_country": "MNTN.US"
+    },
+    {
+        "symbol": "AMPL",
+        "country": "United States",
+        "symbol_country": "AMPL.US"
+    },
+    {
+        "symbol": "SOI.PA",
+        "country": "France",
+        "symbol_country": "SOI.PA.FR"
+    },
+    {
+        "symbol": "TRN.L",
+        "country": "United Kingdom",
+        "symbol_country": "TRN.L.GB"
+    },
+    {
+        "symbol": "NABL",
+        "country": "United States",
+        "symbol_country": "NABL.US"
+    },
+    {
+        "symbol": "PLNW.PA",
+        "country": "France",
+        "symbol_country": "PLNW.PA.FR"
+    },
+    {
+        "symbol": "2121.T",
+        "country": "Japan",
+        "symbol_country": "2121.T.JP"
+    },
+    {
+        "symbol": "HIMX",
+        "country": "Taiwan",
+        "symbol_country": "HIMX.TW"
+    },
+    {
+        "symbol": "DGNX",
+        "country": "Hong Kong",
+        "symbol_country": "DGNX.HK"
+    },
+    {
+        "symbol": "YSN.F",
+        "country": "Germany",
+        "symbol_country": "YSN.F.DE"
+    },
+    {
+        "symbol": "OPRA",
+        "country": "Norway",
+        "symbol_country": "OPRA.NO"
+    },
+    {
+        "symbol": "MLNK",
+        "country": "United States",
+        "symbol_country": "MLNK.US"
+    },
+    {
+        "symbol": "MXL",
+        "country": "United States",
+        "symbol_country": "MXL.US"
+    },
+    {
+        "symbol": "SDGR",
+        "country": "United States",
+        "symbol_country": "SDGR.US"
+    },
+    {
+        "symbol": "263750.KQ",
+        "country": "South Korea",
+        "symbol_country": "263750.KQ.KR"
+    },
+    {
+        "symbol": "VECO",
+        "country": "United States",
+        "symbol_country": "VECO.US"
+    },
+    {
+        "symbol": "PLAB",
+        "country": "United States",
+        "symbol_country": "PLAB.US"
+    },
+    {
+        "symbol": "HFG.DE",
+        "country": "Germany",
+        "symbol_country": "HFG.DE.DE"
+    },
+    {
+        "symbol": "LASR",
+        "country": "United States",
+        "symbol_country": "LASR.US"
+    },
+    {
+        "symbol": "RDFN",
+        "country": "United States",
+        "symbol_country": "RDFN.US"
+    },
+    {
+        "symbol": "UBI.PA",
+        "country": "France",
+        "symbol_country": "UBI.PA.FR"
+    },
+    {
+        "symbol": "NXU.DE",
+        "country": "Germany",
+        "symbol_country": "NXU.DE.DE"
+    },
+    {
+        "symbol": "TDUP",
+        "country": "United States",
+        "symbol_country": "TDUP.US"
+    },
+    {
+        "symbol": "QTCOM.HE",
+        "country": "Finland",
+        "symbol_country": "QTCOM.HE.FI"
+    },
+    {
+        "symbol": "PRG",
+        "country": "United States",
+        "symbol_country": "PRG.US"
+    },
+    {
+        "symbol": "PLTK",
+        "country": "Israel",
+        "symbol_country": "PLTK.IL"
+    },
+    {
+        "symbol": "ONDS",
+        "country": "United States",
+        "symbol_country": "ONDS.US"
+    },
+    {
+        "symbol": "TDOC",
+        "country": "United States",
+        "symbol_country": "TDOC.US"
+    },
+    {
+        "symbol": "COP.DE",
+        "country": "Germany",
+        "symbol_country": "COP.DE.DE"
+    },
+    {
+        "symbol": "BASE",
+        "country": "United States",
+        "symbol_country": "BASE.US"
+    },
+    {
+        "symbol": "RPD",
+        "country": "United States",
+        "symbol_country": "RPD.US"
+    },
+    {
+        "symbol": "BYIT.L",
+        "country": "United Kingdom",
+        "symbol_country": "BYIT.L.GB"
+    },
+    {
+        "symbol": "3105.TWO",
+        "country": "Taiwan",
+        "symbol_country": "3105.TWO.TW"
+    },
+    {
+        "symbol": "UBXN.SW",
+        "country": "Switzerland",
+        "symbol_country": "UBXN.SW.CH"
+    },
+    {
+        "symbol": "YUBICO.ST",
+        "country": "Sweden",
+        "symbol_country": "YUBICO.ST.SE"
+    },
+    {
+        "symbol": "CRTO",
+        "country": "France",
+        "symbol_country": "CRTO.FR"
+    },
+    {
+        "symbol": "WAF.F",
+        "country": "Germany",
+        "symbol_country": "WAF.F.DE"
+    },
+    {
+        "symbol": "NVTS",
+        "country": "Ireland",
+        "symbol_country": "NVTS.IE"
+    },
+    {
+        "symbol": "NB2.DE",
+        "country": "Germany",
+        "symbol_country": "NB2.DE.DE"
+    },
+    {
+        "symbol": "CRAYN.OL",
+        "country": "Norway",
+        "symbol_country": "CRAYN.OL.NO"
+    },
+    {
+        "symbol": "DGII",
+        "country": "United States",
+        "symbol_country": "DGII.US"
+    },
+    {
+        "symbol": "PENG",
+        "country": "United States",
+        "symbol_country": "PENG.US"
+    },
+    {
+        "symbol": "ATEN",
+        "country": "United States",
+        "symbol_country": "ATEN.US"
+    },
+    {
+        "symbol": "4478.T",
+        "country": "Japan",
+        "symbol_country": "4478.T.JP"
+    },
+    {
+        "symbol": "NEGG",
+        "country": "United States",
+        "symbol_country": "NEGG.US"
+    },
+    {
+        "symbol": "YALA",
+        "country": "United Arab Emirates",
+        "symbol_country": "YALA.AE"
+    },
+    {
+        "symbol": "VRNT",
+        "country": "United States",
+        "symbol_country": "VRNT.US"
+    },
+    {
+        "symbol": "SDR.AX",
+        "country": "Australia",
+        "symbol_country": "SDR.AX.AU"
+    },
+    {
+        "symbol": "PRLB",
+        "country": "United States",
+        "symbol_country": "PRLB.US"
+    },
+    {
+        "symbol": "JAMF",
+        "country": "United States",
+        "symbol_country": "JAMF.US"
+    },
+    {
+        "symbol": "NAZARA.NS",
+        "country": "India",
+        "symbol_country": "NAZARA.NS.IN"
+    },
+    {
+        "symbol": "4776.T",
+        "country": "Japan",
+        "symbol_country": "4776.T.JP"
+    },
+    {
+        "symbol": "CTEV",
+        "country": "United States",
+        "symbol_country": "CTEV.US"
+    },
+    {
+        "symbol": "TRST.L",
+        "country": "Denmark",
+        "symbol_country": "TRST.L.DK"
+    },
+    {
+        "symbol": "HYQ.F",
+        "country": "Germany",
+        "symbol_country": "HYQ.F.DE"
+    },
+    {
+        "symbol": "SEMR",
+        "country": "United States",
+        "symbol_country": "SEMR.US"
+    },
+    {
+        "symbol": "LUXE",
+        "country": "Germany",
+        "symbol_country": "LUXE.DE"
+    },
+    {
+        "symbol": "RPI.L",
+        "country": "United Kingdom",
+        "symbol_country": "RPI.L.GB"
+    },
+    {
+        "symbol": "CAT.AX",
+        "country": "Australia",
+        "symbol_country": "CAT.AX.AU"
+    },
+    {
+        "symbol": "JMIA",
+        "country": "Germany",
+        "symbol_country": "JMIA.DE"
+    },
+    {
+        "symbol": "KNOS.L",
+        "country": "United Kingdom",
+        "symbol_country": "KNOS.L.GB"
+    },
+    {
+        "symbol": "BUKA.JK",
+        "country": "Indonesia",
+        "symbol_country": "BUKA.JK.ID"
+    },
+    {
+        "symbol": "YEXT",
+        "country": "United States",
+        "symbol_country": "YEXT.US"
+    },
+    {
+        "symbol": "FSLY",
+        "country": "United States",
+        "symbol_country": "FSLY.US"
+    },
+    {
+        "symbol": "UCTT",
+        "country": "United States",
+        "symbol_country": "UCTT.US"
+    },
+    {
+        "symbol": "3532.TW",
+        "country": "Taiwan",
+        "symbol_country": "3532.TW.TW"
+    },
+    {
+        "symbol": "HLIT",
+        "country": "United States",
+        "symbol_country": "HLIT.US"
+    },
+    {
+        "symbol": "TIXT",
+        "country": "Canada",
+        "symbol_country": "TIXT.CA"
+    },
+    {
+        "symbol": "XFAB.PA",
+        "country": "Belgium",
+        "symbol_country": "XFAB.PA.BE"
+    },
+    {
+        "symbol": "GRPN",
+        "country": "United States",
+        "symbol_country": "GRPN.US"
+    },
+    {
+        "symbol": "IRE.AX",
+        "country": "Australia",
+        "symbol_country": "IRE.AX.AU"
+    },
+    {
+        "symbol": "UDMY",
+        "country": "United States",
+        "symbol_country": "UDMY.US"
+    },
+    {
+        "symbol": "WEB.AX",
+        "country": "Australia",
+        "symbol_country": "WEB.AX.AU"
+    },
+    {
+        "symbol": "DAO",
+        "country": "China",
+        "symbol_country": "DAO.CN"
+    },
+    {
+        "symbol": "ETWO",
+        "country": "United States",
+        "symbol_country": "ETWO.US"
+    },
+    {
+        "symbol": "3765.T",
+        "country": "Japan",
+        "symbol_country": "3765.T.JP"
+    },
+    {
+        "symbol": "MAPMYINDIA.NS",
+        "country": "India",
+        "symbol_country": "MAPMYINDIA.NS.IN"
+    },
+    {
+        "symbol": "LSS.PA",
+        "country": "France",
+        "symbol_country": "LSS.PA.FR"
+    },
+    {
+        "symbol": "TBLA",
+        "country": "United States",
+        "symbol_country": "TBLA.US"
+    },
+    {
+        "symbol": "IIIV",
+        "country": "United States",
+        "symbol_country": "IIIV.US"
+    },
+    {
+        "symbol": "MGIC",
+        "country": "Israel",
+        "symbol_country": "MGIC.IL"
+    },
+    {
+        "symbol": "GCT",
+        "country": "China",
+        "symbol_country": "GCT.CN"
+    },
+    {
+        "symbol": "MUM.F",
+        "country": "Germany",
+        "symbol_country": "MUM.F.DE"
+    },
+    {
+        "symbol": "TANLA.NS",
+        "country": "India",
+        "symbol_country": "TANLA.NS.IN"
+    },
+    {
+        "symbol": "COHU",
+        "country": "United States",
+        "symbol_country": "COHU.US"
+    },
+    {
+        "symbol": "BMBL",
+        "country": "United States",
+        "symbol_country": "BMBL.US"
+    },
+    {
+        "symbol": "SSYS",
+        "country": "Israel",
+        "symbol_country": "SSYS.IL"
+    },
+    {
+        "symbol": "CRSR",
+        "country": "United States",
+        "symbol_country": "CRSR.US"
+    },
+    {
+        "symbol": "BLND",
+        "country": "United States",
+        "symbol_country": "BLND.US"
+    },
+    {
+        "symbol": "SPT",
+        "country": "United States",
+        "symbol_country": "SPT.US"
+    },
+    {
+        "symbol": "ATS.VI",
+        "country": "Austria",
+        "symbol_country": "ATS.VI.AT"
+    },
+    {
+        "symbol": "TREE",
+        "country": "United States",
+        "symbol_country": "TREE.US"
+    },
+    {
+        "symbol": "INDI",
+        "country": "United States",
+        "symbol_country": "INDI.US"
+    },
+    {
+        "symbol": "FQT.VI",
+        "country": "Austria",
+        "symbol_country": "FQT.VI.AT"
+    },
+    {
+        "symbol": "ENGH.TO",
+        "country": "Canada",
+        "symbol_country": "ENGH.TO.CA"
+    },
+    {
+        "symbol": "QNST",
+        "country": "United States",
+        "symbol_country": "QNST.US"
+    },
+    {
+        "symbol": "RCAT",
+        "country": "United States",
+        "symbol_country": "RCAT.US"
+    },
+    {
+        "symbol": "DCBO",
+        "country": "Canada",
+        "symbol_country": "DCBO.CA"
+    },
+    {
+        "symbol": "AOSL",
+        "country": "United States",
+        "symbol_country": "AOSL.US"
+    },
+    {
+        "symbol": "AEVA",
+        "country": "United States",
+        "symbol_country": "AEVA.US"
+    },
+    {
+        "symbol": "ALFA.L",
+        "country": "United Kingdom",
+        "symbol_country": "ALFA.L.GB"
+    },
+    {
+        "symbol": "BTBT",
+        "country": "United States",
+        "symbol_country": "BTBT.US"
+    },
+    {
+        "symbol": "REAL",
+        "country": "United States",
+        "symbol_country": "REAL.US"
+    },
+    {
+        "symbol": "6315.T",
+        "country": "Japan",
+        "symbol_country": "6315.T.JP"
+    },
+    {
+        "symbol": "MASTEK.NS",
+        "country": "India",
+        "symbol_country": "MASTEK.NS.IN"
+    },
+    {
+        "symbol": "DAVA",
+        "country": "United Kingdom",
+        "symbol_country": "DAVA.GB"
+    },
+    {
+        "symbol": "FVRR",
+        "country": "Israel",
+        "symbol_country": "FVRR.IL"
+    },
+    {
+        "symbol": "FARO",
+        "country": "United States",
+        "symbol_country": "FARO.US"
+    },
+    {
+        "symbol": "HIPO",
+        "country": "United States",
+        "symbol_country": "HIPO.US"
+    },
+    {
+        "symbol": "ALTS",
+        "country": "United States",
+        "symbol_country": "ALTS.US"
+    },
+    {
+        "symbol": "SMWB",
+        "country": "Israel",
+        "symbol_country": "SMWB.IL"
+    },
+    {
+        "symbol": "PSFE",
+        "country": "United States",
+        "symbol_country": "PSFE.US"
+    },
+    {
+        "symbol": "LQDT",
+        "country": "United States",
+        "symbol_country": "LQDT.US"
+    },
+    {
+        "symbol": "EQS.PA",
+        "country": "France",
+        "symbol_country": "EQS.PA.FR"
+    },
+    {
+        "symbol": "3778.T",
+        "country": "Japan",
+        "symbol_country": "3778.T.JP"
+    },
+    {
+        "symbol": "PINE.L",
+        "country": "United Kingdom",
+        "symbol_country": "PINE.L.GB"
+    },
+    {
+        "symbol": "ALNT",
+        "country": "United States",
+        "symbol_country": "ALNT.US"
+    },
+    {
+        "symbol": "NRDS",
+        "country": "United States",
+        "symbol_country": "NRDS.US"
+    },
+    {
+        "symbol": "CTLP",
+        "country": "United States",
+        "symbol_country": "CTLP.US"
+    },
+    {
+        "symbol": "NTGR",
+        "country": "United States",
+        "symbol_country": "NTGR.US"
+    },
+    {
+        "symbol": "PDFS",
+        "country": "United States",
+        "symbol_country": "PDFS.US"
+    },
+    {
+        "symbol": "GETY",
+        "country": "United States",
+        "symbol_country": "GETY.US"
+    },
+    {
+        "symbol": "HSN.AX",
+        "country": "Australia",
+        "symbol_country": "HSN.AX.AU"
+    },
+    {
+        "symbol": "FDP.L",
+        "country": "United Kingdom",
+        "symbol_country": "FDP.L.GB"
+    },
+    {
+        "symbol": "QD",
+        "country": "China",
+        "symbol_country": "QD.CN"
+    },
+    {
+        "symbol": "NA9.DE",
+        "country": "Germany",
+        "symbol_country": "NA9.DE.DE"
+    },
+    {
+        "symbol": "RSKD",
+        "country": "Israel",
+        "symbol_country": "RSKD.IL"
+    },
+    {
+        "symbol": "ABS.WA",
+        "country": "Poland",
+        "symbol_country": "ABS.WA.PL"
+    },
+    {
+        "symbol": "HUYA",
+        "country": "China",
+        "symbol_country": "HUYA.CN"
+    },
+    {
+        "symbol": "BITF",
+        "country": "Canada",
+        "symbol_country": "BITF.CA"
+    },
+    {
+        "symbol": "TOM2.AS",
+        "country": "Netherlands",
+        "symbol_country": "TOM2.AS.NL"
+    },
+    {
+        "symbol": "PRO",
+        "country": "United States",
+        "symbol_country": "PRO.US"
+    },
+    {
+        "symbol": "VTEX",
+        "country": "United Kingdom",
+        "symbol_country": "VTEX.GB"
+    },
+    {
+        "symbol": "SSTK",
+        "country": "United States",
+        "symbol_country": "SSTK.US"
+    },
+    {
+        "symbol": "6947.T",
+        "country": "Japan",
+        "symbol_country": "6947.T.JP"
+    },
+    {
+        "symbol": "AEHR",
+        "country": "United States",
+        "symbol_country": "AEHR.US"
+    },
+    {
+        "symbol": "CINT",
+        "country": "Brazil",
+        "symbol_country": "CINT.BR"
+    },
+    {
+        "symbol": "DEFI.NE",
+        "country": "Canada",
+        "symbol_country": "DEFI.NE.CA"
+    },
+    {
+        "symbol": "ITRN",
+        "country": "Israel",
+        "symbol_country": "ITRN.IL"
+    },
+    {
+        "symbol": "MUB.DE",
+        "country": "Germany",
+        "symbol_country": "MUB.DE.DE"
+    },
+    {
+        "symbol": "KIND",
+        "country": "United States",
+        "symbol_country": "KIND.US"
+    },
+    {
+        "symbol": "GBG.L",
+        "country": "United Kingdom",
+        "symbol_country": "GBG.L.GB"
+    },
+    {
+        "symbol": "SFIX",
+        "country": "United States",
+        "symbol_country": "SFIX.US"
+    },
+    {
+        "symbol": "DOMO",
+        "country": "United States",
+        "symbol_country": "DOMO.US"
+    },
+    {
+        "symbol": "VMEO",
+        "country": "United States",
+        "symbol_country": "VMEO.US"
+    },
+    {
+        "symbol": "SABR",
+        "country": "United States",
+        "symbol_country": "SABR.US"
+    },
+    {
+        "symbol": "112040.KQ",
+        "country": "South Korea",
+        "symbol_country": "112040.KQ.KR"
+    },
+    {
+        "symbol": "098460.KQ",
+        "country": "South Korea",
+        "symbol_country": "098460.KQ.KR"
+    },
+    {
+        "symbol": "RDVT",
+        "country": "United States",
+        "symbol_country": "RDVT.US"
+    },
+    {
+        "symbol": "GDYN",
+        "country": "United States",
+        "symbol_country": "GDYN.US"
+    },
+    {
+        "symbol": "MAX",
+        "country": "United States",
+        "symbol_country": "MAX.US"
+    },
+    {
+        "symbol": "EMUDHRA.NS",
+        "country": "India",
+        "symbol_country": "EMUDHRA.NS.IN"
+    },
+    {
+        "symbol": "HIVE",
+        "country": "Canada",
+        "symbol_country": "HIVE.CA"
+    },
+    {
+        "symbol": "PRTH",
+        "country": "United States",
+        "symbol_country": "PRTH.US"
+    },
+    {
+        "symbol": "AVALON.NS",
+        "country": "India",
+        "symbol_country": "AVALON.NS.IN"
+    },
+    {
+        "symbol": "DTOL.TO",
+        "country": "Canada",
+        "symbol_country": "DTOL.TO.CA"
+    },
+    {
+        "symbol": "BVS.AX",
+        "country": "Australia",
+        "symbol_country": "BVS.AX.AU"
+    },
+    {
+        "symbol": "PEXIP.OL",
+        "country": "Norway",
+        "symbol_country": "PEXIP.OL.NO"
+    },
+    {
+        "symbol": "GTK.NZ",
+        "country": "New Zealand",
+        "symbol_country": "GTK.NZ.NZ"
+    },
+    {
+        "symbol": "IBTA",
+        "country": "United States",
+        "symbol_country": "IBTA.US"
+    },
+    {
+        "symbol": "BKSY",
+        "country": "United States",
+        "symbol_country": "BKSY.US"
+    },
+    {
+        "symbol": "3445.T",
+        "country": "Japan",
+        "symbol_country": "3445.T.JP"
+    },
+    {
+        "symbol": "FUFU",
+        "country": "Singapore",
+        "symbol_country": "FUFU.SG"
+    },
+    {
+        "symbol": "QDT.PA",
+        "country": "France",
+        "symbol_country": "QDT.PA.FR"
+    },
+    {
+        "symbol": "AIOT",
+        "country": "United States",
+        "symbol_country": "AIOT.US"
+    },
+    {
+        "symbol": "CGNT",
+        "country": "Israel",
+        "symbol_country": "CGNT.IL"
+    },
+    {
+        "symbol": "DSP",
+        "country": "United States",
+        "symbol_country": "DSP.US"
+    },
+    {
+        "symbol": "WYFI",
+        "country": "United States",
+        "symbol_country": "WYFI.US"
+    },
+    {
+        "symbol": "0710.HK",
+        "country": "Hong Kong",
+        "symbol_country": "0710.HK.HK"
+    },
+    {
+        "symbol": "CVO.TO",
+        "country": "Canada",
+        "symbol_country": "CVO.TO.CA"
+    },
+    {
+        "symbol": "NCC.L",
+        "country": "United Kingdom",
+        "symbol_country": "NCC.L.GB"
+    },
+    {
+        "symbol": "SMHN.DE",
+        "country": "Germany",
+        "symbol_country": "SMHN.DE.DE"
+    },
+    {
+        "symbol": "WEAV",
+        "country": "United States",
+        "symbol_country": "WEAV.US"
+    },
+    {
+        "symbol": "ICHR",
+        "country": "United States",
+        "symbol_country": "ICHR.US"
+    },
+    {
+        "symbol": "ECX",
+        "country": "China",
+        "symbol_country": "ECX.CN"
+    },
+    {
+        "symbol": "WIIT.MI",
+        "country": "Italy",
+        "symbol_country": "WIIT.MI.IT"
+    },
+    {
+        "symbol": "SKYT",
+        "country": "United States",
+        "symbol_country": "SKYT.US"
+    },
+    {
+        "symbol": "NXL.AX",
+        "country": "Australia",
+        "symbol_country": "NXL.AX.AU"
+    },
+    {
+        "symbol": "THRY",
+        "country": "United States",
+        "symbol_country": "THRY.US"
+    },
+    {
+        "symbol": "CBRAIN.CO",
+        "country": "Denmark",
+        "symbol_country": "CBRAIN.CO.DK"
+    },
+    {
+        "symbol": "INFIBEAM.NS",
+        "country": "India",
+        "symbol_country": "INFIBEAM.NS.IN"
+    },
+    {
+        "symbol": "OSPN",
+        "country": "United States",
+        "symbol_country": "OSPN.US"
+    },
+    {
+        "symbol": "IMOS",
+        "country": "Taiwan",
+        "symbol_country": "IMOS.TW"
+    },
+    {
+        "symbol": "ATG.L",
+        "country": "United Kingdom",
+        "symbol_country": "ATG.L.GB"
+    },
+    {
+        "symbol": "QOR.AX",
+        "country": "Australia",
+        "symbol_country": "QOR.AX.AU"
+    },
+    {
+        "symbol": "RUL.AX",
+        "country": "Australia",
+        "symbol_country": "RUL.AX.AU"
+    },
+    {
+        "symbol": "CEVA",
+        "country": "United States",
+        "symbol_country": "CEVA.US"
+    },
+    {
+        "symbol": "RPAY",
+        "country": "United States",
+        "symbol_country": "RPAY.US"
+    },
+    {
+        "symbol": "MDRX",
+        "country": "United States",
+        "symbol_country": "MDRX.US"
+    },
+    {
+        "symbol": "THG.L",
+        "country": "United Kingdom",
+        "symbol_country": "THG.L.GB"
+    },
+    {
+        "symbol": "WPL.WA",
+        "country": "Poland",
+        "symbol_country": "WPL.WA.PL"
+    },
+    {
+        "symbol": "VER.ST",
+        "country": "Sweden",
+        "symbol_country": "VER.ST.SE"
+    },
+    {
+        "symbol": "3632.T",
+        "country": "Japan",
+        "symbol_country": "3632.T.JP"
+    },
+    {
+        "symbol": "PSAN.DE",
+        "country": "Germany",
+        "symbol_country": "PSAN.DE.DE"
+    },
+    {
+        "symbol": "DND.TO",
+        "country": "Canada",
+        "symbol_country": "DND.TO.CA"
+    },
+    {
+        "symbol": "CIGNITITEC.NS",
+        "country": "India",
+        "symbol_country": "CIGNITITEC.NS.IN"
+    },
+    {
+        "symbol": "CCSI",
+        "country": "United States",
+        "symbol_country": "CCSI.US"
+    },
+    {
+        "symbol": "HKD",
+        "country": "Hong Kong",
+        "symbol_country": "HKD.HK"
+    },
+    {
+        "symbol": "RR",
+        "country": "United States",
+        "symbol_country": "RR.US"
+    },
+    {
+        "symbol": "C79.AX",
+        "country": "Australia",
+        "symbol_country": "C79.AX.AU"
+    },
+    {
+        "symbol": "XRX",
+        "country": "United States",
+        "symbol_country": "XRX.US"
+    },
+    {
+        "symbol": "PLW.WA",
+        "country": "Poland",
+        "symbol_country": "PLW.WA.PL"
+    },
+    {
+        "symbol": "POET",
+        "country": "Canada",
+        "symbol_country": "POET.CA"
+    },
+    {
+        "symbol": "SOHU",
+        "country": "China",
+        "symbol_country": "SOHU.CN"
+    },
+    {
+        "symbol": "DDI",
+        "country": "United States",
+        "symbol_country": "DDI.US"
+    },
+    {
+        "symbol": "MITK",
+        "country": "United States",
+        "symbol_country": "MITK.US"
+    },
+    {
+        "symbol": "LWLG",
+        "country": "United States",
+        "symbol_country": "LWLG.US"
+    },
+    {
+        "symbol": "BLZE",
+        "country": "United States",
+        "symbol_country": "BLZE.US"
+    },
+    {
+        "symbol": "APPS",
+        "country": "United States",
+        "symbol_country": "APPS.US"
+    },
+    {
+        "symbol": "CRNC",
+        "country": "United States",
+        "symbol_country": "CRNC.US"
+    },
+    {
+        "symbol": "TALK",
+        "country": "United States",
+        "symbol_country": "TALK.US"
+    },
+    {
+        "symbol": "TXT.MI",
+        "country": "Italy",
+        "symbol_country": "TXT.MI.IT"
+    },
+    {
+        "symbol": "CNDT",
+        "country": "United States",
+        "symbol_country": "CNDT.US"
+    },
+    {
+        "symbol": "3668.T",
+        "country": "Japan",
+        "symbol_country": "3668.T.JP"
+    },
+    {
+        "symbol": "GRVY",
+        "country": "South Korea",
+        "symbol_country": "GRVY.KR"
+    },
+    {
+        "symbol": "IOT.MI",
+        "country": "Italy",
+        "symbol_country": "IOT.MI.IT"
+    },
+    {
+        "symbol": "IVU.DE",
+        "country": "Germany",
+        "symbol_country": "IVU.DE.DE"
+    },
+    {
+        "symbol": "ARQQ",
+        "country": "United Kingdom",
+        "symbol_country": "ARQQ.GB"
+    },
+    {
+        "symbol": "TTGT",
+        "country": "United States",
+        "symbol_country": "TTGT.US"
+    },
+    {
+        "symbol": "ZH",
+        "country": "China",
+        "symbol_country": "ZH.CN"
+    },
+    {
+        "symbol": "ZIP",
+        "country": "United States",
+        "symbol_country": "ZIP.US"
+    },
+    {
+        "symbol": "TLS",
+        "country": "United States",
+        "symbol_country": "TLS.US"
+    },
+    {
+        "symbol": "DOCM.SW",
+        "country": "Switzerland",
+        "symbol_country": "DOCM.SW.CH"
+    },
+    {
+        "symbol": "IFM.AX",
+        "country": "Australia",
+        "symbol_country": "IFM.AX.AU"
+    },
+    {
+        "symbol": "XNET",
+        "country": "China",
+        "symbol_country": "XNET.CN"
+    },
+    {
+        "symbol": "PERI",
+        "country": "Israel",
+        "symbol_country": "PERI.IL"
+    },
+    {
+        "symbol": "AIP",
+        "country": "United States",
+        "symbol_country": "AIP.US"
+    },
+    {
+        "symbol": "VGL.NZ",
+        "country": "New Zealand",
+        "symbol_country": "VGL.NZ.NZ"
+    },
+    {
+        "symbol": "LWSA3.SA",
+        "country": "Brazil",
+        "symbol_country": "LWSA3.SA.BR"
+    },
+    {
+        "symbol": "TXT.WA",
+        "country": "Poland",
+        "symbol_country": "TXT.WA.PL"
+    },
+    {
+        "symbol": "NEON",
+        "country": "Sweden",
+        "symbol_country": "NEON.SE"
+    },
+    {
+        "symbol": "PUBM",
+        "country": "United States",
+        "symbol_country": "PUBM.US"
+    },
+    {
+        "symbol": "RMNI",
+        "country": "United States",
+        "symbol_country": "RMNI.US"
+    },
+    {
+        "symbol": "BIGC",
+        "country": "United States",
+        "symbol_country": "BIGC.US"
+    },
+    {
+        "symbol": "LSAK",
+        "country": "South Africa",
+        "symbol_country": "LSAK.ZA"
+    },
+    {
+        "symbol": "WBT.AX",
+        "country": "Australia",
+        "symbol_country": "WBT.AX.AU"
+    },
+    {
+        "symbol": "LAES",
+        "country": "Switzerland",
+        "symbol_country": "LAES.CH"
+    },
+    {
+        "symbol": "CMG.TO",
+        "country": "Canada",
+        "symbol_country": "CMG.TO.CA"
+    },
+    {
+        "symbol": "ABSI",
+        "country": "United States",
+        "symbol_country": "ABSI.US"
+    },
+    {
+        "symbol": "MSTCLTD.NS",
+        "country": "India",
+        "symbol_country": "MSTCLTD.NS.IN"
+    },
+    {
+        "symbol": "FOBK.F",
+        "country": "Ireland",
+        "symbol_country": "FOBK.F.IE"
+    },
+    {
+        "symbol": "SHO.WA",
+        "country": "Poland",
+        "symbol_country": "SHO.WA.PL"
+    },
+    {
+        "symbol": "CAN",
+        "country": "China",
+        "symbol_country": "CAN.CN"
+    },
+    {
+        "symbol": "ALBFR.PA",
+        "country": "France",
+        "symbol_country": "ALBFR.PA.FR"
+    },
+    {
+        "symbol": "GRRR",
+        "country": "Taiwan",
+        "symbol_country": "GRRR.TW"
+    },
+    {
+        "symbol": "SPOK",
+        "country": "United States",
+        "symbol_country": "SPOK.US"
+    },
+    {
+        "symbol": "LIN.PA",
+        "country": "France",
+        "symbol_country": "LIN.PA.FR"
+    },
+    {
+        "symbol": "ALLT",
+        "country": "Israel",
+        "symbol_country": "ALLT.IL"
+    },
+    {
+        "symbol": "EASEMYTRIP.NS",
+        "country": "India",
+        "symbol_country": "EASEMYTRIP.NS.IN"
+    },
+    {
+        "symbol": "095660.KQ",
+        "country": "South Korea",
+        "symbol_country": "095660.KQ.KR"
+    },
+    {
+        "symbol": "WITH.HE",
+        "country": "Finland",
+        "symbol_country": "WITH.HE.FI"
+    },
+    {
+        "symbol": "FSECURE.HE",
+        "country": "Finland",
+        "symbol_country": "FSECURE.HE.FI"
+    },
+    {
+        "symbol": "INVZ",
+        "country": "Israel",
+        "symbol_country": "INVZ.IL"
+    },
+    {
+        "symbol": "MVIS",
+        "country": "United States",
+        "symbol_country": "MVIS.US"
+    },
+    {
+        "symbol": "INF.PA",
+        "country": "France",
+        "symbol_country": "INF.PA.FR"
+    },
+    {
+        "symbol": "DDD",
+        "country": "United States",
+        "symbol_country": "DDD.US"
+    },
+    {
+        "symbol": "PDYN",
+        "country": "United States",
+        "symbol_country": "PDYN.US"
+    },
+    {
+        "symbol": "ALMU",
+        "country": "United States",
+        "symbol_country": "ALMU.US"
+    },
+    {
+        "symbol": "078340.KQ",
+        "country": "South Korea",
+        "symbol_country": "078340.KQ.KR"
+    },
+    {
+        "symbol": "OPRX",
+        "country": "United States",
+        "symbol_country": "OPRX.US"
+    },
+    {
+        "symbol": "API",
+        "country": "China",
+        "symbol_country": "API.CN"
+    },
+    {
+        "symbol": "LAW",
+        "country": "United States",
+        "symbol_country": "LAW.US"
+    },
+    {
+        "symbol": "PARRO.PA",
+        "country": "France",
+        "symbol_country": "PARRO.PA.FR"
+    },
+    {
+        "symbol": "NNDM",
+        "country": "United States",
+        "symbol_country": "NNDM.US"
+    },
+    {
+        "symbol": "4165.T",
+        "country": "Japan",
+        "symbol_country": "4165.T.JP"
+    },
+    {
+        "symbol": "NUCLEUS.NS",
+        "country": "India",
+        "symbol_country": "NUCLEUS.NS.IN"
+    },
+    {
+        "symbol": "LFMD",
+        "country": "United States",
+        "symbol_country": "LFMD.US"
+    },
+    {
+        "symbol": "069080.KQ",
+        "country": "South Korea",
+        "symbol_country": "069080.KQ.KR"
+    },
+    {
+        "symbol": "MTLS",
+        "country": "Belgium",
+        "symbol_country": "MTLS.BE"
+    },
+    {
+        "symbol": "TRAK",
+        "country": "United States",
+        "symbol_country": "TRAK.US"
+    },
+    {
+        "symbol": "RXT",
+        "country": "United States",
+        "symbol_country": "RXT.US"
+    },
+    {
+        "symbol": "SLP",
+        "country": "United States",
+        "symbol_country": "SLP.US"
+    },
+    {
+        "symbol": "MNDR",
+        "country": "Singapore",
+        "symbol_country": "MNDR.SG"
+    },
+    {
+        "symbol": "PAYS",
+        "country": "United States",
+        "symbol_country": "PAYS.US"
+    },
+    {
+        "symbol": "FNX.L",
+        "country": "United Kingdom",
+        "symbol_country": "FNX.L.GB"
+    },
+    {
+        "symbol": "OCFT",
+        "country": "China",
+        "symbol_country": "OCFT.CN"
+    },
+    {
+        "symbol": "SPIR",
+        "country": "United States",
+        "symbol_country": "SPIR.US"
+    },
+    {
+        "symbol": "XPER",
+        "country": "United States",
+        "symbol_country": "XPER.US"
+    },
+    {
+        "symbol": "UIS",
+        "country": "United States",
+        "symbol_country": "UIS.US"
+    },
+    {
+        "symbol": "SMRT",
+        "country": "United States",
+        "symbol_country": "SMRT.US"
+    },
+    {
+        "symbol": "BRN.AX",
+        "country": "Australia",
+        "symbol_country": "BRN.AX.AU"
+    },
+    {
+        "symbol": "NET.L",
+        "country": "United Kingdom",
+        "symbol_country": "NET.L.GB"
+    },
+    {
+        "symbol": "ERD.NZ",
+        "country": "New Zealand",
+        "symbol_country": "ERD.NZ.NZ"
+    },
+    {
+        "symbol": "ADMCM.HE",
+        "country": "Finland",
+        "symbol_country": "ADMCM.HE.FI"
+    },
+    {
+        "symbol": "AUDC",
+        "country": "Israel",
+        "symbol_country": "AUDC.IL"
+    },
+    {
+        "symbol": "SPZ.AX",
+        "country": "Australia",
+        "symbol_country": "SPZ.AX.AU"
+    },
+    {
+        "symbol": "EGHT",
+        "country": "United States",
+        "symbol_country": "EGHT.US"
+    },
+    {
+        "symbol": "GEOS",
+        "country": "United States",
+        "symbol_country": "GEOS.US"
+    },
+    {
+        "symbol": "GDEV",
+        "country": "Cyprus",
+        "symbol_country": "GDEV.CY"
+    },
+    {
+        "symbol": "SATX",
+        "country": "Israel",
+        "symbol_country": "SATX.IL"
+    },
+    {
+        "symbol": "FRGE",
+        "country": "United States",
+        "symbol_country": "FRGE.US"
+    },
+    {
+        "symbol": "TPG.F",
+        "country": "Germany",
+        "symbol_country": "TPG.F.DE"
+    },
+    {
+        "symbol": "CURI",
+        "country": "United States",
+        "symbol_country": "CURI.US"
+    },
+    {
+        "symbol": "NRDY",
+        "country": "United States",
+        "symbol_country": "NRDY.US"
+    },
+    {
+        "symbol": "SHVA.TA",
+        "country": "Israel",
+        "symbol_country": "SHVA.TA.IL"
+    },
+    {
+        "symbol": "KLTR",
+        "country": "United States",
+        "symbol_country": "KLTR.US"
+    },
+    {
+        "symbol": "MTRK.AS",
+        "country": "Italy",
+        "symbol_country": "MTRK.AS.IT"
+    },
+    {
+        "symbol": "ACCELYA.NS",
+        "country": "India",
+        "symbol_country": "ACCELYA.NS.IN"
+    },
+    {
+        "symbol": "ONTF",
+        "country": "United States",
+        "symbol_country": "ONTF.US"
+    },
+    {
+        "symbol": "VIOT",
+        "country": "China",
+        "symbol_country": "VIOT.CN"
+    },
+    {
+        "symbol": "TRVG",
+        "country": "Germany",
+        "symbol_country": "TRVG.DE"
+    },
+    {
+        "symbol": "OT8.F",
+        "country": "Luxembourg",
+        "symbol_country": "OT8.F.LU"
+    },
+    {
+        "symbol": "SJJ.DE",
+        "country": "Germany",
+        "symbol_country": "SJJ.DE.DE"
+    },
+    {
+        "symbol": "ASUR",
+        "country": "United States",
+        "symbol_country": "ASUR.US"
+    },
+    {
+        "symbol": "7844.T",
+        "country": "Japan",
+        "symbol_country": "7844.T.JP"
+    },
+    {
+        "symbol": "SOPH",
+        "country": "Switzerland",
+        "symbol_country": "SOPH.CH"
+    },
+    {
+        "symbol": "CRI.WA",
+        "country": "Poland",
+        "symbol_country": "CRI.WA.PL"
+    },
+    {
+        "symbol": "ACSO.L",
+        "country": "United Kingdom",
+        "symbol_country": "ACSO.L.GB"
+    },
+    {
+        "symbol": "AL2SI.PA",
+        "country": "France",
+        "symbol_country": "AL2SI.PA.FR"
+    },
+    {
+        "symbol": "DIB.MI",
+        "country": "Italy",
+        "symbol_country": "DIB.MI.IT"
+    },
+    {
+        "symbol": "PERF",
+        "country": "Taiwan",
+        "symbol_country": "PERF.TW"
+    },
+    {
+        "symbol": "CCRD",
+        "country": "United States",
+        "symbol_country": "CCRD.US"
+    },
+    {
+        "symbol": "3694.T",
+        "country": "Japan",
+        "symbol_country": "3694.T.JP"
+    },
+    {
+        "symbol": "DIGIA.HE",
+        "country": "Finland",
+        "symbol_country": "DIGIA.HE.FI"
+    },
+    {
+        "symbol": "APTD.L",
+        "country": "United Kingdom",
+        "symbol_country": "APTD.L.GB"
+    },
+    {
+        "symbol": "TCX",
+        "country": "Canada",
+        "symbol_country": "TCX.CA"
+    },
+    {
+        "symbol": "CNC.L",
+        "country": "United Kingdom",
+        "symbol_country": "CNC.L.GB"
+    },
+    {
+        "symbol": "LMN.SW",
+        "country": "Netherlands",
+        "symbol_country": "LMN.SW.NL"
+    },
+    {
+        "symbol": "VLN",
+        "country": "Israel",
+        "symbol_country": "VLN.IL"
+    },
+    {
+        "symbol": "3903.T",
+        "country": "Japan",
+        "symbol_country": "3903.T.JP"
+    },
+    {
+        "symbol": "WOLF",
+        "country": "United States",
+        "symbol_country": "WOLF.US"
+    },
+    {
+        "symbol": "MAPS",
+        "country": "United States",
+        "symbol_country": "MAPS.US"
+    },
+    {
+        "symbol": "FAA.DE",
+        "country": "Austria",
+        "symbol_country": "FAA.DE.AT"
+    },
+    {
+        "symbol": "SAAS.L",
+        "country": "United Kingdom",
+        "symbol_country": "SAAS.L.GB"
+    },
+    {
+        "symbol": "BKS.L",
+        "country": "United Kingdom",
+        "symbol_country": "BKS.L.GB"
+    },
+    {
+        "symbol": "FDEV.L",
+        "country": "United Kingdom",
+        "symbol_country": "FDEV.L.GB"
+    },
+    {
+        "symbol": "MRT",
+        "country": "Turkey",
+        "symbol_country": "MRT.TU"
+    },
+    {
+        "symbol": "TRUE",
+        "country": "United States",
+        "symbol_country": "TRUE.US"
+    },
+    {
+        "symbol": "ALVIV.PA",
+        "country": "France",
+        "symbol_country": "ALVIV.PA.FR"
+    },
+    {
+        "symbol": "GHH.L",
+        "country": "United Kingdom",
+        "symbol_country": "GHH.L.GB"
+    },
+    {
+        "symbol": "QUICKHEAL.NS",
+        "country": "India",
+        "symbol_country": "QUICKHEAL.NS.IN"
+    },
+    {
+        "symbol": "RDY.AX",
+        "country": "Australia",
+        "symbol_country": "RDY.AX.AU"
+    },
+    {
+        "symbol": "DMRC",
+        "country": "United States",
+        "symbol_country": "DMRC.US"
+    },
+    {
+        "symbol": "CMCM",
+        "country": "China",
+        "symbol_country": "CMCM.CN"
+    },
+    {
+        "symbol": "VCM.TO",
+        "country": "Canada",
+        "symbol_country": "VCM.TO.CA"
+    },
+    {
+        "symbol": "CRNT",
+        "country": "Israel",
+        "symbol_country": "CRNT.IL"
+    },
+    {
+        "symbol": "EXFY",
+        "country": "United States",
+        "symbol_country": "EXFY.US"
+    },
+    {
+        "symbol": "SNG.MC",
+        "country": "Spain",
+        "symbol_country": "SNG.MC.ES"
+    },
+    {
+        "symbol": "ELCO.L",
+        "country": "United Kingdom",
+        "symbol_country": "ELCO.L.GB"
+    },
+    {
+        "symbol": "SKO.NZ",
+        "country": "New Zealand",
+        "symbol_country": "SKO.NZ.NZ"
+    },
+    {
+        "symbol": "QTX.L",
+        "country": "United Kingdom",
+        "symbol_country": "QTX.L.GB"
+    },
+    {
+        "symbol": "EGAN",
+        "country": "United States",
+        "symbol_country": "EGAN.US"
+    },
+    {
+        "symbol": "BZUN",
+        "country": "China",
+        "symbol_country": "BZUN.CN"
+    },
+    {
+        "symbol": "KUD.SW",
+        "country": "Switzerland",
+        "symbol_country": "KUD.SW.CH"
+    },
+    {
+        "symbol": "CGM.PA",
+        "country": "France",
+        "symbol_country": "CGM.PA.FR"
+    },
+    {
+        "symbol": "ALSTW.PA",
+        "country": "France",
+        "symbol_country": "ALSTW.PA.FR"
+    },
+    {
+        "symbol": "ALLIX.PA",
+        "country": "France",
+        "symbol_country": "ALLIX.PA.FR"
+    },
+    {
+        "symbol": "TEAD",
+        "country": "United States",
+        "symbol_country": "TEAD.US"
+    },
+    {
+        "symbol": "TRB.L",
+        "country": "United Kingdom",
+        "symbol_country": "TRB.L.GB"
+    },
+    {
+        "symbol": "CRGO",
+        "country": "Israel",
+        "symbol_country": "CRGO.IL"
+    },
+    {
+        "symbol": "ARAI",
+        "country": "United States",
+        "symbol_country": "ARAI.US"
+    },
+    {
+        "symbol": "VERI",
+        "country": "United States",
+        "symbol_country": "VERI.US"
+    },
+    {
+        "symbol": "TIO",
+        "country": "United States",
+        "symbol_country": "TIO.US"
+    },
+    {
+        "symbol": "ZOMD.V",
+        "country": "Canada",
+        "symbol_country": "ZOMD.V.CA"
+    },
+    {
+        "symbol": "2497.T",
+        "country": "Japan",
+        "symbol_country": "2497.T.JP"
+    },
+    {
+        "symbol": "VUZI",
+        "country": "United States",
+        "symbol_country": "VUZI.US"
+    },
+    {
+        "symbol": "SSTI",
+        "country": "United States",
+        "symbol_country": "SSTI.US"
+    },
+    {
+        "symbol": "3546.TWO",
+        "country": "Taiwan",
+        "symbol_country": "3546.TWO.TW"
+    },
+    {
+        "symbol": "AEYE",
+        "country": "United States",
+        "symbol_country": "AEYE.US"
+    },
+    {
+        "symbol": "CI7.F",
+        "country": "Poland",
+        "symbol_country": "CI7.F.PL"
+    },
+    {
+        "symbol": "REKR",
+        "country": "United States",
+        "symbol_country": "REKR.US"
+    },
+    {
+        "symbol": "ARBE",
+        "country": "Israel",
+        "symbol_country": "ARBE.IL"
+    },
+    {
+        "symbol": "LEMON.HE",
+        "country": "Finland",
+        "symbol_country": "LEMON.HE.FI"
+    },
+    {
+        "symbol": "UPG.BR",
+        "country": "Belgium",
+        "symbol_country": "UPG.BR.BE"
+    },
+    {
+        "symbol": "TRCS.L",
+        "country": "United Kingdom",
+        "symbol_country": "TRCS.L.GB"
+    },
+    {
+        "symbol": "BARK",
+        "country": "United States",
+        "symbol_country": "BARK.US"
+    },
+    {
+        "symbol": "SVCO",
+        "country": "United States",
+        "symbol_country": "SVCO.US"
+    },
+    {
+        "symbol": "ESY.HM",
+        "country": "Germany",
+        "symbol_country": "ESY.HM.DE"
+    },
+    {
+        "symbol": "AISP",
+        "country": "United States",
+        "symbol_country": "AISP.US"
+    },
+    {
+        "symbol": "APX.AX",
+        "country": "Australia",
+        "symbol_country": "APX.AX.AU"
+    },
+    {
+        "symbol": "ALFRE.PA",
+        "country": "France",
+        "symbol_country": "ALFRE.PA.FR"
+    },
+    {
+        "symbol": "MRAM",
+        "country": "United States",
+        "symbol_country": "MRAM.US"
+    },
+    {
+        "symbol": "LTRX",
+        "country": "United States",
+        "symbol_country": "LTRX.US"
+    },
+    {
+        "symbol": "IH",
+        "country": "China",
+        "symbol_country": "IH.CN"
+    },
+    {
+        "symbol": "7201.SR",
+        "country": "Saudi Arabia",
+        "symbol_country": "7201.SR.SA"
+    },
+    {
+        "symbol": "CHGG",
+        "country": "United States",
+        "symbol_country": "CHGG.US"
+    },
+    {
+        "symbol": "DUG.AX",
+        "country": "Australia",
+        "symbol_country": "DUG.AX.AU"
+    },
+    {
+        "symbol": "Nano Labs",
+        "country": "China",
+        "symbol_country": "Nano Labs.CN"
+    },
+    {
+        "symbol": "ALLD3.SA",
+        "country": "Brazil",
+        "symbol_country": "ALLD3.SA.BR"
+    },
+    {
+        "symbol": "PAY.TO",
+        "country": "Canada",
+        "symbol_country": "PAY.TO.CA"
+    },
+    {
+        "symbol": "TROO",
+        "country": "Hong Kong",
+        "symbol_country": "TROO.HK"
+    },
+    {
+        "symbol": "CGEN",
+        "country": "Israel",
+        "symbol_country": "CGEN.IL"
+    },
+    {
+        "symbol": "OSS",
+        "country": "United States",
+        "symbol_country": "OSS.US"
+    },
+    {
+        "symbol": "SKIL",
+        "country": "United States",
+        "symbol_country": "SKIL.US"
+    },
+    {
+        "symbol": "STEM",
+        "country": "United States",
+        "symbol_country": "STEM.US"
+    },
+    {
+        "symbol": "SKLZ",
+        "country": "United States",
+        "symbol_country": "SKLZ.US"
+    },
+    {
+        "symbol": "SQNS",
+        "country": "France",
+        "symbol_country": "SQNS.FR"
+    },
+    {
+        "symbol": "NFN.DE",
+        "country": "Germany",
+        "symbol_country": "NFN.DE.DE"
+    },
+    {
+        "symbol": "SYZ.TO",
+        "country": "Canada",
+        "symbol_country": "SYZ.TO.CA"
+    },
+    {
+        "symbol": "LAZR",
+        "country": "United States",
+        "symbol_country": "LAZR.US"
+    },
+    {
+        "symbol": "MYPS",
+        "country": "United States",
+        "symbol_country": "MYPS.US"
+    },
+    {
+        "symbol": "DHH.MI",
+        "country": "Italy",
+        "symbol_country": "DHH.MI.IT"
+    },
+    {
+        "symbol": "DUOT",
+        "country": "United States",
+        "symbol_country": "DUOT.US"
+    },
+    {
+        "symbol": "BKKT",
+        "country": "United States",
+        "symbol_country": "BKKT.US"
+    },
+    {
+        "symbol": "11B.WA",
+        "country": "Poland",
+        "symbol_country": "11B.WA.PL"
+    },
+    {
+        "symbol": "NCTY",
+        "country": "China",
+        "symbol_country": "NCTY.CN"
+    },
+    {
+        "symbol": "RMBL",
+        "country": "United States",
+        "symbol_country": "RMBL.US"
+    },
+    {
+        "symbol": "ALAR",
+        "country": "Israel",
+        "symbol_country": "ALAR.IL"
+    },
+    {
+        "symbol": "IQE.L",
+        "country": "United Kingdom",
+        "symbol_country": "IQE.L.GB"
+    },
+    {
+        "symbol": "LIDR",
+        "country": "United States",
+        "symbol_country": "LIDR.US"
+    },
+    {
+        "symbol": "MSAB-B.ST",
+        "country": "Sweden",
+        "symbol_country": "MSAB-B.ST.SE"
+    },
+    {
+        "symbol": "BSS.F",
+        "country": "Germany",
+        "symbol_country": "BSS.F.DE"
+    },
+    {
+        "symbol": "EHTH",
+        "country": "United States",
+        "symbol_country": "EHTH.US"
+    },
+    {
+        "symbol": "ART.AX",
+        "country": "Australia",
+        "symbol_country": "ART.AX.AU"
+    },
+    {
+        "symbol": "CTNK.F",
+        "country": "Germany",
+        "symbol_country": "CTNK.F.DE"
+    },
+    {
+        "symbol": "MX",
+        "country": "Luxembourg",
+        "symbol_country": "MX.LU"
+    },
+    {
+        "symbol": "AMWL",
+        "country": "United States",
+        "symbol_country": "AMWL.US"
+    },
+    {
+        "symbol": "3PL.AX",
+        "country": "Australia",
+        "symbol_country": "3PL.AX.AU"
+    },
+    {
+        "symbol": "4434.T",
+        "country": "Japan",
+        "symbol_country": "4434.T.JP"
+    },
+    {
+        "symbol": "ICG",
+        "country": "China",
+        "symbol_country": "ICG.CN"
+    },
+    {
+        "symbol": "ATOM",
+        "country": "United States",
+        "symbol_country": "ATOM.US"
+    },
+    {
+        "symbol": "IDN",
+        "country": "United States",
+        "symbol_country": "IDN.US"
+    },
+    {
+        "symbol": "AIW.MI",
+        "country": "Italy",
+        "symbol_country": "AIW.MI.IT"
+    },
+    {
+        "symbol": "EXL.DE",
+        "country": "Germany",
+        "symbol_country": "EXL.DE.DE"
+    },
+    {
+        "symbol": "AIFORIA.HE",
+        "country": "Finland",
+        "symbol_country": "AIFORIA.HE.FI"
+    },
+    {
+        "symbol": "NACON.PA",
+        "country": "France",
+        "symbol_country": "NACON.PA.FR"
+    },
+    {
+        "symbol": "LPSN",
+        "country": "United States",
+        "symbol_country": "LPSN.US"
+    },
+    {
+        "symbol": "CASH3.SA",
+        "country": "Brazil",
+        "symbol_country": "CASH3.SA.BR"
+    },
+    {
+        "symbol": "GRYP",
+        "country": "United States",
+        "symbol_country": "GRYP.US"
+    },
+    {
+        "symbol": "RSSS",
+        "country": "United States",
+        "symbol_country": "RSSS.US"
+    },
+    {
+        "symbol": "ALATA.PA",
+        "country": "France",
+        "symbol_country": "ALATA.PA.FR"
+    },
+    {
+        "symbol": "3793.T",
+        "country": "Japan",
+        "symbol_country": "3793.T.JP"
+    },
+    {
+        "symbol": "CTM",
+        "country": "United States",
+        "symbol_country": "CTM.US"
+    },
+    {
+        "symbol": "THNC.TO",
+        "country": "Canada",
+        "symbol_country": "THNC.TO.CA"
+    },
+    {
+        "symbol": "SILC",
+        "country": "Israel",
+        "symbol_country": "SILC.IL"
+    },
+    {
+        "symbol": "CLBS.L",
+        "country": "United Kingdom",
+        "symbol_country": "CLBS.L.GB"
+    },
+    {
+        "symbol": "QUIK",
+        "country": "United States",
+        "symbol_country": "QUIK.US"
+    },
+    {
+        "symbol": "INVE",
+        "country": "United States",
+        "symbol_country": "INVE.US"
+    },
+    {
+        "symbol": "EYE.L",
+        "country": "United Kingdom",
+        "symbol_country": "EYE.L.GB"
+    },
+    {
+        "symbol": "VLDX",
+        "country": "United States",
+        "symbol_country": "VLDX.US"
+    },
+    {
+        "symbol": "GNSS",
+        "country": "United States",
+        "symbol_country": "GNSS.US"
+    },
+    {
+        "symbol": "ASYS",
+        "country": "United States",
+        "symbol_country": "ASYS.US"
+    },
+    {
+        "symbol": "ZENV",
+        "country": "Brazil",
+        "symbol_country": "ZENV.BR"
+    },
+    {
+        "symbol": "UPLD",
+        "country": "United States",
+        "symbol_country": "UPLD.US"
+    },
+    {
+        "symbol": "ATEME.PA",
+        "country": "France",
+        "symbol_country": "ATEME.PA.FR"
+    },
+    {
+        "symbol": "MRX.F",
+        "country": "Germany",
+        "symbol_country": "MRX.F.DE"
+    },
+    {
+        "symbol": "FLN.AX",
+        "country": "Australia",
+        "symbol_country": "FLN.AX.AU"
+    },
+    {
+        "symbol": "VANTI.PA",
+        "country": "France",
+        "symbol_country": "VANTI.PA.FR"
+    },
+    {
+        "symbol": "SST",
+        "country": "United States",
+        "symbol_country": "SST.US"
+    },
+    {
+        "symbol": "GIGA.MC",
+        "country": "Spain",
+        "symbol_country": "GIGA.MC.ES"
+    },
+    {
+        "symbol": "ILLR",
+        "country": "United States",
+        "symbol_country": "ILLR.US"
+    },
+    {
+        "symbol": "GCTS",
+        "country": "United States",
+        "symbol_country": "GCTS.US"
+    },
+    {
+        "symbol": "PULS.L",
+        "country": "United Kingdom",
+        "symbol_country": "PULS.L.GB"
+    },
+    {
+        "symbol": "ALHYP.PA",
+        "country": "France",
+        "symbol_country": "ALHYP.PA.FR"
+    },
+    {
+        "symbol": "SNCR",
+        "country": "United States",
+        "symbol_country": "SNCR.US"
+    },
+    {
+        "symbol": "SPA.L",
+        "country": "United Kingdom",
+        "symbol_country": "SPA.L.GB"
+    },
+    {
+        "symbol": "CNS.L",
+        "country": "United Kingdom",
+        "symbol_country": "CNS.L.GB"
+    },
+    {
+        "symbol": "UAVS",
+        "country": "United States",
+        "symbol_country": "UAVS.US"
+    },
+    {
+        "symbol": "ASC.KW",
+        "country": "Kuwait",
+        "symbol_country": "ASC.KW.KW"
+    },
+    {
+        "symbol": "PETS",
+        "country": "United States",
+        "symbol_country": "PETS.US"
+    },
+    {
+        "symbol": "GMM",
+        "country": "China",
+        "symbol_country": "GMM.CN"
+    },
+    {
+        "symbol": "WKEY",
+        "country": "Switzerland",
+        "symbol_country": "WKEY.CH"
+    },
+    {
+        "symbol": "KPLT",
+        "country": "United States",
+        "symbol_country": "KPLT.US"
+    },
+    {
+        "symbol": "WFCF",
+        "country": "United States",
+        "symbol_country": "WFCF.US"
+    },
+    {
+        "symbol": "ODYS",
+        "country": "Israel",
+        "symbol_country": "ODYS.IL"
+    },
+    {
+        "symbol": "AVAI",
+        "country": "United States",
+        "symbol_country": "AVAI.US"
+    },
+    {
+        "symbol": "YI",
+        "country": "China",
+        "symbol_country": "YI.CN"
+    },
+    {
+        "symbol": "CYR.DE",
+        "country": "Germany",
+        "symbol_country": "CYR.DE.DE"
+    },
+    {
+        "symbol": "SYT",
+        "country": "Japan",
+        "symbol_country": "SYT.JP"
+    },
+    {
+        "symbol": "FORA",
+        "country": "United States",
+        "symbol_country": "FORA.US"
+    },
+    {
+        "symbol": "AUID",
+        "country": "United States",
+        "symbol_country": "AUID.US"
+    },
+    {
+        "symbol": "CMTL",
+        "country": "United States",
+        "symbol_country": "CMTL.US"
+    },
+    {
+        "symbol": "3656.T",
+        "country": "Japan",
+        "symbol_country": "3656.T.JP"
+    },
+    {
+        "symbol": "YOC.DE",
+        "country": "Germany",
+        "symbol_country": "YOC.DE.DE"
+    },
+    {
+        "symbol": "AILE",
+        "country": "United States",
+        "symbol_country": "AILE.US"
+    },
+    {
+        "symbol": "LGCL",
+        "country": "China",
+        "symbol_country": "LGCL.CN"
+    },
+    {
+        "symbol": "AGIL.MC",
+        "country": "Spain",
+        "symbol_country": "AGIL.MC.ES"
+    },
+    {
+        "symbol": "COH.PA",
+        "country": "France",
+        "symbol_country": "COH.PA.FR"
+    },
+    {
+        "symbol": "ZSPC",
+        "country": "United States",
+        "symbol_country": "ZSPC.US"
+    },
+    {
+        "symbol": "PHUN",
+        "country": "United States",
+        "symbol_country": "PHUN.US"
+    },
+    {
+        "symbol": "MOBX",
+        "country": "United States",
+        "symbol_country": "MOBX.US"
+    },
+    {
+        "symbol": "BTCM",
+        "country": "China",
+        "symbol_country": "BTCM.CN"
+    },
+    {
+        "symbol": "QMCO",
+        "country": "United States",
+        "symbol_country": "QMCO.US"
+    },
+    {
+        "symbol": "SURG",
+        "country": "United States",
+        "symbol_country": "SURG.US"
+    },
+    {
+        "symbol": "PCF.WA",
+        "country": "Poland",
+        "symbol_country": "PCF.WA.PL"
+    },
+    {
+        "symbol": "NHTC",
+        "country": "United States",
+        "symbol_country": "NHTC.US"
+    },
+    {
+        "symbol": "7060.T",
+        "country": "Japan",
+        "symbol_country": "7060.T.JP"
+    },
+    {
+        "symbol": "3912.T",
+        "country": "Japan",
+        "symbol_country": "3912.T.JP"
+    },
+    {
+        "symbol": "MOB",
+        "country": "Australia",
+        "symbol_country": "MOB.AU"
+    },
+    {
+        "symbol": "BMR",
+        "country": "Israel",
+        "symbol_country": "BMR.IL"
+    },
+    {
+        "symbol": "TECH.OL",
+        "country": "Norway",
+        "symbol_country": "TECH.OL.NO"
+    },
+    {
+        "symbol": "3IINFOLTD.NS",
+        "country": "India",
+        "symbol_country": "3IINFOLTD.NS.IN"
+    },
+    {
+        "symbol": "PRTS",
+        "country": "United States",
+        "symbol_country": "PRTS.US"
+    },
+    {
+        "symbol": "PXLW",
+        "country": "United States",
+        "symbol_country": "PXLW.US"
+    },
+    {
+        "symbol": "VERB",
+        "country": "United States",
+        "symbol_country": "VERB.US"
+    },
+    {
+        "symbol": "CYN",
+        "country": "United States",
+        "symbol_country": "CYN.US"
+    },
+    {
+        "symbol": "KORE",
+        "country": "United States",
+        "symbol_country": "KORE.US"
+    },
+    {
+        "symbol": "TACT",
+        "country": "United States",
+        "symbol_country": "TACT.US"
+    },
+    {
+        "symbol": "SHLT",
+        "country": "Israel",
+        "symbol_country": "SHLT.IL"
+    },
+    {
+        "symbol": "USIO",
+        "country": "United States",
+        "symbol_country": "USIO.US"
+    },
+    {
+        "symbol": "SELX",
+        "country": "Taiwan",
+        "symbol_country": "SELX.TW"
+    },
+    {
+        "symbol": "MNTC.ST",
+        "country": "Sweden",
+        "symbol_country": "MNTC.ST.SE"
+    },
+    {
+        "symbol": "4728.T",
+        "country": "Japan",
+        "symbol_country": "4728.T.JP"
+    },
+    {
+        "symbol": "SWVL",
+        "country": "United Arab Emirates",
+        "symbol_country": "SWVL.AE"
+    },
+    {
+        "symbol": "IOM.L",
+        "country": "United Kingdom",
+        "symbol_country": "IOM.L.GB"
+    },
+    {
+        "symbol": "STAR-B.ST",
+        "country": "Sweden",
+        "symbol_country": "STAR-B.ST.SE"
+    },
+    {
+        "symbol": "CISO",
+        "country": "United States",
+        "symbol_country": "CISO.US"
+    },
+    {
+        "symbol": "SJ",
+        "country": "China",
+        "symbol_country": "SJ.CN"
+    },
+    {
+        "symbol": "3851.T",
+        "country": "Japan",
+        "symbol_country": "3851.T.JP"
+    },
+    {
+        "symbol": "AIRE",
+        "country": "United States",
+        "symbol_country": "AIRE.US"
+    },
+    {
+        "symbol": "VRAR",
+        "country": "United States",
+        "symbol_country": "VRAR.US"
+    },
+    {
+        "symbol": "3667.T",
+        "country": "Japan",
+        "symbol_country": "3667.T.JP"
+    },
+    {
+        "symbol": "ALWED.PA",
+        "country": "France",
+        "symbol_country": "ALWED.PA.FR"
+    },
+    {
+        "symbol": "MINM",
+        "country": "United States",
+        "symbol_country": "MINM.US"
+    },
+    {
+        "symbol": "GFAI",
+        "country": "Singapore",
+        "symbol_country": "GFAI.SG"
+    },
+    {
+        "symbol": "STRM",
+        "country": "United States",
+        "symbol_country": "STRM.US"
+    },
+    {
+        "symbol": "ISHA.DE",
+        "country": "Germany",
+        "symbol_country": "ISHA.DE.DE"
+    },
+    {
+        "symbol": "4199.T",
+        "country": "Japan",
+        "symbol_country": "4199.T.JP"
+    },
+    {
+        "symbol": "HUBC",
+        "country": "Israel",
+        "symbol_country": "HUBC.IL"
+    },
+    {
+        "symbol": "BLBX",
+        "country": "United States",
+        "symbol_country": "BLBX.US"
+    },
+    {
+        "symbol": "MRAI",
+        "country": "United States",
+        "symbol_country": "MRAI.US"
+    },
+    {
+        "symbol": "RVSN",
+        "country": "Israel",
+        "symbol_country": "RVSN.IL"
+    },
+    {
+        "symbol": "9421.T",
+        "country": "Japan",
+        "symbol_country": "9421.T.JP"
+    },
+    {
+        "symbol": "AIXI",
+        "country": "China",
+        "symbol_country": "AIXI.CN"
+    },
+    {
+        "symbol": "4174.T",
+        "country": "Japan",
+        "symbol_country": "4174.T.JP"
+    },
+    {
+        "symbol": "VMX.PA",
+        "country": "France",
+        "symbol_country": "VMX.PA.FR"
+    },
+    {
+        "symbol": "GREE",
+        "country": "United States",
+        "symbol_country": "GREE.US"
+    },
+    {
+        "symbol": "ARBK",
+        "country": "United Kingdom",
+        "symbol_country": "ARBK.GB"
+    },
+    {
+        "symbol": "LTCH",
+        "country": "United States",
+        "symbol_country": "LTCH.US"
+    },
+    {
+        "symbol": "3907.T",
+        "country": "Japan",
+        "symbol_country": "3907.T.JP"
+    },
+    {
+        "symbol": "CXAI",
+        "country": "United States",
+        "symbol_country": "CXAI.US"
+    },
+    {
+        "symbol": "VIAO",
+        "country": "Germany",
+        "symbol_country": "VIAO.DE"
+    },
+    {
+        "symbol": "ANY",
+        "country": "Canada",
+        "symbol_country": "ANY.CA"
+    },
+    {
+        "symbol": "ORKT",
+        "country": "Singapore",
+        "symbol_country": "ORKT.SG"
+    },
+    {
+        "symbol": "PT",
+        "country": "China",
+        "symbol_country": "PT.CN"
+    },
+    {
+        "symbol": "SMSI",
+        "country": "United States",
+        "symbol_country": "SMSI.US"
+    },
+    {
+        "symbol": "HRYU",
+        "country": "South Korea",
+        "symbol_country": "HRYU.KR"
+    },
+    {
+        "symbol": "SEAC",
+        "country": "United States",
+        "symbol_country": "SEAC.US"
+    },
+    {
+        "symbol": "SOS",
+        "country": "China",
+        "symbol_country": "SOS.CN"
+    },
+    {
+        "symbol": "FCUV",
+        "country": "United States",
+        "symbol_country": "FCUV.US"
+    },
+    {
+        "symbol": "ME",
+        "country": "United States",
+        "symbol_country": "ME.US"
+    },
+    {
+        "symbol": "WETG",
+        "country": "China",
+        "symbol_country": "WETG.CN"
+    },
+    {
+        "symbol": "SVRE",
+        "country": "Israel",
+        "symbol_country": "SVRE.IL"
+    },
+    {
+        "symbol": "WATT",
+        "country": "United States",
+        "symbol_country": "WATT.US"
+    },
+    {
+        "symbol": "JUMPNET.NS",
+        "country": "India",
+        "symbol_country": "JUMPNET.NS.IN"
+    },
+    {
+        "symbol": "JTAI",
+        "country": "United States",
+        "symbol_country": "JTAI.US"
+    },
+    {
+        "symbol": "SPPL",
+        "country": "Singapore",
+        "symbol_country": "SPPL.SG"
+    },
+    {
+        "symbol": "ATER",
+        "country": "United States",
+        "symbol_country": "ATER.US"
+    },
+    {
+        "symbol": "EKSO",
+        "country": "United States",
+        "symbol_country": "EKSO.US"
+    },
+    {
+        "symbol": "NCPL",
+        "country": "United States",
+        "symbol_country": "NCPL.US"
+    },
+    {
+        "symbol": "OLB",
+        "country": "United States",
+        "symbol_country": "OLB.US"
+    },
+    {
+        "symbol": "LFWD",
+        "country": "Israel",
+        "symbol_country": "LFWD.IL"
+    },
+    {
+        "symbol": "VS",
+        "country": "Canada",
+        "symbol_country": "VS.CA"
+    },
+    {
+        "symbol": "RTC",
+        "country": "China",
+        "symbol_country": "RTC.CN"
+    },
+    {
+        "symbol": "YJ",
+        "country": "China",
+        "symbol_country": "YJ.CN"
+    },
+    {
+        "symbol": "ELWS",
+        "country": "Japan",
+        "symbol_country": "ELWS.JP"
+    },
+    {
+        "symbol": "SCKT",
+        "country": "United States",
+        "symbol_country": "SCKT.US"
+    },
+    {
+        "symbol": "FRSX",
+        "country": "Israel",
+        "symbol_country": "FRSX.IL"
+    },
+    {
+        "symbol": "ALKAL.PA",
+        "country": "France",
+        "symbol_country": "ALKAL.PA.FR"
+    },
+    {
+        "symbol": "OBLG",
+        "country": "United States",
+        "symbol_country": "OBLG.US"
+    },
+    {
+        "symbol": "APCX",
+        "country": "United States",
+        "symbol_country": "APCX.US"
+    },
+    {
+        "symbol": "IDAI",
+        "country": "United States",
+        "symbol_country": "IDAI.US"
+    },
+    {
+        "symbol": "ALWIT.PA",
+        "country": "France",
+        "symbol_country": "ALWIT.PA.FR"
+    },
+    {
+        "symbol": "CETX",
+        "country": "United States",
+        "symbol_country": "CETX.US"
+    },
+    {
+        "symbol": "SGN",
+        "country": "United States",
+        "symbol_country": "SGN.US"
+    },
+    {
+        "symbol": "ULY",
+        "country": "United States",
+        "symbol_country": "ULY.US"
+    },
+    {
+        "symbol": "LCFY",
+        "country": "Australia",
+        "symbol_country": "LCFY.AU"
+    },
+    {
+        "symbol": "ONFO",
+        "country": "United States",
+        "symbol_country": "ONFO.US"
+    },
+    {
+        "symbol": "TGL",
+        "country": "Malaysia",
+        "symbol_country": "TGL.MY"
+    },
+    {
+        "symbol": "BKYI",
+        "country": "United States",
+        "symbol_country": "BKYI.US"
+    },
+    {
+        "symbol": "PIK",
+        "country": "United States",
+        "symbol_country": "PIK.US"
+    },
+    {
+        "symbol": "TWOU",
+        "country": "United States",
+        "symbol_country": "TWOU.US"
+    },
+    {
+        "symbol": "AFN.L",
+        "country": "United Kingdom",
+        "symbol_country": "AFN.L.GB"
+    },
+    {
+        "symbol": "M0YN.DE",
+        "country": "Germany",
+        "symbol_country": "M0YN.DE.DE"
+    },
+    {
+        "symbol": "SLE",
+        "country": "United States",
+        "symbol_country": "SLE.US"
+    },
+    {
+        "symbol": "FRGT",
+        "country": "United States",
+        "symbol_country": "FRGT.US"
+    },
+    {
+        "symbol": "IMTE",
+        "country": "Australia",
+        "symbol_country": "IMTE.AU"
+    },
+    {
+        "symbol": "MRIN",
+        "country": "United States",
+        "symbol_country": "MRIN.US"
+    },
+    {
+        "symbol": "BLMZ",
+        "country": "United States",
+        "symbol_country": "BLMZ.US"
+    },
+    {
+        "symbol": "PET",
+        "country": "United States",
+        "symbol_country": "PET.US"
+    },
+    {
+        "symbol": "SHPW",
+        "country": "United States",
+        "symbol_country": "SHPW.US"
+    },
+    {
+        "symbol": "GMVD",
+        "country": "Israel",
+        "symbol_country": "GMVD.IL"
+    },
+    {
+        "symbol": "MARK",
+        "country": "United States",
+        "symbol_country": "MARK.US"
+    },
+    {
+        "symbol": "STBX",
+        "country": "Malaysia",
+        "symbol_country": "STBX.MY"
+    },
+    {
+        "symbol": "XELA",
+        "country": "United States",
+        "symbol_country": "XELA.US"
+    },
+    {
+        "symbol": "FINR",
+        "country": "United Kingdom",
+        "symbol_country": "FINR.GB"
+    },
+    {
+        "symbol": "BBIG",
+        "country": "United States",
+        "symbol_country": "BBIG.US"
+    },
+    {
+        "symbol": "MOND",
+        "country": "United States",
+        "symbol_country": "MOND.US"
+    },
+    {
+        "symbol": "PRST",
+        "country": "United States",
+        "symbol_country": "PRST.US"
+    },
+    {
+        "symbol": "MVLA",
+        "country": "United States",
+        "symbol_country": "MVLA.US"
+    },
+    {
+        "symbol": "TRIRF",
+        "country": "Singapore",
+        "symbol_country": "TRIRF.SG"
+    },
+    {
+        "symbol": "GROM",
+        "country": "United States",
+        "symbol_country": "GROM.US"
+    },
+    {
+        "symbol": "CHYM",
+        "country": "United States",
+        "symbol_country": "CHYM.US"
+    },
+    {
+        "symbol": "OZON.ME",
+        "country": "United States",
+        "symbol_country": "OZON.ME.US"
+    }
+]

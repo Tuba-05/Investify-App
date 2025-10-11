@@ -2,69 +2,81 @@ import React, { useEffect, useState,  } from "react";
 import { DataGrid } from "@mui/x-data-grid"; // react table library better than simple plain html css
 import { IoStarSharp } from "react-icons/io5";
 import { useNavigate } from "react-router-dom"
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, m } from "framer-motion";
 
 
 const WatchList = () => {
   // ======================================================================
-  // ==================== ANIMATION PART ================================
-  // ======================================================================
-  // Dummy news data (replace with API call later)
-const dummyNews = [
-  "📈 Tesla stock surges 4% after quarterly earnings beat expectations",
-  "💰 Oil prices fall to 3-month low amid global slowdown fears",
-  "🏦 Federal Reserve holds interest rates steady",
-  "📊 Microsoft announces record profits in cloud division",
-  "💹 Bitcoin rises above $60,000 for the first time in months",
-];
-  const [index, setIndex] = useState(0);
-
-  // Change headline every 4 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % dummyNews.length);
-    }, 4000);
-    return () => clearInterval(interval);
-  }, []);
-  // ======================================================================
-  // ==================== WATCH LIST TABLE ================================
+  // ==================== WATCH LIST TABLE & DAILY NEWS ================================
   // ======================================================================
   const navigate = useNavigate(); // for navigation on row click(C-name) 
   const [rows, setRows] = useState([]); // Stores fetched watchlist data
   const [loading, setLoading] = useState(true); // Loading state
   const [userName, setUserName] = useState("");
   const userId = localStorage.getItem("userId"); // get logged-in user ID
-  // Fetching watchlist data from Flask API on component mount
-  useEffect(() => {
-    // If no user ID, skip fetching
-    if (!userId) {
-      setRows([]);
-      setLoading(false);
-      return;
-    }
-    // Fetching watchlist data from Flask API
-    fetch(`http://127.0.0.1:5000/watchlist/${userId}`)
-      .then((res) => res.json()) // Waits for server response then res.json()converts raw response into JSON format
-      .then((data) => {
-        // If watchlist has entries
-        if (data.success) {
-          setUserName(data.username);
-          const mapped = data.companies.map((item, index) => ({
-            id: item.id,   // use real company id from backend
-            c_name: item.c_name,
-            _rowId: index + 1, // unique id for DataGrid if needed
-          }));
-          setRows(mapped);
-        } else {
-          setRows([]);
-        }
-      })
-      .catch((err) => {
-        console.error("Error fetching watchlist:", err);
+  // State for daily news and current headline index
+    const [dailyNews, setDailyNews] = useState([]);
+    const [index, setIndex] = useState(0);
+  
+    // Fetching watchlist & daily news data from Flask API on component mount
+    useEffect(() => {
+      // If no user ID, skip fetching
+      if (!userId) {
         setRows([]);
-      })
-      .finally(() => setLoading(false)); // stop loading spinner
-  }, [userId]);
+        setLoading(false);
+        return;
+      }
+      // Fetching daily news data from Flask API
+      fetch('http://127.0.0.1:5000/fetch-daily-news', {method: "GET"})
+        .then((res) => res.json()) // Waits for server response then res.json()converts raw response into JSON format
+        .then((data)=>{
+          if(data.success){
+            const mappedNews = data.articles.map((item) => ({
+              source: item.source,
+              author: item.author || "Unknown",
+              description: item.description,
+              title: item.title,
+              url: item.url,
+            }));
+            setDailyNews(mappedNews);
+            console.log("Daily news fetched successfully", data); // for checking purposes
+          } 
+          else{
+            console.error("Failed to fetch daily news");
+          }
+        });
+      // Fetching watchlist data from Flask API
+      fetch(`http://127.0.0.1:5000/watchlist/${userId}`)
+        .then((res) => res.json()) // Waits for server response then res.json()converts raw response into JSON format
+        .then((data) => {
+          // If watchlist has entries
+          if (data.success) {
+            setUserName(data.username);
+            const mapped = data.companies.map((item, index) => ({
+              id: item.id,   // use real company id from backend
+              c_name: item.c_name,
+              _rowId: index + 1, // unique id for DataGrid if needed
+            }));
+            setRows(mapped);
+          } else {
+            setRows([]);
+          }
+        })
+        .catch((err) => {
+          console.error("Error fetching watchlist:", err);
+          setRows([]);
+        })
+        .finally(() => setLoading(false));
+    }, [userId]);
+  
+    // Effect to change news headline every 4 seconds
+    useEffect(() => {
+      if (dailyNews.length === 0) return;
+      const interval = setInterval(() => {
+        setIndex((prev) => (prev + 1) % dailyNews.length);
+      }, 4000);
+      return () => clearInterval(interval);
+    }, [dailyNews]);
 
   // Remove company from watchlist
   const handleToggleWatchlist = (companyId, companyName) => {
@@ -144,7 +156,7 @@ const dummyNews = [
         />
       )}
     </div>
-    {/* ===================================================================================================== */}
+    {/* ====================================== Daily NEWS ============================================ */}
     <h2 style={{ padding: "40px", marginLeft: 900,  fontSize: '42px'  }} >📊 News Feed </h2>
     <div
       style={{
@@ -168,7 +180,7 @@ const dummyNews = [
             color: "#033e3a",
           }}
         >
-          {dummyNews[index]}
+          {dailyNews[index]} {/* Display current news */}
         </motion.p>
       </AnimatePresence>
     </div>
