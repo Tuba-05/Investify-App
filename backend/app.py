@@ -10,9 +10,10 @@ import requests, base64 # to fetch company logos from Clearbit API & convert to 
 import json  # to read news.json file
 import threading  # to run background tasks (like fetching daily news)
 import sv_daily_news # sv_news.py file (in same folder) for fetching daily news 
-import matplotlib.pyplot as plt  # for data visualization 
-import io   # to handle in-memory files 
-import numpy as np
+
+
+
+
 
 app = Flask(__name__)  # createing flask web application
 
@@ -278,21 +279,18 @@ def fetch_news_from_file():
 
 
 # ================================== GRAPH ROUTE ========================================
-@app.route('/plot', methods=['GET'])
-def plot_grapg():
-    plt.figure()
-    x = np.array([10, 20, 30, 40, 50, 60, 70, 80, 90, 100])
-    y = np.array([2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025])
-    plt.plot(x,y)
-
-    # Save it to a BytesIO object (in memory)
-    img = io.BytesIO()
-    plt.savefig(img, format='png')
-    img.seek(0)
-    plt.close()
+# 1. *************** Historical Data (last 30 days) ***************
+@app.route('/historical-data-last-thirtyDAYS/<symbol>', methods=['POST'])
+def get_historical_data_last_thirtyDAYS(symbol):
+    """ Fetch historical stock data for the last 30 days for a given company symbol """
+    # if symbol exits in DB
+    company = Company.query.filter_by(symbol=symbol).first()
+    if not company: # if company not found in DB    
+        return jsonify({"success": False, "message": "Company not found"}), 404
     
-    # Send the image as a response
-    return send_file(img, mimetype='image/png')
+
+# 2. *************** Historical Data (last 20 yrs weekly data) ***************
+@app.route('/historical-data-last-twentyYRS/<symbol>', methods=['POST'])
 
 # ================== HOME ROUTE ==================
 @app.route("/")

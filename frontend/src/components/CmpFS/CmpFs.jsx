@@ -7,17 +7,34 @@ function CmpFS() {
   const { id } = useParams();  // get company ID from URL
   const [data, setData] = useState(null); // state to hold fetched data
 
-  useEffect(() => {
+  // COMPANY'S FS DISPLAY
+  useEffect(() => {   
     fetch(`http://127.0.0.1:5000/company/${id}`) // Flask backend endpoint
       .then((res) => res.json()) // parse JSON response
       .then((info) => setData(info)) // set data to state
       .catch((err) => console.error("Error fetching company data:", err)); // handle errors
   }, [id]); // re-run effect if ID changes
 
+  // GRAPH DISPLAY
+  useEffect(() => {
+    // Only fetch historical data if data and data.symbol are available
+    if (data?.symbol) {
+      // 1. *************** Historical Data (last 30 days) ***************
+      fetch(`http://127.0.0.1.5000/historical-data-last-thirtyDAYS/${data.symbol}`, {
+        method: 'POST'
+      });
+      // 2. *************** Historical Data (last 20 yrs weekly data) ***************
+      fetch(`http://127.0.0.1.5000/historical-data-last-twentyYRS/${data.symbol}`, {
+        method: 'POST'
+      });
+    }
+  }, [data?.symbol]);
+
   if (!data) return <p>Loading...</p>; // show loading state
   
   const latest = data.financials?.[data.financials.length - 1]; // Get the most recent [financials (last entry)]
 
+  
   return (
     <>
       <div

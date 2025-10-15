@@ -408,43 +408,64 @@
 
 
 # ____________________________________________________________________________________
+# FETCHING NEWS USING REQUESTS LIBRARY AND SAVING TO news.json
+
+# import requests
+# import json
+
+# # API endpoint and parameters
+# url = "https://newsapi.org/v2/top-headlines"
+# params = {
+#     "language": "en",
+#     "category": "business",
+#     "apiKey": "9718ed53731a41f1a8c08d42844fe6e8"
+# }
+
+# # Send GET request
+# response = requests.get(url, params=params) 
+
+# # Check if successful
+# if response.status_code == 200:
+#     data = response.json()
+#     articles = data.get("articles", []) # Safely get articles list
+    
+#     print(f"Total articles fetched: {len(articles)}\n")
+
+#     filtered_articles = []
+#     for article in articles:
+#         filtered_articles.append({ 
+#             "source": article["source"]["name"] if article["source"] else "Unknown", 
+#             "author": article.get("author", "N/A"),
+#             "title": article.get("title", "No title"),
+#             "description": article.get("description", "No description"),
+#             "url": article.get("url", "No URL")
+#         })
+
+#     with open("news.json", "w", encoding="utf-8") as f:
+#         json.dump(filtered_articles, f, indent=4, ensure_ascii=False)
+#     print("saved successfully")
+
+# else:
+#     print("Error:", response.status_code, response.text)
+
+# ____________________________________________________________________________________
+# HISTORICAL DATA USING ALPHAVANTAGE API
 
 import requests
 import json
 
-# API endpoint and parameters
-url = "https://newsapi.org/v2/top-headlines"
-params = {
-    "language": "en",
-    "category": "business",
-    "apiKey": "9718ed53731a41f1a8c08d42844fe6e8"
-}
+# replace the "demo" apikey below with your own key from https://www.alphavantage.co/support/#api-key
 
-# Send GET request
-response = requests.get(url, params=params) 
+demo = "YAB8GYYHAUBZZDZW"  # API KEY
+url_1 = "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=AAPL&interval=60min&outputsize=full&apikey=YAB8GYYHAUBZZDZW" #last 30 days intraday data
+# url_2 ="https://www.alphavantage.co/query?function=TIME_SERIES_WEEKLY&symbol=AAPL&apikey=YAB8GYYHAUBZZDZW" # last 20 years weekly data
+response = requests.get(url_1)
 
-# Check if successful
-if response.status_code == 200:
-    data = response.json()
-    articles = data.get("articles", []) # Safely get articles list
-    
-    print(f"Total articles fetched: {len(articles)}\n")
-
-    filtered_articles = []
-    for article in articles:
-        filtered_articles.append({ 
-            "source": article["source"]["name"] if article["source"] else "Unknown", 
-            "author": article.get("author", "N/A"),
-            "title": article.get("title", "No title"),
-            "description": article.get("description", "No description"),
-            "url": article.get("url", "No URL")
-        })
-
-    with open("news.json", "w", encoding="utf-8") as f:
-        json.dump(filtered_articles, f, indent=4, ensure_ascii=False)
-    print("saved successfully")
-
-else:
-    print("Error:", response.status_code, response.text)
-
-# ____________________________________________________________________________________
+try:
+    if response.status_code == 200:
+        data = response.json()
+        with open("historical_data.json", "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=4, ensure_ascii=False)
+        print("saved successfully")
+except Exception as e:
+    print("Error:", str(e))
