@@ -1,72 +1,121 @@
 [
     {
-        "source": "Fortune",
-        "author": "Jason Ma",
-        "title": "Markets expect Trump's latest China tariffs will backfire as gold jumps and the dollar 'is not looking looking healthy' - Fortune",
-        "description": "\"This is now the second instance where markets are trading tariffs as backfiring on the US, not on the rest of the world.\"",
-        "url": "https://fortune.com/2025/10/11/trump-china-tariffs-backfire-gold-prices-dollar-stock-selloff/"
+        "source": "CNBC",
+        "author": "Liz Napolitano, Lisa Kailai Han",
+        "title": "Stocks cut gains as market choppiness persists: Live updates - CNBC",
+        "description": "Stocks reversed course on Wednesday, giving up earlier gains, as volatility continued to engulf Wall Street.",
+        "url": "https://www.cnbc.com/2025/10/14/stock-market-today-live-updates.html"
     },
     {
-        "source": "Bloomberg",
-        "author": "Geoffrey Morgan, Sagarika Jaisinghani, Winnie Hsu",
-        "title": "Tariffs and AI Spending in Focus as Traders Brace For Earnings - Bloomberg.com",
-        "description": "A record-setting surge in US stocks has traders approaching the start of corporate earnings season with elevated expectations and little patience for companies that don’t meet the bar.",
-        "url": "https://www.bloomberg.com/news/articles/2025-10-11/tariffs-and-ai-spending-in-focus-as-traders-brace-for-earnings"
+        "source": "Financial Times",
+        "author": "Demetri Sevastopulo",
+        "title": "US warns world will ‘decouple’ from China if it imposes new export controls - Financial Times",
+        "description": "Scott Bessent says Washington will retaliate if Beijing proceeds with policy on rare earths and critical minerals",
+        "url": "https://www.ft.com/content/15a957a7-104e-431a-807e-441e5c2c753f"
+    },
+    {
+        "source": "Anthropic.com",
+        "author": null,
+        "title": "Introducing Claude Haiku 4.5 - Anthropic",
+        "description": "Claude Haiku 4.5, our latest small model, is available today to all users.",
+        "url": "https://www.anthropic.com/news/claude-haiku-4-5"
+    },
+    {
+        "source": "Charlotte Observer",
+        "author": "Catherine Muccigrosso",
+        "title": "New details emerge in LendingTree CEO’s death in ATV crash on NC family farm - Charlotte Observer",
+        "description": "Doug Lebda, 55, founder and CEO of LendingTree, was found dead after an ATV accident at his 227-acre Mill Springs property in Polk County, North Carolina.",
+        "url": "https://www.charlotteobserver.com/news/business/article312511305.html"
     },
     {
         "source": "Politico",
-        "author": "Megan Messerly, Phelim Kine",
-        "title": "China’s rare earth gambit reveals the next phase of its economic warfare - Politico",
-        "description": "Beijing’s rare earth crackdown lays bare the fusion of economic rivalry and national security risk.",
-        "url": "https://www.politico.com/news/2025/10/11/chinas-rare-earth-gambit-reveals-the-next-phase-of-its-economic-warfare-00602692"
+        "author": "Zi-Ann Lum",
+        "title": "Trump’s trade war nets a major victory over Canadian auto industry - Politico",
+        "description": "Carmaker Stellantis is shifting thousands of jobs and investing billions in U.S.-side production, punching a hole in Canada’s trade talk strategy.",
+        "url": "https://www.politico.com/news/2025/10/15/canada-auto-trump-trade-war-00608984"
+    },
+    {
+        "source": "Hollywood Reporter",
+        "author": "Alex Weprin",
+        "title": "Layoffs Hit NBC News: 150 Jobs Cut Ahead of Versant Split - The Hollywood Reporter",
+        "description": "The cuts come ahead of Comcast's Versant spinoff, which will see MSNBC and CNBC cleaved off from the rest of the NBC News Group.",
+        "url": "http://www.hollywoodreporter.com/business/business-news/nbc-news-layoffs-jobs-cut-ahead-msnbc-cnbc-split-versant-1236401602/"
+    },
+    {
+        "source": "Internet",
+        "author": "The Hacker News",
+        "title": "F5 Breach Exposes BIG-IP Source Code — Nation-State Hackers Behind Massive Intrusion - The Hacker News",
+        "description": "F5 confirms nation-state breach exposing BIG-IP source code and vulnerabilities; containment completed, customers urged to update.",
+        "url": "https://thehackernews.com/2025/10/f5-breach-exposes-big-ip-source-code.html"
+    },
+    {
+        "source": "The Washington Post",
+        "author": "Kelly Kasulis Cho",
+        "title": "Unsafe amounts of lead found in some protein powders, report says - The Washington Post",
+        "description": "More than two-thirds of the 23 protein powders tested by Consumer Reports had lead levels exceeding the watchdog group’s daily intake safety standards.",
+        "url": "https://www.washingtonpost.com/health/2025/10/15/consumer-reports-protein-powder-lead/"
+    },
+    {
+        "source": "TheStreet",
+        "author": "Todd Campbell",
+        "title": "Veteran trader who bought Nvidia stock at $13 revamps price target - TheStreet",
+        "description": "Here's what could happen to Nvidia shares next.",
+        "url": "https://www.thestreet.com/investing/stocks/veteran-trader-who-bought-nvidia-stock-at-13-revamps-price-target"
     },
     {
         "source": "BBC News",
         "author": null,
-        "title": "A tangled web of deals stokes AI bubble fears in Silicon Valley - BBC",
-        "description": "Some are worried that the rapid rise in the value of AI tech companies may be a bubble waiting to burst.",
-        "url": "https://www.bbc.com/news/articles/cz69qy760weo"
+        "title": "As US shutdown starts to bite, how much could it hit economy? - BBC",
+        "description": "As workers start to miss pay, the impact of the shutdown will start to ripple out across industries.",
+        "url": "https://www.bbc.com/news/articles/c9861edyjlno"
     },
     {
-        "source": "UPI.com",
-        "author": "Mike Heuer",
-        "title": "Trump administration cancels massive Nevada solar power project - upi.com",
-        "description": "The Trump administration has canceled the proposed Esmeralda 7 Solar Project in Nevada that would have been among the world's largest solar power facilities.",
-        "url": "https://www.upi.com"
+        "source": "MarketWatch",
+        "author": "William Gavin",
+        "title": "Tesla has big robotaxi ambitions, and now Waymo may be shifting its approach - MarketWatch",
+        "description": "Waymo has a reputation for moving deliberately in its autonomous-driving rollout. Now it’s picking up speed as the market looks to get more competitive.",
+        "url": "https://www.marketwatch.com/story/tesla-has-big-robotaxi-ambitions-and-now-waymo-may-be-shifting-its-approach-2e1181aa"
     },
     {
-        "source": "ABC News",
-        "author": "ABC News - Breaking News, Latest News and Videos",
-        "title": "Why soaring gold prices could be a warning sign for the economy - ABC News - Breaking News, Latest News and Videos",
-        "description": null,
-        "url": "https://abcnews.go.com/Business/soaring-gold-prices-warning-sign-economy/story?id\\\\u003d126414464"
+        "source": "The Wall Street Journal",
+        "author": "Alexander Saeedy",
+        "title": "Strong U.S. Economy Powers Bank of America Profit Higher - The Wall Street Journal",
+        "description": "The bank’s profit rose 23%, with consumer spending up and investment banking results booming",
+        "url": "https://www.wsj.com/finance/banking/bank-of-america-bac-q3-earnings-report-stock-2025-6af3d29d"
     },
     {
-        "source": "NBC News",
-        "author": "Rob Wile",
-        "title": "Consumer outlook for household finances falls to lowest in over a decade - NBC News",
-        "description": "Consumers' outlooks for their economic futures have  the University of Michigan Surveys of Consumers",
-        "url": "https://www.nbcnews.com/business/consumer/consumer-sentiment-michigan-october-rcna236879"
+        "source": "Morganstanley.com",
+        "author": null,
+        "title": "Morgan Stanley Reports Third Quarter 2025 - Morgan Stanley",
+        "description": "Morgan Stanley Reports Third Quarter 2025",
+        "url": "https://www.morganstanley.com/press-releases/morgan-stanley-reports-third-quarter-2025"
     },
     {
         "source": "BBC News",
         "author": null,
-        "title": "OpenAI video app Sora hits 1 million downloads faster than ChatGPT - BBC",
-        "description": "The popular AI tool generates ten second long realistic-looking videos from simple text prompts.",
-        "url": "https://www.bbc.com/news/articles/crkjgrvg6z4o"
+        "title": "ChatGPT will soon allow erotica for verified adults, OpenAI boss says - BBC",
+        "description": "CEO Sam Altman says upcoming versions of the popular chatbot would enable it to behave in a more human-like way  - \"but only if you want it\".",
+        "url": "https://www.bbc.com/news/articles/cpd2qv58yl5o"
     },
     {
-        "source": "Forbes",
-        "author": "Alicia Park",
-        "title": "With Billionaire Backers In Tow, Crypto’s Fastest-Growing Startup Mints The World’s Youngest Self-Made Billionaire - Forbes",
-        "description": "A $2 billion investment from NYSE parent ICE vaults Polymarket’s 27 year-old founder Shayne Coplan into the three-comma club and intensifies its rivalry with prediction market competitor Kalshi.",
-        "url": "https://www.forbes.com/sites/aliciapark/2025/10/10/with-billionaire-backers-in-tow-cryptos-fastest-growing-startup-mints-the-worlds-youngest-self-made-billionaire/"
+        "source": "MarketWatch",
+        "author": "Barbara Kollmeyer",
+        "title": "‘Expensive, but not nutty.’ Howard Marks on U.S. stocks and the one thing investors should be doing right now. - MarketWatch",
+        "description": "Oaktree co-founder says U.S. investors are ‘maybe complacent’",
+        "url": "https://www.marketwatch.com/story/expensive-but-not-nutty-howard-marks-on-u-s-stocks-and-the-one-thing-investors-should-be-doing-right-now-74c75960"
     },
     {
-        "source": "Forbes",
-        "author": "Dan Alexander",
-        "title": "Donald Trump Is Now One Of The World's Biggest Bitcoin Investors - Forbes",
-        "description": "Trump's crypto portfolio goes beyond World Liberty Financial and his memecoin—he’s also big into bitcoin. Will he use his presidency to boost its price to new heights?",
-        "url": "https://www.forbes.com/sites/danalexander/2025/10/10/trump-is-now-one-of-americas-biggest-bitcoin-investors/"
+        "source": "Fortune",
+        "author": "Eleanor Pringle",
+        "title": "Powell says exactly what Wall Street wants to hear as Trump provokes soybean battle with China - Fortune",
+        "description": "Investors heard enough of what they wanted to remain bullish on further cuts.",
+        "url": "https://fortune.com/2025/10/15/fed-powell-policy-hints-wall-street-upside-trump-china-soy/"
+    },
+    {
+        "source": "Just-auto.com",
+        "author": "GlobalData",
+        "title": "GM to take $1.6bn charge amid EV strategy overhaul - Yahoo Finance",
+        "description": "The loss of the federal EV tax credit has weakened the sales outlook for EVs.",
+        "url": "https://www.just-auto.com/news/gm-charge-amid-ev-strategy/"
     }
 ]

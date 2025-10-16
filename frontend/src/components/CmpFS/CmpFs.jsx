@@ -1,11 +1,21 @@
 import { useParams } from "react-router-dom"; // to access/read values from URL 
 import { useEffect, useState } from "react"; // for fetching data from Flask API and storing in state
 import { MdArrowRight } from "react-icons/md"; // arrow icon for list items
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+// ====================================================================================================================================
+// import { Line } from 'react-chartjs-2';
+// import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend } from 'chart.js';
+// Register components
+// ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
+// ====================================================================================================================================
+
 
 
 function CmpFS() {
   const { id } = useParams();  // get company ID from URL
   const [data, setData] = useState(null); // state to hold fetched data
+  const [last30daysdata, setlast30daysdata] = useState([]);
+  const [last20yrsdata, setlast20yrsdata] = useState([]);  
 
   // COMPANY'S FS DISPLAY
   useEffect(() => {   
@@ -20,11 +30,11 @@ function CmpFS() {
     // Only fetch historical data if data and data.symbol are available
     if (data?.symbol) {
       // 1. *************** Historical Data (last 30 days) ***************
-      fetch(`http://127.0.0.1.5000/historical-data-last-thirtyDAYS/${data.symbol}`, {method: 'GET'})
+      fetch(`http://127.0.0.1:5000/historical-data-last-thirtyDAYS/${data.symbol}`, {method: 'GET'})
         .then((res) => res.json())
         .then((histData) => {
           if(histData.success && Array.isArray(histData.hist_data)){
-            const last30daysdata = histData.hist_data.map(item => ({
+            const last30days_data = histData.hist_data.map(item => ({
               date: item.date,
               open: item.open,
               close: item.close,
@@ -32,6 +42,7 @@ function CmpFS() {
               low: item.low,
               volume: item.volume
             }));
+            setlast30daysdata(last30days_data); // Store 30 days data in state
             console.log("Historical data (30 days):", histData); // for checking purposes
           }
           else{
@@ -39,18 +50,35 @@ function CmpFS() {
           } 
         })
         .catch((err) => console.error("Error fetching 30 days historical data:", err))
-
+    
       // 2. *************** Historical Data (last 20 yrs weekly data) ***************
-      // fetch(`http://127.0.0.1.5000/historical-data-last-twentyYRS/${data.symbol}`, {method: 'GET'})
-      //   .then((res) => res.json())
-        
+      fetch(`http://127.0.0.1:5000/historical-data-last-twentyYRS/${data.symbol}`, {method: 'GET'})
+        .then((res) => res.json())
+        .then((histData) =>{
+          if(histData.success && Array.isArray(histData.hist_data)){
+            const last20yrs_data = histData.hist_data.map(item =>({
+              date: item.date,
+              open: item.open,
+              close: item.close,
+              high : item.high,
+              low: item.low,
+              volume: item.volume
+            }));
+            setlast20yrsdata(last20yrs_data); // Store 20 yrs data in state
+            console.log("Historical data (20 yrs):", histData); // for checking purposes
+          }
+          else{
+            console.error("Error: Invalid historical data format", histData); // handle unexpected data format
+          }
+        })
+        .catch((err) => console.error("Error fetching 20 yrs historical data:", err))
     }
   }, [data?.symbol]);
-
-  if (!data) return <p>Loading...</p>; // show loading state
   
-  const latest = data.financials?.[data.financials.length - 1]; // Get the most recent [financials (last entry)]
-
+  if (!data) return <p>Loading...</p>; // show loading state
+  if (last20yrsdata.length === 0 && last30daysdata.length === 0) // if historical data not yet loaded 
+  return <p>Loading charts...</p>; 
+  const latest = data.financials?.[data.financials.length - 1]; // Get the most recent [financials (last entry)
   
   return (
     <>
@@ -221,8 +249,19 @@ function CmpFS() {
                 justifyContent: "center",
                 alignItems: "center",
                 marginTop: "20px",
-              }}
-            ></div>
+                width: "100%", height: 400
+              }}>
+              <h2 style={{ textAlign: "center" }}>Stock Price (Last 30 Days)</h2>
+              <ResponsiveContainer>
+                <LineChart data={last30daysdata}>
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis name="Date" dataKey="date" tick={{ fontSize: 10 }} />
+                  <YAxis name= "Volume" dataKey="volume" tick={{ fontSize: 10 }} />
+                  <Tooltip />
+                  <Line type="monotone" dataKey="close" stroke="#8884d8" strokeWidth={2} dot={false} />
+                </LineChart>
+              </ResponsiveContainer>
+            </div>
           </>
         ) : (
           // if no financial data available

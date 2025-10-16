@@ -58,7 +58,7 @@
 
 
 #____________________________________________________________________________________
-# FOR companies TABLE
+# FOR companies TABLE(DB)
 # try:
         # with open("companies.json", "r", encoding="utf-8") as file:
         #    data = json.load(file)
@@ -82,7 +82,7 @@
 
         #     db.session.commit()
 #____________________________________________________________________________________
-# FOR financial statement TABLE
+# FOR financial statement TABLE(DB)
 #____________________________________________________________________________________
 # import json, yfinance as yf, pandas as pd
 # with app.app_context():
