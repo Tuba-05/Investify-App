@@ -20,13 +20,30 @@ function CmpFS() {
     // Only fetch historical data if data and data.symbol are available
     if (data?.symbol) {
       // 1. *************** Historical Data (last 30 days) ***************
-      fetch(`http://127.0.0.1.5000/historical-data-last-thirtyDAYS/${data.symbol}`, {
-        method: 'POST'
-      });
+      fetch(`http://127.0.0.1.5000/historical-data-last-thirtyDAYS/${data.symbol}`, {method: 'GET'})
+        .then((res) => res.json())
+        .then((histData) => {
+          if(histData.success && Array.isArray(histData.hist_data)){
+            const last30daysdata = histData.hist_data.map(item => ({
+              date: item.date,
+              open: item.open,
+              close: item.close,
+              high : item.high,
+              low: item.low,
+              volume: item.volume
+            }));
+            console.log("Historical data (30 days):", histData); // for checking purposes
+          }
+          else{
+            console.error("Error: Invalid historical data format", histData); // handle unexpected data format
+          } 
+        })
+        .catch((err) => console.error("Error fetching 30 days historical data:", err))
+
       // 2. *************** Historical Data (last 20 yrs weekly data) ***************
-      fetch(`http://127.0.0.1.5000/historical-data-last-twentyYRS/${data.symbol}`, {
-        method: 'POST'
-      });
+      // fetch(`http://127.0.0.1.5000/historical-data-last-twentyYRS/${data.symbol}`, {method: 'GET'})
+      //   .then((res) => res.json())
+        
     }
   }, [data?.symbol]);
 

@@ -195,8 +195,10 @@ const WatchList = () => {
       >
         <h2 style={{ fontSize: "42px", marginBottom: "35px" }}>📰 News Feed</h2>
 
-        <AnimatePresence mode="wait">
+        {/* allows a react component to animate out smoothly before unmounting. */}
+        <AnimatePresence mode="wait">  {/* wait until the exiting animation finishes before showing the new one */}
           {current && (
+            // div that can move, fade, scale, or animate easily — same applies for motion.img, motion.button
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
