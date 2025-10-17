@@ -35,7 +35,7 @@ class User(db.Model):
     name = db.Column(db.String(100), nullable=False)
     email = db.Column(db.String(120), unique=True, nullable=False)
     password = db.Column(db.String(255), nullable=False)
-    created_at = db.Column(db.DateTime, default=db.func.now())
+    created_at = db.Column(db.DateTime, default=db.func.now(), onupdate=db.func.now())
 
 class Company(db.Model):
     __tablename__ = 'companies'
@@ -46,7 +46,7 @@ class Company(db.Model):
     symbol = db.Column(db.String(20), nullable=True, unique = True)
     price_usd = db.Column("price(USD)", db.Float, nullable=True)
     marketcap = db.Column(db.Float, nullable=True)
-    created_at = db.Column(db.DateTime, default=db.func.now())
+    created_at = db.Column(db.DateTime, default=db.func.now(), onupdate=db.func.now())
 
 class FinancialStatement(db.Model):
     __tablename__ = 'financial_statement'
@@ -59,23 +59,19 @@ class FinancialStatement(db.Model):
     assets = db.Column(db.Numeric)
     liabilities = db.Column(db.Numeric)
     date = db.Column(db.Date)
-    created_at = db.Column(db.DateTime, default=db.func.now())
+    created_at = db.Column(db.DateTime, default=db.func.now(), onupdate=db.func.now())
 
 class Watchlist(db.Model):
     __tablename__ = 'watchlist'
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
     company_id = db.Column(db.Integer, db.ForeignKey('companies.id'))
-    created_at = db.Column(db.DateTime, default=db.func.now())
+    created_at = db.Column(db.DateTime, default=db.func.now(), onupdate=db.func.now())
 
 with app.app_context(): 
     '''tells Flask "I want to use app features in this standalone script" and gives you access to 
                 database operations and other Flask functionality.'''
     pass
-    # rows = Company.query.limit(50).all()   # fetch all rows from "users" table
-    # data = [ (row.id, row.name, row.symbol, row.country, row.price_usd, row.marketcap, row.sector ) for row in rows]
-    # df = pd.DataFrame(data, columns=["id", "c_name", "symbol", "country", "price in USD", "market capitalaization", "sector"])
-    # print(tabulate(df, headers="keys", tablefmt="psql")) # data in pretty table format
 
 # =============================== AUTH ROUTES ====================================================
 
@@ -348,14 +344,14 @@ def home():
 
 # ================== DAILY NEWS FETCHING IN BACKGROUND ===================
 def run_background_task():
-    """ Function to run the background task for fetching daily news """
-    updates.start_scheduler()   # call a function inside sv_daily_news.py
-
+    """ Function to run the background task for fetching and updating daily updates """
+    updates.start_scheduler()   # call a function inside upadtes.py
+    updates.update_companies_details() # call a function inside updates.py
 
 # ================== Run the Flask app ===================
 if __name__ == "__main__":
     ''' Run the Flask app '''
-    # Start background thread for news fetching
+    # Start background thread for daily updating news & companies details 
     thread = threading.Thread(target=run_background_task) # create a background thread
     thread.daemon = True  # ensures it stops when Flask stops
     thread.start() # start the background thread
