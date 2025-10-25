@@ -1,0 +1,1305 @@
+2025-10-17 21:18:22,557 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-17 21:18:22,557 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-17 21:18:22,566 - INFO -  * Restarting with stat
+2025-10-17 21:18:25,119 - WARNING -  * Debugger is active!
+2025-10-17 21:18:25,129 - INFO -  * Debugger PIN: 963-026-660
+2025-10-17 21:20:39,753 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-17 21:20:39,761 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-17 21:20:39,768 - INFO -  * Restarting with stat
+2025-10-17 21:20:42,337 - WARNING -  * Debugger is active!
+2025-10-17 21:20:42,337 - INFO -  * Debugger PIN: 963-026-660
+2025-10-17 21:32:18,669 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-17 21:32:18,674 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-17 21:32:18,675 - INFO -  * Restarting with stat
+2025-10-17 21:32:21,292 - WARNING -  * Debugger is active!
+2025-10-17 21:32:21,302 - INFO -  * Debugger PIN: 963-026-660
+2025-10-17 21:33:11,568 - INFO -  * Detected change in 'C:\\Users\\AA\\OneDrive\\Desktop\\Investify\\backend\\updates.py', reloading
+2025-10-17 21:33:12,067 - INFO -  * Restarting with stat
+2025-10-17 21:33:15,457 - WARNING -  * Debugger is active!
+2025-10-17 21:33:15,467 - INFO -  * Debugger PIN: 963-026-660
+2025-10-17 23:15:39,141 - INFO - ⏭️ Update already ran today — skipping.
+2025-10-18 12:55:29,522 - INFO - 🔄 Running daily update...
+2025-10-18 12:55:40,552 - INFO - ✅Successfully fetched & added data in both DBs for NVDA
+2025-10-18 12:55:44,830 - INFO - ✅Successfully fetched & added data in both DBs for MSFT
+2025-10-18 12:55:48,749 - INFO - ✅Successfully fetched & added data in both DBs for AAPL
+2025-10-18 12:55:52,560 - INFO - ✅Successfully fetched & added data in both DBs for GOOG
+2025-10-18 12:55:56,299 - INFO - ✅Successfully fetched & added data in both DBs for AMZN
+2025-10-18 12:56:00,235 - INFO - ✅Successfully fetched & added data in both DBs for META
+2025-10-18 12:56:04,084 - INFO - ✅Successfully fetched & added data in both DBs for AVGO
+2025-10-18 12:56:07,931 - INFO - ✅Successfully fetched & added data in both DBs for TSM
+2025-10-18 12:56:11,876 - INFO - ✅Successfully fetched & added data in both DBs for TSLA
+2025-10-18 12:56:15,665 - INFO - ✅Successfully fetched & added data in both DBs for TCEHY
+2025-10-18 12:56:20,085 - INFO - ✅Successfully fetched & added data in both DBs for ORCL
+2025-10-18 12:56:23,940 - INFO - ✅Successfully fetched & added data in both DBs for NFLX
+2025-10-18 12:56:27,752 - INFO - ✅Successfully fetched & added data in both DBs for PLTR
+2025-10-18 12:56:31,720 - INFO - ✅Successfully fetched & added data in both DBs for 005930.KS
+2025-10-18 12:56:35,614 - INFO - ✅Successfully fetched & added data in both DBs for SAP
+2025-10-18 12:56:39,456 - INFO - ✅Successfully fetched & added data in both DBs for ASML
+2025-10-18 12:56:43,351 - INFO - ✅Successfully fetched & added data in both DBs for BABA
+2025-10-18 12:56:47,672 - INFO - ✅Successfully fetched & added data in both DBs for AMD
+2025-10-18 12:56:51,501 - INFO - ✅Successfully fetched & added data in both DBs for CSCO
+2025-10-18 12:56:55,565 - INFO - ✅Successfully fetched & added data in both DBs for CRM
+2025-10-18 12:56:59,618 - INFO - ✅Successfully fetched & added data in both DBs for IBM
+2025-10-18 12:57:03,458 - INFO - ✅Successfully fetched & added data in both DBs for UBER
+2025-10-18 12:57:07,570 - INFO - ✅Successfully fetched & added data in both DBs for TXN
+2025-10-18 12:57:11,772 - INFO - ✅Successfully fetched & added data in both DBs for INTU
+2025-10-18 12:57:15,730 - INFO - ✅Successfully fetched & added data in both DBs for NOW
+2025-10-18 12:57:19,556 - INFO - ✅Successfully fetched & added data in both DBs for BKNG
+2025-10-18 12:57:23,381 - INFO - ✅Successfully fetched & added data in both DBs for SHOP
+2025-10-18 12:57:27,243 - INFO - ✅Successfully fetched & added data in both DBs for XIACF
+2025-10-18 12:57:31,206 - INFO - ✅Successfully fetched & added data in both DBs for PDD
+2025-10-18 12:57:35,112 - INFO - ✅Successfully fetched & added data in both DBs for QCOM
+2025-10-18 12:57:38,996 - INFO - ✅Successfully fetched & added data in both DBs for ANET
+2025-10-18 12:57:43,040 - INFO - ✅Successfully fetched & added data in both DBs for SONY
+2025-10-18 12:57:46,983 - INFO - ✅Successfully fetched & added data in both DBs for APP
+2025-10-18 12:57:50,871 - INFO - ✅Successfully fetched & added data in both DBs for ADBE
+2025-10-18 12:57:54,781 - INFO - ✅Successfully fetched & added data in both DBs for ARM
+2025-10-18 12:57:58,571 - INFO - ✅Successfully fetched & added data in both DBs for SPOT
+2025-10-18 12:58:03,049 - INFO - ✅Successfully fetched & added data in both DBs for SU.PA
+2025-10-18 12:58:07,010 - INFO - ✅Successfully fetched & added data in both DBs for 000660.KS
+2025-10-18 12:58:10,858 - INFO - ✅Successfully fetched & added data in both DBs for MU
+2025-10-18 12:58:14,680 - INFO - ✅Successfully fetched & added data in both DBs for LRCX
+2025-10-18 12:58:18,569 - INFO - ✅Successfully fetched & added data in both DBs for AMAT
+2025-10-18 12:58:22,499 - INFO - ✅Successfully fetched & added data in both DBs for ADI
+2025-10-18 12:58:26,332 - INFO - ✅Successfully fetched & added data in both DBs for PANW
+2025-10-18 12:58:30,838 - INFO - ✅Successfully fetched & added data in both DBs for ADP
+2025-10-18 12:58:34,638 - INFO - ✅Successfully fetched & added data in both DBs for MELI
+2025-10-18 12:58:38,588 - INFO - ✅Successfully fetched & added data in both DBs for KLAC
+2025-10-18 12:58:42,604 - INFO - ✅Successfully fetched & added data in both DBs for SNPS
+2025-10-18 12:58:46,606 - INFO - ✅Successfully fetched & added data in both DBs for INTC
+2025-10-18 12:58:50,592 - INFO - ✅Successfully fetched & added data in both DBs for SE
+2025-10-18 12:58:56,289 - INFO - ✅Successfully fetched & added data in both DBs for 7974.T
+2025-10-18 12:59:00,168 - INFO - ✅Successfully fetched & added data in both DBs for CRWD
+2025-10-18 12:59:04,076 - INFO - ✅Successfully fetched & added data in both DBs for DASH
+2025-10-18 12:59:08,492 - INFO - ✅Successfully fetched & added data in both DBs for MSTR
+2025-10-18 12:59:12,422 - INFO - ✅Successfully fetched & added data in both DBs for CDNS
+2025-10-18 12:59:17,985 - INFO - ✅Successfully fetched & added data in both DBs for 6861.T
+2025-10-18 12:59:21,921 - INFO - ✅Successfully fetched & added data in both DBs for 2317.TW
+2025-10-18 12:59:25,660 - INFO - ✅Successfully fetched & added data in both DBs for 688256.SS
+2025-10-18 12:59:29,517 - INFO - ✅Successfully fetched & added data in both DBs for HOOD
+2025-10-18 12:59:33,399 - INFO - ✅Successfully fetched & added data in both DBs for DELL
+2025-10-18 12:59:37,242 - INFO - ✅Successfully fetched & added data in both DBs for NTES
+2025-10-18 12:59:41,188 - INFO - ✅Successfully fetched & added data in both DBs for 3690.HK
+2025-10-18 12:59:45,026 - INFO - ✅Successfully fetched & added data in both DBs for ABNB
+2025-10-18 12:59:48,864 - INFO - ✅Successfully fetched & added data in both DBs for COIN
+2025-10-18 12:59:52,712 - INFO - ✅Successfully fetched & added data in both DBs for 0981.HK
+2025-10-18 12:59:56,530 - INFO - ✅Successfully fetched & added data in both DBs for EQIX
+2025-10-18 13:00:01,220 - INFO - ✅Successfully fetched & added data in both DBs for FI
+2025-10-18 13:00:05,986 - INFO - ✅Successfully fetched & added data in both DBs for 2454.TW
+2025-10-18 13:00:09,816 - INFO - ✅Successfully fetched & added data in both DBs for NET
+2025-10-18 13:00:14,151 - INFO - ✅Successfully fetched & added data in both DBs for CSU.TO
+2025-10-18 13:00:18,165 - INFO - ✅Successfully fetched & added data in both DBs for SNOW
+2025-10-18 13:00:22,015 - INFO - ✅Successfully fetched & added data in both DBs for PYPL
+2025-10-18 13:00:29,405 - INFO - ✅Successfully fetched & added data in both DBs for 8035.T
+2025-10-18 13:00:33,580 - INFO - ✅Successfully fetched & added data in both DBs for MRVL
+2025-10-18 13:00:37,887 - INFO - ✅Successfully fetched & added data in both DBs for TEL
+2025-10-18 13:00:41,771 - INFO - ✅Successfully fetched & added data in both DBs for WDAY
+2025-10-18 13:00:45,640 - INFO - ✅Successfully fetched & added data in both DBs for ADSK
+2025-10-18 13:00:49,470 - INFO - ✅Successfully fetched & added data in both DBs for 2308.TW
+2025-10-18 13:00:53,456 - INFO - ✅Successfully fetched & added data in both DBs for NXPI
+2025-10-18 13:00:57,291 - INFO - ✅Successfully fetched & added data in both DBs for FTNT
+2025-10-18 13:01:01,205 - INFO - ✅Successfully fetched & added data in both DBs for DELTA.BK
+2025-10-18 13:01:07,042 - INFO - ✅Successfully fetched & added data in both DBs for 6857.T
+2025-10-18 13:01:11,047 - INFO - ✅Successfully fetched & added data in both DBs for ROP
+2025-10-18 13:01:14,955 - INFO - ✅Successfully fetched & added data in both DBs for IFX.DE
+2025-10-18 13:01:18,757 - INFO - ✅Successfully fetched & added data in both DBs for ADYEN.AS
+2025-10-18 13:01:22,548 - INFO - ✅Successfully fetched & added data in both DBs for CPNG
+2025-10-18 13:01:26,374 - INFO - ✅Successfully fetched & added data in both DBs for DCII.JK
+2025-10-18 13:01:30,344 - INFO - ✅Successfully fetched & added data in both DBs for XYZ
+2025-10-18 13:01:35,047 - INFO - ✅Successfully fetched & added data in both DBs for VEEV
+2025-10-18 13:01:38,842 - INFO - ✅Successfully fetched & added data in both DBs for CRWV
+2025-10-18 13:01:43,889 - INFO - ✅Successfully fetched & added data in both DBs for DDOG
+2025-10-18 13:01:48,326 - INFO - ✅Successfully fetched & added data in both DBs for GRMN
+2025-10-18 13:01:53,082 - INFO - ✅Successfully fetched & added data in both DBs for JD
+2025-10-18 13:01:57,223 - INFO - ✅Successfully fetched & added data in both DBs for TEAM
+2025-10-18 13:02:01,473 - INFO - ✅Successfully fetched & added data in both DBs for EA
+2025-10-18 13:02:05,356 - INFO - ✅Successfully fetched & added data in both DBs for TCOM
+2025-10-18 13:02:09,324 - INFO - ✅Successfully fetched & added data in both DBs for EBAY
+2025-10-18 13:02:13,242 - INFO - ✅Successfully fetched & added data in both DBs for TTWO
+2025-10-18 13:02:17,115 - INFO - ✅Successfully fetched & added data in both DBs for ZS
+2025-10-18 13:02:21,003 - INFO - ✅Successfully fetched & added data in both DBs for 1024.HK
+2025-10-18 13:02:25,016 - INFO - ✅Successfully fetched & added data in both DBs for DSY.PA
+2025-10-18 13:02:28,956 - INFO - ✅Successfully fetched & added data in both DBs for MPWR
+2025-10-18 13:02:35,274 - INFO - ✅Successfully fetched & added data in both DBs for 6701.T
+2025-10-18 13:02:39,270 - INFO - ✅Successfully fetched & added data in both DBs for 002371.SZ
+2025-10-18 13:02:43,253 - INFO - ✅Successfully fetched & added data in both DBs for RDDT
+2025-10-18 13:02:47,066 - INFO - ✅Successfully fetched & added data in both DBs for CSGP
+2025-10-18 13:02:51,145 - INFO - ✅Successfully fetched & added data in both DBs for AMS.MC
+2025-10-18 13:02:56,212 - INFO - ✅Successfully fetched & added data in both DBs for FIS
+2025-10-18 13:03:00,445 - INFO - ✅Successfully fetched & added data in both DBs for MCHP
+2025-10-18 13:03:04,623 - INFO - ✅Successfully fetched & added data in both DBs for STX
+2025-10-18 13:03:09,245 - INFO - ✅Successfully fetched & added data in both DBs for FICO
+2025-10-18 13:03:13,451 - INFO - ✅Successfully fetched & added data in both DBs for FIG
+2025-10-18 13:03:17,992 - INFO - ✅Successfully fetched & added data in both DBs for 2382.TW
+2025-10-18 13:03:22,129 - INFO - ✅Successfully fetched & added data in both DBs for ETERNAL.NS
+2025-10-18 13:03:25,979 - INFO - ✅Successfully fetched & added data in both DBs for IQV
+2025-10-18 13:03:31,004 - INFO - ✅Successfully fetched & added data in both DBs for CRCL
+2025-10-18 13:03:34,939 - INFO - ✅Successfully fetched & added data in both DBs for BIDU
+2025-10-18 13:03:42,656 - INFO - ✅Successfully fetched & added data in both DBs for 6981.T
+2025-10-18 13:03:48,573 - INFO - ✅Successfully fetched & added data in both DBs for 6146.T
+2025-10-18 13:03:53,079 - INFO - ✅Successfully fetched & added data in both DBs for WKL.AS
+2025-10-18 13:03:56,964 - INFO - ✅Successfully fetched & added data in both DBs for SOFI
+2025-10-18 13:04:00,938 - INFO - ✅Successfully fetched & added data in both DBs for HPE
+2025-10-18 13:04:04,917 - INFO - ✅Successfully fetched & added data in both DBs for ALAB
+2025-10-18 13:04:08,762 - INFO - ✅Successfully fetched & added data in both DBs for KEYS
+2025-10-18 13:04:12,577 - INFO - ✅Successfully fetched & added data in both DBs for SYM
+2025-10-18 13:04:18,947 - INFO - ✅Successfully fetched & added data in both DBs for 7751.T
+2025-10-18 13:04:22,859 - INFO - ✅Successfully fetched & added data in both DBs for SMCI
+2025-10-18 13:04:26,841 - INFO - ✅Successfully fetched & added data in both DBs for ERIC
+2025-10-18 13:04:30,752 - INFO - ✅Successfully fetched & added data in both DBs for EXPE
+2025-10-18 13:04:34,762 - INFO - ✅Successfully fetched & added data in both DBs for DIDIY
+2025-10-18 13:04:38,527 - INFO - ✅Successfully fetched & added data in both DBs for PTC
+2025-10-18 13:04:42,310 - INFO - ✅Successfully fetched & added data in both DBs for TTD
+2025-10-18 13:04:46,147 - INFO - ✅Successfully fetched & added data in both DBs for FUTU
+2025-10-18 13:04:49,947 - INFO - ✅Successfully fetched & added data in both DBs for TOST
+2025-10-18 13:04:53,729 - INFO - ✅Successfully fetched & added data in both DBs for 6618.HK
+2025-10-18 13:04:57,842 - INFO - ✅Successfully fetched & added data in both DBs for HPQ
+2025-10-18 13:05:02,131 - INFO - ✅Successfully fetched & added data in both DBs for HUBS
+2025-10-18 13:05:08,272 - INFO - ✅Successfully fetched & added data in both DBs for 6752.T
+2025-10-18 13:05:12,105 - INFO - ✅Successfully fetched & added data in both DBs for TYL
+2025-10-18 13:05:16,724 - INFO - ✅Successfully fetched & added data in both DBs for STM
+2025-10-18 13:05:20,548 - INFO - ✅Successfully fetched & added data in both DBs for ZM
+2025-10-18 13:05:24,306 - INFO - ✅Successfully fetched & added data in both DBs for MDB
+2025-10-18 13:05:28,123 - INFO - ✅Successfully fetched & added data in both DBs for LDOS
+2025-10-18 13:05:32,762 - INFO - ✅Successfully fetched & added data in both DBs for ASM.AS
+2025-10-18 13:05:37,134 - INFO - ✅Successfully fetched & added data in both DBs for 035420.KS
+2025-10-18 13:05:41,760 - INFO - ✅Successfully fetched & added data in both DBs for NOK
+2025-10-18 13:05:48,090 - INFO - ✅Successfully fetched & added data in both DBs for 7832.T
+2025-10-18 13:05:52,550 - INFO - ✅Successfully fetched & added data in both DBs for CYBR
+2025-10-18 13:05:56,997 - INFO - ✅Successfully fetched & added data in both DBs for NTAP
+2025-10-18 13:06:02,857 - INFO - ✅Successfully fetched & added data in both DBs for 6723.T
+2025-10-18 13:06:07,263 - INFO - ✅Successfully fetched & added data in both DBs for SSNC
+2025-10-18 13:06:11,640 - INFO - ✅Successfully fetched & added data in both DBs for ASX
+2025-10-18 13:06:15,969 - INFO - ✅Successfully fetched & added data in both DBs for WTC.AX
+2025-10-18 13:06:20,349 - INFO - ✅Successfully fetched & added data in both DBs for GPN
+2025-10-18 13:06:24,693 - INFO - ✅Successfully fetched & added data in both DBs for CRDO
+2025-10-18 13:06:30,281 - INFO - ✅Successfully fetched & added data in both DBs for ON
+2025-10-18 13:06:37,035 - INFO - ✅Successfully fetched & added data in both DBs for 9766.T
+2025-10-18 13:06:41,529 - INFO - ✅Successfully fetched & added data in both DBs for GDDY
+2025-10-18 13:06:46,062 - INFO - ✅Successfully fetched & added data in both DBs for CHKP
+2025-10-18 13:06:50,916 - INFO - ✅Successfully fetched & added data in both DBs for PME.AX
+2025-10-18 13:06:55,360 - INFO - ✅Successfully fetched & added data in both DBs for IOT
+2025-10-18 13:06:59,779 - INFO - ✅Successfully fetched & added data in both DBs for Z
+2025-10-18 13:07:04,125 - INFO - ✅Successfully fetched & added data in both DBs for GRAB
+2025-10-18 13:07:08,225 - INFO - ✅Successfully fetched & added data in both DBs for 035720.KS
+2025-10-18 13:07:12,066 - INFO - ✅Successfully fetched & added data in both DBs for PSTG
+2025-10-18 13:07:16,108 - INFO - ✅Successfully fetched & added data in both DBs for 688012.SS
+2025-10-18 13:07:20,202 - INFO - ✅Successfully fetched & added data in both DBs for TRMB
+2025-10-18 13:07:24,227 - INFO - ✅Successfully fetched & added data in both DBs for GEN
+2025-10-18 13:07:28,187 - INFO - ✅Successfully fetched & added data in both DBs for GFS
+2025-10-18 13:07:32,196 - INFO - ✅Successfully fetched & added data in both DBs for NTNX
+2025-10-18 13:07:36,039 - INFO - ✅Successfully fetched & added data in both DBs for FFIV
+2025-10-18 13:07:41,688 - INFO - ✅Successfully fetched & added data in both DBs for 3659.T
+2025-10-18 13:07:45,697 - INFO - ✅Successfully fetched & added data in both DBs for GWRE
+2025-10-18 13:07:49,517 - INFO - ✅Successfully fetched & added data in both DBs for 6669.TW
+2025-10-18 13:07:54,367 - INFO - ✅Successfully fetched & added data in both DBs for 0992.HK
+2025-10-18 13:07:59,786 - INFO - ✅Successfully fetched & added data in both DBs for XRO.AX
+2025-10-18 13:08:03,979 - INFO - ✅Successfully fetched & added data in both DBs for KKS.F
+2025-10-18 13:08:08,496 - INFO - ✅Successfully fetched & added data in both DBs for 002230.SZ
+2025-10-18 13:08:13,283 - INFO - ✅Successfully fetched & added data in both DBs for ASTS
+2025-10-18 13:08:17,392 - INFO - ✅Successfully fetched & added data in both DBs for U
+2025-10-18 13:08:21,321 - INFO - ✅Successfully fetched & added data in both DBs for RBRK
+2025-10-18 13:08:26,115 - INFO - ✅Successfully fetched & added data in both DBs for UMC
+2025-10-18 13:08:30,471 - INFO - ✅Successfully fetched & added data in both DBs for NBIS
+2025-10-18 13:08:34,293 - INFO - ✅Successfully fetched & added data in both DBs for CHWY
+2025-10-18 13:08:38,876 - INFO - ✅Successfully fetched & added data in both DBs for BSY
+2025-10-18 13:08:42,727 - INFO - ✅Successfully fetched & added data in both DBs for ZBRA
+2025-10-18 13:08:46,602 - INFO - ✅Successfully fetched & added data in both DBs for OKTA
+2025-10-18 13:08:50,517 - INFO - ✅Successfully fetched & added data in both DBs for NEM.F
+2025-10-18 13:08:54,517 - INFO - ✅Successfully fetched & added data in both DBs for TWLO
+2025-10-18 13:08:58,410 - INFO - ✅Successfully fetched & added data in both DBs for 2357.TW
+2025-10-18 13:09:02,450 - INFO - ✅Successfully fetched & added data in both DBs for 603986.SS
+2025-10-18 13:09:06,748 - INFO - ✅Successfully fetched & added data in both DBs for LOGI
+2025-10-18 13:09:10,910 - INFO - ✅Successfully fetched & added data in both DBs for DT
+2025-10-18 13:09:14,740 - INFO - ✅Successfully fetched & added data in both DBs for DOCU
+2025-10-18 13:09:19,149 - ERROR - ❌ Error updating FS for FDS: Timestamp('2025-08-31 00:00:00')
+2025-10-18 13:09:22,746 - INFO - ✅Successfully fetched & added data in both DBs for SGE.L
+2025-10-18 13:09:26,521 - INFO - ✅Successfully fetched & added data in both DBs for ROKU
+2025-10-18 13:09:31,042 - INFO - ✅Successfully fetched & added data in both DBs for COHR
+2025-10-18 13:09:34,918 - INFO - ✅Successfully fetched & added data in both DBs for QXO
+2025-10-18 13:09:38,838 - INFO - ✅Successfully fetched & added data in both DBs for 000977.SZ
+2025-10-18 13:09:42,788 - INFO - ✅Successfully fetched & added data in both DBs for 688036.SS
+2025-10-18 13:09:48,943 - INFO - ✅Successfully fetched & added data in both DBs for 4716.T
+2025-10-18 13:09:52,777 - INFO - ✅Successfully fetched & added data in both DBs for MANH
+2025-10-18 13:09:57,969 - INFO - ✅Successfully fetched & added data in both DBs for 4755.T
+2025-10-18 13:10:02,273 - INFO - ✅Successfully fetched & added data in both DBs for PAYC
+2025-10-18 13:10:06,119 - INFO - ✅Successfully fetched & added data in both DBs for DOCS
+2025-10-18 13:10:09,956 - INFO - ✅Successfully fetched & added data in both DBs for TEM
+2025-10-18 13:10:13,835 - INFO - ✅Successfully fetched & added data in both DBs for ENTG
+2025-10-18 13:10:18,177 - INFO - ✅Successfully fetched & added data in both DBs for IONQ
+2025-10-18 13:10:22,208 - INFO - ✅Successfully fetched & added data in both DBs for JKHY
+2025-10-18 13:10:26,062 - INFO - ✅Successfully fetched & added data in both DBs for SNAP
+2025-10-18 13:10:30,504 - INFO - ✅Successfully fetched & added data in both DBs for 601360.SS
+2025-10-18 13:10:34,553 - INFO - ✅Successfully fetched & added data in both DBs for CART
+2025-10-18 13:10:38,412 - INFO - ✅Successfully fetched & added data in both DBs for MBLY
+2025-10-18 13:10:42,289 - INFO - ✅Successfully fetched & added data in both DBs for SAIL
+2025-10-18 13:10:46,172 - INFO - ✅Successfully fetched & added data in both DBs for GTM
+2025-10-18 13:10:50,377 - INFO - ✅Successfully fetched & added data in both DBs for SWKS
+2025-10-18 13:10:54,255 - INFO - ✅Successfully fetched & added data in both DBs for 688521.SS
+2025-10-18 13:10:58,127 - INFO - ✅Successfully fetched & added data in both DBs for AKAM
+2025-10-18 13:11:02,853 - INFO - ✅Successfully fetched & added data in both DBs for 0241.HK
+2025-10-18 13:11:06,846 - INFO - ✅Successfully fetched & added data in both DBs for BESI.AS
+2025-10-18 13:11:10,819 - INFO - ✅Successfully fetched & added data in both DBs for DAY
+2025-10-18 13:11:14,825 - INFO - ✅Successfully fetched & added data in both DBs for ALE.WA
+2025-10-18 13:11:19,134 - INFO - ✅Successfully fetched & added data in both DBs for 600703.SS
+2025-10-18 13:11:23,068 - INFO - ✅Successfully fetched & added data in both DBs for 259960.KS
+2025-10-18 13:11:27,408 - INFO - ✅Successfully fetched & added data in both DBs for 3661.TW
+2025-10-18 13:11:31,458 - INFO - ✅Successfully fetched & added data in both DBs for AUR
+2025-10-18 13:11:35,348 - INFO - ✅Successfully fetched & added data in both DBs for 0020.HK
+2025-10-18 13:11:39,293 - INFO - ✅Successfully fetched & added data in both DBs for ALGN
+2025-10-18 13:11:43,114 - INFO - ✅Successfully fetched & added data in both DBs for PCOR
+2025-10-18 13:11:47,656 - INFO - ✅Successfully fetched & added data in both DBs for TOI.V
+2025-10-18 13:11:55,229 - INFO - ✅Successfully fetched & added data in both DBs for 2413.T
+2025-10-18 13:11:59,201 - INFO - ✅Successfully fetched & added data in both DBs for 2395.TW
+2025-10-18 13:12:03,052 - INFO - ✅Successfully fetched & added data in both DBs for 688396.SS
+2025-10-18 13:12:06,960 - INFO - ✅Successfully fetched & added data in both DBs for PCTY
+2025-10-18 13:12:10,797 - INFO - ✅Successfully fetched & added data in both DBs for HIMS
+2025-10-18 13:12:14,736 - INFO - ✅Successfully fetched & added data in both DBs for CAR.AX
+2025-10-18 13:12:18,650 - INFO - ✅Successfully fetched & added data in both DBs for MMYT
+2025-10-18 13:12:24,165 - INFO - ✅Successfully fetched & added data in both DBs for 6920.T
+2025-10-18 13:12:28,316 - INFO - ✅Successfully fetched & added data in both DBs for 301269.SZ
+2025-10-18 13:12:32,178 - INFO - ✅Successfully fetched & added data in both DBs for 2301.TW
+2025-10-18 13:12:36,045 - INFO - ✅Successfully fetched & added data in both DBs for EPAM
+2025-10-18 13:12:39,871 - INFO - ✅Successfully fetched & added data in both DBs for W
+2025-10-18 13:12:43,628 - INFO - ✅Successfully fetched & added data in both DBs for MTSI
+2025-10-18 13:12:47,490 - INFO - ✅Successfully fetched & added data in both DBs for KVYO
+2025-10-18 13:12:51,367 - INFO - ✅Successfully fetched & added data in both DBs for DOX
+2025-10-18 13:12:55,216 - INFO - ✅Successfully fetched & added data in both DBs for TTAN
+2025-10-18 13:12:59,259 - INFO - ✅Successfully fetched & added data in both DBs for POLICYBZR.NS
+2025-10-18 13:13:03,895 - INFO - ✅Successfully fetched & added data in both DBs for MNDY
+2025-10-18 13:13:07,841 - INFO - ✅Successfully fetched & added data in both DBs for BILI
+2025-10-18 13:13:12,109 - INFO - ✅Successfully fetched & added data in both DBs for 066570.KS
+2025-10-18 13:13:16,224 - INFO - ✅Successfully fetched & added data in both DBs for 2379.TW
+2025-10-18 13:13:20,101 - INFO - ✅Successfully fetched & added data in both DBs for LMN.V
+2025-10-18 13:13:24,110 - INFO - ✅Successfully fetched & added data in both DBs for PEGA
+2025-10-18 13:13:28,040 - INFO - ✅Successfully fetched & added data in both DBs for LSCC
+2025-10-18 13:13:31,940 - INFO - ✅Successfully fetched & added data in both DBs for MTCH
+2025-10-18 13:13:35,829 - INFO - ✅Successfully fetched & added data in both DBs for PAYTM.NS
+2025-10-18 13:13:39,689 - INFO - ✅Successfully fetched & added data in both DBs for LITE
+2025-10-18 13:13:43,529 - INFO - ✅Successfully fetched & added data in both DBs for ESTC
+2025-10-18 13:13:49,172 - INFO - ✅Successfully fetched & added data in both DBs for 3064.T
+2025-10-18 13:13:53,064 - INFO - ✅Successfully fetched & added data in both DBs for 3034.TW
+2025-10-18 13:13:57,010 - INFO - ✅Successfully fetched & added data in both DBs for NICE
+2025-10-18 13:14:00,910 - INFO - ✅Successfully fetched & added data in both DBs for DSGX
+2025-10-18 13:14:04,720 - INFO - ✅Successfully fetched & added data in both DBs for QRVO
+2025-10-18 13:14:08,613 - INFO - ✅Successfully fetched & added data in both DBs for OTEX
+2025-10-18 13:14:13,975 - INFO - ✅Successfully fetched & added data in both DBs for 3092.T
+2025-10-18 13:14:18,112 - INFO - ✅Successfully fetched & added data in both DBs for TNE.AX
+2025-10-18 13:14:22,131 - INFO - ✅Successfully fetched & added data in both DBs for VIPS
+2025-10-18 13:14:26,091 - INFO - ✅Successfully fetched & added data in both DBs for CVLT
+2025-10-18 13:14:30,110 - INFO - ✅Successfully fetched & added data in both DBs for 688126.SS
+2025-10-18 13:14:33,927 - INFO - ✅Successfully fetched & added data in both DBs for DHER.F
+2025-10-18 13:14:37,745 - INFO - ✅Successfully fetched & added data in both DBs for VENDA.OL
+2025-10-18 13:14:41,725 - INFO - ✅Successfully fetched & added data in both DBs for 600588.SS
+2025-10-18 13:14:45,675 - INFO - ✅Successfully fetched & added data in both DBs for G
+2025-10-18 13:14:49,559 - INFO - ✅Successfully fetched & added data in both DBs for GTLB
+2025-10-18 13:14:53,459 - INFO - ✅Successfully fetched & added data in both DBs for DBX
+2025-10-18 13:14:57,365 - INFO - ✅Successfully fetched & added data in both DBs for ENT.L
+2025-10-18 13:15:02,257 - INFO - ✅Successfully fetched & added data in both DBs for NVMI
+2025-10-18 13:15:06,393 - INFO - ✅Successfully fetched & added data in both DBs for 600460.SS
+2025-10-18 13:15:10,510 - INFO - ✅Successfully fetched & added data in both DBs for WIX
+2025-10-18 13:15:14,390 - INFO - ✅Successfully fetched & added data in both DBs for NYKAA.NS
+2025-10-18 13:15:18,299 - INFO - ✅Successfully fetched & added data in both DBs for INFA
+2025-10-18 13:15:22,653 - INFO - ✅Successfully fetched & added data in both DBs for 3037.TW
+2025-10-18 13:15:26,555 - INFO - ✅Successfully fetched & added data in both DBs for 300454.SZ
+2025-10-18 13:15:30,607 - INFO - ✅Successfully fetched & added data in both DBs for ZAL.DE
+2025-10-18 13:15:36,054 - INFO - ✅Successfully fetched & added data in both DBs for 7735.T
+2025-10-18 13:15:39,956 - INFO - ✅Successfully fetched & added data in both DBs for 688608.SS
+2025-10-18 13:15:43,917 - INFO - ✅Successfully fetched & added data in both DBs for CDR.WA
+2025-10-18 13:15:47,983 - INFO - ✅Successfully fetched & added data in both DBs for LIF
+2025-10-18 13:15:52,811 - INFO - ✅Successfully fetched & added data in both DBs for 4704.T
+2025-10-18 13:15:56,878 - INFO - ✅Successfully fetched & added data in both DBs for BULL
+2025-10-18 13:16:00,919 - INFO - ✅Successfully fetched & added data in both DBs for IDCC
+2025-10-18 13:16:05,005 - INFO - ✅Successfully fetched & added data in both DBs for SECT-B.ST
+2025-10-18 13:16:08,944 - INFO - ✅Successfully fetched & added data in both DBs for 300661.SZ
+2025-10-18 13:16:13,309 - INFO - ✅Successfully fetched & added data in both DBs for TSEM
+2025-10-18 13:16:17,158 - INFO - ✅Successfully fetched & added data in both DBs for UPST
+2025-10-18 13:16:21,103 - INFO - ✅Successfully fetched & added data in both DBs for LYFT
+2025-10-18 13:16:24,993 - INFO - ✅Successfully fetched & added data in both DBs for CWAN
+2025-10-18 13:16:28,806 - INFO - ✅Successfully fetched & added data in both DBs for VRNS
+2025-10-18 13:16:32,753 - INFO - ✅Successfully fetched & added data in both DBs for CFLT
+2025-10-18 13:16:36,672 - INFO - ✅Successfully fetched & added data in both DBs for WAY
+2025-10-18 13:16:40,575 - INFO - ✅Successfully fetched & added data in both DBs for 688728.SS
+2025-10-18 13:16:44,522 - INFO - ✅Successfully fetched & added data in both DBs for 688120.SS
+2025-10-18 13:16:48,935 - INFO - ✅Successfully fetched & added data in both DBs for CCCS
+2025-10-18 13:16:52,771 - INFO - ✅Successfully fetched & added data in both DBs for 688213.SS
+2025-10-18 13:16:56,702 - INFO - ✅Successfully fetched & added data in both DBs for TEMN.SW
+2025-10-18 13:17:01,093 - INFO - ✅Successfully fetched & added data in both DBs for IOS.DE
+2025-10-18 13:17:04,943 - INFO - ✅Successfully fetched & added data in both DBs for SANM
+2025-10-18 13:17:09,142 - INFO - ✅Successfully fetched & added data in both DBs for SITM
+2025-10-18 13:17:13,563 - INFO - ✅Successfully fetched & added data in both DBs for 3888.HK
+2025-10-18 13:17:20,728 - INFO - ✅Successfully fetched & added data in both DBs for 4751.T
+2025-10-18 13:17:24,604 - INFO - ✅Successfully fetched & added data in both DBs for AMKR
+2025-10-18 13:17:28,717 - INFO - ✅Successfully fetched & added data in both DBs for 042700.KS
+2025-10-18 13:17:32,600 - INFO - ✅Successfully fetched & added data in both DBs for CRUS
+2025-10-18 13:17:36,523 - INFO - ✅Successfully fetched & added data in both DBs for PATH
+2025-10-18 13:17:40,534 - INFO - ✅Successfully fetched & added data in both DBs for 3443.TW
+2025-10-18 13:17:44,439 - INFO - ✅Successfully fetched & added data in both DBs for MARA
+2025-10-18 13:17:48,405 - INFO - ✅Successfully fetched & added data in both DBs for NXT.AX
+2025-10-18 13:17:52,315 - INFO - ✅Successfully fetched & added data in both DBs for 6488.TWO
+2025-10-18 13:17:56,276 - INFO - ✅Successfully fetched & added data in both DBs for 377300.KS
+2025-10-18 13:18:00,718 - INFO - ✅Successfully fetched & added data in both DBs for ALGM
+2025-10-18 13:18:06,977 - INFO - ✅Successfully fetched & added data in both DBs for 6963.T
+2025-10-18 13:18:09,735 - ERROR - HTTP Error 404: 
+2025-10-18 13:18:11,684 - ERROR - $FNOX.ST: possibly delisted; no price data found  (period=1y) (Yahoo error = "No data found, symbol may be delisted")
+2025-10-18 13:18:12,665 - ERROR - $FNOX.ST: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2025-10-18 13:18:12,833 - ERROR - ❌Error reading companies.json:'currentTradingPeriod'
+2025-10-18 13:18:12,843 - INFO - ✅ Update completed successfully.
+2025-10-18 13:38:26,677 - INFO - ⏭️ Update already ran today — skipping.
+2025-10-18 13:39:02,959 - INFO - ⏭️ Update already ran today — skipping.
+2025-10-18 13:39:03,850 - INFO - ✅Total articles fetched: 19
+
+2025-10-18 13:39:03,859 - INFO - ✅FILE : updates.py : Daily news saved successfully
+2025-10-18 13:39:28,057 - INFO - ✅Successfully fetched & added data in both DBs for NVDA
+2025-10-18 13:39:32,107 - INFO - ✅Successfully fetched & added data in both DBs for MSFT
+2025-10-18 13:39:36,157 - INFO - ✅Successfully fetched & added data in both DBs for AAPL
+2025-10-18 13:39:40,249 - INFO - ✅Successfully fetched & added data in both DBs for GOOG
+2025-10-18 13:39:44,757 - INFO - ✅Successfully fetched & added data in both DBs for AMZN
+2025-10-18 13:39:48,816 - INFO - ✅Successfully fetched & added data in both DBs for META
+2025-10-18 13:39:52,948 - INFO - ✅Successfully fetched & added data in both DBs for AVGO
+2025-10-18 13:39:57,018 - INFO - ✅Successfully fetched & added data in both DBs for TSM
+2025-10-18 13:40:01,151 - INFO - ✅Successfully fetched & added data in both DBs for TSLA
+2025-10-18 13:40:05,199 - INFO - ✅Successfully fetched & added data in both DBs for TCEHY
+2025-10-18 13:40:09,280 - INFO - ✅Successfully fetched & added data in both DBs for ORCL
+2025-10-18 13:40:13,204 - INFO - ✅Successfully fetched & added data in both DBs for NFLX
+2025-10-18 13:40:17,091 - INFO - ✅Successfully fetched & added data in both DBs for PLTR
+2025-10-18 13:40:20,996 - INFO - ✅Successfully fetched & added data in both DBs for 005930.KS
+2025-10-18 13:40:25,117 - INFO - ✅Successfully fetched & added data in both DBs for SAP
+2025-10-18 13:40:29,124 - INFO - ✅Successfully fetched & added data in both DBs for ASML
+2025-10-18 13:40:33,960 - INFO - ✅Successfully fetched & added data in both DBs for BABA
+2025-10-18 13:40:37,997 - INFO - ✅Successfully fetched & added data in both DBs for AMD
+2025-10-18 13:40:42,038 - INFO - ✅Successfully fetched & added data in both DBs for CSCO
+2025-10-18 13:40:46,045 - INFO - ✅Successfully fetched & added data in both DBs for CRM
+2025-10-18 13:40:50,120 - INFO - ✅Successfully fetched & added data in both DBs for IBM
+2025-10-18 13:40:53,964 - INFO - ✅Successfully fetched & added data in both DBs for UBER
+2025-10-18 13:40:58,037 - INFO - ✅Successfully fetched & added data in both DBs for TXN
+2025-10-18 13:41:02,797 - INFO - ✅Successfully fetched & added data in both DBs for INTU
+2025-10-18 13:41:06,935 - INFO - ✅Successfully fetched & added data in both DBs for NOW
+2025-10-18 13:41:10,911 - INFO - ✅Successfully fetched & added data in both DBs for BKNG
+2025-10-18 13:41:14,967 - INFO - ✅Successfully fetched & added data in both DBs for SHOP
+2025-10-18 13:41:19,017 - INFO - ✅Successfully fetched & added data in both DBs for XIACF
+2025-10-18 13:41:23,105 - INFO - ✅Successfully fetched & added data in both DBs for PDD
+2025-10-18 13:41:27,644 - INFO - ✅Successfully fetched & added data in both DBs for QCOM
+2025-10-18 13:41:32,376 - INFO - ✅Successfully fetched & added data in both DBs for ANET
+2025-10-18 13:41:36,767 - INFO - ✅Successfully fetched & added data in both DBs for SONY
+2025-10-18 13:41:40,881 - INFO - ✅Successfully fetched & added data in both DBs for APP
+2025-10-18 13:41:45,007 - INFO - ✅Successfully fetched & added data in both DBs for ADBE
+2025-10-18 13:41:49,246 - INFO - ✅Successfully fetched & added data in both DBs for ARM
+2025-10-18 13:41:53,252 - INFO - ✅Successfully fetched & added data in both DBs for SPOT
+2025-10-18 13:41:57,537 - INFO - ✅Successfully fetched & added data in both DBs for SU.PA
+2025-10-18 13:42:01,854 - INFO - ✅Successfully fetched & added data in both DBs for 000660.KS
+2025-10-18 13:42:06,308 - INFO - ✅Successfully fetched & added data in both DBs for MU
+2025-10-18 13:42:10,456 - INFO - ✅Successfully fetched & added data in both DBs for LRCX
+2025-10-18 13:42:14,672 - INFO - ✅Successfully fetched & added data in both DBs for AMAT
+2025-10-18 13:42:18,784 - INFO - ✅Successfully fetched & added data in both DBs for ADI
+2025-10-18 13:42:22,798 - INFO - ✅Successfully fetched & added data in both DBs for PANW
+2025-10-18 13:42:26,819 - INFO - ✅Successfully fetched & added data in both DBs for ADP
+2025-10-18 13:42:31,567 - INFO - ✅Successfully fetched & added data in both DBs for MELI
+2025-10-18 13:42:35,824 - INFO - ✅Successfully fetched & added data in both DBs for KLAC
+2025-10-18 13:42:39,825 - INFO - ✅Successfully fetched & added data in both DBs for SNPS
+2025-10-18 13:42:44,039 - INFO - ✅Successfully fetched & added data in both DBs for INTC
+2025-10-18 13:42:48,199 - INFO - ✅Successfully fetched & added data in both DBs for SE
+2025-10-18 13:42:53,953 - INFO - ✅Successfully fetched & added data in both DBs for 7974.T
+2025-10-18 13:42:58,096 - INFO - ✅Successfully fetched & added data in both DBs for CRWD
+2025-10-18 13:43:02,621 - INFO - ✅Successfully fetched & added data in both DBs for DASH
+2025-10-18 13:43:06,688 - INFO - ✅Successfully fetched & added data in both DBs for MSTR
+2025-10-18 13:43:11,291 - INFO - ✅Successfully fetched & added data in both DBs for CDNS
+2025-10-18 13:43:16,527 - INFO - ✅Successfully fetched & added data in both DBs for 6861.T
+2025-10-18 13:43:20,364 - INFO - ✅Successfully fetched & added data in both DBs for 2317.TW
+2025-10-18 13:43:24,473 - INFO - ✅Successfully fetched & added data in both DBs for 688256.SS
+2025-10-18 13:43:28,494 - INFO - ✅Successfully fetched & added data in both DBs for HOOD
+2025-10-18 13:43:32,655 - INFO - ✅Successfully fetched & added data in both DBs for DELL
+2025-10-18 13:43:36,880 - INFO - ✅Successfully fetched & added data in both DBs for NTES
+2025-10-18 13:43:40,716 - INFO - ✅Successfully fetched & added data in both DBs for 3690.HK
+2025-10-18 13:43:44,744 - INFO - ✅Successfully fetched & added data in both DBs for ABNB
+2025-10-18 13:43:48,614 - INFO - ✅Successfully fetched & added data in both DBs for COIN
+2025-10-18 13:43:52,529 - INFO - ✅Successfully fetched & added data in both DBs for 0981.HK
+2025-10-18 13:43:56,741 - INFO - ✅Successfully fetched & added data in both DBs for EQIX
+2025-10-18 13:44:02,224 - INFO - ✅Successfully fetched & added data in both DBs for FI
+2025-10-18 13:44:06,332 - INFO - ✅Successfully fetched & added data in both DBs for 2454.TW
+2025-10-18 13:44:10,479 - INFO - ✅Successfully fetched & added data in both DBs for NET
+2025-10-18 13:44:14,644 - INFO - ✅Successfully fetched & added data in both DBs for CSU.TO
+2025-10-18 13:44:18,669 - INFO - ✅Successfully fetched & added data in both DBs for SNOW
+2025-10-18 13:44:24,266 - INFO - ✅Successfully fetched & added data in both DBs for PYPL
+2025-10-18 13:44:30,502 - INFO - ✅Successfully fetched & added data in both DBs for 8035.T
+2025-10-18 13:44:34,793 - INFO - ✅Successfully fetched & added data in both DBs for MRVL
+2025-10-18 13:44:38,828 - INFO - ✅Successfully fetched & added data in both DBs for TEL
+2025-10-18 13:44:42,861 - INFO - ✅Successfully fetched & added data in both DBs for WDAY
+2025-10-18 13:44:46,798 - INFO - ✅Successfully fetched & added data in both DBs for ADSK
+2025-10-18 13:44:50,716 - INFO - ✅Successfully fetched & added data in both DBs for 2308.TW
+2025-10-18 13:44:54,604 - INFO - ✅Successfully fetched & added data in both DBs for NXPI
+2025-10-18 13:44:58,834 - INFO - ✅Successfully fetched & added data in both DBs for FTNT
+2025-10-18 13:45:02,971 - INFO - ✅Successfully fetched & added data in both DBs for DELTA.BK
+2025-10-18 13:45:08,408 - INFO - ✅Successfully fetched & added data in both DBs for 6857.T
+2025-10-18 13:45:12,517 - INFO - ✅Successfully fetched & added data in both DBs for ROP
+2025-10-18 13:45:16,479 - INFO - ✅Successfully fetched & added data in both DBs for IFX.DE
+2025-10-18 13:45:20,525 - INFO - ✅Successfully fetched & added data in both DBs for ADYEN.AS
+2025-10-18 13:45:24,498 - INFO - ✅Successfully fetched & added data in both DBs for CPNG
+2025-10-18 13:45:27,971 - INFO - ✅Successfully fetched & added data in both DBs for DCII.JK
+2025-10-18 13:45:32,019 - INFO - ✅Successfully fetched & added data in both DBs for XYZ
+2025-10-18 13:45:36,085 - INFO - ✅Successfully fetched & added data in both DBs for VEEV
+2025-10-18 13:45:39,967 - INFO - ✅Successfully fetched & added data in both DBs for CRWV
+2025-10-18 13:45:43,959 - INFO - ✅Successfully fetched & added data in both DBs for DDOG
+2025-10-18 13:45:48,060 - INFO - ✅Successfully fetched & added data in both DBs for GRMN
+2025-10-18 13:45:51,988 - INFO - ✅Successfully fetched & added data in both DBs for JD
+2025-10-18 13:45:56,043 - INFO - ✅Successfully fetched & added data in both DBs for TEAM
+2025-10-18 13:46:00,131 - INFO - ✅Successfully fetched & added data in both DBs for EA
+2025-10-18 13:46:04,799 - INFO - ✅Successfully fetched & added data in both DBs for TCOM
+2025-10-18 13:46:08,879 - INFO - ✅Successfully fetched & added data in both DBs for EBAY
+2025-10-18 13:46:12,980 - INFO - ✅Successfully fetched & added data in both DBs for TTWO
+2025-10-18 13:46:16,950 - INFO - ✅Successfully fetched & added data in both DBs for ZS
+2025-10-18 13:46:21,009 - INFO - ✅Successfully fetched & added data in both DBs for 1024.HK
+2025-10-18 13:46:25,096 - INFO - ✅Successfully fetched & added data in both DBs for DSY.PA
+2025-10-18 13:46:29,211 - INFO - ✅Successfully fetched & added data in both DBs for MPWR
+2025-10-18 13:46:35,309 - INFO - ✅Successfully fetched & added data in both DBs for 6701.T
+2025-10-18 13:46:39,465 - INFO - ✅Successfully fetched & added data in both DBs for 002371.SZ
+2025-10-18 13:46:43,575 - INFO - ✅Successfully fetched & added data in both DBs for RDDT
+2025-10-18 13:46:48,076 - INFO - ✅Successfully fetched & added data in both DBs for CSGP
+2025-10-18 13:46:52,396 - INFO - ✅Successfully fetched & added data in both DBs for AMS.MC
+2025-10-18 13:46:56,444 - INFO - ✅Successfully fetched & added data in both DBs for FIS
+2025-10-18 13:47:00,453 - INFO - ✅Successfully fetched & added data in both DBs for MCHP
+2025-10-18 13:47:04,489 - INFO - ✅Successfully fetched & added data in both DBs for STX
+2025-10-18 13:47:08,386 - INFO - ✅Successfully fetched & added data in both DBs for FICO
+2025-10-18 13:47:12,393 - INFO - ✅Successfully fetched & added data in both DBs for FIG
+2025-10-18 13:47:16,210 - INFO - ✅Successfully fetched & added data in both DBs for 2382.TW
+2025-10-18 13:47:20,209 - INFO - ✅Successfully fetched & added data in both DBs for ETERNAL.NS
+2025-10-18 13:47:24,166 - INFO - ✅Successfully fetched & added data in both DBs for IQV
+2025-10-18 13:47:28,195 - INFO - ✅Successfully fetched & added data in both DBs for CRCL
+2025-10-18 13:47:32,418 - INFO - ✅Successfully fetched & added data in both DBs for BIDU
+2025-10-18 13:47:38,473 - INFO - ✅Successfully fetched & added data in both DBs for 6981.T
+2025-10-18 13:47:43,553 - INFO - ✅Successfully fetched & added data in both DBs for 6146.T
+2025-10-18 13:47:47,395 - INFO - ✅Successfully fetched & added data in both DBs for WKL.AS
+2025-10-18 13:47:50,927 - INFO - ✅Successfully fetched & added data in both DBs for SOFI
+2025-10-18 13:47:54,417 - INFO - ✅Successfully fetched & added data in both DBs for HPE
+2025-10-18 13:47:57,950 - INFO - ✅Successfully fetched & added data in both DBs for ALAB
+2025-10-18 13:48:01,673 - INFO - ✅Successfully fetched & added data in both DBs for KEYS
+2025-10-18 13:48:05,250 - INFO - ✅Successfully fetched & added data in both DBs for SYM
+2025-10-18 13:48:10,142 - INFO - ✅Successfully fetched & added data in both DBs for 7751.T
+2025-10-18 13:48:13,633 - INFO - ✅Successfully fetched & added data in both DBs for SMCI
+2025-10-18 13:48:17,270 - INFO - ✅Successfully fetched & added data in both DBs for ERIC
+2025-10-18 13:48:20,953 - INFO - ✅Successfully fetched & added data in both DBs for EXPE
+2025-10-18 13:48:25,057 - INFO - ✅Successfully fetched & added data in both DBs for DIDIY
+2025-10-18 13:48:28,541 - INFO - ✅Successfully fetched & added data in both DBs for PTC
+2025-10-18 13:48:32,157 - INFO - ✅Successfully fetched & added data in both DBs for TTD
+2025-10-18 13:48:35,868 - INFO - ✅Successfully fetched & added data in both DBs for FUTU
+2025-10-18 13:48:39,317 - INFO - ✅Successfully fetched & added data in both DBs for TOST
+2025-10-18 13:48:42,790 - INFO - ✅Successfully fetched & added data in both DBs for 6618.HK
+2025-10-18 13:48:46,809 - INFO - ✅Successfully fetched & added data in both DBs for HPQ
+2025-10-18 13:48:50,336 - INFO - ✅Successfully fetched & added data in both DBs for HUBS
+2025-10-18 13:48:55,199 - INFO - ✅Successfully fetched & added data in both DBs for 6752.T
+2025-10-18 13:48:58,656 - INFO - ✅Successfully fetched & added data in both DBs for TYL
+2025-10-18 13:49:02,451 - INFO - ✅Successfully fetched & added data in both DBs for STM
+2025-10-18 13:49:05,965 - INFO - ✅Successfully fetched & added data in both DBs for ZM
+2025-10-18 13:49:09,527 - INFO - ✅Successfully fetched & added data in both DBs for MDB
+2025-10-18 13:49:13,077 - INFO - ✅Successfully fetched & added data in both DBs for LDOS
+2025-10-18 13:49:16,654 - INFO - ✅Successfully fetched & added data in both DBs for ASM.AS
+2025-10-18 13:49:20,077 - INFO - ✅Successfully fetched & added data in both DBs for 035420.KS
+2025-10-18 13:49:23,564 - INFO - ✅Successfully fetched & added data in both DBs for NOK
+2025-10-18 13:49:28,721 - INFO - ✅Successfully fetched & added data in both DBs for 7832.T
+2025-10-18 13:49:32,234 - INFO - ✅Successfully fetched & added data in both DBs for CYBR
+2025-10-18 13:49:35,777 - INFO - ✅Successfully fetched & added data in both DBs for NTAP
+2025-10-18 13:49:40,959 - INFO - ✅Successfully fetched & added data in both DBs for 6723.T
+2025-10-18 13:49:44,640 - INFO - ✅Successfully fetched & added data in both DBs for SSNC
+2025-10-18 13:49:48,244 - INFO - ✅Successfully fetched & added data in both DBs for ASX
+2025-10-18 13:49:51,827 - INFO - ✅Successfully fetched & added data in both DBs for WTC.AX
+2025-10-18 13:49:55,963 - INFO - ✅Successfully fetched & added data in both DBs for GPN
+2025-10-18 13:49:59,643 - INFO - ✅Successfully fetched & added data in both DBs for CRDO
+2025-10-18 13:50:03,768 - INFO - ✅Successfully fetched & added data in both DBs for ON
+2025-10-18 13:50:09,531 - INFO - ✅Successfully fetched & added data in both DBs for 9766.T
+2025-10-18 13:50:13,397 - INFO - ✅Successfully fetched & added data in both DBs for GDDY
+2025-10-18 13:50:17,264 - INFO - ✅Successfully fetched & added data in both DBs for CHKP
+2025-10-18 13:50:20,889 - INFO - ✅Successfully fetched & added data in both DBs for PME.AX
+2025-10-18 13:50:25,062 - INFO - ✅Successfully fetched & added data in both DBs for IOT
+2025-10-18 13:50:28,579 - INFO - ✅Successfully fetched & added data in both DBs for Z
+2025-10-18 13:50:32,150 - INFO - ✅Successfully fetched & added data in both DBs for GRAB
+2025-10-18 13:50:35,656 - INFO - ✅Successfully fetched & added data in both DBs for 035720.KS
+2025-10-18 13:50:39,235 - INFO - ✅Successfully fetched & added data in both DBs for PSTG
+2025-10-18 13:50:42,853 - INFO - ✅Successfully fetched & added data in both DBs for 688012.SS
+2025-10-18 13:50:46,334 - INFO - ✅Successfully fetched & added data in both DBs for TRMB
+2025-10-18 13:50:51,171 - INFO - ✅Successfully fetched & added data in both DBs for GEN
+2025-10-18 13:50:55,045 - INFO - ✅Successfully fetched & added data in both DBs for GFS
+2025-10-18 13:50:58,559 - INFO - ✅Successfully fetched & added data in both DBs for NTNX
+2025-10-18 13:51:02,063 - INFO - ✅Successfully fetched & added data in both DBs for FFIV
+2025-10-18 13:51:08,198 - INFO - ✅Successfully fetched & added data in both DBs for 3659.T
+2025-10-18 13:51:11,847 - INFO - ✅Successfully fetched & added data in both DBs for GWRE
+2025-10-18 13:51:15,331 - INFO - ✅Successfully fetched & added data in both DBs for 6669.TW
+2025-10-18 13:51:18,898 - INFO - ✅Successfully fetched & added data in both DBs for 0992.HK
+2025-10-18 13:51:22,585 - INFO - ✅Successfully fetched & added data in both DBs for XRO.AX
+2025-10-18 13:51:26,110 - INFO - ✅Successfully fetched & added data in both DBs for KKS.F
+2025-10-18 13:51:29,592 - INFO - ✅Successfully fetched & added data in both DBs for 002230.SZ
+2025-10-18 13:51:33,071 - INFO - ✅Successfully fetched & added data in both DBs for ASTS
+2025-10-18 13:51:37,109 - INFO - ✅Successfully fetched & added data in both DBs for U
+2025-10-18 13:51:40,554 - INFO - ✅Successfully fetched & added data in both DBs for RBRK
+2025-10-18 13:51:44,445 - INFO - ✅Successfully fetched & added data in both DBs for UMC
+2025-10-18 13:51:47,972 - INFO - ✅Successfully fetched & added data in both DBs for NBIS
+2025-10-18 13:51:51,529 - INFO - ✅Successfully fetched & added data in both DBs for CHWY
+2025-10-18 13:51:55,065 - INFO - ✅Successfully fetched & added data in both DBs for BSY
+2025-10-18 13:51:58,549 - INFO - ✅Successfully fetched & added data in both DBs for ZBRA
+2025-10-18 13:52:02,087 - INFO - ✅Successfully fetched & added data in both DBs for OKTA
+2025-10-18 13:52:05,692 - INFO - ✅Successfully fetched & added data in both DBs for NEM.F
+2025-10-18 13:52:09,183 - INFO - ✅Successfully fetched & added data in both DBs for TWLO
+2025-10-18 13:52:12,660 - INFO - ✅Successfully fetched & added data in both DBs for 2357.TW
+2025-10-18 13:52:16,216 - INFO - ✅Successfully fetched & added data in both DBs for 603986.SS
+2025-10-18 13:52:19,818 - INFO - ✅Successfully fetched & added data in both DBs for LOGI
+2025-10-18 13:52:23,352 - INFO - ✅Successfully fetched & added data in both DBs for DT
+2025-10-18 13:52:26,997 - INFO - ✅Successfully fetched & added data in both DBs for DOCU
+2025-10-18 13:52:30,558 - ERROR - ❌ Error updating FS for FDS: Timestamp('2025-08-31 00:00:00')
+2025-10-18 13:52:33,639 - INFO - ✅Successfully fetched & added data in both DBs for SGE.L
+2025-10-18 13:52:37,235 - INFO - ✅Successfully fetched & added data in both DBs for ROKU
+2025-10-18 13:52:40,763 - INFO - ✅Successfully fetched & added data in both DBs for COHR
+2025-10-18 13:52:44,883 - INFO - ✅Successfully fetched & added data in both DBs for QXO
+2025-10-18 13:52:48,461 - INFO - ✅Successfully fetched & added data in both DBs for 000977.SZ
+2025-10-18 13:52:51,974 - INFO - ✅Successfully fetched & added data in both DBs for 688036.SS
+2025-10-18 13:52:57,350 - INFO - ✅Successfully fetched & added data in both DBs for 4716.T
+2025-10-18 13:53:00,906 - INFO - ✅Successfully fetched & added data in both DBs for MANH
+2025-10-18 13:53:05,806 - INFO - ✅Successfully fetched & added data in both DBs for 4755.T
+2025-10-18 13:53:09,294 - INFO - ✅Successfully fetched & added data in both DBs for PAYC
+2025-10-18 13:53:12,793 - INFO - ✅Successfully fetched & added data in both DBs for DOCS
+2025-10-18 13:53:16,260 - INFO - ✅Successfully fetched & added data in both DBs for TEM
+2025-10-18 13:53:19,863 - INFO - ✅Successfully fetched & added data in both DBs for ENTG
+2025-10-18 13:53:23,475 - INFO - ✅Successfully fetched & added data in both DBs for IONQ
+2025-10-18 13:53:26,988 - INFO - ✅Successfully fetched & added data in both DBs for JKHY
+2025-10-18 13:53:31,098 - INFO - ✅Successfully fetched & added data in both DBs for SNAP
+2025-10-18 13:53:34,642 - INFO - ✅Successfully fetched & added data in both DBs for 601360.SS
+2025-10-18 13:53:38,644 - INFO - ✅Successfully fetched & added data in both DBs for CART
+2025-10-18 13:53:42,220 - INFO - ✅Successfully fetched & added data in both DBs for MBLY
+2025-10-18 13:53:45,549 - INFO - ✅Successfully fetched & added data in both DBs for SAIL
+2025-10-18 13:53:49,033 - INFO - ✅Successfully fetched & added data in both DBs for GTM
+2025-10-18 13:53:52,654 - INFO - ✅Successfully fetched & added data in both DBs for SWKS
+2025-10-18 13:53:56,228 - INFO - ✅Successfully fetched & added data in both DBs for 688521.SS
+2025-10-18 13:53:59,727 - INFO - ✅Successfully fetched & added data in both DBs for AKAM
+2025-10-18 13:54:03,372 - INFO - ✅Successfully fetched & added data in both DBs for 0241.HK
+2025-10-18 13:54:06,882 - INFO - ✅Successfully fetched & added data in both DBs for BESI.AS
+2025-10-18 13:54:10,451 - INFO - ✅Successfully fetched & added data in both DBs for DAY
+2025-10-18 13:54:13,971 - INFO - ✅Successfully fetched & added data in both DBs for ALE.WA
+2025-10-18 13:54:19,039 - INFO - ✅Successfully fetched & added data in both DBs for 600703.SS
+2025-10-18 13:54:22,730 - INFO - ✅Successfully fetched & added data in both DBs for 259960.KS
+2025-10-18 13:54:26,078 - INFO - ✅Successfully fetched & added data in both DBs for 3661.TW
+2025-10-18 13:54:29,545 - INFO - ✅Successfully fetched & added data in both DBs for AUR
+2025-10-18 13:54:33,069 - INFO - ✅Successfully fetched & added data in both DBs for 0020.HK
+2025-10-18 13:54:36,589 - INFO - ✅Successfully fetched & added data in both DBs for ALGN
+2025-10-18 13:54:40,100 - INFO - ✅Successfully fetched & added data in both DBs for PCOR
+2025-10-18 13:54:43,611 - INFO - ✅Successfully fetched & added data in both DBs for TOI.V
+2025-10-18 13:54:49,256 - INFO - ✅Successfully fetched & added data in both DBs for 2413.T
+2025-10-18 13:54:52,724 - INFO - ✅Successfully fetched & added data in both DBs for 2395.TW
+2025-10-18 13:54:56,276 - INFO - ✅Successfully fetched & added data in both DBs for 688396.SS
+2025-10-18 13:54:59,834 - INFO - ✅Successfully fetched & added data in both DBs for PCTY
+2025-10-18 13:55:03,237 - INFO - ✅Successfully fetched & added data in both DBs for HIMS
+2025-10-18 13:55:07,594 - INFO - ✅Successfully fetched & added data in both DBs for CAR.AX
+2025-10-18 13:55:11,158 - INFO - ✅Successfully fetched & added data in both DBs for MMYT
+2025-10-18 13:55:16,702 - INFO - ✅Successfully fetched & added data in both DBs for 6920.T
+2025-10-18 13:55:20,673 - INFO - ✅Successfully fetched & added data in both DBs for 301269.SZ
+2025-10-18 13:55:24,424 - INFO - ✅Successfully fetched & added data in both DBs for 2301.TW
+2025-10-18 13:55:27,899 - INFO - ✅Successfully fetched & added data in both DBs for EPAM
+2025-10-18 13:55:31,432 - INFO - ✅Successfully fetched & added data in both DBs for W
+2025-10-18 13:55:34,969 - INFO - ✅Successfully fetched & added data in both DBs for MTSI
+2025-10-18 13:55:38,545 - INFO - ✅Successfully fetched & added data in both DBs for KVYO
+2025-10-18 13:55:42,110 - INFO - ✅Successfully fetched & added data in both DBs for DOX
+2025-10-18 13:55:46,393 - INFO - ✅Successfully fetched & added data in both DBs for TTAN
+2025-10-18 13:55:50,271 - INFO - ✅Successfully fetched & added data in both DBs for POLICYBZR.NS
+2025-10-18 13:55:54,003 - INFO - ✅Successfully fetched & added data in both DBs for MNDY
+2025-10-18 13:55:57,780 - INFO - ✅Successfully fetched & added data in both DBs for BILI
+2025-10-18 13:56:01,539 - INFO - ✅Successfully fetched & added data in both DBs for 066570.KS
+2025-10-18 13:56:05,297 - INFO - ✅Successfully fetched & added data in both DBs for 2379.TW
+2025-10-18 13:56:08,939 - INFO - ✅Successfully fetched & added data in both DBs for LMN.V
+2025-10-18 13:56:12,504 - INFO - ✅Successfully fetched & added data in both DBs for PEGA
+2025-10-18 13:56:16,046 - INFO - ✅Successfully fetched & added data in both DBs for LSCC
+2025-10-18 13:56:19,997 - INFO - ✅Successfully fetched & added data in both DBs for MTCH
+2025-10-18 13:56:23,666 - INFO - ✅Successfully fetched & added data in both DBs for PAYTM.NS
+2025-10-18 13:56:27,147 - INFO - ✅Successfully fetched & added data in both DBs for LITE
+2025-10-18 13:56:30,657 - INFO - ✅Successfully fetched & added data in both DBs for ESTC
+2025-10-18 13:56:36,093 - INFO - ✅Successfully fetched & added data in both DBs for 3064.T
+2025-10-18 13:56:39,569 - INFO - ✅Successfully fetched & added data in both DBs for 3034.TW
+2025-10-18 13:56:43,113 - INFO - ✅Successfully fetched & added data in both DBs for NICE
+2025-10-18 13:56:46,922 - INFO - ✅Successfully fetched & added data in both DBs for DSGX
+2025-10-18 13:56:50,609 - INFO - ✅Successfully fetched & added data in both DBs for QRVO
+2025-10-18 13:56:54,186 - INFO - ✅Successfully fetched & added data in both DBs for OTEX
+2025-10-18 13:57:00,076 - INFO - ✅Successfully fetched & added data in both DBs for 3092.T
+2025-10-18 13:57:04,044 - INFO - ✅Successfully fetched & added data in both DBs for TNE.AX
+2025-10-18 13:57:07,578 - INFO - ✅Successfully fetched & added data in both DBs for VIPS
+2025-10-18 13:57:11,072 - INFO - ✅Successfully fetched & added data in both DBs for CVLT
+2025-10-18 13:57:14,636 - INFO - ✅Successfully fetched & added data in both DBs for 688126.SS
+2025-10-18 13:57:18,245 - INFO - ✅Successfully fetched & added data in both DBs for DHER.F
+2025-10-18 13:57:21,697 - INFO - ✅Successfully fetched & added data in both DBs for VENDA.OL
+2025-10-18 13:57:25,637 - INFO - ✅Successfully fetched & added data in both DBs for 600588.SS
+2025-10-18 13:57:29,063 - INFO - ✅Successfully fetched & added data in both DBs for G
+2025-10-18 13:57:32,596 - INFO - ✅Successfully fetched & added data in both DBs for GTLB
+2025-10-18 13:57:36,131 - INFO - ✅Successfully fetched & added data in both DBs for DBX
+2025-10-18 13:57:40,164 - INFO - ✅Successfully fetched & added data in both DBs for ENT.L
+2025-10-18 13:57:44,561 - INFO - ✅Successfully fetched & added data in both DBs for NVMI
+2025-10-18 13:57:48,127 - INFO - ✅Successfully fetched & added data in both DBs for 600460.SS
+2025-10-18 13:57:51,915 - INFO - ✅Successfully fetched & added data in both DBs for WIX
+2025-10-18 13:57:55,683 - INFO - ✅Successfully fetched & added data in both DBs for NYKAA.NS
+2025-10-18 13:57:59,264 - INFO - ✅Successfully fetched & added data in both DBs for INFA
+2025-10-18 13:58:02,717 - INFO - ✅Successfully fetched & added data in both DBs for 3037.TW
+2025-10-18 13:58:06,101 - INFO - ✅Successfully fetched & added data in both DBs for 300454.SZ
+2025-10-18 13:58:10,043 - INFO - ✅Successfully fetched & added data in both DBs for ZAL.DE
+2025-10-18 13:58:16,217 - INFO - ✅Successfully fetched & added data in both DBs for 7735.T
+2025-10-18 13:58:20,208 - INFO - ✅Successfully fetched & added data in both DBs for 688608.SS
+2025-10-18 13:58:23,724 - INFO - ✅Successfully fetched & added data in both DBs for CDR.WA
+2025-10-18 13:58:27,218 - INFO - ✅Successfully fetched & added data in both DBs for LIF
+2025-10-18 13:58:32,303 - INFO - ✅Successfully fetched & added data in both DBs for 4704.T
+2025-10-18 13:58:35,810 - INFO - ✅Successfully fetched & added data in both DBs for BULL
+2025-10-18 13:58:39,332 - INFO - ✅Successfully fetched & added data in both DBs for IDCC
+2025-10-18 13:58:42,800 - INFO - ✅Successfully fetched & added data in both DBs for SECT-B.ST
+2025-10-18 13:58:46,368 - INFO - ✅Successfully fetched & added data in both DBs for 300661.SZ
+2025-10-18 13:58:49,793 - INFO - ✅Successfully fetched & added data in both DBs for TSEM
+2025-10-18 13:58:53,175 - INFO - ✅Successfully fetched & added data in both DBs for UPST
+2025-10-18 13:58:56,785 - INFO - ✅Successfully fetched & added data in both DBs for LYFT
+2025-10-18 13:59:00,892 - INFO - ✅Successfully fetched & added data in both DBs for CWAN
+2025-10-18 13:59:04,760 - INFO - ✅Successfully fetched & added data in both DBs for VRNS
+2025-10-18 13:59:08,227 - INFO - ✅Successfully fetched & added data in both DBs for CFLT
+2025-10-18 13:59:11,759 - INFO - ✅Successfully fetched & added data in both DBs for WAY
+2025-10-18 13:59:15,433 - INFO - ✅Successfully fetched & added data in both DBs for 688728.SS
+2025-10-18 13:59:19,013 - INFO - ✅Successfully fetched & added data in both DBs for 688120.SS
+2025-10-18 13:59:23,899 - INFO - ✅Successfully fetched & added data in both DBs for CCCS
+2025-10-18 13:59:28,436 - INFO - ✅Successfully fetched & added data in both DBs for 688213.SS
+2025-10-18 13:59:32,500 - INFO - ✅Successfully fetched & added data in both DBs for TEMN.SW
+2025-10-18 13:59:36,065 - INFO - ✅Successfully fetched & added data in both DBs for IOS.DE
+2025-10-18 13:59:39,466 - INFO - ✅Successfully fetched & added data in both DBs for SANM
+2025-10-18 13:59:42,934 - INFO - ✅Successfully fetched & added data in both DBs for SITM
+2025-10-18 13:59:46,706 - INFO - ✅Successfully fetched & added data in both DBs for 3888.HK
+2025-10-18 13:59:52,004 - INFO - ✅Successfully fetched & added data in both DBs for 4751.T
+2025-10-18 13:59:55,888 - INFO - ✅Successfully fetched & added data in both DBs for AMKR
+2025-10-18 13:59:59,529 - INFO - ✅Successfully fetched & added data in both DBs for 042700.KS
+2025-10-18 14:00:03,082 - INFO - ✅Successfully fetched & added data in both DBs for CRUS
+2025-10-18 14:00:06,672 - INFO - ✅Successfully fetched & added data in both DBs for PATH
+2025-10-18 14:00:10,018 - INFO - ✅Successfully fetched & added data in both DBs for 3443.TW
+2025-10-18 14:00:13,571 - INFO - ✅Successfully fetched & added data in both DBs for MARA
+2025-10-18 14:00:17,067 - INFO - ✅Successfully fetched & added data in both DBs for NXT.AX
+2025-10-18 14:00:21,167 - INFO - ✅Successfully fetched & added data in both DBs for 6488.TWO
+2025-10-18 14:00:24,711 - INFO - ✅Successfully fetched & added data in both DBs for 377300.KS
+2025-10-18 14:00:28,220 - INFO - ✅Successfully fetched & added data in both DBs for ALGM
+2025-10-18 14:00:34,049 - INFO - ✅Successfully fetched & added data in both DBs for 6963.T
+2025-10-18 14:00:36,378 - ERROR - HTTP Error 404: 
+2025-10-18 14:00:38,295 - ERROR - $FNOX.ST: possibly delisted; no price data found  (period=1y) (Yahoo error = "No data found, symbol may be delisted")
+2025-10-18 14:00:39,259 - ERROR - $FNOX.ST: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2025-10-18 14:00:39,362 - ERROR - ❌Error reading companies.json:'currentTradingPeriod'
+2025-10-18 14:03:06,888 - INFO - ⏭️ Update already ran today — skipping.
+2025-10-18 14:03:07,478 - INFO - ✅Total articles fetched: 19
+
+2025-10-18 14:03:07,481 - INFO - ✅FILE : updates.py : Daily news saved successfully
+2025-10-18 14:03:29,769 - INFO - ✅Successfully fetched & added data in both DBs for NVDA
+2025-10-18 14:03:33,378 - INFO - ✅Successfully fetched & added data in both DBs for MSFT
+2025-10-18 14:03:37,136 - INFO - ✅Successfully fetched & added data in both DBs for AAPL
+2025-10-18 14:03:40,692 - INFO - ✅Successfully fetched & added data in both DBs for GOOG
+2025-10-18 14:03:44,402 - INFO - ✅Successfully fetched & added data in both DBs for AMZN
+2025-10-18 14:03:48,096 - INFO - ✅Successfully fetched & added data in both DBs for META
+2025-10-18 14:03:51,770 - INFO - ✅Successfully fetched & added data in both DBs for AVGO
+2025-10-18 14:03:55,422 - INFO - ✅Successfully fetched & added data in both DBs for TSM
+2025-10-18 14:03:59,105 - INFO - ✅Successfully fetched & added data in both DBs for TSLA
+2025-10-18 14:04:02,687 - INFO - ✅Successfully fetched & added data in both DBs for TCEHY
+2025-10-18 14:04:06,660 - INFO - ✅Successfully fetched & added data in both DBs for ORCL
+2025-10-18 14:04:10,337 - INFO - ✅Successfully fetched & added data in both DBs for NFLX
+2025-10-18 14:04:13,882 - INFO - ✅Successfully fetched & added data in both DBs for PLTR
+2025-10-18 14:04:17,464 - INFO - ✅Successfully fetched & added data in both DBs for 005930.KS
+2025-10-18 14:04:21,284 - INFO - ✅Successfully fetched & added data in both DBs for SAP
+2025-10-18 14:04:25,026 - INFO - ✅Successfully fetched & added data in both DBs for ASML
+2025-10-18 14:04:28,612 - INFO - ✅Successfully fetched & added data in both DBs for BABA
+2025-10-18 14:04:32,114 - INFO - ✅Successfully fetched & added data in both DBs for AMD
+2025-10-18 14:04:35,731 - INFO - ✅Successfully fetched & added data in both DBs for CSCO
+2025-10-18 14:04:39,264 - INFO - ✅Successfully fetched & added data in both DBs for CRM
+2025-10-18 14:04:42,897 - INFO - ✅Successfully fetched & added data in both DBs for IBM
+2025-10-18 14:04:46,336 - INFO - ✅Successfully fetched & added data in both DBs for UBER
+2025-10-18 14:04:49,951 - INFO - ✅Successfully fetched & added data in both DBs for TXN
+2025-10-18 14:04:53,385 - INFO - ✅Successfully fetched & added data in both DBs for INTU
+2025-10-18 14:04:57,389 - INFO - ✅Successfully fetched & added data in both DBs for NOW
+2025-10-18 14:05:00,883 - INFO - ✅Successfully fetched & added data in both DBs for BKNG
+2025-10-18 14:05:04,454 - INFO - ✅Successfully fetched & added data in both DBs for SHOP
+2025-10-18 14:05:08,611 - INFO - ✅Successfully fetched & added data in both DBs for XIACF
+2025-10-18 14:05:12,597 - INFO - ✅Successfully fetched & added data in both DBs for PDD
+2025-10-18 14:05:16,409 - INFO - ✅Successfully fetched & added data in both DBs for QCOM
+2025-10-18 14:05:19,956 - INFO - ✅Successfully fetched & added data in both DBs for ANET
+2025-10-18 14:05:23,672 - INFO - ✅Successfully fetched & added data in both DBs for SONY
+2025-10-18 14:05:27,156 - INFO - ✅Successfully fetched & added data in both DBs for APP
+2025-10-18 14:05:30,705 - INFO - ✅Successfully fetched & added data in both DBs for ADBE
+2025-10-18 14:05:34,221 - INFO - ✅Successfully fetched & added data in both DBs for ARM
+2025-10-18 14:05:37,712 - INFO - ✅Successfully fetched & added data in both DBs for SPOT
+2025-10-18 14:05:41,280 - INFO - ✅Successfully fetched & added data in both DBs for SU.PA
+2025-10-18 14:05:44,748 - INFO - ✅Successfully fetched & added data in both DBs for 000660.KS
+2025-10-18 14:05:48,268 - INFO - ✅Successfully fetched & added data in both DBs for MU
+2025-10-18 14:05:51,758 - INFO - ✅Successfully fetched & added data in both DBs for LRCX
+2025-10-18 14:05:55,454 - INFO - ✅Successfully fetched & added data in both DBs for AMAT
+2025-10-18 14:05:59,125 - INFO - ✅Successfully fetched & added data in both DBs for ADI
+2025-10-18 14:06:02,808 - INFO - ✅Successfully fetched & added data in both DBs for PANW
+2025-10-18 14:06:07,409 - INFO - ✅Successfully fetched & added data in both DBs for ADP
+2025-10-18 14:06:10,915 - INFO - ✅Successfully fetched & added data in both DBs for MELI
+2025-10-18 14:06:14,696 - INFO - ✅Successfully fetched & added data in both DBs for KLAC
+2025-10-18 14:06:18,280 - INFO - ✅Successfully fetched & added data in both DBs for SNPS
+2025-10-18 14:06:22,284 - INFO - ✅Successfully fetched & added data in both DBs for INTC
+2025-10-18 14:06:25,805 - INFO - ✅Successfully fetched & added data in both DBs for SE
+2025-10-18 14:06:30,809 - INFO - ✅Successfully fetched & added data in both DBs for 7974.T
+2025-10-18 14:06:34,228 - INFO - ✅Successfully fetched & added data in both DBs for CRWD
+2025-10-18 14:06:37,799 - INFO - ✅Successfully fetched & added data in both DBs for DASH
+2025-10-18 14:06:41,337 - INFO - ✅Successfully fetched & added data in both DBs for MSTR
+2025-10-18 14:06:44,894 - INFO - ✅Successfully fetched & added data in both DBs for CDNS
+2025-10-18 14:06:49,615 - INFO - ✅Successfully fetched & added data in both DBs for 6861.T
+2025-10-18 14:06:53,011 - INFO - ✅Successfully fetched & added data in both DBs for 2317.TW
+2025-10-18 14:06:56,469 - INFO - ✅Successfully fetched & added data in both DBs for 688256.SS
+2025-10-18 14:07:00,021 - INFO - ✅Successfully fetched & added data in both DBs for HOOD
+2025-10-18 14:07:03,831 - INFO - ✅Successfully fetched & added data in both DBs for DELL
+2025-10-18 14:07:07,440 - INFO - ✅Successfully fetched & added data in both DBs for NTES
+2025-10-18 14:07:10,889 - INFO - ✅Successfully fetched & added data in both DBs for 3690.HK
+2025-10-18 14:07:14,359 - INFO - ✅Successfully fetched & added data in both DBs for ABNB
+2025-10-18 14:07:17,828 - INFO - ✅Successfully fetched & added data in both DBs for COIN
+2025-10-18 14:07:21,253 - INFO - ✅Successfully fetched & added data in both DBs for 0981.HK
+2025-10-18 14:07:24,788 - INFO - ✅Successfully fetched & added data in both DBs for EQIX
+2025-10-18 14:07:28,260 - INFO - ✅Successfully fetched & added data in both DBs for FI
+2025-10-18 14:07:31,682 - INFO - ✅Successfully fetched & added data in both DBs for 2454.TW
+2025-10-18 14:07:35,255 - INFO - ✅Successfully fetched & added data in both DBs for NET
+2025-10-18 14:07:38,789 - INFO - ✅Successfully fetched & added data in both DBs for CSU.TO
+2025-10-18 14:07:42,451 - INFO - ✅Successfully fetched & added data in both DBs for SNOW
+2025-10-18 14:07:46,616 - INFO - ✅Successfully fetched & added data in both DBs for PYPL
+2025-10-18 14:07:51,930 - INFO - ✅Successfully fetched & added data in both DBs for 8035.T
+2025-10-18 14:07:55,654 - INFO - ✅Successfully fetched & added data in both DBs for MRVL
+2025-10-18 14:07:59,247 - INFO - ✅Successfully fetched & added data in both DBs for TEL
+2025-10-18 14:08:02,839 - INFO - ✅Successfully fetched & added data in both DBs for WDAY
+2025-10-18 14:08:06,434 - INFO - ✅Successfully fetched & added data in both DBs for ADSK
+2025-10-18 14:08:09,975 - INFO - ✅Successfully fetched & added data in both DBs for 2308.TW
+2025-10-18 14:08:13,687 - INFO - ✅Successfully fetched & added data in both DBs for NXPI
+2025-10-18 14:08:17,309 - INFO - ✅Successfully fetched & added data in both DBs for FTNT
+2025-10-18 14:08:21,178 - INFO - ✅Successfully fetched & added data in both DBs for DELTA.BK
+2025-10-18 14:08:26,287 - INFO - ✅Successfully fetched & added data in both DBs for 6857.T
+2025-10-18 14:08:30,030 - INFO - ✅Successfully fetched & added data in both DBs for ROP
+2025-10-18 14:08:33,503 - INFO - ✅Successfully fetched & added data in both DBs for IFX.DE
+2025-10-18 14:08:37,597 - INFO - ✅Successfully fetched & added data in both DBs for ADYEN.AS
+2025-10-18 14:08:43,450 - INFO - ✅Successfully fetched & added data in both DBs for CPNG
+2025-10-18 14:08:49,326 - INFO - ✅Successfully fetched & added data in both DBs for DCII.JK
+2025-10-18 14:08:53,628 - INFO - ✅Successfully fetched & added data in both DBs for XYZ
+2025-10-18 14:08:57,157 - INFO - ✅Successfully fetched & added data in both DBs for VEEV
+2025-10-18 14:09:00,684 - INFO - ✅Successfully fetched & added data in both DBs for CRWV
+2025-10-18 14:09:04,470 - INFO - ✅Successfully fetched & added data in both DBs for DDOG
+2025-10-18 14:09:08,306 - INFO - ✅Successfully fetched & added data in both DBs for GRMN
+2025-10-18 14:09:12,099 - INFO - ✅Successfully fetched & added data in both DBs for JD
+2025-10-18 14:09:15,766 - INFO - ✅Successfully fetched & added data in both DBs for TEAM
+2025-10-18 14:09:19,390 - INFO - ✅Successfully fetched & added data in both DBs for EA
+2025-10-18 14:09:23,760 - INFO - ✅Successfully fetched & added data in both DBs for TCOM
+2025-10-18 14:09:27,669 - INFO - ✅Successfully fetched & added data in both DBs for EBAY
+2025-10-18 14:09:31,115 - INFO - ✅Successfully fetched & added data in both DBs for TTWO
+2025-10-18 14:09:34,490 - INFO - ✅Successfully fetched & added data in both DBs for ZS
+2025-10-18 14:09:38,094 - INFO - ✅Successfully fetched & added data in both DBs for 1024.HK
+2025-10-18 14:09:41,590 - INFO - ✅Successfully fetched & added data in both DBs for DSY.PA
+2025-10-18 14:09:45,110 - INFO - ✅Successfully fetched & added data in both DBs for MPWR
+2025-10-18 14:09:52,071 - INFO - ✅Successfully fetched & added data in both DBs for 6701.T
+2025-10-18 14:09:55,684 - INFO - ✅Successfully fetched & added data in both DBs for 002371.SZ
+2025-10-18 14:09:59,160 - INFO - ✅Successfully fetched & added data in both DBs for RDDT
+2025-10-18 14:10:02,683 - INFO - ✅Successfully fetched & added data in both DBs for CSGP
+2025-10-18 14:10:06,202 - INFO - ✅Successfully fetched & added data in both DBs for AMS.MC
+2025-10-18 14:10:09,786 - INFO - ✅Successfully fetched & added data in both DBs for FIS
+2025-10-18 14:10:13,354 - INFO - ✅Successfully fetched & added data in both DBs for MCHP
+2025-10-18 14:10:16,950 - INFO - ✅Successfully fetched & added data in both DBs for STX
+2025-10-18 14:10:20,358 - INFO - ✅Successfully fetched & added data in both DBs for FICO
+2025-10-18 14:10:23,840 - INFO - ✅Successfully fetched & added data in both DBs for FIG
+2025-10-18 14:10:27,328 - INFO - ✅Successfully fetched & added data in both DBs for 2382.TW
+2025-10-18 14:10:30,927 - INFO - ✅Successfully fetched & added data in both DBs for ETERNAL.NS
+2025-10-18 14:10:34,441 - INFO - ✅Successfully fetched & added data in both DBs for IQV
+2025-10-18 14:10:38,061 - INFO - ✅Successfully fetched & added data in both DBs for CRCL
+2025-10-18 14:10:41,598 - INFO - ✅Successfully fetched & added data in both DBs for BIDU
+2025-10-18 14:10:47,008 - INFO - ✅Successfully fetched & added data in both DBs for 6981.T
+2025-10-18 14:10:51,822 - INFO - ✅Successfully fetched & added data in both DBs for 6146.T
+2025-10-18 14:10:55,321 - INFO - ✅Successfully fetched & added data in both DBs for WKL.AS
+2025-10-18 14:10:58,867 - INFO - ✅Successfully fetched & added data in both DBs for SOFI
+2025-10-18 14:11:02,657 - INFO - ✅Successfully fetched & added data in both DBs for HPE
+2025-10-18 14:11:06,130 - INFO - ✅Successfully fetched & added data in both DBs for ALAB
+2025-10-18 14:11:09,704 - INFO - ✅Successfully fetched & added data in both DBs for KEYS
+2025-10-18 14:11:13,280 - INFO - ✅Successfully fetched & added data in both DBs for SYM
+2025-10-18 14:11:18,081 - INFO - ✅Successfully fetched & added data in both DBs for 7751.T
+2025-10-18 14:11:21,611 - INFO - ✅Successfully fetched & added data in both DBs for SMCI
+2025-10-18 14:11:25,132 - INFO - ✅Successfully fetched & added data in both DBs for ERIC
+2025-10-18 14:11:28,763 - INFO - ✅Successfully fetched & added data in both DBs for EXPE
+2025-10-18 14:11:32,338 - INFO - ✅Successfully fetched & added data in both DBs for DIDIY
+2025-10-18 14:11:36,024 - INFO - ✅Successfully fetched & added data in both DBs for PTC
+2025-10-18 14:11:39,498 - INFO - ✅Successfully fetched & added data in both DBs for TTD
+2025-10-18 14:11:43,098 - INFO - ✅Successfully fetched & added data in both DBs for FUTU
+2025-10-18 14:11:46,531 - INFO - ✅Successfully fetched & added data in both DBs for TOST
+2025-10-18 14:11:49,910 - INFO - ✅Successfully fetched & added data in both DBs for 6618.HK
+2025-10-18 14:11:53,595 - INFO - ✅Successfully fetched & added data in both DBs for HPQ
+2025-10-18 14:11:57,116 - INFO - ✅Successfully fetched & added data in both DBs for HUBS
+2025-10-18 14:12:01,794 - INFO - ✅Successfully fetched & added data in both DBs for 6752.T
+2025-10-18 14:12:05,884 - INFO - ✅Successfully fetched & added data in both DBs for TYL
+2025-10-18 14:12:09,408 - INFO - ✅Successfully fetched & added data in both DBs for STM
+2025-10-18 14:12:12,989 - INFO - ✅Successfully fetched & added data in both DBs for ZM
+2025-10-18 14:12:16,413 - INFO - ✅Successfully fetched & added data in both DBs for MDB
+2025-10-18 14:12:20,303 - INFO - ✅Successfully fetched & added data in both DBs for LDOS
+2025-10-18 14:12:24,003 - INFO - ✅Successfully fetched & added data in both DBs for ASM.AS
+2025-10-18 14:12:27,485 - INFO - ✅Successfully fetched & added data in both DBs for 035420.KS
+2025-10-18 14:12:33,719 - INFO - ✅Successfully fetched & added data in both DBs for NOK
+2025-10-18 14:12:43,296 - INFO - ✅Successfully fetched & added data in both DBs for 7832.T
+2025-10-18 14:12:48,272 - INFO - ✅Successfully fetched & added data in both DBs for CYBR
+2025-10-18 14:12:51,844 - INFO - ✅Successfully fetched & added data in both DBs for NTAP
+2025-10-18 14:12:57,118 - INFO - ✅Successfully fetched & added data in both DBs for 6723.T
+2025-10-18 14:13:01,302 - INFO - ✅Successfully fetched & added data in both DBs for SSNC
+2025-10-18 14:13:05,007 - INFO - ✅Successfully fetched & added data in both DBs for ASX
+2025-10-18 14:13:08,670 - INFO - ✅Successfully fetched & added data in both DBs for WTC.AX
+2025-10-18 14:13:12,328 - INFO - ✅Successfully fetched & added data in both DBs for GPN
+2025-10-18 14:13:15,993 - INFO - ✅Successfully fetched & added data in both DBs for CRDO
+2025-10-18 14:13:19,494 - INFO - ✅Successfully fetched & added data in both DBs for ON
+2025-10-18 14:13:24,418 - INFO - ✅Successfully fetched & added data in both DBs for 9766.T
+2025-10-18 14:13:27,914 - INFO - ✅Successfully fetched & added data in both DBs for GDDY
+2025-10-18 14:13:31,414 - INFO - ✅Successfully fetched & added data in both DBs for CHKP
+2025-10-18 14:13:34,951 - INFO - ✅Successfully fetched & added data in both DBs for PME.AX
+2025-10-18 14:13:38,748 - INFO - ✅Successfully fetched & added data in both DBs for IOT
+2025-10-18 14:13:42,370 - INFO - ✅Successfully fetched & added data in both DBs for Z
+2025-10-18 14:13:45,899 - INFO - ✅Successfully fetched & added data in both DBs for GRAB
+2025-10-18 14:13:49,413 - INFO - ✅Successfully fetched & added data in both DBs for 035720.KS
+2025-10-18 14:13:53,032 - INFO - ✅Successfully fetched & added data in both DBs for PSTG
+2025-10-18 14:13:57,955 - INFO - ✅Successfully fetched & added data in both DBs for 688012.SS
+2025-10-18 14:14:01,524 - INFO - ✅Successfully fetched & added data in both DBs for TRMB
+2025-10-18 14:14:05,045 - INFO - ✅Successfully fetched & added data in both DBs for GEN
+2025-10-18 14:14:08,568 - INFO - ✅Successfully fetched & added data in both DBs for GFS
+2025-10-18 14:14:12,194 - INFO - ✅Successfully fetched & added data in both DBs for NTNX
+2025-10-18 14:14:15,600 - INFO - ✅Successfully fetched & added data in both DBs for FFIV
+2025-10-18 14:14:22,137 - INFO - ✅Successfully fetched & added data in both DBs for 3659.T
+2025-10-18 14:14:27,429 - INFO - ✅Successfully fetched & added data in both DBs for GWRE
+2025-10-18 14:14:30,953 - INFO - ✅Successfully fetched & added data in both DBs for 6669.TW
+2025-10-18 14:14:34,688 - INFO - ✅Successfully fetched & added data in both DBs for 0992.HK
+2025-10-18 14:14:38,261 - INFO - ✅Successfully fetched & added data in both DBs for XRO.AX
+2025-10-18 14:14:44,510 - INFO - ✅Successfully fetched & added data in both DBs for KKS.F
+2025-10-18 14:14:48,781 - INFO - ✅Successfully fetched & added data in both DBs for 002230.SZ
+2025-10-18 14:14:52,987 - INFO - ✅Successfully fetched & added data in both DBs for ASTS
+2025-10-18 14:14:56,463 - INFO - ✅Successfully fetched & added data in both DBs for U
+2025-10-18 14:15:00,089 - INFO - ✅Successfully fetched & added data in both DBs for RBRK
+2025-10-18 14:15:03,988 - INFO - ✅Successfully fetched & added data in both DBs for UMC
+2025-10-18 14:15:07,576 - INFO - ✅Successfully fetched & added data in both DBs for NBIS
+2025-10-18 14:15:11,262 - INFO - ✅Successfully fetched & added data in both DBs for CHWY
+2025-10-18 14:15:14,892 - INFO - ✅Successfully fetched & added data in both DBs for BSY
+2025-10-18 14:15:18,565 - INFO - ✅Successfully fetched & added data in both DBs for ZBRA
+2025-10-18 14:15:22,091 - INFO - ✅Successfully fetched & added data in both DBs for OKTA
+2025-10-18 14:15:25,697 - INFO - ✅Successfully fetched & added data in both DBs for NEM.F
+2025-10-18 14:15:29,314 - INFO - ✅Successfully fetched & added data in both DBs for TWLO
+2025-10-18 14:15:32,747 - INFO - ✅Successfully fetched & added data in both DBs for 2357.TW
+2025-10-18 14:15:36,263 - INFO - ✅Successfully fetched & added data in both DBs for 603986.SS
+2025-10-18 14:15:39,773 - INFO - ✅Successfully fetched & added data in both DBs for LOGI
+2025-10-18 14:15:43,306 - INFO - ✅Successfully fetched & added data in both DBs for DT
+2025-10-18 14:15:46,864 - INFO - ✅Successfully fetched & added data in both DBs for DOCU
+2025-10-18 14:15:50,402 - ERROR - ❌ Error updating FS for FDS: Timestamp('2025-08-31 00:00:00')
+2025-10-18 14:15:53,648 - INFO - ✅Successfully fetched & added data in both DBs for SGE.L
+2025-10-18 14:15:57,124 - INFO - ✅Successfully fetched & added data in both DBs for ROKU
+2025-10-18 14:16:00,714 - INFO - ✅Successfully fetched & added data in both DBs for COHR
+2025-10-18 14:16:04,674 - INFO - ✅Successfully fetched & added data in both DBs for QXO
+2025-10-18 14:16:08,833 - INFO - ✅Successfully fetched & added data in both DBs for 000977.SZ
+2025-10-18 14:16:13,049 - INFO - ✅Successfully fetched & added data in both DBs for 688036.SS
+2025-10-18 14:16:18,659 - INFO - ✅Successfully fetched & added data in both DBs for 4716.T
+2025-10-18 14:16:22,842 - INFO - ✅Successfully fetched & added data in both DBs for MANH
+2025-10-18 14:16:28,355 - INFO - ✅Successfully fetched & added data in both DBs for 4755.T
+2025-10-18 14:16:32,281 - INFO - ✅Successfully fetched & added data in both DBs for PAYC
+2025-10-18 14:16:36,331 - INFO - ✅Successfully fetched & added data in both DBs for DOCS
+2025-10-18 14:16:40,337 - INFO - ✅Successfully fetched & added data in both DBs for TEM
+2025-10-18 14:16:44,587 - INFO - ✅Successfully fetched & added data in both DBs for ENTG
+2025-10-18 14:16:48,543 - INFO - ✅Successfully fetched & added data in both DBs for IONQ
+2025-10-18 14:16:52,582 - INFO - ✅Successfully fetched & added data in both DBs for JKHY
+2025-10-18 14:16:56,642 - INFO - ✅Successfully fetched & added data in both DBs for SNAP
+2025-10-18 14:17:00,673 - INFO - ✅Successfully fetched & added data in both DBs for 601360.SS
+2025-10-18 14:17:04,665 - INFO - ✅Successfully fetched & added data in both DBs for CART
+2025-10-18 14:17:08,731 - INFO - ✅Successfully fetched & added data in both DBs for MBLY
+2025-10-18 14:17:12,521 - INFO - ✅Successfully fetched & added data in both DBs for SAIL
+2025-10-18 14:17:16,532 - INFO - ✅Successfully fetched & added data in both DBs for GTM
+2025-10-18 14:17:20,467 - INFO - ✅Successfully fetched & added data in both DBs for SWKS
+2025-10-18 14:17:24,400 - INFO - ✅Successfully fetched & added data in both DBs for 688521.SS
+2025-10-18 14:17:28,397 - INFO - ✅Successfully fetched & added data in both DBs for AKAM
+2025-10-18 14:17:32,533 - INFO - ✅Successfully fetched & added data in both DBs for 0241.HK
+2025-10-18 14:17:36,489 - INFO - ✅Successfully fetched & added data in both DBs for BESI.AS
+2025-10-18 14:17:40,738 - INFO - ✅Successfully fetched & added data in both DBs for DAY
+2025-10-18 14:17:44,817 - INFO - ✅Successfully fetched & added data in both DBs for ALE.WA
+2025-10-18 14:17:48,862 - INFO - ✅Successfully fetched & added data in both DBs for 600703.SS
+2025-10-18 14:17:52,711 - INFO - ✅Successfully fetched & added data in both DBs for 259960.KS
+2025-10-18 14:17:56,597 - INFO - ✅Successfully fetched & added data in both DBs for 3661.TW
+2025-10-18 14:18:00,384 - INFO - ✅Successfully fetched & added data in both DBs for AUR
+2025-10-18 14:18:04,251 - INFO - ✅Successfully fetched & added data in both DBs for 0020.HK
+2025-10-18 14:18:08,196 - INFO - ✅Successfully fetched & added data in both DBs for ALGN
+2025-10-18 14:18:12,306 - INFO - ✅Successfully fetched & added data in both DBs for PCOR
+2025-10-18 14:18:16,369 - INFO - ✅Successfully fetched & added data in both DBs for TOI.V
+2025-10-18 14:18:21,505 - INFO - ✅Successfully fetched & added data in both DBs for 2413.T
+2025-10-18 14:18:25,438 - INFO - ✅Successfully fetched & added data in both DBs for 2395.TW
+2025-10-18 14:18:29,472 - INFO - ✅Successfully fetched & added data in both DBs for 688396.SS
+2025-10-18 14:18:33,508 - INFO - ✅Successfully fetched & added data in both DBs for PCTY
+2025-10-18 14:18:37,302 - INFO - ✅Successfully fetched & added data in both DBs for HIMS
+2025-10-18 14:18:41,290 - INFO - ✅Successfully fetched & added data in both DBs for CAR.AX
+2025-10-18 14:18:45,215 - INFO - ✅Successfully fetched & added data in both DBs for MMYT
+2025-10-18 14:18:50,185 - INFO - ✅Successfully fetched & added data in both DBs for 6920.T
+2025-10-18 14:18:54,123 - INFO - ✅Successfully fetched & added data in both DBs for 301269.SZ
+2025-10-18 14:18:57,962 - INFO - ✅Successfully fetched & added data in both DBs for 2301.TW
+2025-10-18 14:19:02,009 - INFO - ✅Successfully fetched & added data in both DBs for EPAM
+2025-10-18 14:19:05,995 - INFO - ✅Successfully fetched & added data in both DBs for W
+2025-10-18 14:19:09,987 - INFO - ✅Successfully fetched & added data in both DBs for MTSI
+2025-10-18 14:19:13,924 - INFO - ✅Successfully fetched & added data in both DBs for KVYO
+2025-10-18 14:19:17,973 - INFO - ✅Successfully fetched & added data in both DBs for DOX
+2025-10-18 14:19:21,744 - INFO - ✅Successfully fetched & added data in both DBs for TTAN
+2025-10-18 14:19:25,716 - INFO - ✅Successfully fetched & added data in both DBs for POLICYBZR.NS
+2025-10-18 14:19:29,719 - INFO - ✅Successfully fetched & added data in both DBs for MNDY
+2025-10-18 14:19:33,882 - INFO - ✅Successfully fetched & added data in both DBs for BILI
+2025-10-18 14:19:37,788 - INFO - ✅Successfully fetched & added data in both DBs for 066570.KS
+2025-10-18 14:19:41,638 - INFO - ✅Successfully fetched & added data in both DBs for 2379.TW
+2025-10-18 14:19:45,922 - INFO - ✅Successfully fetched & added data in both DBs for LMN.V
+2025-10-18 14:19:49,991 - INFO - ✅Successfully fetched & added data in both DBs for PEGA
+2025-10-18 14:19:54,023 - INFO - ✅Successfully fetched & added data in both DBs for LSCC
+2025-10-18 14:19:58,147 - INFO - ✅Successfully fetched & added data in both DBs for MTCH
+2025-10-18 14:20:02,107 - INFO - ✅Successfully fetched & added data in both DBs for PAYTM.NS
+2025-10-18 14:20:06,100 - INFO - ✅Successfully fetched & added data in both DBs for LITE
+2025-10-18 14:20:10,032 - INFO - ✅Successfully fetched & added data in both DBs for ESTC
+2025-10-18 14:20:14,975 - INFO - ✅Successfully fetched & added data in both DBs for 3064.T
+2025-10-18 14:20:18,828 - INFO - ✅Successfully fetched & added data in both DBs for 3034.TW
+2025-10-18 14:20:22,787 - INFO - ✅Successfully fetched & added data in both DBs for NICE
+2025-10-18 14:20:26,891 - INFO - ✅Successfully fetched & added data in both DBs for DSGX
+2025-10-18 14:20:30,897 - INFO - ✅Successfully fetched & added data in both DBs for QRVO
+2025-10-18 14:20:34,910 - INFO - ✅Successfully fetched & added data in both DBs for OTEX
+2025-10-18 14:20:39,637 - INFO - ✅Successfully fetched & added data in both DBs for 3092.T
+2025-10-18 14:20:43,650 - INFO - ✅Successfully fetched & added data in both DBs for TNE.AX
+2025-10-18 14:20:47,585 - INFO - ✅Successfully fetched & added data in both DBs for VIPS
+2025-10-18 14:20:51,599 - INFO - ✅Successfully fetched & added data in both DBs for CVLT
+2025-10-18 14:20:55,595 - INFO - ✅Successfully fetched & added data in both DBs for 688126.SS
+2025-10-18 14:20:59,608 - INFO - ✅Successfully fetched & added data in both DBs for DHER.F
+2025-10-18 14:21:03,634 - INFO - ✅Successfully fetched & added data in both DBs for VENDA.OL
+2025-10-18 14:21:07,680 - INFO - ✅Successfully fetched & added data in both DBs for 600588.SS
+2025-10-18 14:21:11,527 - INFO - ✅Successfully fetched & added data in both DBs for G
+2025-10-18 14:21:15,689 - INFO - ✅Successfully fetched & added data in both DBs for GTLB
+2025-10-18 14:21:19,746 - INFO - ✅Successfully fetched & added data in both DBs for DBX
+2025-10-18 14:21:23,856 - INFO - ✅Successfully fetched & added data in both DBs for ENT.L
+2025-10-18 14:21:27,692 - INFO - ✅Successfully fetched & added data in both DBs for NVMI
+2025-10-18 14:21:31,855 - INFO - ✅Successfully fetched & added data in both DBs for 600460.SS
+2025-10-18 14:21:36,113 - INFO - ✅Successfully fetched & added data in both DBs for WIX
+2025-10-18 14:21:40,267 - INFO - ✅Successfully fetched & added data in both DBs for NYKAA.NS
+2025-10-18 14:21:44,317 - INFO - ✅Successfully fetched & added data in both DBs for INFA
+2025-10-18 14:21:48,198 - INFO - ✅Successfully fetched & added data in both DBs for 3037.TW
+2025-10-18 14:21:52,069 - INFO - ✅Successfully fetched & added data in both DBs for 300454.SZ
+2025-10-18 14:21:56,156 - INFO - ✅Successfully fetched & added data in both DBs for ZAL.DE
+2025-10-18 14:22:01,432 - INFO - ✅Successfully fetched & added data in both DBs for 7735.T
+2025-10-18 14:22:05,618 - INFO - ✅Successfully fetched & added data in both DBs for 688608.SS
+2025-10-18 14:22:09,744 - INFO - ✅Successfully fetched & added data in both DBs for CDR.WA
+2025-10-18 14:22:14,077 - INFO - ✅Successfully fetched & added data in both DBs for LIF
+2025-10-18 14:22:19,004 - INFO - ✅Successfully fetched & added data in both DBs for 4704.T
+2025-10-18 14:22:23,216 - INFO - ✅Successfully fetched & added data in both DBs for BULL
+2025-10-18 14:22:27,263 - INFO - ✅Successfully fetched & added data in both DBs for IDCC
+2025-10-18 14:22:31,572 - INFO - ✅Successfully fetched & added data in both DBs for SECT-B.ST
+2025-10-18 14:22:35,679 - INFO - ✅Successfully fetched & added data in both DBs for 300661.SZ
+2025-10-18 14:22:39,609 - INFO - ✅Successfully fetched & added data in both DBs for TSEM
+2025-10-18 14:22:43,710 - INFO - ✅Successfully fetched & added data in both DBs for UPST
+2025-10-18 14:22:47,693 - INFO - ✅Successfully fetched & added data in both DBs for LYFT
+2025-10-18 14:22:51,728 - INFO - ✅Successfully fetched & added data in both DBs for CWAN
+2025-10-18 14:22:55,874 - INFO - ✅Successfully fetched & added data in both DBs for VRNS
+2025-10-18 14:22:59,913 - INFO - ✅Successfully fetched & added data in both DBs for CFLT
+2025-10-18 14:23:03,989 - INFO - ✅Successfully fetched & added data in both DBs for WAY
+2025-10-18 14:23:08,255 - INFO - ✅Successfully fetched & added data in both DBs for 688728.SS
+2025-10-18 14:23:12,241 - INFO - ✅Successfully fetched & added data in both DBs for 688120.SS
+2025-10-18 14:23:18,911 - INFO - ✅Successfully fetched & added data in both DBs for CCCS
+2025-10-18 14:23:22,387 - INFO - ✅Successfully fetched & added data in both DBs for 688213.SS
+2025-10-18 14:23:26,161 - INFO - ✅Successfully fetched & added data in both DBs for TEMN.SW
+2025-10-18 14:23:29,857 - INFO - ✅Successfully fetched & added data in both DBs for IOS.DE
+2025-10-18 14:23:33,294 - INFO - ✅Successfully fetched & added data in both DBs for SANM
+2025-10-18 14:23:36,740 - INFO - ✅Successfully fetched & added data in both DBs for SITM
+2025-10-18 14:23:40,256 - INFO - ✅Successfully fetched & added data in both DBs for 3888.HK
+2025-10-18 14:23:44,498 - INFO - ✅Successfully fetched & added data in both DBs for 4751.T
+2025-10-18 14:23:48,007 - INFO - ✅Successfully fetched & added data in both DBs for AMKR
+2025-10-18 14:23:51,546 - INFO - ✅Successfully fetched & added data in both DBs for 042700.KS
+2025-10-18 14:23:55,228 - INFO - ✅Successfully fetched & added data in both DBs for CRUS
+2025-10-18 14:23:58,801 - INFO - ✅Successfully fetched & added data in both DBs for PATH
+2025-10-18 14:24:02,224 - INFO - ✅Successfully fetched & added data in both DBs for 3443.TW
+2025-10-18 14:24:05,830 - INFO - ✅Successfully fetched & added data in both DBs for MARA
+2025-10-18 14:24:09,386 - INFO - ✅Successfully fetched & added data in both DBs for NXT.AX
+2025-10-18 14:24:12,853 - INFO - ✅Successfully fetched & added data in both DBs for 6488.TWO
+2025-10-18 14:24:16,289 - INFO - ✅Successfully fetched & added data in both DBs for 377300.KS
+2025-10-18 14:24:19,756 - INFO - ✅Successfully fetched & added data in both DBs for ALGM
+2025-10-18 14:24:24,069 - INFO - ✅Successfully fetched & added data in both DBs for 6963.T
+2025-10-18 14:24:26,367 - ERROR - HTTP Error 404: 
+2025-10-18 14:24:28,269 - ERROR - $FNOX.ST: possibly delisted; no price data found  (period=1y) (Yahoo error = "No data found, symbol may be delisted")
+2025-10-18 14:24:29,209 - ERROR - $FNOX.ST: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2025-10-18 14:24:29,311 - ERROR - ❌Error reading companies.json:'currentTradingPeriod'
+2025-10-18 14:51:14,396 - INFO - ⏭️ Update already ran today — skipping.
+2025-10-18 15:21:11,204 - INFO - ⏭️ Update already ran today — skipping.
+2025-10-18 15:21:11,829 - INFO - ✅Total articles fetched: 19
+
+2025-10-18 15:21:11,829 - INFO - ✅FILE : updates.py : Daily news saved successfully
+2025-10-18 15:21:20,113 - INFO - ✅Successfully fetched & added data in both DBs for NVDA
+2025-10-18 15:21:24,246 - WARNING - ❌No financial data for MSFT, skipping update.
+2025-10-18 15:21:28,012 - INFO - ✅Successfully fetched & added data in both DBs for AAPL
+2025-10-18 15:21:32,285 - INFO - ✅Successfully fetched & added data in both DBs for GOOG
+2025-10-18 15:21:36,436 - INFO - ✅Successfully fetched & added data in both DBs for AMZN
+2025-10-18 15:21:40,706 - INFO - ✅Successfully fetched & added data in both DBs for META
+2025-10-18 15:21:41,942 - ERROR - $AVGO: possibly delisted; no price data found  (period=1d)
+2025-10-18 15:21:45,634 - INFO - ✅Successfully fetched & added data in both DBs for AVGO
+2025-10-18 15:21:49,797 - INFO - ✅Successfully fetched & added data in both DBs for TSM
+2025-10-18 15:21:51,677 - ERROR - $TSLA: possibly delisted; no price data found  (period=5d)
+2025-10-18 15:21:51,775 - ERROR - ❌Error reading companies.json:'currentTradingPeriod'
+2025-10-18 15:23:18,633 - INFO - ⏭️ Update already ran today — skipping.
+2025-10-18 15:23:18,739 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-18 15:23:18,747 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-18 15:23:18,747 - INFO -  * Restarting with stat
+2025-10-18 15:23:21,248 - INFO - ⏭️ Update already ran today — skipping.
+2025-10-18 15:23:21,287 - WARNING -  * Debugger is active!
+2025-10-18 15:23:21,292 - INFO -  * Debugger PIN: 963-026-660
+2025-10-18 15:23:35,932 - INFO - 127.0.0.1 - - [18/Oct/2025 15:23:35] "GET / HTTP/1.1" 200 -
+2025-10-18 15:23:36,041 - INFO - 127.0.0.1 - - [18/Oct/2025 15:23:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-18 15:23:45,423 - INFO - 127.0.0.1 - - [18/Oct/2025 15:23:45] "GET /fetch-daily-news HTTP/1.1" 200 -
+2025-10-18 15:23:45,480 - INFO - 127.0.0.1 - - [18/Oct/2025 15:23:45] "GET /fetch-daily-news HTTP/1.1" 200 -
+2025-10-18 15:23:47,630 - INFO - 127.0.0.1 - - [18/Oct/2025 15:23:47] "GET /watchlist/2 HTTP/1.1" 200 -
+2025-10-18 15:23:48,043 - INFO - 127.0.0.1 - - [18/Oct/2025 15:23:48] "GET /watchlist/2 HTTP/1.1" 200 -
+2025-10-18 15:23:51,637 - INFO - 127.0.0.1 - - [18/Oct/2025 15:23:51] "GET /company/1 HTTP/1.1" 200 -
+2025-10-18 15:23:52,379 - INFO - 127.0.0.1 - - [18/Oct/2025 15:23:52] "GET /company/1 HTTP/1.1" 200 -
+2025-10-18 15:23:54,403 - INFO - ✅FILE : updates.py : NVDA last 30 days data saved successfully
+2025-10-18 15:23:54,540 - INFO - 127.0.0.1 - - [18/Oct/2025 15:23:54] "GET /historical-data-last-thirtyDAYS/NVDA HTTP/1.1" 200 -
+2025-10-18 15:23:54,906 - INFO - ✅FILE : updates.py : NVDA last 20 years saved successfully
+2025-10-18 15:23:55,176 - INFO - 127.0.0.1 - - [18/Oct/2025 15:23:55] "GET /historical-data-last-twentyYRS/NVDA HTTP/1.1" 200 -
+2025-10-18 15:28:55,461 - INFO - ⏭️ Update already ran today — skipping.
+2025-10-18 15:28:55,528 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-18 15:28:55,528 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-18 15:28:55,528 - INFO -  * Restarting with stat
+2025-10-18 15:28:57,874 - INFO - ⏭️ Update already ran today — skipping.
+2025-10-18 15:28:57,912 - WARNING -  * Debugger is active!
+2025-10-18 15:28:57,927 - INFO -  * Debugger PIN: 963-026-660
+2025-10-18 15:29:19,311 - INFO - 127.0.0.1 - - [18/Oct/2025 15:29:19] "OPTIONS /login HTTP/1.1" 200 -
+2025-10-18 15:29:21,670 - INFO - 127.0.0.1 - - [18/Oct/2025 15:29:21] "POST /login HTTP/1.1" 200 -
+2025-10-18 15:29:28,051 - INFO - 127.0.0.1 - - [18/Oct/2025 15:29:28] "GET /fetch-daily-news HTTP/1.1" 200 -
+2025-10-18 15:29:28,064 - INFO - 127.0.0.1 - - [18/Oct/2025 15:29:28] "GET /fetch-daily-news HTTP/1.1" 200 -
+2025-10-18 15:29:28,469 - INFO - 127.0.0.1 - - [18/Oct/2025 15:29:28] "GET /watchlist/2 HTTP/1.1" 200 -
+2025-10-18 15:29:28,954 - INFO - 127.0.0.1 - - [18/Oct/2025 15:29:28] "GET /watchlist/2 HTTP/1.1" 200 -
+2025-10-18 15:29:31,992 - INFO - 127.0.0.1 - - [18/Oct/2025 15:29:31] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 15:29:32,619 - INFO - 127.0.0.1 - - [18/Oct/2025 15:29:32] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 15:29:34,651 - INFO - ✅FILE : updates.py : TSLA last 30 days data saved successfully
+2025-10-18 15:29:34,806 - INFO - 127.0.0.1 - - [18/Oct/2025 15:29:34] "GET /historical-data-last-thirtyDAYS/TSLA HTTP/1.1" 200 -
+2025-10-18 15:29:35,088 - INFO - ✅FILE : updates.py : TSLA last 20 years saved successfully
+2025-10-18 15:29:35,235 - INFO - 127.0.0.1 - - [18/Oct/2025 15:29:35] "GET /historical-data-last-twentyYRS/TSLA HTTP/1.1" 200 -
+2025-10-18 15:35:54,519 - INFO - 127.0.0.1 - - [18/Oct/2025 15:35:54] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 15:35:55,373 - INFO - 127.0.0.1 - - [18/Oct/2025 15:35:55] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 15:35:56,793 - INFO - ✅FILE : updates.py : TSLA last 30 days data saved successfully
+2025-10-18 15:35:56,928 - INFO - 127.0.0.1 - - [18/Oct/2025 15:35:56] "GET /historical-data-last-thirtyDAYS/TSLA HTTP/1.1" 200 -
+2025-10-18 15:35:57,184 - INFO - ✅FILE : updates.py : TSLA last 20 years saved successfully
+2025-10-18 15:35:57,415 - INFO - 127.0.0.1 - - [18/Oct/2025 15:35:57] "GET /historical-data-last-twentyYRS/TSLA HTTP/1.1" 200 -
+2025-10-18 15:38:43,582 - INFO - 127.0.0.1 - - [18/Oct/2025 15:38:43] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 15:38:44,159 - INFO - 127.0.0.1 - - [18/Oct/2025 15:38:44] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 15:38:46,020 - INFO - ✅FILE : updates.py : TSLA last 30 days data saved successfully
+2025-10-18 15:38:46,236 - INFO - 127.0.0.1 - - [18/Oct/2025 15:38:46] "GET /historical-data-last-thirtyDAYS/TSLA HTTP/1.1" 200 -
+2025-10-18 15:38:46,357 - INFO - ✅FILE : updates.py : TSLA last 20 years saved successfully
+2025-10-18 15:38:46,597 - INFO - 127.0.0.1 - - [18/Oct/2025 15:38:46] "GET /historical-data-last-twentyYRS/TSLA HTTP/1.1" 200 -
+2025-10-18 15:39:05,921 - INFO - 127.0.0.1 - - [18/Oct/2025 15:39:05] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 15:39:06,764 - INFO - 127.0.0.1 - - [18/Oct/2025 15:39:06] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 15:39:08,056 - INFO - ✅FILE : updates.py : TSLA last 20 years saved successfully
+2025-10-18 15:39:08,221 - INFO - 127.0.0.1 - - [18/Oct/2025 15:39:08] "GET /historical-data-last-twentyYRS/TSLA HTTP/1.1" 200 -
+2025-10-18 15:39:08,258 - INFO - ✅FILE : updates.py : TSLA last 30 days data saved successfully
+2025-10-18 15:39:08,479 - INFO - 127.0.0.1 - - [18/Oct/2025 15:39:08] "GET /historical-data-last-thirtyDAYS/TSLA HTTP/1.1" 200 -
+2025-10-18 15:40:55,591 - INFO - 127.0.0.1 - - [18/Oct/2025 15:40:55] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 15:40:56,129 - INFO - 127.0.0.1 - - [18/Oct/2025 15:40:56] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 15:40:57,663 - INFO - ✅FILE : updates.py : TSLA last 30 days data saved successfully
+2025-10-18 15:40:57,874 - INFO - 127.0.0.1 - - [18/Oct/2025 15:40:57] "GET /historical-data-last-thirtyDAYS/TSLA HTTP/1.1" 200 -
+2025-10-18 15:40:58,095 - INFO - ✅FILE : updates.py : TSLA last 20 years saved successfully
+2025-10-18 15:40:58,322 - INFO - 127.0.0.1 - - [18/Oct/2025 15:40:58] "GET /historical-data-last-twentyYRS/TSLA HTTP/1.1" 200 -
+2025-10-18 15:40:58,955 - INFO - 127.0.0.1 - - [18/Oct/2025 15:40:58] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 15:40:59,792 - INFO - 127.0.0.1 - - [18/Oct/2025 15:40:59] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 15:41:00,978 - INFO - ✅FILE : updates.py : TSLA last 20 years saved successfully
+2025-10-18 15:41:01,118 - INFO - 127.0.0.1 - - [18/Oct/2025 15:41:01] "GET /historical-data-last-twentyYRS/TSLA HTTP/1.1" 200 -
+2025-10-18 15:41:01,187 - INFO - ✅FILE : updates.py : TSLA last 30 days data saved successfully
+2025-10-18 15:41:01,472 - INFO - 127.0.0.1 - - [18/Oct/2025 15:41:01] "GET /historical-data-last-thirtyDAYS/TSLA HTTP/1.1" 200 -
+2025-10-18 15:51:43,458 - INFO - 127.0.0.1 - - [18/Oct/2025 15:51:43] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 15:51:44,046 - INFO - 127.0.0.1 - - [18/Oct/2025 15:51:44] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 15:51:45,992 - INFO - ✅FILE : updates.py : TSLA last 30 days data saved successfully
+2025-10-18 15:51:46,252 - INFO - ✅FILE : updates.py : TSLA last 20 years saved successfully
+2025-10-18 15:51:46,262 - INFO - 127.0.0.1 - - [18/Oct/2025 15:51:46] "GET /historical-data-last-thirtyDAYS/TSLA HTTP/1.1" 200 -
+2025-10-18 15:51:46,563 - INFO - 127.0.0.1 - - [18/Oct/2025 15:51:46] "GET /historical-data-last-twentyYRS/TSLA HTTP/1.1" 200 -
+2025-10-18 15:51:50,936 - INFO - 127.0.0.1 - - [18/Oct/2025 15:51:50] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 15:51:51,876 - INFO - 127.0.0.1 - - [18/Oct/2025 15:51:51] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 15:51:53,085 - INFO - ✅FILE : updates.py : TSLA last 20 years saved successfully
+2025-10-18 15:51:53,251 - INFO - 127.0.0.1 - - [18/Oct/2025 15:51:53] "GET /historical-data-last-twentyYRS/TSLA HTTP/1.1" 200 -
+2025-10-18 15:51:53,312 - INFO - ✅FILE : updates.py : TSLA last 30 days data saved successfully
+2025-10-18 15:51:53,520 - INFO - 127.0.0.1 - - [18/Oct/2025 15:51:53] "GET /historical-data-last-thirtyDAYS/TSLA HTTP/1.1" 200 -
+2025-10-18 15:52:11,309 - INFO - 127.0.0.1 - - [18/Oct/2025 15:52:11] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 15:52:12,007 - INFO - 127.0.0.1 - - [18/Oct/2025 15:52:12] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 15:52:13,419 - INFO - ✅FILE : updates.py : TSLA last 30 days data saved successfully
+2025-10-18 15:52:13,640 - INFO - 127.0.0.1 - - [18/Oct/2025 15:52:13] "GET /historical-data-last-thirtyDAYS/TSLA HTTP/1.1" 200 -
+2025-10-18 15:52:13,984 - INFO - ✅FILE : updates.py : TSLA last 20 years saved successfully
+2025-10-18 15:52:14,234 - INFO - 127.0.0.1 - - [18/Oct/2025 15:52:14] "GET /historical-data-last-twentyYRS/TSLA HTTP/1.1" 200 -
+2025-10-18 15:52:14,942 - INFO - 127.0.0.1 - - [18/Oct/2025 15:52:14] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 15:52:15,792 - INFO - 127.0.0.1 - - [18/Oct/2025 15:52:15] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 15:52:17,085 - INFO - ✅FILE : updates.py : TSLA last 20 years saved successfully
+2025-10-18 15:52:17,317 - INFO - 127.0.0.1 - - [18/Oct/2025 15:52:17] "GET /historical-data-last-twentyYRS/TSLA HTTP/1.1" 200 -
+2025-10-18 15:52:17,341 - INFO - ✅FILE : updates.py : TSLA last 30 days data saved successfully
+2025-10-18 15:52:17,556 - INFO - 127.0.0.1 - - [18/Oct/2025 15:52:17] "GET /historical-data-last-thirtyDAYS/TSLA HTTP/1.1" 200 -
+2025-10-18 15:52:31,224 - INFO - 127.0.0.1 - - [18/Oct/2025 15:52:31] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 15:52:31,899 - INFO - 127.0.0.1 - - [18/Oct/2025 15:52:31] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 15:52:38,370 - INFO - ✅FILE : updates.py : TSLA last 20 years saved successfully
+2025-10-18 15:52:38,836 - INFO - ✅FILE : updates.py : TSLA last 30 days data saved successfully
+2025-10-18 15:52:38,948 - INFO - 127.0.0.1 - - [18/Oct/2025 15:52:38] "GET /historical-data-last-twentyYRS/TSLA HTTP/1.1" 200 -
+2025-10-18 15:52:39,255 - INFO - 127.0.0.1 - - [18/Oct/2025 15:52:39] "GET /historical-data-last-thirtyDAYS/TSLA HTTP/1.1" 200 -
+2025-10-18 15:52:44,715 - INFO - 127.0.0.1 - - [18/Oct/2025 15:52:44] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 15:52:47,371 - INFO - ✅FILE : updates.py : TSLA last 30 days data saved successfully
+2025-10-18 15:52:47,533 - INFO - 127.0.0.1 - - [18/Oct/2025 15:52:47] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 15:52:47,628 - INFO - 127.0.0.1 - - [18/Oct/2025 15:52:47] "GET /historical-data-last-thirtyDAYS/TSLA HTTP/1.1" 200 -
+2025-10-18 15:52:48,203 - INFO - ✅FILE : updates.py : TSLA last 20 years saved successfully
+2025-10-18 15:52:48,522 - INFO - 127.0.0.1 - - [18/Oct/2025 15:52:48] "GET /historical-data-last-twentyYRS/TSLA HTTP/1.1" 200 -
+2025-10-18 15:54:08,605 - INFO - 127.0.0.1 - - [18/Oct/2025 15:54:08] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 15:54:09,601 - INFO - 127.0.0.1 - - [18/Oct/2025 15:54:09] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 15:54:10,484 - INFO - ✅FILE : updates.py : TSLA last 30 days data saved successfully
+2025-10-18 15:54:10,615 - INFO - 127.0.0.1 - - [18/Oct/2025 15:54:10] "GET /historical-data-last-thirtyDAYS/TSLA HTTP/1.1" 200 -
+2025-10-18 15:54:11,449 - INFO - ✅FILE : updates.py : TSLA last 20 years saved successfully
+2025-10-18 15:54:11,683 - INFO - 127.0.0.1 - - [18/Oct/2025 15:54:11] "GET /historical-data-last-twentyYRS/TSLA HTTP/1.1" 200 -
+2025-10-18 15:58:32,624 - INFO - 127.0.0.1 - - [18/Oct/2025 15:58:32] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 15:58:33,241 - INFO - 127.0.0.1 - - [18/Oct/2025 15:58:33] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 15:58:34,748 - INFO - ✅FILE : updates.py : TSLA last 20 years saved successfully
+2025-10-18 15:58:34,964 - INFO - 127.0.0.1 - - [18/Oct/2025 15:58:34] "GET /historical-data-last-twentyYRS/TSLA HTTP/1.1" 200 -
+2025-10-18 15:58:34,997 - INFO - ✅FILE : updates.py : TSLA last 30 days data saved successfully
+2025-10-18 15:58:35,189 - INFO - 127.0.0.1 - - [18/Oct/2025 15:58:35] "GET /historical-data-last-thirtyDAYS/TSLA HTTP/1.1" 200 -
+2025-10-18 16:00:19,480 - INFO - 127.0.0.1 - - [18/Oct/2025 16:00:19] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 16:00:26,497 - INFO - ✅FILE : updates.py : TSLA last 20 years saved successfully
+2025-10-18 16:00:26,497 - INFO - ✅FILE : updates.py : TSLA last 30 days data saved successfully
+2025-10-18 16:00:26,596 - INFO - 127.0.0.1 - - [18/Oct/2025 16:00:26] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 16:00:26,604 - INFO - 127.0.0.1 - - [18/Oct/2025 16:00:26] "GET /historical-data-last-thirtyDAYS/TSLA HTTP/1.1" 200 -
+2025-10-18 16:00:26,685 - INFO - 127.0.0.1 - - [18/Oct/2025 16:00:26] "GET /historical-data-last-twentyYRS/TSLA HTTP/1.1" 200 -
+2025-10-18 16:00:30,295 - INFO - 127.0.0.1 - - [18/Oct/2025 16:00:30] "GET /fetch-daily-news HTTP/1.1" 200 -
+2025-10-18 16:00:30,313 - INFO - 127.0.0.1 - - [18/Oct/2025 16:00:30] "GET /fetch-daily-news HTTP/1.1" 200 -
+2025-10-18 16:00:36,663 - INFO - 127.0.0.1 - - [18/Oct/2025 16:00:36] "GET /watchlist/2 HTTP/1.1" 200 -
+2025-10-18 16:00:38,942 - INFO - 127.0.0.1 - - [18/Oct/2025 16:00:38] "GET /fetch-daily-news HTTP/1.1" 200 -
+2025-10-18 16:00:38,983 - INFO - 127.0.0.1 - - [18/Oct/2025 16:00:38] "GET /fetch-daily-news HTTP/1.1" 200 -
+2025-10-18 16:00:39,911 - INFO - 127.0.0.1 - - [18/Oct/2025 16:00:39] "GET /watchlist/2 HTTP/1.1" 200 -
+2025-10-18 16:00:51,386 - INFO - 127.0.0.1 - - [18/Oct/2025 16:00:51] "GET /watchlist/2 HTTP/1.1" 200 -
+2025-10-18 16:01:00,476 - INFO - 127.0.0.1 - - [18/Oct/2025 16:01:00] "GET /watchlist/2 HTTP/1.1" 200 -
+2025-10-18 16:01:00,723 - INFO - 127.0.0.1 - - [18/Oct/2025 16:01:00] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 16:01:03,266 - INFO - 127.0.0.1 - - [18/Oct/2025 16:01:03] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 16:01:03,571 - INFO - ✅FILE : updates.py : TSLA last 20 years saved successfully
+2025-10-18 16:01:03,688 - INFO - 127.0.0.1 - - [18/Oct/2025 16:01:03] "GET /historical-data-last-twentyYRS/TSLA HTTP/1.1" 200 -
+2025-10-18 16:01:04,025 - INFO - ✅FILE : updates.py : TSLA last 30 days data saved successfully
+2025-10-18 16:01:04,133 - INFO - 127.0.0.1 - - [18/Oct/2025 16:01:04] "GET /historical-data-last-thirtyDAYS/TSLA HTTP/1.1" 200 -
+2025-10-18 16:06:42,671 - INFO - 127.0.0.1 - - [18/Oct/2025 16:06:42] "OPTIONS /login HTTP/1.1" 200 -
+2025-10-18 16:06:43,536 - INFO - 127.0.0.1 - - [18/Oct/2025 16:06:43] "POST /login HTTP/1.1" 200 -
+2025-10-18 16:06:50,185 - INFO - 127.0.0.1 - - [18/Oct/2025 16:06:50] "GET /fetch-daily-news HTTP/1.1" 200 -
+2025-10-18 16:06:50,205 - INFO - 127.0.0.1 - - [18/Oct/2025 16:06:50] "GET /fetch-daily-news HTTP/1.1" 200 -
+2025-10-18 16:06:51,135 - INFO - 127.0.0.1 - - [18/Oct/2025 16:06:51] "GET /watchlist/2 HTTP/1.1" 200 -
+2025-10-18 16:06:51,588 - INFO - 127.0.0.1 - - [18/Oct/2025 16:06:51] "GET /watchlist/2 HTTP/1.1" 200 -
+2025-10-18 16:06:54,908 - INFO - 127.0.0.1 - - [18/Oct/2025 16:06:54] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 16:06:55,825 - INFO - 127.0.0.1 - - [18/Oct/2025 16:06:55] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 16:06:57,117 - INFO - ✅FILE : updates.py : TSLA last 30 days data saved successfully
+2025-10-18 16:06:57,117 - INFO - ✅FILE : updates.py : TSLA last 20 years saved successfully
+2025-10-18 16:06:57,242 - INFO - 127.0.0.1 - - [18/Oct/2025 16:06:57] "GET /historical-data-last-thirtyDAYS/TSLA HTTP/1.1" 200 -
+2025-10-18 16:06:57,415 - INFO - 127.0.0.1 - - [18/Oct/2025 16:06:57] "GET /historical-data-last-twentyYRS/TSLA HTTP/1.1" 200 -
+2025-10-18 16:09:11,206 - INFO -  * Detected change in 'C:\\Users\\AA\\OneDrive\\Desktop\\Investify\\backend\\app.py', reloading
+2025-10-18 16:09:11,545 - INFO -  * Restarting with stat
+2025-10-18 16:09:15,168 - INFO - ⏭️ Update already ran today — skipping.
+2025-10-18 16:09:15,223 - WARNING -  * Debugger is active!
+2025-10-18 16:09:15,223 - INFO -  * Debugger PIN: 963-026-660
+2025-10-18 16:11:03,479 - INFO - 127.0.0.1 - - [18/Oct/2025 16:11:03] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 16:11:03,989 - INFO - 127.0.0.1 - - [18/Oct/2025 16:11:03] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 16:11:04,506 - INFO - 127.0.0.1 - - [18/Oct/2025 16:11:04] "GET /historical-data-last-thirtyDAYS/TSLA HTTP/1.1" 200 -
+2025-10-18 16:11:06,095 - INFO - ✅FILE : updates.py : TSLA last 20 years saved successfully
+2025-10-18 16:11:06,288 - INFO - 127.0.0.1 - - [18/Oct/2025 16:11:06] "GET /historical-data-last-twentyYRS/TSLA HTTP/1.1" 200 -
+2025-10-18 16:11:50,157 - INFO -  * Detected change in 'C:\\Users\\AA\\OneDrive\\Desktop\\Investify\\backend\\app.py', reloading
+2025-10-18 16:11:50,442 - INFO -  * Restarting with stat
+2025-10-18 16:11:53,610 - INFO - ⏭️ Update already ran today — skipping.
+2025-10-18 16:11:53,659 - WARNING -  * Debugger is active!
+2025-10-18 16:11:53,659 - INFO -  * Debugger PIN: 963-026-660
+2025-10-18 16:14:28,979 - INFO - 127.0.0.1 - - [18/Oct/2025 16:14:28] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 16:14:29,834 - INFO - 127.0.0.1 - - [18/Oct/2025 16:14:29] "GET /company/9 HTTP/1.1" 200 -
+2025-10-18 16:14:29,970 - INFO - 127.0.0.1 - - [18/Oct/2025 16:14:29] "GET /historical-data-last-thirtyDAYS/TSLA HTTP/1.1" 200 -
+2025-10-18 16:14:30,734 - INFO - 127.0.0.1 - - [18/Oct/2025 16:14:30] "GET /historical-data-last-twentyYRS/TSLA HTTP/1.1" 200 -
+2025-10-18 16:15:12,759 - INFO - 127.0.0.1 - - [18/Oct/2025 16:15:12] "GET /watchlist/2 HTTP/1.1" 200 -
+2025-10-18 16:15:13,526 - INFO - 127.0.0.1 - - [18/Oct/2025 16:15:13] "GET /companies HTTP/1.1" 200 -
+2025-10-18 16:15:13,526 - INFO - 127.0.0.1 - - [18/Oct/2025 16:15:13] "GET /watchlist/2 HTTP/1.1" 200 -
+2025-10-18 16:15:14,289 - INFO - 127.0.0.1 - - [18/Oct/2025 16:15:14] "GET /companies HTTP/1.1" 200 -
+2025-10-18 16:15:26,627 - INFO - 127.0.0.1 - - [18/Oct/2025 16:15:26] "POST /watchlist/2/21 HTTP/1.1" 200 -
+2025-10-18 16:15:30,794 - INFO - 127.0.0.1 - - [18/Oct/2025 16:15:30] "GET /fetch-daily-news HTTP/1.1" 200 -
+2025-10-18 16:15:30,811 - INFO - 127.0.0.1 - - [18/Oct/2025 16:15:30] "GET /fetch-daily-news HTTP/1.1" 200 -
+2025-10-18 16:15:31,581 - INFO - 127.0.0.1 - - [18/Oct/2025 16:15:31] "GET /watchlist/2 HTTP/1.1" 200 -
+2025-10-18 16:15:32,004 - INFO - 127.0.0.1 - - [18/Oct/2025 16:15:32] "GET /watchlist/2 HTTP/1.1" 200 -
+2025-10-18 16:15:35,330 - INFO - 127.0.0.1 - - [18/Oct/2025 16:15:35] "GET /company/21 HTTP/1.1" 200 -
+2025-10-18 16:15:35,654 - INFO - 127.0.0.1 - - [18/Oct/2025 16:15:35] "GET /historical-data-last-thirtyDAYS/IBM HTTP/1.1" 200 -
+2025-10-18 16:15:35,905 - INFO - 127.0.0.1 - - [18/Oct/2025 16:15:35] "GET /historical-data-last-twentyYRS/IBM HTTP/1.1" 200 -
+2025-10-18 16:15:36,203 - INFO - 127.0.0.1 - - [18/Oct/2025 16:15:36] "GET /company/21 HTTP/1.1" 200 -
+2025-10-18 16:16:41,510 - INFO -  * Detected change in 'C:\\Users\\AA\\OneDrive\\Desktop\\Investify\\backend\\app.py', reloading
+2025-10-18 16:16:41,761 - INFO -  * Restarting with stat
+2025-10-18 16:16:44,516 - INFO - ⏭️ Update already ran today — skipping.
+2025-10-18 16:16:44,563 - WARNING -  * Debugger is active!
+2025-10-18 16:16:44,564 - INFO -  * Debugger PIN: 963-026-660
+2025-10-18 16:17:16,705 - INFO -  * Detected change in 'C:\\Users\\AA\\OneDrive\\Desktop\\Investify\\backend\\app.py', reloading
+2025-10-18 16:17:16,971 - INFO -  * Restarting with stat
+2025-10-18 16:17:19,727 - INFO - ⏭️ Update already ran today — skipping.
+2025-10-18 16:17:19,777 - WARNING -  * Debugger is active!
+2025-10-18 16:17:19,785 - INFO -  * Debugger PIN: 963-026-660
+2025-10-18 16:17:37,555 - INFO - 127.0.0.1 - - [18/Oct/2025 16:17:37] "GET /company/21 HTTP/1.1" 200 -
+2025-10-18 16:17:38,482 - INFO - 127.0.0.1 - - [18/Oct/2025 16:17:38] "GET /company/21 HTTP/1.1" 200 -
+2025-10-18 16:17:38,735 - INFO - 127.0.0.1 - - [18/Oct/2025 16:17:38] "GET /historical-data-last-thirtyDAYS/IBM HTTP/1.1" 200 -
+2025-10-18 16:17:39,425 - INFO - 127.0.0.1 - - [18/Oct/2025 16:17:39] "GET /historical-data-last-twentyYRS/IBM HTTP/1.1" 200 -
+2025-10-18 16:26:44,533 - INFO - 127.0.0.1 - - [18/Oct/2025 16:26:44] "GET /company/21 HTTP/1.1" 200 -
+2025-10-18 16:26:44,982 - INFO - 127.0.0.1 - - [18/Oct/2025 16:26:44] "GET /historical-data-last-thirtyDAYS/IBM HTTP/1.1" 200 -
+2025-10-18 16:26:45,162 - INFO - 127.0.0.1 - - [18/Oct/2025 16:26:45] "GET /historical-data-last-twentyYRS/IBM HTTP/1.1" 200 -
+2025-10-18 16:26:45,385 - INFO - 127.0.0.1 - - [18/Oct/2025 16:26:45] "GET /company/21 HTTP/1.1" 200 -
+2025-10-18 16:43:48,700 - INFO - 127.0.0.1 - - [18/Oct/2025 16:43:48] "OPTIONS /login HTTP/1.1" 200 -
+2025-10-18 16:43:49,271 - INFO - 127.0.0.1 - - [18/Oct/2025 16:43:49] "POST /login HTTP/1.1" 200 -
+2025-10-18 16:44:02,464 - INFO - 127.0.0.1 - - [18/Oct/2025 16:44:02] "GET /fetch-daily-news HTTP/1.1" 200 -
+2025-10-18 16:44:02,530 - INFO - 127.0.0.1 - - [18/Oct/2025 16:44:02] "GET /fetch-daily-news HTTP/1.1" 200 -
+2025-10-18 16:44:03,219 - INFO - 127.0.0.1 - - [18/Oct/2025 16:44:03] "GET /watchlist/2 HTTP/1.1" 200 -
+2025-10-18 16:44:03,964 - INFO - 127.0.0.1 - - [18/Oct/2025 16:44:03] "GET /watchlist/2 HTTP/1.1" 200 -
+2025-10-18 16:44:12,039 - INFO - 127.0.0.1 - - [18/Oct/2025 16:44:12] "GET /company/21 HTTP/1.1" 200 -
+2025-10-18 16:44:12,592 - INFO - 127.0.0.1 - - [18/Oct/2025 16:44:12] "GET /historical-data-last-twentyYRS/IBM HTTP/1.1" 200 -
+2025-10-18 16:44:12,764 - INFO - 127.0.0.1 - - [18/Oct/2025 16:44:12] "GET /historical-data-last-thirtyDAYS/IBM HTTP/1.1" 200 -
+2025-10-18 16:44:12,912 - INFO - 127.0.0.1 - - [18/Oct/2025 16:44:12] "GET /company/21 HTTP/1.1" 200 -
+2025-10-18 16:46:00,269 - INFO - 127.0.0.1 - - [18/Oct/2025 16:46:00] "GET /company/21 HTTP/1.1" 200 -
+2025-10-18 16:46:00,851 - INFO - 127.0.0.1 - - [18/Oct/2025 16:46:00] "GET /historical-data-last-twentyYRS/IBM HTTP/1.1" 200 -
+2025-10-18 16:46:01,233 - INFO - 127.0.0.1 - - [18/Oct/2025 16:46:01] "GET /historical-data-last-thirtyDAYS/IBM HTTP/1.1" 200 -
+2025-10-18 16:46:01,258 - INFO - 127.0.0.1 - - [18/Oct/2025 16:46:01] "GET /company/21 HTTP/1.1" 200 -
+2025-10-18 16:46:01,945 - INFO - 127.0.0.1 - - [18/Oct/2025 16:46:01] "GET /company/21 HTTP/1.1" 200 -
+2025-10-18 16:46:02,306 - INFO - 127.0.0.1 - - [18/Oct/2025 16:46:02] "GET /historical-data-last-twentyYRS/IBM HTTP/1.1" 200 -
+2025-10-18 16:46:02,648 - INFO - 127.0.0.1 - - [18/Oct/2025 16:46:02] "GET /historical-data-last-thirtyDAYS/IBM HTTP/1.1" 200 -
+2025-10-18 16:46:02,911 - INFO - 127.0.0.1 - - [18/Oct/2025 16:46:02] "GET /company/21 HTTP/1.1" 200 -
+2025-10-18 17:07:18,028 - INFO - 127.0.0.1 - - [18/Oct/2025 17:07:18] "GET /fetch-daily-news HTTP/1.1" 200 -
+2025-10-18 17:07:18,042 - INFO - 127.0.0.1 - - [18/Oct/2025 17:07:18] "GET /fetch-daily-news HTTP/1.1" 200 -
+2025-10-18 17:07:18,835 - INFO - 127.0.0.1 - - [18/Oct/2025 17:07:18] "GET /watchlist/2 HTTP/1.1" 200 -
+2025-10-18 17:07:19,245 - INFO - 127.0.0.1 - - [18/Oct/2025 17:07:19] "GET /watchlist/2 HTTP/1.1" 200 -
+2025-10-18 17:07:23,260 - INFO - 127.0.0.1 - - [18/Oct/2025 17:07:23] "GET /company/21 HTTP/1.1" 200 -
+2025-10-18 17:07:23,698 - INFO - 127.0.0.1 - - [18/Oct/2025 17:07:23] "GET /historical-data-last-thirtyDAYS/IBM HTTP/1.1" 200 -
+2025-10-18 17:07:23,882 - INFO - 127.0.0.1 - - [18/Oct/2025 17:07:23] "GET /historical-data-last-twentyYRS/IBM HTTP/1.1" 200 -
+2025-10-18 17:07:24,090 - INFO - 127.0.0.1 - - [18/Oct/2025 17:07:24] "GET /company/21 HTTP/1.1" 200 -
+2025-10-18 17:15:56,469 - INFO - 127.0.0.1 - - [18/Oct/2025 17:15:56] "GET /company/21 HTTP/1.1" 200 -
+2025-10-18 17:15:56,902 - INFO - 127.0.0.1 - - [18/Oct/2025 17:15:56] "GET /historical-data-last-twentyYRS/IBM HTTP/1.1" 200 -
+2025-10-18 17:15:57,163 - INFO - 127.0.0.1 - - [18/Oct/2025 17:15:57] "GET /historical-data-last-thirtyDAYS/IBM HTTP/1.1" 200 -
+2025-10-18 17:15:57,341 - INFO - 127.0.0.1 - - [18/Oct/2025 17:15:57] "GET /company/21 HTTP/1.1" 200 -
+2025-10-18 17:17:57,927 - INFO - 127.0.0.1 - - [18/Oct/2025 17:17:57] "GET /company/21 HTTP/1.1" 200 -
+2025-10-18 17:17:58,303 - INFO - 127.0.0.1 - - [18/Oct/2025 17:17:58] "GET /historical-data-last-twentyYRS/IBM HTTP/1.1" 200 -
+2025-10-18 17:17:58,729 - INFO - 127.0.0.1 - - [18/Oct/2025 17:17:58] "GET /historical-data-last-thirtyDAYS/IBM HTTP/1.1" 200 -
+2025-10-18 17:17:58,836 - INFO - 127.0.0.1 - - [18/Oct/2025 17:17:58] "GET /company/21 HTTP/1.1" 200 -
+2025-10-18 17:18:56,464 - INFO - 127.0.0.1 - - [18/Oct/2025 17:18:56] "GET /fetch-daily-news HTTP/1.1" 200 -
+2025-10-18 17:18:56,471 - INFO - 127.0.0.1 - - [18/Oct/2025 17:18:56] "GET /fetch-daily-news HTTP/1.1" 200 -
+2025-10-18 17:18:56,861 - INFO - 127.0.0.1 - - [18/Oct/2025 17:18:56] "GET /watchlist/2 HTTP/1.1" 200 -
+2025-10-18 17:18:57,606 - INFO - 127.0.0.1 - - [18/Oct/2025 17:18:57] "GET /watchlist/2 HTTP/1.1" 200 -
+2025-10-18 17:19:03,247 - INFO - 127.0.0.1 - - [18/Oct/2025 17:19:03] "GET /company/21 HTTP/1.1" 200 -
+2025-10-18 17:19:03,798 - INFO - 127.0.0.1 - - [18/Oct/2025 17:19:03] "GET /company/21 HTTP/1.1" 200 -
+2025-10-18 17:19:03,872 - INFO - 127.0.0.1 - - [18/Oct/2025 17:19:03] "GET /historical-data-last-twentyYRS/IBM HTTP/1.1" 200 -
+2025-10-18 17:19:03,978 - INFO - 127.0.0.1 - - [18/Oct/2025 17:19:03] "GET /historical-data-last-thirtyDAYS/IBM HTTP/1.1" 200 -
+2025-10-21 21:02:52,210 - INFO - 🔄 Running daily update...
+2025-10-21 21:03:10,305 - ERROR - $NVDA: possibly delisted; no price data found  (period=1d)
+2025-10-21 21:03:37,254 - ERROR - $NVDA: possibly delisted; no price data found  (period=5d)
+2025-10-21 21:03:37,399 - ERROR - ❌Error reading companies.json:'currentTradingPeriod'
+2025-10-21 21:04:01,055 - INFO - ✅Total articles fetched: 16
+
+2025-10-21 21:04:01,055 - INFO - ✅FILE : updates.py : Daily news saved successfully
+2025-10-21 21:04:01,066 - INFO - ✅ Update completed successfully.
+2025-10-21 21:04:02,488 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-21 21:04:02,498 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-21 21:04:02,539 - INFO -  * Restarting with stat
+2025-10-21 21:04:08,503 - INFO - ⏭️ Update already ran today — skipping.
+2025-10-21 21:04:08,604 - WARNING -  * Debugger is active!
+2025-10-21 21:04:08,621 - INFO -  * Debugger PIN: 963-026-660
+2025-10-21 21:04:50,301 - INFO -  * Detected change in 'C:\\Users\\AA\\OneDrive\\Desktop\\Investify\\backend\\updates.py', reloading
+2025-10-21 21:04:50,544 - INFO -  * Restarting with stat
+2025-10-21 21:04:54,830 - WARNING -  * Debugger is active!
+2025-10-21 21:04:54,853 - INFO -  * Debugger PIN: 963-026-660
+2025-10-21 21:04:56,656 - INFO -  * Detected change in 'C:\\Users\\AA\\OneDrive\\Desktop\\Investify\\backend\\updates.py', reloading
+2025-10-21 21:04:57,137 - INFO -  * Restarting with stat
+2025-10-21 21:09:55,055 - INFO - ✅Total articles fetched: 16
+
+2025-10-21 21:09:55,062 - INFO - ✅FILE : updates.py : Daily news saved successfully
+2025-10-21 21:10:32,411 - ERROR - $NVDA: possibly delisted; no price data found  (period=1d)
+2025-10-21 21:11:02,441 - ERROR - NVDA: Yahoo web request for share count failed
+2025-10-21 21:13:03,554 - ERROR - $NVDA: possibly delisted; no price data found  (period=1d)
+2025-10-21 21:13:43,807 - ERROR - NVDA: Yahoo web request for share count failed
+2025-10-21 21:14:10,688 - ERROR - ❌Error reading companies.json:Failed to perform, curl: (35) Recv failure: Connection was reset. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-21 21:14:10,787 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-21 21:14:10,787 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-21 21:14:10,795 - INFO -  * Restarting with stat
+2025-10-21 21:14:33,721 - ERROR - $NVDA: possibly delisted; no price data found  (period=1d)
+2025-10-21 21:15:39,371 - WARNING - ⚠️ fallback info failed for NVDA: Failed to perform, curl: (28) Operation timed out after 30004 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-21 21:16:39,686 - WARNING - ❌No financial data for NVDA, skipping update.
+2025-10-21 21:16:47,256 - ERROR - $MSFT: possibly delisted; no price data found  (period=1d)
+2025-10-21 21:16:56,571 - ERROR - $MSFT: possibly delisted; no price data found  (period=1y)

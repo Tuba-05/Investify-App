@@ -1,121 +1,114 @@
 [
     {
-        "source": "CNBC",
-        "author": "Liz Napolitano, Lisa Kailai Han",
-        "title": "Stocks cut gains as market choppiness persists: Live updates - CNBC",
-        "description": "Stocks reversed course on Wednesday, giving up earlier gains, as volatility continued to engulf Wall Street.",
-        "url": "https://www.cnbc.com/2025/10/14/stock-market-today-live-updates.html"
+        "source": "Al Jazeera English",
+        "author": "Al Jazeera",
+        "title": "Amazon Web Services struggling to recover from global web outages - Al Jazeera",
+        "description": "Amazon Web Services outages had knocked many global websites and apps offline, including Signal, Coinbase and Robinhood.",
+        "url": "https://www.aljazeera.com/news/2025/10/20/amazon-cloud-problems-spur-outage-of-global-websites-and-apps"
     },
     {
-        "source": "Financial Times",
-        "author": "Demetri Sevastopulo",
-        "title": "US warns world will ‘decouple’ from China if it imposes new export controls - Financial Times",
-        "description": "Scott Bessent says Washington will retaliate if Beijing proceeds with policy on rare earths and critical minerals",
-        "url": "https://www.ft.com/content/15a957a7-104e-431a-807e-441e5c2c753f"
-    },
-    {
-        "source": "Anthropic.com",
-        "author": null,
-        "title": "Introducing Claude Haiku 4.5 - Anthropic",
-        "description": "Claude Haiku 4.5, our latest small model, is available today to all users.",
-        "url": "https://www.anthropic.com/news/claude-haiku-4-5"
-    },
-    {
-        "source": "Charlotte Observer",
-        "author": "Catherine Muccigrosso",
-        "title": "New details emerge in LendingTree CEO’s death in ATV crash on NC family farm - Charlotte Observer",
-        "description": "Doug Lebda, 55, founder and CEO of LendingTree, was found dead after an ATV accident at his 227-acre Mill Springs property in Polk County, North Carolina.",
-        "url": "https://www.charlotteobserver.com/news/business/article312511305.html"
-    },
-    {
-        "source": "Politico",
-        "author": "Zi-Ann Lum",
-        "title": "Trump’s trade war nets a major victory over Canadian auto industry - Politico",
-        "description": "Carmaker Stellantis is shifting thousands of jobs and investing billions in U.S.-side production, punching a hole in Canada’s trade talk strategy.",
-        "url": "https://www.politico.com/news/2025/10/15/canada-auto-trump-trade-war-00608984"
-    },
-    {
-        "source": "Hollywood Reporter",
-        "author": "Alex Weprin",
-        "title": "Layoffs Hit NBC News: 150 Jobs Cut Ahead of Versant Split - The Hollywood Reporter",
-        "description": "The cuts come ahead of Comcast's Versant spinoff, which will see MSNBC and CNBC cleaved off from the rest of the NBC News Group.",
-        "url": "http://www.hollywoodreporter.com/business/business-news/nbc-news-layoffs-jobs-cut-ahead-msnbc-cnbc-split-versant-1236401602/"
-    },
-    {
-        "source": "Internet",
-        "author": "The Hacker News",
-        "title": "F5 Breach Exposes BIG-IP Source Code — Nation-State Hackers Behind Massive Intrusion - The Hacker News",
-        "description": "F5 confirms nation-state breach exposing BIG-IP source code and vulnerabilities; containment completed, customers urged to update.",
-        "url": "https://thehackernews.com/2025/10/f5-breach-exposes-big-ip-source-code.html"
+        "source": "Tipranks.com",
+        "author": "William White",
+        "title": "Why Is Replimune Stock (REPL) Up 105% Today? - TipRanks",
+        "description": "Replimune stock gained on Monday thanks to an accepted resubmission of a BLA to the FDA.",
+        "url": "https://www.tipranks.com/news/why-is-replimune-stock-repl-up-105-today"
     },
     {
         "source": "The Washington Post",
-        "author": "Kelly Kasulis Cho",
-        "title": "Unsafe amounts of lead found in some protein powders, report says - The Washington Post",
-        "description": "More than two-thirds of the 23 protein powders tested by Consumer Reports had lead levels exceeding the watchdog group’s daily intake safety standards.",
-        "url": "https://www.washingtonpost.com/health/2025/10/15/consumer-reports-protein-powder-lead/"
+        "author": "Katrina Northrop, Lyric Li",
+        "title": "China’s economy grows at slowest pace in a year as trade war bites - The Washington Post",
+        "description": "Official data put the annual growth rate at 4.8 percent, a sobering number for Chinese Communist Party leaders as they begin an important planning meeting.",
+        "url": "https://www.washingtonpost.com/world/2025/10/20/china-economy-gdp-growth/"
     },
     {
-        "source": "TheStreet",
-        "author": "Todd Campbell",
-        "title": "Veteran trader who bought Nvidia stock at $13 revamps price target - TheStreet",
-        "description": "Here's what could happen to Nvidia shares next.",
-        "url": "https://www.thestreet.com/investing/stocks/veteran-trader-who-bought-nvidia-stock-at-13-revamps-price-target"
-    },
-    {
-        "source": "BBC News",
+        "source": "Investor's Business Daily",
         "author": null,
-        "title": "As US shutdown starts to bite, how much could it hit economy? - BBC",
-        "description": "As workers start to miss pay, the impact of the shutdown will start to ripple out across industries.",
-        "url": "https://www.bbc.com/news/articles/c9861edyjlno"
+        "title": "Dow Jones Futures Rise; Tesla Earnings, China Trade Talks, CPI Inflation Ahead - Investor's Business Daily",
+        "description": "A choppy market is dangerous for active investors.",
+        "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-tesla-earnings-china-trade-talks-cpi-inflation/"
     },
     {
-        "source": "MarketWatch",
-        "author": "William Gavin",
-        "title": "Tesla has big robotaxi ambitions, and now Waymo may be shifting its approach - MarketWatch",
-        "description": "Waymo has a reputation for moving deliberately in its autonomous-driving rollout. Now it’s picking up speed as the market looks to get more competitive.",
-        "url": "https://www.marketwatch.com/story/tesla-has-big-robotaxi-ambitions-and-now-waymo-may-be-shifting-its-approach-2e1181aa"
-    },
-    {
-        "source": "The Wall Street Journal",
-        "author": "Alexander Saeedy",
-        "title": "Strong U.S. Economy Powers Bank of America Profit Higher - The Wall Street Journal",
-        "description": "The bank’s profit rose 23%, with consumer spending up and investment banking results booming",
-        "url": "https://www.wsj.com/finance/banking/bank-of-america-bac-q3-earnings-report-stock-2025-6af3d29d"
-    },
-    {
-        "source": "Morganstanley.com",
-        "author": null,
-        "title": "Morgan Stanley Reports Third Quarter 2025 - Morgan Stanley",
-        "description": "Morgan Stanley Reports Third Quarter 2025",
-        "url": "https://www.morganstanley.com/press-releases/morgan-stanley-reports-third-quarter-2025"
-    },
-    {
-        "source": "BBC News",
-        "author": null,
-        "title": "ChatGPT will soon allow erotica for verified adults, OpenAI boss says - BBC",
-        "description": "CEO Sam Altman says upcoming versions of the popular chatbot would enable it to behave in a more human-like way  - \"but only if you want it\".",
-        "url": "https://www.bbc.com/news/articles/cpd2qv58yl5o"
-    },
-    {
-        "source": "MarketWatch",
-        "author": "Barbara Kollmeyer",
-        "title": "‘Expensive, but not nutty.’ Howard Marks on U.S. stocks and the one thing investors should be doing right now. - MarketWatch",
-        "description": "Oaktree co-founder says U.S. investors are ‘maybe complacent’",
-        "url": "https://www.marketwatch.com/story/expensive-but-not-nutty-howard-marks-on-u-s-stocks-and-the-one-thing-investors-should-be-doing-right-now-74c75960"
+        "source": "9to5Mac",
+        "author": "Ben Lovejoy",
+        "title": "Cheapest and most expensive iPhone 17 models reportedly seeing strong sales - 9to5Mac",
+        "description": "Both the cheapest and the most expensive iPhone 17 models are reportedly seeing strong demand. A new market intelligence report...",
+        "url": "https://9to5mac.com/2025/10/20/cheapest-and-most-expensive-iphone-17-models-reportedly-seeing-strong-sales/"
     },
     {
         "source": "Fortune",
-        "author": "Eleanor Pringle",
-        "title": "Powell says exactly what Wall Street wants to hear as Trump provokes soybean battle with China - Fortune",
-        "description": "Investors heard enough of what they wanted to remain bullish on further cuts.",
-        "url": "https://fortune.com/2025/10/15/fed-powell-policy-hints-wall-street-upside-trump-china-soy/"
+        "author": "Jim Edwards",
+        "title": "Stock traders are delighted at the prospect of Trump losing his tariff war - Fortune",
+        "description": "Investors are increasingly convinced that the Fed’s rate cuts are now locked in. The notion that the U.S. Supreme Court may rule that Trump’s tariffs are illegal would be the icing on the equity cake.",
+        "url": "https://fortune.com/2025/10/20/stocks-trump-tariff-trade-war/"
     },
     {
-        "source": "Just-auto.com",
-        "author": "GlobalData",
-        "title": "GM to take $1.6bn charge amid EV strategy overhaul - Yahoo Finance",
-        "description": "The loss of the federal EV tax credit has weakened the sales outlook for EVs.",
-        "url": "https://www.just-auto.com/news/gm-charge-amid-ev-strategy/"
+        "source": "MarketWatch",
+        "author": "Jamie Chisholm",
+        "title": "With Apple stock near a record high as earnings loom, here’s the options trade to make - MarketWatch",
+        "description": "The iPhone maker’s shares tend to rise in the last 3 months of the year, says Evercore",
+        "url": "https://www.marketwatch.com/story/with-apple-stock-near-a-record-high-as-earnings-loom-heres-the-options-trade-to-make-73ef26ae"
+    },
+    {
+        "source": "Financial Times",
+        "author": "Sarah White",
+        "title": "BNP Paribas shares slump after Sudan court ruling - Financial Times",
+        "description": "Verdict in case over providing banking services to former ruler could open door to thousands more claims, lawyers argue",
+        "url": "https://www.ft.com/content/40b268f5-2bb4-4ef5-bb6d-2a645b33e2d5"
+    },
+    {
+        "source": "Bloomberg",
+        "author": null,
+        "title": "China’s Rare-Earth Magnet Exports to US Slip Ahead of Trump-Xi - Bloomberg.com",
+        "description": "China’s shipments of rare-earth magnets to the US and the European Union dropped in September, before Beijing escalated tensions by ramping up export curbs amid stormy trade talks between the world’s top two economies.",
+        "url": "https://www.bloomberg.com/news/articles/2025-10-20/china-s-rare-earth-magnet-exports-to-us-slip-ahead-of-trump-xi"
+    },
+    {
+        "source": "Business Insider",
+        "author": "Aki Ito",
+        "title": "Workplace loyalty isn't dead - businessinsider.com",
+        "description": "We asked employees whether they prefer more money or loyalty. The results are surprising.",
+        "url": "https://www.businessinsider.com/white-collar-employees-want-loyalty-more-than-money-2025-10"
+    },
+    {
+        "source": "Yahoo Entertainment",
+        "author": "James Havers",
+        "title": "California farmer watches in pain as local winery dumps truckloads of his grapes. Why his only customer rejected him - Yahoo Finance",
+        "description": "One small miss cost a farmer truckloads worth $10K-$15K all left to rot — what investors need to know.",
+        "url": "https://finance.yahoo.com/news/california-farmer-watches-pain-local-000300742.html"
+    },
+    {
+        "source": "The Wall Street Journal",
+        "author": "Lauren Thomas",
+        "title": "Exclusive | Activist Jana Takes Stake in Cooper, a Maker of Medical Devices - WSJ - The Wall Street Journal",
+        "description": "Bausch + Lomb CEO, a regular dealmaker, says he would be interested",
+        "url": "https://www.wsj.com/business/deals/activist-jana-takes-stake-in-cooper-a-maker-of-medical-devices-20ffbe9c"
+    },
+    {
+        "source": "The Business of Fashion",
+        "author": "Daniela Morosini",
+        "title": "L’Oréal to Acquire Kering Beauty Portfolio for $4.6 Billion - The Business of Fashion",
+        "description": "The companies announced on Sunday that L’Oréal will acquire Kering’s beauty brands and licenses for its fashion house names, including Gucci.",
+        "url": "https://www.businessoffashion.com/news/beauty/loreal-to-acquire-kering-beauty-portfolio-for-46-billion/"
+    },
+    {
+        "source": "Motley Fool",
+        "author": "Katie Brockman, The Motley Fool",
+        "title": "Social Security's 2026 COLA Forecast: What Retirees Ages 62 to 80 Should Expect - Yahoo Finance",
+        "description": "Here's what you might expect from the COLA in 2026.",
+        "url": "https://www.fool.com/retirement/2025/10/19/social-securitys-2026-cola-forecast-what-retirees/"
+    },
+    {
+        "source": "Politico",
+        "author": "David Cohen",
+        "title": "Global economy 'yet to feel the pain' from tariffs, European Central Bank president says - Politico",
+        "description": "\"It's a question of time,\" Christine Lagarde said.",
+        "url": "https://www.politico.com/news/2025/10/19/global-economy-trump-tariffs-ecb-lagarde-00615067"
+    },
+    {
+        "source": "Bloomberg",
+        "author": "Michael MacKenzie, Ye Xie",
+        "title": "Treasuries Rally Drives Home Haven Role as Credit Worries Swirl - Bloomberg.com",
+        "description": "All it took was a classic bout of haven buying to wake up a slumbering Treasuries market and drive benchmark yields to the lowest in months.",
+        "url": "https://www.bloomberg.com/news/articles/2025-10-19/treasuries-rally-drives-home-haven-role-as-credit-worries-swirl"
     }
 ]

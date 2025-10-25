@@ -126,6 +126,9 @@ const StockList = () => {
           rowHeight={50}
           initialState={{
             pagination: { paginationModel: { pageSize: 10 } },
+            sorting: {
+            sortModel: [{ field: "id", sort: "asc" }],
+                  },
           }}
           pageSizeOptions={[10]}
           sx={{

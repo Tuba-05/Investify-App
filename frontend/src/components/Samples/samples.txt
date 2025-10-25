@@ -57,3 +57,241 @@
 -----------------------------------------------------------------------------------------------------------------------
 #######################################################################################################################
 -----------------------------------------------------------------------------------------------------------------------
+ // const lst30dysDtCharts = [
+  //   // {/* ================= CHART 1: OPEN & CLOSE ================= */}
+  //   <div style={{ background: "#111827" /* Tailwind bg-gray-900 */,
+  //             padding: "1rem" /* p-4 */,
+  //             borderRadius: "1rem" /* rounded-2xl */,
+  //             boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.3)" /* shadow-lg */,
+  //     }}>
+  //     <h2 style={{ fontSize: "1.25rem" /* text-xl */,
+  //               marginBottom: "0.75rem" /* mb-3 */,
+  //               fontWeight: "600" /* font-semibold */,
+  //               textAlign: "center" /* text-center */,
+  //               color: "#a855f7",
+  //       }}>
+  //       Price Movement (Open & Close) </h2>
+  //     <div style={{ width: "100%", // full container width
+  //                 overflowX: "auto", // enable horizontal scroll
+  //                 overflowY: "auto", // enable vertical scroll
+  //       }}>
+  //       <div style={{ width: "2200px", // larger inner width for scrolling
+  //                   height: "400px", // larger inner width for scrolling
+  //         }}>
+  //         <ResponsiveContainer width="500%" height="100%">
+  //           <ComposedChart data={last30daysdata}>
+  //             <CartesianGrid strokeDasharray="3 3" stroke="#aea4a4ff" />
+  //             <XAxis dataKey="date" stroke="#aea4a4ff" />
+  //             <YAxis stroke="#aea4a4ff" />
+  //             <Tooltip />
+  //             <Legend />
+  //             <Bar type="catmullRom" dataKey="open" fill="#6911c7ff" name="Open"/>
+  //             <Bar type="catmullRom" dataKey="close" fill="#cf1010ff" name="Close"/>
+  //           </ComposedChart>
+  //         </ResponsiveContainer>
+  //       </div>
+  //     </div>
+  //   </div>,
+  //   // {/* ================= CHART 2: HIGH & LOW ================= */}
+  //   <div style={{ background: "#111827" /* Tailwind bg-gray-900 */,
+  //               padding: "1rem" /* p-4 */,
+  //               borderRadius: "1rem" /* rounded-2xl */,
+  //               boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.3)" /* shadow-lg */,
+  //     }}>
+  //       <h2 style={{ fontSize: "1.25rem" /* text-xl */,
+  //                 marginBottom: "0.75rem" /* mb-3 */,
+  //                 fontWeight: "600" /* font-semibold */,
+  //                 textAlign: "center" /* text-center */,
+  //                 color: "#a855f7",
+  //         }} >
+  //         Price Range (High & Low) </h2>
+  //       <div style={{ width: "100%", // full container width
+  //                   overflowX: "auto", // enable horizontal scroll
+  //                   overflowY: "auto", // enable vertical scroll
+  //         }} >
+  //         <div style={{ width: "2200px", // larger inner width for scrolling
+  //                     height: "400px", // larger inner width for scrolling
+  //           }}>
+  //           <ResponsiveContainer width="500%" height="100%">
+  //             <ComposedChart data={last30daysdata}>
+  //               <CartesianGrid strokeDasharray="3 3" stroke="#aea4a4ff" />
+  //               <XAxis dataKey="date" fill="#aea4a4ff" />
+  //               <YAxis stroke="#aea4a4ff" />
+  //               <Tooltip />
+  //               <Legend />
+  //               <Bar type="catmullRom" dataKey="high" fill="#840eaeff"  name="High" />
+  //               <Bar type="catmullRom" dataKey="low" fill="#810000ff"  name="Low" />
+  //             </ComposedChart>
+  //           </ResponsiveContainer>
+  //         </div>
+  //       </div>
+  //   </div>,
+  //   // {/* ================= CHART 3: VOLUME ================= */}
+  //   <div style={{ background: "#111827" /* Tailwind bg-gray-900 */,
+  //               padding: "1rem" /* p-4 */,
+  //               borderRadius: "1rem" /* rounded-2xl */,
+  //               boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.3)" /* shadow-lg */,
+  //     }}>
+  //       <h2 style={{ fontSize: "1.25rem" /* text-xl */,
+  //                 marginBottom: "0.75rem" /* mb-3 */,
+  //                 fontWeight: "600" /* font-semibold */,
+  //                 textAlign: "center" /* text-center */,
+  //                 color: "#a855f7",
+  //         }}>
+  //         Trading Volume </h2>
+  //       <div style={{ width: "100%", // full container width
+  //                   overflowX: "auto", // enable horizontal scroll
+  //                   overflowY: "auto", // enable vertical scroll
+  //         }}>
+  //         <div style={{ width: "2200px", height: "400px" }}>
+  //           {/* <-- increase size */}
+  //           <ResponsiveContainer width="300%" height="100%">
+  //             <AreaChart data={last30daysdata}>
+  //               <CartesianGrid strokeDasharray="3 3" stroke="#aea4a4ff" />
+  //               <XAxis dataKey="date" stroke="#aea4a4ff" />
+  //               <YAxis stroke="#aea4a4ff" />
+  //               <Tooltip />
+  //               <Legend />
+  //               <Area type="catmullRom"
+  //                     dataKey="volume"
+  //                     stroke="#af22c7ff"
+  //                     fill="#af22c7ff"
+  //                     fillOpacity={0.4} />
+  //               {/* <-- thicker bars */}
+  //             </AreaChart>
+  //           </ResponsiveContainer>
+  //         </div>
+  //       </div>
+  //   </div>,
+  // ];
+
+//   const lst20yrsDtCharts =[   
+//     // {/* ================= CHART 1: OPEN & CLOSE ================= */}
+//     <div style={{ background: "#111827" /* Tailwind bg-gray-900 */,
+//               padding: "1rem" /* p-4 */,
+//               borderRadius: "1rem" /* rounded-2xl */,
+//               boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.3)" /* shadow-lg */,
+//       }}>
+//       <h2 style={{ fontSize: "1.25rem" /* text-xl */,
+//                 marginBottom: "0.75rem" /* mb-3 */,
+//                 fontWeight: "600" /* font-semibold */,
+//                 textAlign: "center" /* text-center */,
+//                 color: "#a855f7",
+//         }}>
+//         Price Movement (Open & Close) </h2>
+//       <div style={{ width: "100%", // full container width
+//                   overflowX: "auto", // enable horizontal scroll
+//                   overflowY: "auto", // enable vertical scroll
+//         }}>
+//         <div style={{ width: "2200px", // larger inner width for scrolling
+//                     height: "400px", // larger inner width for scrolling
+//           }}>
+//           <ResponsiveContainer width="500%" height="100%">
+//             <ComposedChart data={last20yrsdata}>
+//               <CartesianGrid strokeDasharray="3 3" stroke="#aea4a4ff" />
+//               <XAxis dataKey="date" stroke="#aea4a4ff" />
+//               <YAxis stroke="#aea4a4ff" />
+//               <Tooltip />
+//               <Legend />
+//               <Bar type="catmullRom" dataKey="open" fill="#0d8ac0ff" name="Open"/>
+//               <Bar type="catmullRom" dataKey="close" fill="#0ba881ff" name="Close"/>
+//             </ComposedChart>
+//           </ResponsiveContainer>
+//         </div>
+//       </div>
+//     </div>,
+//     // {/* ================= CHART 2: HIGH & LOW ================= */}
+//     <div style={{ background: "#111827" /* Tailwind bg-gray-900 */,
+//                 padding: "1rem" /* p-4 */,
+//                 borderRadius: "1rem" /* rounded-2xl */,
+//                 boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.3)" /* shadow-lg */,
+//       }}>
+//         <h2 style={{ fontSize: "1.25rem" /* text-xl */,
+//                   marginBottom: "0.75rem" /* mb-3 */,
+//                   fontWeight: "600" /* font-semibold */,
+//                   textAlign: "center" /* text-center */,
+//                   color: "#a855f7",
+//           }} >
+//           Price Range (High & Low) </h2>
+//         <div style={{ width: "100%", // full container width
+//                     overflowX: "auto", // enable horizontal scroll
+//                     overflowY: "auto", // enable vertical scroll
+//           }} >
+//           <div style={{ width: "2200px", // larger inner width for scrolling
+//                       height: "400px", // larger inner width for scrolling
+//             }}>
+//             <ResponsiveContainer width="500%" height="100%">
+//               <ComposedChart data={last20yrsdata}>
+//                 <CartesianGrid strokeDasharray="3 3" stroke="#aea4a4ff" />
+//                 <XAxis dataKey="date" fill="#aea4a4ff" />
+//                 <YAxis stroke="#aea4a4ff" />
+//                 <Tooltip />
+//                 <Legend />
+//                 <Bar type="catmullRom" dataKey="high" fill="#6cdaedff"  name="High" />
+//                 <Bar type="catmullRom" dataKey="low" fill="#4efcd1ff"  name="Low" />
+//               </ComposedChart>
+//             </ResponsiveContainer>
+//           </div>
+//         </div>
+//     </div>,
+//     // {/* ================= CHART 3: VOLUME ================= */}
+//     <div style={{ background: "#111827" /* Tailwind bg-gray-900 */,
+//                 padding: "1rem" /* p-4 */,
+//                 borderRadius: "1rem" /* rounded-2xl */,
+//                 boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.3)" /* shadow-lg */,
+//       }}>
+//         <h2 style={{ fontSize: "1.25rem" /* text-xl */,
+//                   marginBottom: "0.75rem" /* mb-3 */,
+//                   fontWeight: "600" /* font-semibold */,
+//                   textAlign: "center" /* text-center */,
+//                   color: "#a855f7",
+//           }}>
+//           Trading Volume </h2>
+//         <div style={{ width: "100%", // full container width
+//                     overflowX: "auto", // enable horizontal scroll
+//                     overflowY: "auto", // enable vertical scroll
+//           }}>
+//           <div style={{ width: "2200px", height: "400px" }}>
+//             {/* <-- increase size */}
+//             <ResponsiveContainer width="300%" height="100%">
+//               <AreaChart data={last20yrsdata}>
+//                 <CartesianGrid strokeDasharray="3 3" stroke="#aea4a4ff" />
+//                 <XAxis dataKey="date" stroke="#aea4a4ff" />
+//                 <YAxis stroke="#aea4a4ff" />
+//                 <Tooltip />
+//                 <Legend />
+//                 <Area type="catmullRom"
+//                       dataKey="volume"
+//                       stroke="#750375ff"
+//                       fill="#750375ff"
+//                       fillOpacity={0.4} />
+//                 {/* <-- thicker bars */}
+//               </AreaChart>
+//             </ResponsiveContainer>
+//           </div>
+//         </div>
+//     </div>,
+//   ];
+
+{/* <div className="flex flex-col gap-12 p-5 bg-gray-950 text-green-300">
+              <div className=" p-3 bg-gray-950 text-green-300"> */}
+                {/* Chart #01 */}
+                {/* <button style={{ top: "50%", left: "20px", position: "absolute", transform: "translateY(-50%)" }}
+                  onClick={chart1prevSlide} >
+                  <IoIosArrowDropleftCircle style={{ fontSize: "45px" }} /> </button>
+                <div> {lst30dysDtCharts[chart1CurrentIndex]} </div>
+                <button style={{ top: "50%", right: "20px", position: "absolute", transform: "translateY(-50%)" }}
+                  onClick={chart1nextSlide} >
+                  <IoIosArrowDroprightCircle style={{ fontSize: "45px" }} /> </button>
+              </div>
+              <div className="  p-3 bg-gray-950 text-green-300"> */}
+                {/* Chart #02 */}
+                {/* <button style={{ top: "80%", left: "20px", position: "absolute", transform: "translateY(-50%)" }}
+                  onClick={chart2prevSlide} >
+                  <IoIosArrowDropleftCircle style={{ fontSize: "45px" }} />  </button>
+                <div> {lst20yrsDtCharts[chart2CurrentIndex]} </div>
+                <button style={{ top: "80%", right: "20px", position: "absolute", transform: "translateY(-50%)" }}
+                  onClick={chart2nextSlide} >
+                  <IoIosArrowDroprightCircle style={{ fontSize: "45px" }} /> </button>
+              </div>
+            </div> */}

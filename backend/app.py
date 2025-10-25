@@ -8,10 +8,7 @@ from werkzeug.security import generate_password_hash, check_password_hash # to p
 from flask_cors import CORS # in order to resolve different server ports(frontend&backend) connection problems 
 import requests, base64 # to fetch company logos from Clearbit API & convert to base64 string
 import json  # to read news.json file
-import threading  # to run background tasks (like fetching daily news)
-import backend.updates as updates # file in same folder 
-
-
+# import updates
 
 
 
@@ -52,12 +49,12 @@ class FinancialStatement(db.Model):
     __tablename__ = 'financial_statement'
     id = db.Column(db.Integer, primary_key=True)
     company_id = db.Column(db.Integer, db.ForeignKey('companies.id'))
-    revenue = db.Column(db.Numeric)
-    profit = db.Column(db.Numeric)
-    income = db.Column(db.Numeric)
-    equity = db.Column(db.Numeric)
-    assets = db.Column(db.Numeric)
-    liabilities = db.Column(db.Numeric)
+    revenue = db.Column(db.Float, nullable=True)
+    profit = db.Column(db.Float, nullable=True)
+    income = db.Column(db.Float, nullable=True)
+    equity = db.Column(db.Float, nullable=True)
+    assets = db.Column(db.Float, nullable=True)
+    liabilities = db.Column(db.Float, nullable=True)
     date = db.Column(db.Date)
     created_at = db.Column(db.DateTime, default=db.func.now(), onupdate=db.func.now())
 
@@ -283,10 +280,10 @@ def get_historical_data_last_thirtyDAYS(symbol):
     company = Company.query.filter_by(symbol=symbol).first()
     if not company: # if company not found in DB    
         return jsonify({"success": False, "message": "Company not found"}), 404
-    updates.get_last30days_data(symbol) # fetch latest data from Alpha Vantage API
+    # updates.get_last30days_data(symbol) # fetch latest data from Alpha Vantage API
     with open("last30days_historical_data.json", "r", encoding="utf-8") as f: # read from last30days_historical_data.json file
         last30days_data = json.load(f) # load JSON data Convert to Python-readable object
-    time_series = last30days_data.get("Time Series (60min)", {}) # Extract time series data else return {} dict
+    time_series = last30days_data.get("Time Series (5min)", {}) # Extract time series data else return {} dict
     formatted_data = [
             {
                 "date": date,
@@ -312,11 +309,11 @@ def get_historical_data_last_twentyYRS(symbol):
     company = Company.query.filter_by(symbol=symbol).first()
     if not company: # if company not found in DB    
         return jsonify({"success": False, "message": "Company not found"}), 404
-    updates.get_last20yrs_data(symbol) # fetch latest data from Alpha Vantage API
+    # updates.get_last20yrs_data(symbol) # fetch latest data from Alpha Vantage API
     with open("last20yrs_historical_data.json", "r", encoding="utf-8") as f: # read from last20yrs_historical_data.json file
         last20yrs_data = json.load(f) # load JSON data Convert to Python-readable object
     
-    time_series = last20yrs_data.get("Weekly Time Series", {}) # Extract time series data else return {} dict
+    time_series = last20yrs_data.get("Time Series (5min)", {}) # Extract time series data else return {} dict
     formatted_data = [
             {
                 "date": date,
@@ -342,18 +339,8 @@ def home():
     return {"status": "ok", "message": "Investify backend is running!"}
 
 
-# ================== DAILY NEWS FETCHING IN BACKGROUND ===================
-def run_background_task():
-    """ Function to run the background task for fetching and updating daily updates """
-    updates.start_scheduler()   # call a function inside upadtes.py
-    updates.update_companies_details() # call a function inside updates.py
-
 # ================== Run the Flask app ===================
 if __name__ == "__main__":
-    ''' Run the Flask app '''
-    # Start background thread for daily updating news & companies details 
-    thread = threading.Thread(target=run_background_task) # create a background thread
-    thread.daemon = True  # ensures it stops when Flask stops
-    thread.start() # start the background thread
-    
+    ''' Run the Flask app ''' 
     app.run(debug=True)
+
