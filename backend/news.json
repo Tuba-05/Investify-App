@@ -1,114 +1,135 @@
 [
     {
-        "source": "Al Jazeera English",
-        "author": "Al Jazeera",
-        "title": "Amazon Web Services struggling to recover from global web outages - Al Jazeera",
-        "description": "Amazon Web Services outages had knocked many global websites and apps offline, including Signal, Coinbase and Robinhood.",
-        "url": "https://www.aljazeera.com/news/2025/10/20/amazon-cloud-problems-spur-outage-of-global-websites-and-apps"
-    },
-    {
-        "source": "Tipranks.com",
-        "author": "William White",
-        "title": "Why Is Replimune Stock (REPL) Up 105% Today? - TipRanks",
-        "description": "Replimune stock gained on Monday thanks to an accepted resubmission of a BLA to the FDA.",
-        "url": "https://www.tipranks.com/news/why-is-replimune-stock-repl-up-105-today"
-    },
-    {
-        "source": "The Washington Post",
-        "author": "Katrina Northrop, Lyric Li",
-        "title": "China’s economy grows at slowest pace in a year as trade war bites - The Washington Post",
-        "description": "Official data put the annual growth rate at 4.8 percent, a sobering number for Chinese Communist Party leaders as they begin an important planning meeting.",
-        "url": "https://www.washingtonpost.com/world/2025/10/20/china-economy-gdp-growth/"
-    },
-    {
-        "source": "Investor's Business Daily",
-        "author": null,
-        "title": "Dow Jones Futures Rise; Tesla Earnings, China Trade Talks, CPI Inflation Ahead - Investor's Business Daily",
-        "description": "A choppy market is dangerous for active investors.",
-        "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-tesla-earnings-china-trade-talks-cpi-inflation/"
-    },
-    {
-        "source": "9to5Mac",
-        "author": "Ben Lovejoy",
-        "title": "Cheapest and most expensive iPhone 17 models reportedly seeing strong sales - 9to5Mac",
-        "description": "Both the cheapest and the most expensive iPhone 17 models are reportedly seeing strong demand. A new market intelligence report...",
-        "url": "https://9to5mac.com/2025/10/20/cheapest-and-most-expensive-iphone-17-models-reportedly-seeing-strong-sales/"
-    },
-    {
-        "source": "Fortune",
-        "author": "Jim Edwards",
-        "title": "Stock traders are delighted at the prospect of Trump losing his tariff war - Fortune",
-        "description": "Investors are increasingly convinced that the Fed’s rate cuts are now locked in. The notion that the U.S. Supreme Court may rule that Trump’s tariffs are illegal would be the icing on the equity cake.",
-        "url": "https://fortune.com/2025/10/20/stocks-trump-tariff-trade-war/"
-    },
-    {
-        "source": "MarketWatch",
-        "author": "Jamie Chisholm",
-        "title": "With Apple stock near a record high as earnings loom, here’s the options trade to make - MarketWatch",
-        "description": "The iPhone maker’s shares tend to rise in the last 3 months of the year, says Evercore",
-        "url": "https://www.marketwatch.com/story/with-apple-stock-near-a-record-high-as-earnings-loom-heres-the-options-trade-to-make-73ef26ae"
-    },
-    {
-        "source": "Financial Times",
-        "author": "Sarah White",
-        "title": "BNP Paribas shares slump after Sudan court ruling - Financial Times",
-        "description": "Verdict in case over providing banking services to former ruler could open door to thousands more claims, lawyers argue",
-        "url": "https://www.ft.com/content/40b268f5-2bb4-4ef5-bb6d-2a645b33e2d5"
+        "source": "Vox",
+        "author": "Sean Illing",
+        "title": "Why every website you used to love is getting worse - vox.com",
+        "description": "The reason every website you used to love now stinks.",
+        "url": "https://www.vox.com/technology/465922/enshittification-cory-doctorow-amazon-google-facebook"
     },
     {
         "source": "Bloomberg",
-        "author": null,
-        "title": "China’s Rare-Earth Magnet Exports to US Slip Ahead of Trump-Xi - Bloomberg.com",
-        "description": "China’s shipments of rare-earth magnets to the US and the European Union dropped in September, before Beijing escalated tensions by ramping up export curbs amid stormy trade talks between the world’s top two economies.",
-        "url": "https://www.bloomberg.com/news/articles/2025-10-20/china-s-rare-earth-magnet-exports-to-us-slip-ahead-of-trump-xi"
+        "author": "Hallie Gu, James Mayger",
+        "title": "China to Make ‘Substantial’ US Soybean Purchases, Bessent Says - Bloomberg.com",
+        "description": "China will make “substantial” purchases of US soybeans, Treasury Secretary Scott Bessent said Sunday after talks with Chinese counterparts, in a sign that the relations are thawing ahead of a possible leaders’ meeting.",
+        "url": "https://www.bloomberg.com/news/articles/2025-10-26/china-to-make-substantial-us-soybean-purchases-bessent-says"
     },
     {
-        "source": "Business Insider",
-        "author": "Aki Ito",
-        "title": "Workplace loyalty isn't dead - businessinsider.com",
-        "description": "We asked employees whether they prefer more money or loyalty. The results are surprising.",
-        "url": "https://www.businessinsider.com/white-collar-employees-want-loyalty-more-than-money-2025-10"
+        "source": "Investopedia",
+        "author": "Terry Lane",
+        "title": "What to Expect in Markets This Week: Fed Interest-Rate Decision; Earnings From Apple, Microsoft, Meta, Amazon, Alphabet - Investopedia",
+        "description": "Coming up: FOMC interest rate decision, earnings from Apple, Microsoft, Meta, Amazon, Alphabet, and more.",
+        "url": "https://www.investopedia.com/what-to-expect-in-markets-this-week-fed-interest-rate-decision-earnings-from-apple-microsoft-meta-amazon-alphabet-11835986"
     },
     {
-        "source": "Yahoo Entertainment",
-        "author": "James Havers",
-        "title": "California farmer watches in pain as local winery dumps truckloads of his grapes. Why his only customer rejected him - Yahoo Finance",
-        "description": "One small miss cost a farmer truckloads worth $10K-$15K all left to rot — what investors need to know.",
-        "url": "https://finance.yahoo.com/news/california-farmer-watches-pain-local-000300742.html"
+        "source": "CNBC",
+        "author": "Sawdah Bhaimiya",
+        "title": "Meta’s co-founder says being a CEO for 13 years was exhausting: I 'put on this face day after day' - CNBC",
+        "description": "\"I'd intended to be more of a independent or head of engineering,\" Dustin Moskovitz, Asana's co-founder and chairman said about his time at the software firm.",
+        "url": "https://www.cnbc.com/2025/10/26/metas-co-founder-says-being-a-ceo-for-13-years-was-exhausting.html"
+    },
+    {
+        "source": "Teslarati",
+        "author": "Joey Klender",
+        "title": "Tesla Full Self-Driving got a minor feature that’s a massive improvement - Teslarati",
+        "description": "",
+        "url": "https://www.teslarati.com/tesla-full-self-driving-more-seamless-little-known-feature/"
     },
     {
         "source": "The Wall Street Journal",
-        "author": "Lauren Thomas",
-        "title": "Exclusive | Activist Jana Takes Stake in Cooper, a Maker of Medical Devices - WSJ - The Wall Street Journal",
-        "description": "Bausch + Lomb CEO, a regular dealmaker, says he would be interested",
-        "url": "https://www.wsj.com/business/deals/activist-jana-takes-stake-in-cooper-a-maker-of-medical-devices-20ffbe9c"
+        "author": "John Keilman, Jemal R. Brinson",
+        "title": "The ‘Hands Problem’ Holding Back the Humanoid Revolution - The Wall Street Journal",
+        "description": "Researchers face huge challenges in creating robotic hands equal to the real thing, but they’re getting closer. One big question: How many fingers?",
+        "url": "https://www.wsj.com/tech/the-hands-problem-holding-back-the-humanoid-revolution-c1aa6123"
     },
     {
-        "source": "The Business of Fashion",
-        "author": "Daniela Morosini",
-        "title": "L’Oréal to Acquire Kering Beauty Portfolio for $4.6 Billion - The Business of Fashion",
-        "description": "The companies announced on Sunday that L’Oréal will acquire Kering’s beauty brands and licenses for its fashion house names, including Gucci.",
-        "url": "https://www.businessoffashion.com/news/beauty/loreal-to-acquire-kering-beauty-portfolio-for-46-billion/"
+        "source": "NBC News",
+        "author": "Phil Helsel",
+        "title": "Hormel is recalling 5 million pounds of ready-to-eat frozen chicken over metal concerns - NBC News",
+        "description": "Food giant Hormel is recalling nearly 5 million pounds of chicken products after complaints that pieces of metal were found in food, officials said Saturday",
+        "url": "https://www.nbcnews.com/news/us-news/hormel-recalling-5-million-pounds-ready-eat-frozen-chicken-metal-conce-rcna239777"
     },
     {
-        "source": "Motley Fool",
-        "author": "Katie Brockman, The Motley Fool",
-        "title": "Social Security's 2026 COLA Forecast: What Retirees Ages 62 to 80 Should Expect - Yahoo Finance",
-        "description": "Here's what you might expect from the COLA in 2026.",
-        "url": "https://www.fool.com/retirement/2025/10/19/social-securitys-2026-cola-forecast-what-retirees/"
-    },
-    {
-        "source": "Politico",
-        "author": "David Cohen",
-        "title": "Global economy 'yet to feel the pain' from tariffs, European Central Bank president says - Politico",
-        "description": "\"It's a question of time,\" Christine Lagarde said.",
-        "url": "https://www.politico.com/news/2025/10/19/global-economy-trump-tariffs-ecb-lagarde-00615067"
+        "source": "CoinDesk",
+        "author": "Jesse Hamilton",
+        "title": "Trump Names SEC Crypto Task Force Head Selig as Next Nominee to Run U.S. CFTC - CoinDesk",
+        "description": "If confirmed, current SEC official Mike Selig would take over the U.S. commodities watchdog as it's poised to be given wide authority over crypto.",
+        "url": "https://www.coindesk.com/policy/2025/10/25/frame-trump-names-sec-crypto-task-force-head-selig-as-next-nominee-to-run-u-s-cftc"
     },
     {
         "source": "Bloomberg",
-        "author": "Michael MacKenzie, Ye Xie",
-        "title": "Treasuries Rally Drives Home Haven Role as Credit Worries Swirl - Bloomberg.com",
-        "description": "All it took was a classic bout of haven buying to wake up a slumbering Treasuries market and drive benchmark yields to the lowest in months.",
-        "url": "https://www.bloomberg.com/news/articles/2025-10-19/treasuries-rally-drives-home-haven-role-as-credit-worries-swirl"
+        "author": "María Paula Mijares Torres",
+        "title": "ExxonMobil Sues California, Claims New Green Laws Violate Speech - Bloomberg.com",
+        "description": "ExxonMobil Corp. has sued California, arguing that two new state laws violate the First Amendment by trying to force it to agree to a certain climate viewpoint, and conflict with federal regulations.",
+        "url": "https://www.bloomberg.com/news/articles/2025-10-25/exxonmobil-sues-california-claims-new-green-laws-violate-speech"
+    },
+    {
+        "source": "TheStreet",
+        "author": "Fernanda Tronco",
+        "title": "Target announces a major change affecting its entire business - Yahoo Finance",
+        "description": "Over the last year, Target has found itself at the center of intense backlash and boycotts due to a series of controversial business decisions that verge on ...",
+        "url": "https://www.thestreet.com/retail/target-announces-a-major-change-affecting-its-entire-business"
+    },
+    {
+        "source": "Axios",
+        "author": "Sam Sabin",
+        "title": "AI is about to supercharge cyberattacks - Axios",
+        "description": "It's a ticking time bomb facing U.S. companies",
+        "url": "https://www.axios.com/2025/10/25/ai-is-about-to-supercharge-cyberattacks"
+    },
+    {
+        "source": "Fortune",
+        "author": "Ken Sweet, The Associated Press",
+        "title": "JPMorgan balks at legal tab for fraudsters and says Javice's lawyers treat it 'like a blank check' - Fortune",
+        "description": "A court previously ruled JPMorgan was required to advance Javice and Amar for any legal fees, which was part of the bank’s agreement when Frank was acquired in 2021.",
+        "url": "https://fortune.com/2025/10/25/jpmorgan-115-million-legal-tab-frank-fraud-charlie-javice-olivier-amar/"
+    },
+    {
+        "source": "TheStreet",
+        "author": "Tony Owusu, Celine Provini",
+        "title": "Elon Musk’s top 3 shocking quotes from Telsa Q3 earnings call - TheStreet",
+        "description": "Elon Musk channeled author Philip K. Dick in his most recent earnings call conversation.",
+        "url": "https://www.thestreet.com/investing/earnings/elon-musks-top-3-shocking-quotes-from-telsa-q3-earnings-call"
+    },
+    {
+        "source": "24/7 Wall St.",
+        "author": "Rich Duprey",
+        "title": "Nancy Pelosi Is Crushing The S&P 500 And These Are Her 3 Best Positions - Yahoo Finance",
+        "description": "Warren Buffett may be considered the greatest investor of our time, but even he can’t touch the prowess of California congresswoman Nancy Pelosi (D-CA). As...",
+        "url": "https://247wallst.com/investing/2025/10/25/nancy-pelosi-is-crushing-the-sp-500-and-these-are-her-3-best-positions/"
+    },
+    {
+        "source": "Gizmodo.com",
+        "author": "Lucas Ropek",
+        "title": "Tesla’s ‘Mad Max’ Mode is Now Being Investigated by U.S. Regulators - Gizmodo",
+        "description": "Social media users have complained that Teslas using the mode named after a lead-footed dystopian drifter were exceeding the speed limit.",
+        "url": "https://gizmodo.com/tesla-mad-max-investigated-2000677005"
+    },
+    {
+        "source": "Thebanner.com",
+        "author": "Nori Leybengrub",
+        "title": "Feds find almost two-dozen ‘skimmers’ designed to steal credit cards at Baltimore area retailers - The Baltimore Banner",
+        "description": "The U.S. Secret Service, in collaboration with local law enforcement, spent time in and around Baltimore, checking over 3,000 card readers, gas station pumps and ATMs looking for illegal skimming devices.",
+        "url": "https://www.thebanner.com/economy/secret-service-credit-card-skimmer-baltimore-area-retailers-CYYNFNA5LVHZZJYUTBOIUKPUTM/"
+    },
+    {
+        "source": "TheStreet",
+        "author": "Mary Helen Gillespie, Dana Sullivan Kilroy",
+        "title": "New CPI data resets December Fed interest rate cut - TheStreet",
+        "description": "Economists say softer CPI data gives the Federal Reserve breathing room as labor markets weaken.",
+        "url": "https://www.thestreet.com/fed/new-cpi-data-resets-december-fed-interest-rate-cut"
+    },
+    {
+        "source": "SFGate",
+        "author": "Fiona Lee",
+        "title": "Cruise ships are seeing a record year for outbreaks - SFGATE",
+        "description": "The number of outbreaks on cruise ships has exceeded the number from 2024, which was in itself a record year.",
+        "url": "https://www.sfgate.com/travel/article/cruise-ships-seeing-record-year-outbreaks-21118728.php"
+    },
+    {
+        "source": "Gizmodo.com",
+        "author": "Lucas Ropek",
+        "title": "New Trump Administration Energy Rule Would Enable Data Centers with ‘Large Loads’ - Gizmodo",
+        "description": "The \"urgent\" regulatory amendment from the Energy Department would benefit AI companies.",
+        "url": "https://gizmodo.com/ai-large-loads-2000676957"
     }
 ]

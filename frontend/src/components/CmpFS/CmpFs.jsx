@@ -17,6 +17,8 @@ function CmpFS() {
   const [last30daysdata, setlast30daysdata] = useState([]);
   const [last20yrsdata, setlast20yrsdata] = useState([]);
   const [chart1CurrentIndex, setChart1CurrentIndex] = useState(0);
+  const [chart2CurrentIndex, setChart2CurrentIndex] = useState(0);
+
   // const [chart2CurrentIndex, setChart2CurrentIndex] = useState(0);
 
   // COMPANY'S FS DATA FETCHING
@@ -105,48 +107,49 @@ function CmpFS() {
   const chart1prevSlide = () => {
     setChart1CurrentIndex((prevIndex) => (prevIndex === 0 ? 2 : prevIndex - 1));
   };
-  // const chart2nextSlide = () => {
-  //   setChart2CurrentIndex((prevIndex) => (prevIndex === 2 ? 0 : prevIndex + 1));
-  // };
+  const chart2nextSlide = () => {
+    setChart2CurrentIndex((prevIndex) => (prevIndex === 2 ? 0 : prevIndex + 1));
+  };
 
-  // const chart2prevSlide = () => {
-  //   setChart2CurrentIndex((prevIndex) => (prevIndex === 0 ? 2 : prevIndex - 1));
-  // };
+  const chart2prevSlide = () => {
+    setChart2CurrentIndex((prevIndex) => (prevIndex === 0 ? 2 : prevIndex - 1));
+  };
 
   // =======================CHARTS DISPLAY LOGIC=======================
   // ************last 30 days data************
- 
   const chart1Configs = [
   { title: "Price Movement (Open & Close)", dataKey1: "open", dataKey2: "close", data: last30daysdata, colors: ["#6911c7ff", "#cf1010ff"] },
   { title: "Price Range (High & Low)", dataKey1: "high", dataKey2: "low", data: last30daysdata, colors: ["#840eaeff", "#810000ff"] },
   { title: "Trading Volume", dataKey1: "volume", data: last30daysdata, colors: ["#af22c7ff"] },
 ];
   // ************last 20 yrs data************
-
-//   const chart2Configs = [
-//   { title: "Price Movement (Open & Close)", dataKey1: "open", dataKey2: "close", data: last20yrsdata, colors: ["#6911c7ff", "#cf1010ff"] },
-//   { title: "Price Range (High & Low)", dataKey1: "high", dataKey2: "low", data: last20yrsdata, colors: ["#840eaeff", "#810000ff"] },
-//   { title: "Trading Volume", dataKey1: "volume", data: last30daysdata, colors: ["#af22c7ff"] },
-// ];
+  const chart2Configs = [
+  { title: "Price Movement (Open & Close)", dataKey1: "open", dataKey2: "close", data: last20yrsdata, colors: ["#6911c7ff", "#cf1010ff"] },
+  { title: "Price Range (High & Low)", dataKey1: "high", dataKey2: "low", data: last20yrsdata, colors: ["#840eaeff", "#810000ff"] },
+  { title: "Trading Volume", dataKey1: "volume", data: last20yrsdata, colors: ["#af22c7ff"] },
+];
 
 // making reusable chart component
   const ChartDisplay = ({ config }) => (
-  <div style={{background: "#111827" /* Tailwind bg-gray-900 */,
+  <div style={{ background: "#111827" /* Tailwind bg-gray-900 */,
                 padding: "1rem" /* p-4 */,
                 borderRadius: "1rem" /* rounded-2xl */,
-                boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.3)" /* shadow-lg */,}}>
+                boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.3)" /* shadow-lg */,
+                }}>
 
-    <h2 style={{fontSize: "1.25rem" /* text-xl */,
+    <h2 style={{  fontSize: "1.25rem" /* text-xl */,
                   marginBottom: "0.75rem" /* mb-3 */,
                   fontWeight: "600" /* font-semibold */,
                   textAlign: "center" /* text-center */,
                   color: "#a855f7",}}>
-    {config.title} </h2>
+                  {config.title} </h2>
 
     <div style={{ width: "100%", // full container width
-                    overflowX: "auto", // enable horizontal scroll
-                    overflowY: "auto", // enable vertical scroll
-          }}>
+                  overflowX: "auto", // enable horizontal scroll
+                  overflowY: "auto", // enable vertical scroll
+                  }}>
+     <div style={{ width: "2200px", height: "400px" }}>
+             {/* <-- increase size */}        
     <ResponsiveContainer width="100%" height={400}>
       {config.dataKey2 ? (
         <ComposedChart data={config.data}>
@@ -170,9 +173,9 @@ function CmpFS() {
       )}
     </ResponsiveContainer>
     </div>
+    </div>
   </div>
 );
-
 
   if (!data) return <p>Loading...</p>; // show loading state
   if (last20yrsdata.length === 0 && last30daysdata.length === 0)
@@ -187,7 +190,7 @@ function CmpFS() {
           padding: "20px",
           marginLeft: "205px",
           width: "86%",
-          height: "250vh",
+          height: "260vh",
           marginTop: "18px",
           position: "absolute",
           background:
@@ -215,7 +218,7 @@ function CmpFS() {
               style={{
                 listStyleType: "none",
                 lineHeight: "2",
-                fontfamily: "Montserrat",
+                fontFamily: "Montserrat",
               }}
             >
               <table>
@@ -327,34 +330,30 @@ function CmpFS() {
                   </tr>
                 </tbody>
               </table>
-              {/*---------------------------------------------------------------------*/}
-              {/* <li><b><MdArrowRight />Symbol:</b> {data.symbol}</li>
-          <li><b><MdArrowRight />Country:</b> {data.country}</li>
-          <li><b><MdArrowRight />Price USD:</b> {data.price_usd} $</li>
-          <li><b><MdArrowRight />Market Capitalization:</b> {data.market_cap} $</li>
-          <li><b><MdArrowRight />Sector:</b> {data.sector}nology (IT)</li> */}
-              {/* <h2>Latest Financial Statements</h2> */}
-              {/* <li><b><MdArrowRight />Revenue:</b> {latest.revenue} $</li>
-          <li><b><MdArrowRight />Profit:</b> {latest.profit} $</li>
-          <li><b><MdArrowRight />Income:</b> {latest.income} $</li>
-          <li><b><MdArrowRight />Equity:</b> {latest.equity} $</li>
-          <li><b><MdArrowRight />Assets:</b> {latest.assets} $</li>
-          <li><b><MdArrowRight />Liabilities:</b> {latest.liabilities} $</li>
-          <li><b><MdArrowRight />Date:</b> {latest.date}</li> */}
-              {/*---------------------------------------------------------------------*/}
             </div>
             {/* ================= CHARTS DISPLAY ================= */}
             <div className="flex flex-col gap-12 p-5 bg-gray-950 text-green-300">
-              <div className=" p-3 bg-gray-950 text-green-300" style={{ position: "relative" }}>
-                <button style={{ top: "50%", left: "10px", position: "absolute", transform: "translateY(-50%)" }}
+              <h style={{fontSize:"20px"}} > Last 30days Data </h>
+              <div className=" gap-5 p-3 bg-gray-950 text-green-300" style={{ position: "relative" }}>
+                <button style={{ top: "50%", left: "-35px", position: "absolute", transform: "translateY(-50%)" }}
                       onClick={chart1prevSlide} >
-                      <IoIosArrowDropleftCircle style={{ fontSize: "45px" }} /> </button>
+                      <IoIosArrowDropleftCircle style={{ fontSize: "35px" }} /> </button>
                 <div> <ChartDisplay config={chart1Configs[chart1CurrentIndex]} /> </div>
-                <button style={{ top: "50%", right: "10px", position: "absolute", transform: "translateY(-50%)" }}
+                <button style={{ top: "50%", right: "-35px", position: "absolute", transform: "translateY(-50%)" }}
                       onClick={chart1nextSlide} >
-                      <IoIosArrowDroprightCircle style={{ fontSize: "45px" }} /> </button>    
-                </div>
-             </div>  
+                      <IoIosArrowDroprightCircle style={{ fontSize: "35px" }} /> </button>    
+              </div>
+              <h style={{fontSize:"20px"}} > Last 20yrs Data </h>
+              <div className=" gap-5 p-3 bg-gray-950 text-green-300" style={{ position: "relative" }}>
+                <button style={{ top: "50%", left: "-35px", position: "absolute", transform: "translateY(-50%)" }}
+                      onClick={chart2prevSlide} >
+                      <IoIosArrowDropleftCircle style={{ fontSize: "35px" }} /> </button>
+                <div> <ChartDisplay config={chart2Configs[chart2CurrentIndex]} /> </div>
+                <button style={{ top: "50%", right: "-35px", position: "absolute", transform: "translateY(-50%)" }}
+                      onClick={chart2nextSlide} >
+                      <IoIosArrowDroprightCircle style={{ fontSize: "35px" }} /> </button>    
+              </div>
+            </div>  
           </div>    
         </>     
         ) : (

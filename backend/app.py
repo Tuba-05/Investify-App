@@ -84,6 +84,7 @@ def signup():
     password = data.get("password")
 
     if User.query.filter_by(email=email).first(): # check if user exists in DB
+        print("User already exists")
         return jsonify({"success": False, "message": "Email already exists"}), 400
     
     hashed_pw = generate_password_hash(password) # Hash the password for security before saving to DB

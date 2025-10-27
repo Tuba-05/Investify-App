@@ -114,8 +114,7 @@ const WatchList = () => {
       renderCell: (params) =>(
         <span
           onClick={() => handleToggleWatchlist(params.row.id, params.row.c_name)}
-          style={{ cursor: "pointer" }}
-        >
+          style={{ cursor: "pointer" }} >
           <IoStarSharp style={{ color: "#f5c518", fontSize: 20 }} />
         </span>
       ),
@@ -132,8 +131,7 @@ const WatchList = () => {
         padding: "80px",
         marginLeft: "150px",
         flexWrap: "wrap", // allows stacking on smaller screens
-      }}
-    >
+      }} >
       {/* ====================================== WATCH-LIST TABLE ============================================ */}
       <div
         style={{
@@ -141,8 +139,7 @@ const WatchList = () => {
           minWidth: "340px",
           fontFamily: "Montserrat",
           fontSize: "25px",
-        }}
-      >
+        }} >
         <h2 style={{ marginBottom: 10, fontSize: "45px" }}>📊 Your Watchlist</h2>
 
         {userName && (

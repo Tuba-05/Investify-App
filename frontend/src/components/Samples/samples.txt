@@ -295,3 +295,23 @@
                   <IoIosArrowDroprightCircle style={{ fontSize: "45px" }} /> </button>
               </div>
             </div> */}
+
+
+-----------------------------------------------------------------------------------------------------------------------
+#######################################################################################################################
+-----------------------------------------------------------------------------------------------------------------------
+{/*---------------------------------------------------------------------*/}
+              {/* <li><b><MdArrowRight />Symbol:</b> {data.symbol}</li>
+          <li><b><MdArrowRight />Country:</b> {data.country}</li>
+          <li><b><MdArrowRight />Price USD:</b> {data.price_usd} $</li>
+          <li><b><MdArrowRight />Market Capitalization:</b> {data.market_cap} $</li>
+          <li><b><MdArrowRight />Sector:</b> {data.sector}nology (IT)</li> */}
+              {/* <h2>Latest Financial Statements</h2> */}
+              {/* <li><b><MdArrowRight />Revenue:</b> {latest.revenue} $</li>
+          <li><b><MdArrowRight />Profit:</b> {latest.profit} $</li>
+          <li><b><MdArrowRight />Income:</b> {latest.income} $</li>
+          <li><b><MdArrowRight />Equity:</b> {latest.equity} $</li>
+          <li><b><MdArrowRight />Assets:</b> {latest.assets} $</li>
+          <li><b><MdArrowRight />Liabilities:</b> {latest.liabilities} $</li>
+          <li><b><MdArrowRight />Date:</b> {latest.date}</li> */}
+              {/*---------------------------------------------------------------------*/}            

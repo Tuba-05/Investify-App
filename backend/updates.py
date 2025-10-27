@@ -235,13 +235,12 @@ def update_companies_details():
 
 # if should_run_today():
 #     logging.info("🔄 Running daily update...")
-#     update_companies_details()
-#     start_scheduler()
+#     # update_companies_details()
+#     start_scheduler() # news
 #     logging.info("✅ Update completed successfully.")
 # else:
 #     logging.info("⏭️ Update already ran today — skipping.")
 
-
-update_companies_details()
+# start_scheduler()
     
 
