@@ -2,7 +2,7 @@ import React, { useEffect, useState,  } from "react";
 import { DataGrid } from "@mui/x-data-grid"; // react table library better than simple plain html css
 import { IoStarSharp } from "react-icons/io5";
 import { useNavigate } from "react-router-dom"
-import { motion, AnimatePresence, m } from "framer-motion";
+import { motion, AnimatePresence} from "framer-motion";
 
 
 const WatchList = () => {

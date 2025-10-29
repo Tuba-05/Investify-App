@@ -3,12 +3,11 @@ from flask_sqlalchemy import SQLAlchemy  # to make Flask talk to database using 
 from sqlalchemy import text  #used in line49 unless db connection failed
 # for fetching external data (1.e frontend, APIs) & send proper JSON responses to frontend 
 # if json (flask will return it in plain string format), if jsonify (frameworks [like React] expect proper JSON headers)
-from flask import request, jsonify
+from flask import request, jsonify # fetching data from frontend & returning into json format 
 from werkzeug.security import generate_password_hash, check_password_hash # to protect passwords (py library builtin in flask)
 from flask_cors import CORS # in order to resolve different server ports(frontend&backend) connection problems 
 import requests, base64 # to fetch company logos from Clearbit API & convert to base64 string
 import json  # to read news.json file
-# import updates
 
 
 

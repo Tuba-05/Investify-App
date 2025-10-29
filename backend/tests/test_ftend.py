@@ -1,9 +1,12 @@
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
+from selenium import webdriver # Selenium WebDriver class to control the browser Chrome
+from selenium.webdriver.common.by import By # for locating elements on a webpage (by ID, name, class, CSS selector, XPath, etc.)
+from selenium.webdriver.support.ui import WebDriverWait #allows us to wait for elements or events to appear before interacting with them
+# 'expected_conditions' — provides pre-defined conditions (like element_to_be_clickable, alert_is_present)
+# that can be used with WebDriverWait for reliable synchronization.
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.options import Options #allows customizing browser behavior (like running in headless mode, disabling notifications, etc.)
 import time
+
 options = Options()
 options.add_argument("--start-maximized")  # optional
 

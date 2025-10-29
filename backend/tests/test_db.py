@@ -1,5 +1,5 @@
 import sys, os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))) # Go up two folders from this test file and add that directory to Python’s import search path.
 #  ye add isliye kiya bcz 'ModuleNotFoundError' araha tha
 from backend.app import app, db 
 from sqlalchemy import text # for executing plain string 

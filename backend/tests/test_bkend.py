@@ -1,4 +1,4 @@
-import requests
+import requests # for interacting with web APIs.
 
 # api endpoints testing
 BASE_URL = "http://127.0.0.1:5000"
@@ -39,8 +39,6 @@ def test_user_info():
 # 3.companies api testing 
 def test_company_api():
     response = requests.get(f"{BASE_URL}/companies")  # example company ID
-    print(f"Status Code: {response.status_code}")
-    print(f"Response JSON: {response.text}")  # print full text to inspect
     assert response.status_code == 200
     data = response.json()
     # If it's a list, take the first element
