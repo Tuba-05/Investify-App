@@ -38,12 +38,17 @@ class ForgotPassword(db.Model):
     __tablename__ = 'forgot_password_details'
     id =  db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
-    email = db.Column(db.String(120), unique=True, nullable=False)
+    email = db.Column(db.String(120), nullable=False)
     verif_code = db.Column(db.String(6), unique=True, nullable=False)
     generated_at = db.Column(db.DateTime, default=db.func.now(), nullable=False)
     expired_at = db.Column(db.DateTime, nullable=False)
     no_of_codes_generated = db.Column( db.Integer, default = 0)
     created_at = db.Column(db.DateTime, default=db.func.now(), onupdate=db.func.now())
+    
+    # already set through sql query 
+    # __table_args__ = (
+    #     UniqueConstraint('email', 'no_of_codes_generated', name='uix_email_codecount'),
+    # )
 
 class Company(db.Model):
     __tablename__ = 'companies'
@@ -145,18 +150,20 @@ def login():
 
 # ================== 3. FORGOT PASSWORD ROUTE ==================
 # ********* 1- CODE GENERATION *********
-@app.route("/veri-code-fpassword", method=["POST"])
+@app.route("/veri-code-fpassword", methods=["POST"])
 def forgot_pass():
     """ when login user forgot password """
-    data = request.get_json
+    data = request.get_json()
     email = data.get("email")
-
     user = User.query.filter_by(email = email).first() # Find user by email in DB
-    if not user: return jsonify({"success": False , "message": "no such email exist" }), 404
+    if not user:
+        print("user not found") 
+        return jsonify({"success": False , "message": "no such email exist" }), 404
     # keep generating new code whenever finds a duplicate in DB 
     while True:
-        if ForgotPassword.query.filter_by(verif_code = veri_code).first(): veri_code = ottp.generate_random_password() 
-        else: break
+        veri_code = ottp.generate_random_password()
+        if not ForgotPassword.query.filter_by(verif_code = veri_code).first():  break
+
     send_mail = ottp.send_mail(veri_code)
     # Suppose user already exists
     previous_entry = ForgotPassword.query.filter_by(email=email).order_by(ForgotPassword.id.desc()).first()
@@ -167,17 +174,22 @@ def forgot_pass():
     f_pass_entry = ForgotPassword(user_id= user.id, email= email, verif_code= veri_code, no_of_codes_generated= new_count)
     db.session.add(f_pass_entry)
     db.session.commit()
-
+    print(" Saved in forgot_pass_details DB successfully ")
+    return jsonify({"success": True, "message" : "Code sent to email & successfully added in DB" })
 
 # ********* 2- CODE VERIFICATION *********
-@app.route("/check-veri-code", method=['POST'])
+@app.route("/check-veri-code", methods=['POST'])
 def check_veri_code():
     data = request.get_json()
     email = data.get("email")
     code = data.get("veriCode")
     previous_entry = ForgotPassword.query.filter_by(email=email).order_by(ForgotPassword.id.desc()).first()
-    if previous_entry.verif_code == code: return({"success": True, "message" : "Code Verified : )" })
-    else: return({"success" : False, "message" : "Wrong Verification code : ("})
+    if previous_entry.verif_code == code: 
+        print(" Code verified ")
+        return jsonify({"success": True, "message" : "Code Verified : )" })
+    else: 
+        print(" Code not verified. ")
+        return jsonify({"success" : False, "message" : "Wrong Verification code : ("})
 
 
 # ================== 4. COMPANIES ROUTE ==================

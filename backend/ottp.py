@@ -23,7 +23,7 @@ def generate_random_password(length=6):
 
 def send_mail(password):
     sender = "tubabintenaushad@gmail.com"
-    password = "jlgo kkjo jsii wudg"
+    app_password = "jlgo kkjo jsii wudg"
     receiver = "tubabintenaushad@gmail.com"
 
     message = f"Subject:Forgot password Verification Code\n\nThis is your verification code for Investify App login {password}" \
@@ -33,7 +33,7 @@ def send_mail(password):
         # connect to Gmail's SMTP server
         server = smtplib.SMTP("smtp.gmail.com", 587)
         server.starttls()  # secure the connection
-        server.login(sender, password)
+        server.login(sender, app_password)
         server.sendmail(sender, receiver, message)
         print("✅ Email sent successfully!")
     except Exception as e:
@@ -56,7 +56,6 @@ def verify_code(user_input, code_entry):
         return "✅ Code verified successfully!"
     else:
         return "⚠️ Invalid code."
-    
 
     
 

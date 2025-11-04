@@ -2,9 +2,9 @@ import {React, useState, useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const VeriCode = () => {
-    const userEmail = localStorage.get('userEmail')
+    const userEmail = localStorage.getItem('userEmail')
     const [VeriCode, setVeriCode] = useState("")
-    const navigate = useNavigate;
+    const navigate = useNavigate();
 
     useEffect(() => {
         fetch('http://127.0.0.1:5000/veri-code-fpassword' , 
@@ -14,8 +14,9 @@ const VeriCode = () => {
             })
         })
     })
+
     const handleSubmit = () =>{
-        fetch(`http://127.0.0.1:5000/check-veri-code}`, 
+        fetch(`http://127.0.0.1:5000/check-veri-code`, 
             {method: 'POST', headers: { "Content-Type": "application/json" },
              body: JSON.stringify({
                 email : userEmail,
@@ -24,7 +25,7 @@ const VeriCode = () => {
         })
         .then((res) => res.json())
         .then((data) => {
-            if (data.sucess){
+            if (data.success){
                 alert(data.message); // code verified
                 localStorage.setItem("Newpassword", "true" );
                 navigate("/"); // navigate to login page
@@ -52,7 +53,7 @@ const VeriCode = () => {
     <form onSubmit={handleSubmit}>
       <label htmlFor="veriCode">Enter Verification Code:</label>
       <input
-        type="number" // or "number" if it’s digits only
+        type="text" // or "number" if it’s digits only
         maxLength={6}
         id="veriCode"
         value={VeriCode}
