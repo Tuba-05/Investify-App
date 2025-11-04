@@ -8,7 +8,8 @@ from werkzeug.security import generate_password_hash, check_password_hash # to p
 from flask_cors import CORS # in order to resolve different server ports(frontend&backend) connection problems 
 import requests, base64 # to fetch company logos from Clearbit API & convert to base64 string
 import json  # to read news.json file
-
+from password_generator import PasswordGenerator # to send ottp code to email
+import ottp
 
 
 app = Flask(__name__)  # createing flask web application
@@ -31,6 +32,17 @@ class User(db.Model):
     name = db.Column(db.String(100), nullable=False)
     email = db.Column(db.String(120), unique=True, nullable=False)
     password = db.Column(db.String(255), nullable=False)
+    created_at = db.Column(db.DateTime, default=db.func.now(), onupdate=db.func.now())
+
+class ForgotPassword(db.Model):
+    __tablename__ = 'forgot_password_details'
+    id =  db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
+    email = db.Column(db.String(120), unique=True, nullable=False)
+    verif_code = db.Column(db.String(6), unique=True, nullable=False)
+    generated_at = db.Column(db.DateTime, default=db.func.now(), nullable=False)
+    expired_at = db.Column(db.DateTime, nullable=False)
+    no_of_codes_generated = db.Column( db.Integer, default = 0)
     created_at = db.Column(db.DateTime, default=db.func.now(), onupdate=db.func.now())
 
 class Company(db.Model):
@@ -70,8 +82,7 @@ with app.app_context():
     pass
 
 # =============================== AUTH ROUTES ====================================================
-
-# ================== SIGNUP ROUTE ==================
+# ================== 1. SIGNUP ROUTE ==================
 @app.route("/signup", methods=["POST"])
 def signup():
     ''' User signup route '''
@@ -97,7 +108,7 @@ def signup():
                     }) # Send signup success response to frontend
 
 
-# ================== LOGIN ROUTE ==================
+# ================== 2. LOGIN ROUTE ==================
 @app.route("/login", methods=["POST"]) 
 def login():
     ''' User login route '''
@@ -106,22 +117,71 @@ def login():
     data = request.get_json()
     email = data.get("email")
     password = data.get("password")
-    
+    change_password = data.get("ChangePassword")
     user = User.query.filter_by(email=email).first() # Find user by email in DB
     
     if not user:    # if user not exists in DB
         return jsonify({"success": False, "message": "User not found"}), 404 
-
+    
     if not check_password_hash(user.password, password):   # if password not matches with DB passowrd
         return jsonify({"success": False, "message": "Invalid password"}), 401
-
+    
+    if change_password:
+        if user.password == password: 
+            return jsonify({"success": False, "message": "New password can not be Old password" })
+        else:
+            User.query.filter_by(email=email).update({"password": generate_password_hash(password)})
+            db.session.commit()
+            print("User logged in with new password.")
+            return jsonify({"success": True, "message": "Login successful with new password!",
+                        "user": {"id": user.id, "name": user.name, "email": user.email}
+                        }), 200
+    
     print("User logged in") # add for checking purposes
     return jsonify({"success": True, "message": "Login successful!",
                     "user": {"id": user.id, "name": user.name, "email": user.email}
-                    }) # Send login success response to frontend
+                    }), 200 # Send login success response to frontend
 
 
-# ================== COMPANIES ROUTE ==================
+# ================== 3. FORGOT PASSWORD ROUTE ==================
+# ********* 1- CODE GENERATION *********
+@app.route("/veri-code-fpassword", method=["POST"])
+def forgot_pass():
+    """ when login user forgot password """
+    data = request.get_json
+    email = data.get("email")
+
+    user = User.query.filter_by(email = email).first() # Find user by email in DB
+    if not user: return jsonify({"success": False , "message": "no such email exist" }), 404
+    # keep generating new code whenever finds a duplicate in DB 
+    while True:
+        if ForgotPassword.query.filter_by(verif_code = veri_code).first(): veri_code = ottp.generate_random_password() 
+        else: break
+    send_mail = ottp.send_mail(veri_code)
+    # Suppose user already exists
+    previous_entry = ForgotPassword.query.filter_by(email=email).order_by(ForgotPassword.id.desc()).first()
+    # If there's a previous record, get its count, else start from 0
+    current_count = previous_entry.no_of_codes_generated if previous_entry else 0
+    new_count = current_count + 1
+    # update_nof_codes = db.session.get(ForgotPassword, no_of_codes_generated)
+    f_pass_entry = ForgotPassword(user_id= user.id, email= email, verif_code= veri_code, no_of_codes_generated= new_count)
+    db.session.add(f_pass_entry)
+    db.session.commit()
+
+
+# ********* 2- CODE VERIFICATION *********
+@app.route("/check-veri-code", method=['POST'])
+def check_veri_code():
+    data = request.get_json()
+    email = data.get("email")
+    code = data.get("veriCode")
+    previous_entry = ForgotPassword.query.filter_by(email=email).order_by(ForgotPassword.id.desc()).first()
+    if previous_entry.verif_code == code: return({"success": True, "message" : "Code Verified : )" })
+    else: return({"success" : False, "message" : "Wrong Verification code : ("})
+
+
+# ================== 4. COMPANIES ROUTE ==================
+# ********* 1- STOCKLIST TABLE *********
 @app.route("/companies", methods=["GET"])
 def stocklist():
     ''' Fetch all companies route '''
@@ -147,7 +207,7 @@ def stocklist():
     except Exception as e: print("Error fetching companies data from DB:", e)
 
 
-# ================== COMPANY DETAILS ROUTE ==================
+# ********* 2- FINANCIAL STATEMENT/ DETAILS *********
 @app.route('/company/<int:id>', methods=['GET'])
 def get_company_details(id):
     ''' Fetch company details along with its logo & financial statements '''
@@ -202,8 +262,8 @@ def get_company_details(id):
     except Exception as e: print("Error fetching company details from DB:", e)
 
 
-# ================== WATCH-LIST ROUTES ==================
-# 1. ************* Get watchlist for a user & displaying daily news *************
+# ================== 5. WATCH-LIST ROUTES ==================
+# ************* 1- Get watchlist for a user & displaying daily news *************
 @app.route('/watchlist/<int:user_id>', methods=['GET'])
 def get_watchlist(user_id):
     ''' Fetch a user's watchlist with user and company details '''
@@ -234,7 +294,7 @@ def get_watchlist(user_id):
         return jsonify({"success": False, "message": "Error fetching watchlist"}), 500
 
 
-# 2. *************** Add/ Remove company from user's watchlist ***************
+# *************** 2- Add/ Remove company from user's watchlist ***************
 @app.route('/watchlist/<int:user_id>/<int:company_id>', methods=['POST'])
 def toggle_watchlist(user_id, company_id):
     """ Toggle company in user's watchlist (add/remove) & also shows daily NEWS current headlines"""
@@ -257,7 +317,7 @@ def toggle_watchlist(user_id, company_id):
         return jsonify({"success": True, "action": "added", "message": "Company added to watchlist"})
 
 
-# ======================= DAILY NEWS ROUTE =======================
+# ======================= 6. DAILY NEWS ROUTE =======================
 @app.route("/fetch-daily-news", methods=["GET"])    
 def fetch_news_from_file():
     """ Function to read news from news.json file and return as JSON response """
@@ -271,8 +331,8 @@ def fetch_news_from_file():
         return jsonify({"success": False, "message": "Error reading news file"}), 500        
 
 
-# ================================== GRAPH ROUTE ========================================
-# 1. *************** Historical Data (last 30 days) ***************
+# ======================== 7. GRAPH ROUTE =============================
+# *************** 1- Historical Data (last 30 days) ***************
 @app.route('/historical-data-last-thirtyDAYS/<symbol>', methods=['GET'])
 def get_historical_data_last_thirtyDAYS(symbol):
     """ Fetch historical stock data for the last 30 days for a given company symbol """
@@ -301,7 +361,7 @@ def get_historical_data_last_thirtyDAYS(symbol):
     return jsonify({"success": True, "hist_data": formatted_data})
     
 
-# 2. *************** Historical Data (last 20 yrs weekly data) ***************
+# *************** 2- Historical Data (last 20 yrs weekly data) ***************
 @app.route('/historical-data-last-twentyYRS/<symbol>', methods=['GET'])
 def get_historical_data_last_twentyYRS(symbol):
     """ Fetch historical stock data for the last 20 years for a given company symbol """
@@ -332,7 +392,7 @@ def get_historical_data_last_twentyYRS(symbol):
     return jsonify({"success": True, "hist_data": formatted_data})
 
 
-# ================== HOME ROUTE ==================
+# ================== 8. HOME ROUTE ==================
 @app.route("/")
 def home():
     ''' Home route to check if backend is running '''

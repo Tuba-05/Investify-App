@@ -8,6 +8,7 @@ import StockList from './components/StockList/StockList.jsx';
 import Navbar from './components/Navbar/Navbar.jsx';
 import CmpFs from './components/CmpFS/CmpFs.jsx';
 import WatchList from './components/WatchList/WatchList.jsx';
+import VeriCode from './components/VeriCode/VeriCode.jsx'; 
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
     <BrowserRouter style={{ fontFamily: "Montserrat" }}>
         <Routes>
         <Route path='/' element={<LoginSignUp/>}></Route> {/*it will appear first*/}
+        <Route path='/VeriCode' element={<VeriCode/>}></Route>
         {/* Pages after login/signup have Navbar, is the parent layout (contains Outlet) */}
         <Route element={<Navbar />}> 
               {/* pages accessible after login/ signup */}

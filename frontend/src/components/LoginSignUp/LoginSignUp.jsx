@@ -9,6 +9,7 @@ import { FaUserAlt } from "react-icons/fa";
 const LoginSignUp = () => {
   // assigning navigate function to a variavle
   const navigate = useNavigate();
+  const Newpassword = localStorage.getItem("Newpassword") || "false";
 
   // using usestate for switching b/w login/signup and changing formData respectively.
   const [isLogin, setIsLogin] = useState(true);
@@ -42,7 +43,8 @@ const LoginSignUp = () => {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
             email: formData.email,
-            password: formData.password
+            password: formData.password,
+            ChangePassword: Newpassword
           })
         });
         const data = await response.json();
@@ -111,6 +113,18 @@ const LoginSignUp = () => {
     });
   };
 
+  // Verification code trigger on clicking forgot password
+  const trigger_verif_code = () =>{
+    if (formData.email){
+      localStorage.setItem("userEmail", formData.email)
+      alert("Verification code has sent to your email");
+      navigate("/VeriCode"); // navigate to code verification pg
+    }
+    else{
+      alert("Plz fill email first");
+    }
+    }
+  
   return (
     <>
       <div className="auth-page">
@@ -186,7 +200,7 @@ const LoginSignUp = () => {
               {/* Forgot Password Link (login only) */}
               {isLogin && (
                 <div className="forgot-password">
-                  <a href="#" className="forgot-link">Forgot your password?</a>
+                  <a href="#" className="forgot-link" onClick={trigger_verif_code}>Forgot your password?</a>
                 </div>
               )}
 
