@@ -15,16 +15,11 @@ function App() {
     <>
     <BrowserRouter style={{ fontFamily: "Montserrat" }}>
         <Routes>
-        <Route path='/' element={<LoginSignUp/>}></Route> {/*it will appear first*/}
-        <Route path='/VeriCode' element={<VeriCode/>}></Route>
+          {/*it will appear first*/}
+        {/* <Route path='/' element={<LoginSignUp/>}></Route>  */}
+        <Route path='/' element={<VeriCode/>}></Route>
         {/* Pages after login/signup have Navbar, is the parent layout (contains Outlet) */}
-        <Route element={<Navbar />}> 
-              {/* pages accessible after login/ signup */}
-              <Route path='/HmPg' element={<HomePg/>}></Route> {/*it will appear after successful SignUp/In attempt*/}
-              <Route path='/StockList' element={<StockList/>}></Route> {/* StockList page */}
-              <Route path='/CmpFS/:id' element={<CmpFs/>}></Route> {/* Company Financial Statements page with dynamic ID */}
-              <Route path='/WatchList' element={<WatchList/>}></Route> {/* WatchList page */}
-        </Route>  
+        
         {/* fallback for any unknown route */}
         {/* <Route path="*" element={<LoginSignUp />} /> */}
         </Routes>    
