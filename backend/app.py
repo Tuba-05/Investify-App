@@ -1,4 +1,4 @@
-from flask import Flask, send_file  # to create flask web app
+from flask import Flask # to create flask web app
 from flask_sqlalchemy import SQLAlchemy  # to make Flask talk to database using Python code instead of SQL
 from sqlalchemy import text  #used in line49 unless db connection failed
 # for fetching external data (1.e frontend, APIs) & send proper JSON responses to frontend 
@@ -8,8 +8,8 @@ from werkzeug.security import generate_password_hash, check_password_hash # to p
 from flask_cors import CORS # in order to resolve different server ports(frontend&backend) connection problems 
 import requests, base64 # to fetch company logos from Clearbit API & convert to base64 string
 import json  # to read news.json file
-from password_generator import PasswordGenerator # to send ottp code to email
 import ottp
+from threading import Thread
 
 
 app = Flask(__name__)  # createing flask web application
@@ -164,7 +164,7 @@ def forgot_pass():
         veri_code = ottp.generate_random_password()
         if not ForgotPassword.query.filter_by(verif_code = veri_code).first():  break
 
-    send_mail = ottp.send_mail(veri_code)
+    send_mail = Thread(target=ottp.send_mail, args=(veri_code, email)).start()
     # Suppose user already exists
     previous_entry = ForgotPassword.query.filter_by(email=email).order_by(ForgotPassword.id.desc()).first()
     # If there's a previous record, get its count, else start from 0

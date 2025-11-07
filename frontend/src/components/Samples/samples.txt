@@ -321,10 +321,4 @@
 #######################################################################################################################
 -----------------------------------------------------------------------------------------------------------------------
 
-<Route element={<Navbar />}> 
-              {/* pages accessible after login/ signup */}
-              <Route path='/HmPg' element={<HomePg/>}></Route> {/*it will appear after successful SignUp/In attempt*/}
-              <Route path='/StockList' element={<StockList/>}></Route> {/* StockList page */}
-              <Route path='/CmpFS/:id' element={<CmpFs/>}></Route> {/* Company Financial Statements page with dynamic ID */}
-              <Route path='/WatchList' element={<WatchList/>}></Route> {/* WatchList page */}
-        </Route>  
+ 

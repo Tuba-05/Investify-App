@@ -1,6 +1,5 @@
 import random
 import string
-import datetime
 import smtplib
 
 def generate_random_password(length=6):
@@ -21,10 +20,10 @@ def generate_random_password(length=6):
     return password
 
 
-def send_mail(password):
+def send_mail(password, receiver):
     sender = "tubabintenaushad@gmail.com"
     app_password = "jlgo kkjo jsii wudg"
-    receiver = "tubabintenaushad@gmail.com"
+    email_receiver = receiver
 
     message = f"Subject:Forgot password Verification Code\n\nThis is your verification code for Investify App login {password}" \
     "\n NOTE: this code will be active for 2 minutes."
@@ -34,28 +33,11 @@ def send_mail(password):
         server = smtplib.SMTP("smtp.gmail.com", 587)
         server.starttls()  # secure the connection
         server.login(sender, app_password)
-        server.sendmail(sender, receiver, message)
+        server.sendmail(sender, email_receiver, message)
         print("✅ Email sent successfully!")
     except Exception as e:
         print("⚠️ Error:", e)
     finally:
         server.quit()
 
-# Step 2: Store code with timestamp
-def create_code_entry():
-    code = 'abc34we'
-    expiry_time = datetime.datetime.now() + datetime.timedelta(minutes=2)
-    return {"code": code, "expires_at": expiry_time}
-
-# Step 3: Check if code is still valid
-def verify_code(user_input, code_entry):
-    current_time = datetime.datetime.now()
-    if current_time > code_entry["expires_at"]:
-        return "❌ Code expired!"
-    elif user_input == code_entry["code"]:
-        return "✅ Code verified successfully!"
-    else:
-        return "⚠️ Invalid code."
-
-    
 

@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap styles
 import 'boxicons/css/boxicons.min.css'; // Boxicons styles
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  // <StrictMode>
     <App />
-  </StrictMode>,
+  // </StrictMode>, 
 )
