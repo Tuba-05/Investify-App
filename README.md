@@ -2,5 +2,5 @@
 Investify app,  web application
 
 FRONTEND : Reactjs <br> 
-BACKEND : flask
+BACKEND : flask <br>
 DATABASE : Postgre sql db
