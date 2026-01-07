@@ -37,3 +37,29 @@ Investify is a full-stack financial web application providing stock market insig
 
 **Full-Stack Web Application (Flask + React)**
 
+---
+
+## Academic Context
+
+This project was developed as part of the **Computer & Information Systems Engineering** curriculum to demonstrate:
+- Full-stack web development
+- RESTful API design
+- Database management using PostgreSQL
+- Practical implementation and analysis of stock markets.
+
+---
+
+## Author
+
+**Tuba Naushad**  
+Bachelor’s in Computer & Information Systems Engineering  
+Third Year Student  
+
+---
+
+## License
+
+This project is intended for educational purposes only.
+
+
+
