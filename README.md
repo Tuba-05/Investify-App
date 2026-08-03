@@ -1,6 +1,4 @@
-Investify project ke liye complete, enhanced **README.md** file (architecture tree aur details ke sath) ye hai:
 
-```markdown
 # 📈 Investify
 
 <p align="center">
