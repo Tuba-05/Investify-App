@@ -14,18 +14,19 @@
 ---
 
 ## 📑 Table of Contents
-- [✨ Core Features & Innovations](#-core-features--innovations)
-- [🛠️ Technology Stack](#%EF%B8%8F-technology-stack)
-- [📂 Folder Structure](#-folder-structure)
-- [🏗️ System Architecture & Data Flow Diagrams](#%EF%B8%8F-system-architecture--data-flow-diagrams)
-- [🗄️ Database Architecture & Supabase](#-database-architecture--supabase)
-- [🔌 REST API Endpoints Specification](#-rest-api-endpoints-specification)
-- [🚀 Getting Started & Local Setup](#-getting-started--local-setup)
-- [🎓 Academic Context & DBMS Origin Story](#-academic-context--dbms-origin-story)
-- [🤝 Author & Contact](#-author--contact)
+1. [✨ Core Features & Innovations](#core-features)
+2. [🛠️ Technology Stack](#technology-stack)
+3. [📂 Folder Structure](#folder-structure)
+4. [🏗️ System Architecture & Data Flow Diagrams](#system-architecture)
+5. [🗄️ Database Architecture & Supabase](#database-architecture)
+6. [🔌 REST API Endpoints Specification](#api-endpoints)
+7. [🚀 Getting Started & Local Setup](#getting-started)
+8. [🎓 Academic Context & DBMS Origin Story](#academic-context)
+9. [🤝 Author & Contact](#author-contact)
 
 ---
 
+<a id="core-features"></a>
 ## ✨ Core Features & Innovations
 
 ### ⚡ 1. Live Telemetry & 5-Minute Zero-Latency Memory Cache
@@ -60,6 +61,7 @@
 
 ---
 
+<a id="technology-stack"></a>
 ## 🛠️ Technology Stack
 
 | Layer | Technologies & Libraries |
@@ -75,6 +77,7 @@
 
 ---
 
+<a id="folder-structure"></a>
 ## 📂 Folder Structure
 
 ### ⚙️ Backend Structure (`/backend`)
@@ -128,6 +131,7 @@ frontend/
 
 ---
 
+<a id="system-architecture"></a>
 ## 🏗️ System Architecture & Data Flow Diagrams
 
 ### 1. High-Level Full-Stack System Architecture
@@ -211,6 +215,7 @@ frontend/
 
 ---
 
+<a id="database-architecture"></a>
 ## 🗄️ Database Architecture & Supabase
 
 Investify operates on a cloud-hosted **Supabase PostgreSQL** database with SQLAlchemy ORM mappings:
@@ -223,6 +228,7 @@ Investify operates on a cloud-hosted **Supabase PostgreSQL** database with SQLAl
 
 ---
 
+<a id="api-endpoints"></a>
 ## 🔌 REST API Endpoints Specification
 
 ### 🔐 1. Authentication & Security Endpoints (`/api/auth`)
@@ -273,6 +279,7 @@ Investify operates on a cloud-hosted **Supabase PostgreSQL** database with SQLAl
 
 ---
 
+<a id="getting-started"></a>
 ## 🚀 Getting Started & Local Setup
 
 ### Prerequisites
@@ -343,6 +350,7 @@ Application will run on `http://localhost:5173`.
 
 ---
 
+<a id="academic-context"></a>
 ## 🎓 Academic Context & DBMS Origin Story
 
 Investify was originally developed as an academic learning project for a **Database Management Systems (DBMS)** university course at **NED University of Engineering & Technology (NEDUET)**. The initial focus was understanding relational database design, table entity relationships, foreign key constraints, and SQL ORM queries.
@@ -351,6 +359,7 @@ Post-course, the platform underwent production-grade architectural enhancements 
 
 ---
 
+<a id="author-contact"></a>
 ## 🤝 Author & Contact
 
 **Tuba Naushad**  
