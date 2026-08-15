@@ -99,19 +99,43 @@ def forgot_pass():
     print(" Saved in forgot_pass_details DB successfully ")
     return jsonify({"success": True, "message" : "Code sent to email & successfully added in DB" })
 
-# ********* 2- CODE VERIFICATION *********
+# ********* 2- CODE VERIFICATION (WITH 2-MIN EXPIRATION LOGIC) *********
 @auth_bp.route("/check-veri-code", methods=['POST'])
 def check_veri_code():
-    data = request.get_json()
+    data = request.get_json() or {}
     email = data.get("email")
     code = data.get("veriCode")
+
+    if not email or not code:
+        return jsonify({"success": False, "message": "Email address and verification code are required."}), 400
+
     previous_entry = ForgotPassword.query.filter_by(email=email).order_by(ForgotPassword.id.desc()).first()
+
+    if not previous_entry:
+        return jsonify({"success": False, "message": "No verification code requested for this email."}), 404
+
+    from datetime import datetime, timezone
+    now_utc = datetime.now(timezone.utc)
+    expired_at = previous_entry.expired_at
+
+    # Convert naive expired_at from DB to UTC aware
+    if expired_at and expired_at.tzinfo is None:
+        expired_at = expired_at.replace(tzinfo=timezone.utc)
+
+    # Check 2-minute expiration logic
+    if now_utc > expired_at:
+        return jsonify({
+            "success": False, 
+            "expired": True, 
+            "message": "Verification code has EXPIRED (2 min limit). Please click 'Resend Code'."
+        }), 400
+
     if previous_entry.verif_code == code: 
-        print(" Code verified ")
-        return jsonify({"success": True, "message" : "Code Verified : )" })
+        print("Code verified successfully")
+        return jsonify({"success": True, "message": "Code Verified Successfully!"})
     else: 
-        print(" Code not verified. ")
-        return jsonify({"success" : False, "message" : "Wrong Verification code : ("})
+        print("Code verification failed - Wrong code")
+        return jsonify({"success": False, "message": "Invalid Verification Code. Please check and try again."}), 400
 
 
 # ********* 3- SUBMIT SUPPORT TICKET (DISPATCH GMAIL EMAIL VIA SMTP) *********
