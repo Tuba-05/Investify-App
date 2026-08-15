@@ -11,4 +11,6 @@ venv/
 # Local Database & Log files
 *.db
 *.sqlite
-logs/
+*.log
+logs/*.log
+!logs/.gitkeep
