@@ -18,11 +18,11 @@ Originally conceived as a **Database Management Systems (DBMS)** academic projec
 ## 📑 Table of Contents
 1. [Core Features & Innovations](#-core-features--innovations)
 2. [Technology Stack](#%EF%B8%8F-technology-stack)
-3. [Database Architecture & Supabase](#-database-architecture--supabase)
-4. [System Architecture](#-system-architecture)
-5. [Getting Started & Installation](#-getting-started--installation)
-6. [Folder Structure](#-folder-structure)
-7. [Academic Context & Evolution](#-academic-context--evolution)
+3. [Folder Structure](#-folder-structure)
+4. [System Architecture & Data Flow Diagrams](#%EF%B8%8F-system-architecture--data-flow-diagrams)
+5. [Database Architecture & Supabase](#-database-architecture--supabase)
+6. [Getting Started & Local Setup](#-getting-started--local-setup)
+7. [Academic Context & DBMS Origin Story](#-academic-context--dbms-origin-story)
 8. [Author & Contact](#-author--contact)
 
 ---
@@ -53,8 +53,8 @@ Originally conceived as a **Database Management Systems (DBMS)** academic projec
 - **Session Persistence**: Active sessions automatically redirect returning users directly to `/HmPg`.
 - **User Profile Modal**: Interactive sidebar session badge rendering user initials avatar, email badge, saved watchlist stats, and security status.
 
-### 📧 7. SMTP OTP Email Verification
-- 6-digit cryptographically generated OTP codes dispatched via Gmail SMTP for secure password recovery with a 2-minute expiration window.
+### ⏱️ 7. Live 2-Minute OTP Countdown & Email Verification
+- Live 120-second MM:SS countdown timer (`⏱️ Code Valid For: 01:45`) and strict server-side 2-minute expiration logic. 6-digit OTP codes dispatched via Gmail SMTP for secure password recovery.
 
 ### 🎨 8. Premium Dark Glassmorphism UI
 - Unified dark slate theme (`#0f172a`), signature world trading map background (`trading-2.png`), glowing cyan accent borders (`#1cb5ab`), high-contrast typography, and gold star watchlist badges.
@@ -76,6 +76,125 @@ Originally conceived as a **Database Management Systems (DBMS)** academic projec
 
 ---
 
+## 📂 Folder Structure
+
+### ⚙️ Backend Structure (`/backend`)
+
+```text
+backend/
+├── database/
+│   └── database.py          # Supabase PostgreSQL connection & DB initializer
+├── jsonfiles/
+│   ├── companies.json       # Company metadata reference dataset
+│   ├── last20yrs_historical_data.json
+│   └── last30days_historical_data.json
+├── models/
+│   └── models.py            # SQLAlchemy ORM Models (User, Company, FinancialStatement, Watchlist, ForgotPassword)
+├── ottp/
+│   └── ottp.py              # 6-digit OTP generator & SMTP mail dispatch
+├── routes/
+│   ├── auth_routes.py       # Signup, Login, Password Reset, & Support Ticket API
+│   ├── company_routes.py    # StockList quotes, 5-min memory cache, & company details API
+│   ├── graphs.py            # 30-Day intraday & 10-Year historical Recharts graph series API
+│   ├── news.py              # Live Tech & Finance RSS headlines API
+│   └── watchlist.py         # User watchlist bookmarking API
+├── .env                     # Supabase PostgreSQL URI & SMTP credentials
+├── .env.example             # Backend environment template
+└── app.py                   # Main Flask application entry point & CORS configuration
+```
+
+### 💻 Frontend Structure (`/frontend`)
+
+```text
+frontend/
+├── public/                  # Public assets & icon files
+├── src/
+│   ├── assets/              # App images (signature trading-2.png background)
+│   ├── components/
+│   │   ├── AboutUs/         # About Us page & DBMS academic evolution story
+│   │   ├── CmpFS/           # Financial Statements, Recharts sliders, & PDF/CSV report exports
+│   │   ├── Help/            # Support center with expanded FAQs & contact ticket form
+│   │   ├── HomePg/          # Interactive Home Dashboard
+│   │   ├── LoginSignUp/     # Authentication page & inline glassmorphism error alerts
+│   │   ├── Navbar/          # Frosted glass sidebar & User Profile Modal badge
+│   │   ├── ProtectedRoute.jsx # Session route guard wrapper
+│   │   ├── StockList/       # Market Cap dynamic ranking table & live search bar
+│   │   ├── VeriCode/        # 6-digit OTP verification code & 2-min countdown timer
+│   │   └── WatchList/       # Bookmarked stocks grid & live news carousel
+│   ├── App.jsx              # Application router & protected route guard layout
+│   └── main.jsx             # React 19 entry mounting point
+├── package.json             # Frontend packages & build scripts (React 19, Recharts, jsPDF, MUI)
+└── vite.config.js           # Vite dev server configuration & port locking (5173)
+```
+
+---
+
+## 🏗️ System Architecture & Data Flow Diagrams
+
+### 1. High-Level Full-Stack System Architecture
+
+```mermaid
+graph TD
+    User([👤 User / Browser]) -->|HTTPS Port 5173| ReactFrontend[💻 React 19 Frontend - Vite]
+    
+    subgraph Frontend Components
+        ReactFrontend --> Nav[Navbar & User Profile Modal]
+        ReactFrontend --> StockGrid[StockList & Market Cap Ranks]
+        ReactFrontend --> CmpFS[CmpFS & Recharts Trend Sliders]
+        ReactFrontend --> Exports[jsPDF Report & CSV Exporter]
+        ReactFrontend --> Watchlist[WatchList & Live News Carousel]
+        ReactFrontend --> HelpTicket[Help Center & Support Ticket Form]
+        ReactFrontend --> AuthGuard[ProtectedRoute Session Guard]
+    end
+
+    ReactFrontend -->|REST API Calls / Port 5000| FlaskBackend[⚙️ Flask REST API Server]
+
+    subgraph Backend Services & Memory Cache
+        FlaskBackend --> Router[Flask Blueprints Routes]
+        FlaskBackend --> MemoryCache[(⚡ 5-Min Memory TTL Cache)]
+        FlaskBackend --> OTPService[SMTP Mailer & OTP Generator]
+    end
+
+    FlaskBackend -->|SQLAlchemy ORM| SupabaseDB[(🗄️ Supabase PostgreSQL Cloud DB)]
+    FlaskBackend -->|Live Telemetry Fetch| YahooFinance[📈 Yahoo Finance yfinance API]
+    OTPService -->|TLS Port 587| GmailSMTP[📧 Gmail SMTP Server]
+```
+
+### 2. Authentication & 2-Minute OTP Verification Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor User
+    participant React as React Frontend
+    participant Flask as Flask REST API
+    participant DB as Supabase PostgreSQL
+    participant SMTP as Gmail SMTP
+
+    User->>React: Click "Forgot Password?" & enter email
+    React->>Flask: POST /api/auth/veri-code-fpassword
+    Flask->>Flask: Generate 6-char OTP & set expired_at (+2 min)
+    Flask->>DB: Save verification record in forgot_password_details
+    Flask->>SMTP: Dispatch OTP email (TLS Port 587)
+    SMTP-->>User: Deliver 6-digit OTP email to Inbox
+    React->>User: Redirect to VeriCode Page (Live 120s Timer starts)
+    User->>React: Enter OTP code & click "Verify OTP Code"
+    React->>Flask: POST /api/auth/check-veri-code
+    alt Now > Expired_At (2 Minutes Exceeded)
+        Flask-->>React: 400 Expired (Prompt user to click "Resend Code")
+    else Code Valid & Active
+        Flask-->>React: 200 OK (Set Newpassword=true in localStorage)
+        React->>User: Redirect to Login Page with Guidance Banner
+        User->>React: Enter Email & NEW Password -> Click "Sign In"
+        React->>Flask: POST /api/auth/login (ChangePassword=true)
+        Flask->>DB: Update user password hash in Supabase
+        Flask-->>React: 200 OK & User Data
+        React-->>User: Log in & Redirect to Home Dashboard (/HmPg)
+    end
+```
+
+---
+
 ## 🗄️ Database Architecture & Supabase
 
 Investify operates on a cloud-hosted **Supabase PostgreSQL** database with SQLAlchemy ORM mappings:
@@ -88,7 +207,7 @@ Investify operates on a cloud-hosted **Supabase PostgreSQL** database with SQLAl
 
 ---
 
-## 🚀 Getting Started & Installation
+## 🚀 Getting Started & Local Setup
 
 ### Prerequisites
 - **Node.js**: v18+ & `npm`
@@ -158,60 +277,7 @@ Application will run on `http://localhost:5173`.
 
 ---
 
-## 📂 Folder Structure
-
-### ⚙️ Backend Structure (`/backend`)
-
-```text
-backend/
-├── database/
-│   └── database.py          # Supabase PostgreSQL connection & DB initializer
-├── jsonfiles/
-│   ├── companies.json       # Company metadata reference dataset
-│   ├── last20yrs_historical_data.json
-│   └── last30days_historical_data.json
-├── models/
-│   └── models.py            # SQLAlchemy ORM Models (User, Company, FinancialStatement, Watchlist, ForgotPassword)
-├── ottp/
-│   └── ottp.py              # 6-digit OTP generator & SMTP mail dispatch
-├── routes/
-│   ├── auth_routes.py       # Signup, Login, & Password Reset API
-│   ├── company_routes.py    # StockList quotes, 5-min memory cache, & company details API
-│   ├── graphs.py            # 30-Day intraday & 10-Year historical Recharts graph series API
-│   ├── news.py              # Live Tech & Finance RSS headlines API
-│   └── watchlist.py         # User watchlist bookmarking API
-├── .env                     # Supabase PostgreSQL URI & SMTP credentials
-├── .env.example             # Backend environment template
-└── app.py                   # Main Flask application entry point & CORS configuration
-```
-
-### 💻 Frontend Structure (`/frontend`)
-
-```text
-frontend/
-├── public/                  # Public assets & icon files
-├── src/
-│   ├── assets/              # App images (signature trading-2.png background)
-│   ├── components/
-│   │   ├── AboutUs/         # About Us page & DBMS academic evolution story
-│   │   ├── CmpFS/           # Financial Statements, Recharts sliders, & PDF/CSV report exports
-│   │   ├── Help/            # Support center with expanded FAQs & contact form
-│   │   ├── HomePg/          # Interactive Home Dashboard
-│   │   ├── LoginSignUp/     # Authentication page & inline glassmorphism error alerts
-│   │   ├── Navbar/          # Frosted glass sidebar & User Profile Modal badge
-│   │   ├── ProtectedRoute.jsx # Session route guard wrapper
-│   │   ├── StockList/       # Market Cap dynamic ranking table & live search bar
-│   │   ├── VeriCode/        # 6-digit OTP verification code input form
-│   │   └── WatchList/       # Bookmarked stocks grid & live news carousel
-│   ├── App.jsx              # Application router & protected route guard layout
-│   └── main.jsx             # React 19 entry mounting point
-├── package.json             # Frontend packages & build scripts (React 19, Recharts, jsPDF, MUI)
-└── vite.config.js           # Vite dev server configuration & port locking (5173)
-```
-
----
-
-## 🎓 Academic Context & Evolution
+## 🎓 Academic Context & DBMS Origin Story
 
 Investify was originally developed as an academic learning project for a **Database Management Systems (DBMS)** university course at **NED University of Engineering & Technology (NEDUET)**. The initial focus was understanding relational database design, table entity relationships, foreign key constraints, and SQL ORM queries.
 
