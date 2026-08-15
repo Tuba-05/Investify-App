@@ -20,9 +20,11 @@ def generate_random_password(length=6):
     return password
 
 
+import os
+
 def send_mail(password, receiver):
-    sender = "tubabintenaushad@gmail.com"
-    app_password = "jlgo kkjo jsii wudg"
+    sender = os.getenv("SMTP_SENDER_EMAIL", "tubabintenaushad@gmail.com")
+    app_password = os.getenv("SMTP_APP_PASSWORD", "jlgo kkjo jsii wudg")
     email_receiver = receiver
 
     message = f"Subject:Forgot password Verification Code\n\nThis is your verification code for Investify App login {password}" \

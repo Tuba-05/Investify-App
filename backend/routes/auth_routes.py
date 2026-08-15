@@ -89,11 +89,11 @@ def forgot_pass():
     send_mail = Thread(target=ottp.send_mail, args=(veri_code, email)).start()
     # Suppose user already exists
     previous_entry = ForgotPassword.query.filter_by(email=email).order_by(ForgotPassword.id.desc()).first()
-    # If there's a previous record, get its count, else start from 0
     current_count = previous_entry.no_of_codes_generated if previous_entry else 0
     new_count = current_count + 1
-    # update_nof_codes = db.session.get(ForgotPassword, no_of_codes_generated)
-    f_pass_entry = ForgotPassword(user_id= user.id, email= email, verif_code= veri_code, no_of_codes_generated= new_count)
+    from datetime import datetime, timedelta
+    expired_time = datetime.utcnow() + timedelta(minutes=2)
+    f_pass_entry = ForgotPassword(user_id= user.id, email= email, verif_code= veri_code, expired_at=expired_time, no_of_codes_generated= new_count)
     db.session.add(f_pass_entry)
     db.session.commit()
     print(" Saved in forgot_pass_details DB successfully ")

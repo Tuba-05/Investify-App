@@ -1,22 +1,23 @@
-# flask imports
-from flask import Flask # to create flask web app
-from flask_cors import CORS # in order to resolve different server ports(frontend&backend) connection problems 
+import os
+from dotenv import load_dotenv
 
-# db imports
+# Load environment variables from .env file
+load_dotenv()
+
+from flask import Flask
+from flask_cors import CORS
+
 from database.database import init_db
-# routes imports
 from routes.auth_routes import auth_bp
 from routes.company_routes import company_bp
 from routes.watchlist import watchlist_bp
 from routes.news import news_bp
 from routes.graphs import graph_bp
 
-# other imports
-# from threading import Thread
+app = Flask(__name__)
 
-app = Flask(__name__)  # createing flask web application
-
-CORS(app, origins=["http://localhost:5173",  "http://localhost:3000"]) # frontend server 
+# Allow CORS for all origins and HTTP methods (handles any port like 5173, 5174, etc.)
+CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
 
 # Initialize database
 init_db(app)
@@ -37,6 +38,4 @@ def home():
 
 # ================== Run the Flask app ===================
 if __name__ == "__main__":
-    ''' Run the Flask app ''' 
-    app.run(debug=True)
-
+    app.run(debug=True, port=5000)

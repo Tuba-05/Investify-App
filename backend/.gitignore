@@ -1,0 +1,14 @@
+# Environment & Secret Files
+.env
+*.env
+
+# Python Virtual Environments & Caches
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Local Database & Log files
+*.db
+*.sqlite
+logs/

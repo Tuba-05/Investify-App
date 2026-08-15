@@ -2,22 +2,29 @@ import {React, useState, useEffect, useCallback } from 'react'; //useEffect
 import VCimg from '../../assets/vericode.png'
 import { useNavigate } from 'react-router-dom';
 
+const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:5000";
+
 const VeriCode = () => {
     const userEmail = localStorage.getItem('userEmail');
     const [VeriCode, setVeriCode] = useState("");
     const navigate = useNavigate();
 
-    const generate_code = useCallback(() => {
-        fetch('http://127.0.0.1:5000/veri-code-fpassword' , 
+    const generate_code = useCallback((e) => {
+        if (e) e.preventDefault();
+        if (!userEmail) return;
+        fetch(`${API_BASE}/api/auth/veri-code-fpassword` , 
             {method: 'POST', headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
                 email : userEmail
             })
         })
-    }, []);
+        .then((res) => res.json())
+        .catch((err) => console.error("Error generating code:", err));
+    }, [userEmail]);
     
-    const handleSubmit = () =>{
-        fetch(`http://127.0.0.1:5000/check-veri-code`, 
+    const handleSubmit = (e) =>{
+        if (e) e.preventDefault();
+        fetch(`${API_BASE}/api/auth/check-veri-code`, 
             {method: 'POST', headers: { "Content-Type": "application/json" },
              body: JSON.stringify({
                 email : userEmail,
@@ -27,20 +34,23 @@ const VeriCode = () => {
         .then((res) => res.json())
         .then((data) => {
             if (data.success){
-                alert(data.message); // code verified
                 localStorage.setItem("Newpassword", "true" );
-                navigate("/"); // navigate to login page
+                navigate("/"); // navigate directly to login page without alert popup
             }
             else {
-                alert(data.message); // wrong code
+                alert(data.message); // wrong code alert
             }   
         })
+        .catch((err) => console.error("Error verifying code:", err));
     }
 
     // ✅ Run once when page loads
     useEffect(() => {
-        generate_code();
-    }, [generate_code]);
+        if (!userEmail) {
+            alert("No email provided. Please enter your email on the login page.");
+            navigate("/");
+        }
+    }, [userEmail, navigate]);
   return (
     <div style={{ height: 640, width: 1260, position:'fixed', fontfamily: 'Montserrat',
           /*m-l for not mixing with navbar, t&l for placing of DataGrid div*/
@@ -56,7 +66,7 @@ const VeriCode = () => {
           , flexWrap: 'wrap', display: 'flex',  justifyContent: 'center',
         }}
     >
-        <form  
+        <form onSubmit={handleSubmit} 
             style={{
             fontWeight: '600', fontSize:'35px',  padding: '20px', display: 'flex', 
             alignItems: 'center', justifyContent: 'center', flexDirection: 'column',
@@ -78,12 +88,12 @@ const VeriCode = () => {
         <div style={{ display: 'flex', flexDirection:'column', gap: '10px' 
             }}
         >
-        <button onClick={generate_code}
+        <button type="button" onClick={generate_code}
         style={{
             border: '2.5px solid #e21313ff', borderRadius:'30px', width: '280px', 
         }}
-        >Genenrate Code</button>
-        <button onClick={handleSubmit}
+        >Generate Code</button>
+        <button type="submit"
         style={{
             border: '2.5px solid #049d3cff', borderRadius:'30px', width: '120px',
         }}

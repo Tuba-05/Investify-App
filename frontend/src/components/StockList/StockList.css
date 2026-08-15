@@ -1,0 +1,227 @@
+.stocklist-container {
+  min-height: 85vh;
+  margin-left: 230px;
+  padding: 35px 40px 50px 30px;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+.stocklist-card {
+  background: #0f172a;
+  border: 1.5px solid rgba(28, 181, 171, 0.4);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(12px);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.stocklist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.stocklist-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+
+.stocklist-header h2 svg {
+  color: #1cb5ab;
+}
+
+.stock-search-wrapper {
+  position: relative;
+  min-width: 300px;
+  max-width: 450px;
+  flex: 1;
+}
+
+.stock-search-wrapper .search-icon-svg {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.3rem;
+  color: #1cb5ab;
+  z-index: 2;
+}
+
+.stock-search-wrapper input {
+  width: 100%;
+  padding: 10px 20px 10px 50px !important;
+  border-radius: 30px !important;
+  border: 1.5px solid #1cb5ab !important;
+  background: #1e293b !important;
+  color: #ffffff !important;
+  font-size: 0.95rem !important;
+  font-family: 'Montserrat', sans-serif !important;
+  outline: none !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4) !important;
+  box-sizing: border-box !important;
+  -webkit-appearance: none;
+}
+
+.stock-search-wrapper input::placeholder {
+  color: #94a3b8 !important;
+}
+
+.stock-search-wrapper input:focus {
+  border-color: #ff9800 !important;
+  box-shadow: 0 0 15px rgba(255, 152, 0, 0.4) !important;
+}
+
+.stock-count-badge {
+  background: rgba(28, 181, 171, 0.12);
+  border: 1px solid rgba(28, 181, 171, 0.3);
+  color: #cbd5e1;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.refresh-ranks-btn {
+  background: rgba(28, 181, 171, 0.15);
+  border: 1px solid #1cb5ab;
+  color: #1cb5ab;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.25s ease;
+}
+
+.refresh-ranks-btn:hover {
+  background: #1cb5ab;
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(28, 181, 171, 0.3);
+}
+
+.refresh-ranks-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.spin-icon {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Custom DataGrid Dark Theme Overrides */
+.stocklist-datagrid {
+  border: 1.5px solid rgba(28, 181, 171, 0.35) !important;
+  border-radius: 14px !important;
+  overflow: hidden !important;
+  background-color: #0f172a !important;
+  color: #ffffff !important;
+}
+
+.stocklist-datagrid .MuiDataGrid-columnHeaders,
+.stocklist-datagrid .MuiDataGrid-columnHeader,
+.stocklist-datagrid .MuiDataGrid-columnHeaderRow {
+  background-color: #1e293b !important;
+  color: #1cb5ab !important;
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  border-bottom: 2px solid rgba(28, 181, 171, 0.4) !important;
+}
+
+.stocklist-datagrid .MuiDataGrid-columnSeparator {
+  display: none !important;
+}
+
+.stocklist-datagrid .MuiDataGrid-cell {
+  color: #ffffff !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  display: flex !important;
+  align-items: center !important;
+  font-size: 0.95rem !important;
+}
+
+.stocklist-datagrid .MuiDataGrid-row {
+  background-color: #0f172a !important;
+  transition: background-color 0.2s ease;
+}
+
+.stocklist-datagrid .MuiDataGrid-row:hover {
+  background-color: rgba(28, 181, 171, 0.15) !important;
+}
+
+.stocklist-datagrid .MuiTablePagination-root {
+  color: #cbd5e1 !important;
+}
+
+.stock-company-link {
+  color: #38bdf8;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.stock-company-link:hover {
+  color: #1cb5ab;
+  text-decoration: underline;
+}
+
+.star-action-btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  transition: all 0.25s ease;
+}
+
+.star-action-btn:hover {
+  background: rgba(245, 197, 24, 0.2);
+  transform: scale(1.2);
+}
+
+.star-icon-gold {
+  color: #f5c518;
+  font-size: 1.3rem;
+  filter: drop-shadow(0 0 3px rgba(245, 197, 24, 0.6));
+}
+
+.star-icon-grey {
+  color: #64748b;
+  font-size: 1.3rem;
+  transition: color 0.2s ease;
+}
+
+.star-action-btn:hover .star-icon-grey {
+  color: #f5c518;
+}
+
+@media (max-width: 992px) {
+  .stocklist-container {
+    margin-left: 0;
+    padding: 20px;
+  }
+}

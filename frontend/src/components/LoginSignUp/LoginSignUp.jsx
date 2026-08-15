@@ -1,45 +1,63 @@
-import React, { useState } from 'react'; // for formData inputs
+import React, { useState, useEffect } from 'react';
 import "./LoginSignUp.css";
-import { useNavigate } from "react-router-dom"; // to connect HmPg
-// importing react-icons
+import { useNavigate } from "react-router-dom";
 import { HiOutlineMail } from "react-icons/hi";
 import { RiLockPasswordLine } from "react-icons/ri";
 import { FaUserAlt } from "react-icons/fa";
+import { IoAlertCircleOutline } from "react-icons/io5";
 
 const LoginSignUp = () => {
-  // assigning navigate function to a variavle
   const navigate = useNavigate();
   const Newpassword = localStorage.getItem("Newpassword") || "false";
 
-  // using usestate for switching b/w login/signup and changing formData respectively.
+  // Auto redirect if user session is already active
+  useEffect(() => {
+    const userId = localStorage.getItem("userId");
+    if (userId) {
+      navigate("/HmPg", { replace: true });
+    }
+  }, [navigate]);
+
   const [isLogin, setIsLogin] = useState(true);
+  const [errorMsg, setErrorMsg] = useState('');
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     email: '',
     password: '',
     username: '',
   });
-  // function updates form state whenever data is typed in an input field, e -> event obj
+
   const handleInputChange = (e) => {
+    setErrorMsg(''); // Clear error message when user starts typing
     setFormData({
-      ...formData, //copies all the existing key–value pairs from formData into the new object
+      ...formData,
       [e.target.name]: e.target.value
     });
   };
-  // when SignUp/ Login buttom clicked
-  // -----------------------------------------------------------------------------
-  // async → tells JS this function will use asynchronous code. 
-  // await → pauses only inside the async function until the Promise resolves.
-  // So other code keeps running in the meantime.
-  // -----------------------------------------------------------------------------
+
   const handleSubmit = async () => {
-  // for login/ signup part if no external error  
-  try {
+    const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:5000";
+    setErrorMsg('');
+
     if (isLogin) {
-      // login
-      if (formData.email && formData.password) {
-        const response = await fetch("http://127.0.0.1:5000/login",// connection for login function of flask bkend
-          {
-          method: "POST", //sends data in the request body, which is hidden from the URL, making it more secure.
+      if (!formData.email || !formData.password) {
+        setErrorMsg("Please fill in both email and password.");
+        return;
+      }
+    } else {
+      if (!formData.username || !formData.email || !formData.password) {
+        setErrorMsg("Please fill in all fields (username, email, password).");
+        return;
+      }
+    }
+
+    setLoading(true);
+
+    try {
+      if (isLogin) {
+        // Login API Call
+        const response = await fetch(`${API_BASE}/api/auth/login`, {
+          method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
             email: formData.email,
@@ -47,28 +65,28 @@ const LoginSignUp = () => {
             ChangePassword: Newpassword
           })
         });
+
         const data = await response.json();
-        if (data.success) {
-          // save user info in localStorage for session persistence later used in watchlist page
-          localStorage.setItem("userId", data.user.id); // user ID 
-          localStorage.setItem("userName", data.user.name); // user name 
-          localStorage.setItem("userEmail", data.user.email); // user email 
-          alert(data.message); // login sucessful
-          navigate("/HmPg"); // navigate to HmPg
+
+        if (response.ok && data.success) {
+          localStorage.setItem("userId", data.user.id);
+          localStorage.setItem("userName", data.user.name);
+          localStorage.setItem("userEmail", data.user.email);
+          navigate("/HmPg");
         } else {
-          alert(data.message); // login not sucessful
+          // Specific Valid Error Handling
+          if (response.status === 404) {
+            setErrorMsg("No account found with this email. Please check your email or Sign Up.");
+          } else if (response.status === 401) {
+            setErrorMsg("Invalid password. Please check your credentials and try again.");
+          } else {
+            setErrorMsg(data.message || "Invalid login credentials. Please try again.");
+          }
         }
-      } 
-      else {
-        alert("Please fill all fields."); // when any i/p field is empty
-      }
-    } 
-    else {
-      // signup
-      if (formData.username && formData.email && formData.password) {
-        const response = await fetch("http://127.0.0.1:5000/signup", // connection for signup function of flask bkend
-          {
-          method: "POST", //sends data in the request body, which is hidden from the URL, making it more secure.
+      } else {
+        // Signup API Call
+        const response = await fetch(`${API_BASE}/api/auth/signup`, {
+          method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
             username: formData.username,
@@ -76,36 +94,33 @@ const LoginSignUp = () => {
             password: formData.password
           })
         });
+
         const data = await response.json();
-        if (data.success) {
-          // save user info in localStorage for session persistence later used in watchlist page
-          localStorage.setItem("userId", data.user.id); // user ID 
-          localStorage.setItem("userName", data.user.name); // user name 
-          localStorage.setItem("userEmail", data.user.email); // user email 
-          alert(data.message); // signup sucessful
-          navigate("/HmPg"); // navigate to HmPg
-        } 
-        else {
-          alert(data.message); // signup sucessful
+
+        if (response.ok && data.success) {
+          localStorage.setItem("userId", data.user.id);
+          localStorage.setItem("userName", data.user.name);
+          localStorage.setItem("userEmail", data.user.email);
+          navigate("/HmPg");
+        } else {
+          if (response.status === 400) {
+            setErrorMsg(data.message || "This email address is already registered. Please Sign In.");
+          } else {
+            setErrorMsg(data.message || "Failed to create account. Please try again.");
+          }
         }
-      } 
-      else {
-        alert("Please fill all fields."); // when any i/p field is empty
       }
-    }
-    } 
-    //If something goes wrong inside try block (like network failure,  invalid response, 
-    // or coding bug),the code jumps here. The actual error info is stored in error
-    // User cant see it only alert(), msg
-    catch (error) {
-      console.error("Error:", error);
-      alert("Something went wrong. Please try again.");
+    } catch (error) {
+      console.error("Network / Server Error:", error);
+      setErrorMsg("Network Error: Unable to connect to backend server. Please make sure server is running.");
+    } finally {
+      setLoading(false);
     }
   };
 
-  // function switches b/w login/ signup form
   const switchMode = () => {
     setIsLogin(!isLogin);
+    setErrorMsg('');
     setFormData({
       email: '',
       password: '',
@@ -113,125 +128,137 @@ const LoginSignUp = () => {
     });
   };
 
-  // Verification code trigger on clicking forgot password
-  const trigger_verif_code = () =>{
-    if (formData.email){
-      localStorage.setItem("userEmail", formData.email)
-      alert("Verification code has sent to your email");
-      navigate("/VeriCode"); // navigate to code verification pg
+  const trigger_verif_code = async (e) => {
+    if (e) e.preventDefault();
+    setErrorMsg('');
+
+    if (!formData.email) {
+      setErrorMsg("Please enter your email address first to reset password.");
+      return;
     }
-    else{
-      alert("Plz fill email first");
+    
+    const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:5000";
+
+    try {
+      const response = await fetch(`${API_BASE}/api/auth/veri-code-fpassword`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: formData.email })
+      });
+      const data = await response.json();
+      
+      if (data.success) {
+        localStorage.setItem("userEmail", formData.email);
+        navigate("/VeriCode");
+      } else {
+        setErrorMsg(data.message || "No account found with this email. Please check your email or Sign Up.");
+      }
+    } catch (err) {
+      console.error("Error sending verification code:", err);
+      setErrorMsg("Network Error: Failed to send OTP code. Please check your network connection.");
     }
-    }
-  
+  };
+
   return (
-    <>
-      <div className="auth-page">
-        {/* Background with blur overlay */}
-        <div className="background-overlay"></div>
-        
-        <div className="auth-container">
-          {/* Glass effect card */}
-          <div className="glass-card">
-            
-            {/* Header */}
-            <div className="card-header">
-              <h1 className="auth-title">
-                {isLogin ? 'Welcome Back' : 'Create Account'}
-              </h1>
-              <p className="auth-subtitle">
-                {/* Conditional rendering */}
-                {isLogin 
-                  ? 'Sign in to access your investment portfolio' 
-                  : 'Join thousands of successful investors'
-                }
-              </p>
+    <div className="auth-page">
+      <div className="background-overlay"></div>
+      
+      <div className="auth-container">
+        <div className="glass-card">
+          <div className="card-header">
+            <h1 className="auth-title">
+              {isLogin ? 'Welcome Back' : 'Create Account'}
+            </h1>
+            <p className="auth-subtitle">
+              {isLogin 
+                ? 'Sign in to access your investment portfolio' 
+                : 'Join thousands of successful investors'
+              }
+            </p>
+          </div>
+
+          {/* Valid Error Alert Banner */}
+          {errorMsg && (
+            <div className="auth-error-banner">
+              <IoAlertCircleOutline className="error-banner-icon" />
+              <span>{errorMsg}</span>
+            </div>
+          )}
+
+          <div className="auth-form">      
+            {!isLogin && (
+              <div className="input-group">
+                <label htmlFor="username"><FaUserAlt /> Username</label>
+                <input
+                  type="text"
+                  id="username"
+                  name="username"
+                  value={formData.username}
+                  onChange={handleInputChange}
+                  className="glass-input"
+                  placeholder="Enter username"
+                />
+              </div>  
+            )}
+
+            <div className="input-group">
+              <label htmlFor="email"><HiOutlineMail /> Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleInputChange}
+                className="glass-input"
+                placeholder="Enter email"
+              />
             </div>
 
-            {/* Form */}
-            <div className="auth-form">      
-              {/* Signup specific fields */}
-              {!isLogin && (
-                  <div className="input-group ">
-                    <label htmlFor="Name"><FaUserAlt /> Userame</label>
-                    <input
-                      type="text"
-                      id="username"
-                      name="username"
-                      value={formData.username}
-                      onChange={handleInputChange} // function copies data {key:value}
-                      className="glass-input"
-                      placeholder="Enter username"
-                    />
-                  </div>  
-              )}
+            <div className="input-group">
+              <label htmlFor="password"><RiLockPasswordLine /> Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                value={formData.password}
+                onChange={handleInputChange}
+                className="glass-input"
+                placeholder="Enter password"
+              />
+            </div>
 
-              {/* Email */}
-              <div className="input-group">
-                
-                <label htmlFor="email"><HiOutlineMail /> Email Address</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleInputChange} // function copies data {key:value}
-                  className="glass-input"
-                  placeholder="Enter email"
-                />
+            {isLogin && (
+              <div className="forgot-password">
+                <a href="#" className="forgot-link" onClick={trigger_verif_code}>Forgot your password?</a>
               </div>
+            )}
 
-              {/* Password */}
-              <div className="input-group">
-                <label htmlFor="password"><RiLockPasswordLine /> Password</label>
-                <input
-                  type="password"
-                  id="password"
-                  name="password"
-                  value={formData.password}
-                  onChange={handleInputChange} // function copies data {key:value}
-                  className="glass-input"
-                  placeholder="Enter password"
-                />
-              </div>
+            <button 
+              type="button" 
+              onClick={handleSubmit} 
+              disabled={loading}
+              className="glass-button primary"
+            >
+              {loading ? 'Processing...' : isLogin ? 'Sign In' : 'Create Account'} 
+            </button>
+          </div>
 
-              
-              {/* Forgot Password Link (login only) */}
-              {isLogin && (
-                <div className="forgot-password">
-                  <a href="#" className="forgot-link" onClick={trigger_verif_code}>Forgot your password?</a>
-                </div>
-              )}
-
-              {/* Submit Button */}
-              <button type="button" 
-              onClick={handleSubmit} // function take data send to backend for verification then further process
-              className="glass-button primary">
-                {/* Conditional rendering */}
-                {isLogin ? 'Sign In' : 'Create Account'} 
+          <div className="auth-switch">
+            <p>
+              {isLogin ? "Don't have an account? " : "Already have an account? "}
+              <button 
+                type="button" 
+                onClick={switchMode} 
+                className="switch-button"
+              >
+                {isLogin ? 'Sign Up' : 'Sign In'}
               </button>
-            </div>
-
-            {/* Switch between Login/Signup */}
-            <div className="auth-switch">
-              <p>
-                {/* Conditional rendering */}
-                {isLogin ? "Don't have an account? " : "Already have an account? "}
-                <button 
-                  type="button" 
-                  onClick={switchMode} // function switch b/w login/ signup
-                  className="switch-button">
-                    {/* Conditional rendering */}
-                  {isLogin ? 'Sign Up' : 'Sign In'}
-                </button>
-              </p>
-            </div>
-
-          </div> 
-        </div>
+            </p>
+          </div>
+        </div> 
       </div>
-    </>
+    </div>
   );
 };
+
 export default LoginSignUp;

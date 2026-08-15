@@ -1,81 +1,88 @@
 *{
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
-/* ------------------------------------------------------------ */
-/* placement of lotiie animation */
-/* ------------------------------------------------------------ */
-.stock-animation{
-    position: fixed;   /* always stays in viewport */
-    bottom: 3px;      /* distance from bottom */
-    left:780px ;    /* distance from right */
-    width: 900px;      /* control size */
-    height: 600px;
-    z-index: 1000;     /* ensure it appears above other content */
+
+/* Placement of lotie animation */
+.stock-animation {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    width: 750px;
+    height: 520px;
+    z-index: 10;
+    pointer-events: none;
 }
-/* ------------------------------------------------------------ */
-/* background image */
-/* ------------------------------------------------------------ */
-.bg-img{
-    background-image:linear-gradient(
-    rgb(106, 106, 109), 
-    rgba(10, 10, 10, 0.36)), 
-    url("../../assets/trading-2.png");
-    box-shadow: inset 0 0 80px rgb(198, 253, 239); /* Shadow effect */
-    background-size: cover;          /* make it fill */
-    background-repeat: no-repeat;    /* prevent tiling */
-    background-position: center;     /* center it */
-    background-attachment: fixed;    /* stays fixed while scrolling */
+
+@media (max-width: 1200px) {
+    .stock-animation {
+        display: none;
+    }
+}
+
+/* Background image */
+.bg-img {
+    background-image: linear-gradient(
+        rgb(106, 106, 109), 
+        rgba(10, 10, 10, 0.36)), 
+        url("../../assets/trading-2.png");
+    box-shadow: inset 0 0 80px rgb(198, 253, 239);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    padding-top: 40px;
 }
-/* ------------------------------------------------------------ */
-/* content container */
-/* ------------------------------------------------------------ */
-.content{
+
+/* Content container card */
+.content {
     position: relative;
-    width: 595px;
-    height: 390px;
-    left: 230px;
-    top: 200px;
-    z-index: 1;
-    border: 3px solid;
-    border-radius: 55px;
-    border-color: rgba(0, 255, 255, 0.248);
+    max-width: 640px;
+    width: 90%;
+    min-height: 440px;
+    height: auto;
+    margin-left: 240px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 35px 35px 40px 35px;
+    z-index: 20;
+    border: 3px solid rgba(0, 255, 255, 0.35);
+    border-radius: 35px;
+    background: linear-gradient(
+        135deg, 
+        rgba(87, 236, 209, 0.75), 
+        rgba(0, 0, 0, 0.88), 
+        rgba(255, 255, 255, 0.22)
+    );
+    box-sizing: border-box;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(12px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Content container heading */
+.content h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: aliceblue;
+    display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1;
-    background: linear-gradient(
-    45deg, 
-    rgba(87, 236, 209, 0.8),  /* seagreen */
-    rgba(0, 0, 0, 0.874),      /* black */
-    rgba(255, 255, 255, 0.253) /* white */);
-    box-sizing: border-box;
-    box-shadow: 0px 4px 10px rgb(113, 114, 114);
+    gap: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.6);
 }
-/* ------------------------------------------------------------ */
-/* content container heading */
-/* ------------------------------------------------------------ */
-.content h1{
-    font-size: 42px;
-    z-index: 1;
-    position: relative;
-    display: flex;
-    align-items: center;
-    left: 170px;
-    top: 15px;
-    color: aliceblue;
-}
-/* ------------------------------------------------------------ */
-/* content container para */
-/* ------------------------------------------------------------ */
+
+/* Content container para */
 .content p {
-    font-size: 17px;
-    z-index: 1;
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 560px;
-    left:20px ;
-    top: 15px;
+    font-size: 1rem;
+    line-height: 1.65;
     color: aliceblue;
+    margin: 0;
+    text-align: justify;
 }

@@ -1,156 +1,205 @@
-import React, { useEffect, useState } from 'react'; // for fetching data from Flask API and storing in state
-import { useNavigate } from "react-router-dom" // for navigation on row click(C-name)
-import { DataGrid } from "@mui/x-data-grid"; // react table library better than simple plain html css
-import { IoStarSharp } from "react-icons/io5"; // star icon to add favourites in watchlist
+import React, { useEffect, useState } from 'react';
+import { useNavigate } from "react-router-dom";
+import { DataGrid } from "@mui/x-data-grid";
+import { IoStarSharp, IoTrendingUp, IoSearch, IoRefresh } from "react-icons/io5";
+import "./StockList.css";
 
+const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:5000";
 
 const StockList = () => {
-    const navigate = useNavigate(); // for navigation on row click(C-name)
-    const [starredRows, setStarredRows] = useState([]); // store company IDs that are starred
-    const [companies, setCompanies] = useState([]); // Stores fetched company data
-    // Fetching data from Flask API
-    useEffect(() => {
-      const userId = localStorage.getItem("userId");
-      // Fetch all companies + user's watchlist to mark starred companies
-      fetch("http://127.0.0.1:5000/companies")  
-      .then((res) => res.json()) // Waits for server response then res.json()converts raw response into JSON format
-      // data is array of companies, setCompanies(data) saves it into React state so table can update
-      .then((data) => { 
-          console.log("Fetched companies:", data); // log fetched data for debugging
-          setCompanies(data); 
-      })
-      .catch((err) => console.error("Error fetching companies:", err)); // handle errors
+  const navigate = useNavigate();
+  const [starredRows, setStarredRows] = useState([]);
+  const [companies, setCompanies] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [loading, setLoading] = useState(true);
+  const [refreshing, setRefreshing] = useState(false);
 
-      // Fetch user's watchlist
-      fetch(`http://127.0.0.1:5000/watchlist/${userId}`)
+  const fetchStockList = () => {
+    setRefreshing(true);
+    fetch(`${API_BASE}/api/companies/companies`)  
       .then((res) => res.json())
-      .then((data) => {
-        console.log("User watchlist:", data); // log watchlist data for debugging
-        // If fetch successful and companies array exists
-        if (data.success && Array.isArray(data.companies)) {
-        // extract company IDs from watchlist
-        const watchlistIds = data.companies.map((c) => c.id);
-        setStarredRows(watchlistIds);
+      .then((data) => { 
+        if (Array.isArray(data)) {
+          setCompanies(data);
         }
       })
-      .catch((err) => console.error("Error fetching watchlist:", err)); // handle errors
-    }, []);
+      .catch((err) => console.error("Error fetching companies:", err))
+      .finally(() => {
+        setLoading(false);
+        setRefreshing(false);
+      });
+  };
 
-    // Columns definition for DataGrid
-    const columns = [
-    { field: "favourite", headerName: "Favourites", width: 105,
-      sortable: false, filterable: false,
+  useEffect(() => {
+    const userId = localStorage.getItem("userId");
+    fetchStockList();
+
+    // Auto-refresh quotes and re-sort ranks every 5 minutes (300000ms)
+    const interval = setInterval(() => {
+      fetchStockList();
+    }, 300000);
+
+    // Fetch user's watchlist to highlight starred companies
+    if (userId) {
+      fetch(`${API_BASE}/api/watchlist/watchlist/${userId}`)
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.success && Array.isArray(data.companies)) {
+            const watchlistIds = data.companies.map((c) => c.id);
+            setStarredRows(watchlistIds);
+          }
+        })
+        .catch((err) => console.error("Error fetching watchlist:", err));
+    }
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const filteredCompanies = companies.filter((c) => {
+    const term = searchTerm.toLowerCase().trim();
+    if (!term) return true;
+    return (
+      (c.c_name && c.c_name.toLowerCase().includes(term)) ||
+      (c.symbol && c.symbol.toLowerCase().includes(term)) ||
+      (c.sector && c.sector.toLowerCase().includes(term)) ||
+      (c.country && c.country.toLowerCase().includes(term))
+    );
+  });
+
+  const columns = [
+    { 
+      field: "favourite", 
+      headerName: "★", 
+      width: 70,
+      sortable: false, 
+      filterable: false,
+      align: "center",
+      headerAlign: "center",
       renderCell: (params) => {
-        const isStarred = starredRows.includes(params.row.id); // check if this row's company ID is in starredRows
-        // Toggle watchlist status on star icon click
-        const handleToggleWatchlist = () => {
-          const userId = localStorage.getItem("userId"); // get logged-in user ID
-          const companyId = params.row.id; // company ID from the row
-          // Call backend to add/remove from watchlist
-          fetch(`http://127.0.0.1:5000/watchlist/${userId}/${companyId}`, {
+        const isStarred = starredRows.includes(params.row.id);
+        
+        const handleToggleWatchlist = (e) => {
+          e.stopPropagation();
+          const userId = localStorage.getItem("userId");
+          const companyId = params.row.id;
+          if (!userId) {
+            alert("Please log in to add companies to your watchlist");
+            return;
+          }
+
+          fetch(`${API_BASE}/api/watchlist/watchlist/${userId}/${companyId}`, {
             method: "POST",
           })
             .then((res) => res.json())
             .then((data) => {
-              // If backend confirms success
               if (data.success) {
-                // If added to watchlist, show alert and update starredRows state
                 if (data.action === "added") {
-                  alert(`${params.row.c_name} successfully added to your watchlist`);
                   setStarredRows((prev) => [...prev, companyId]);
-                } // If removed from watchlist, show alert and update starredRows state 
-                else if (data.action === "removed") {
-                  alert(`${params.row.c_name} removed from your watchlist`);
+                } else if (data.action === "removed") {
                   setStarredRows((prev) => prev.filter((id) => id !== companyId));
                 }
-              } // If backend returns an error message 
-              else {
-                alert(data.message);
               }
             })
             .catch((err) => console.error("Error toggling watchlist:", err));
         };
+
         return (
-          <span onClick={handleToggleWatchlist} style={{ cursor: "pointer" }}>
-            <IoStarSharp
-              style={{
-                color: isStarred ? "#f5c518ff" : "#ccc",
-                fontSize: 22,
-              }}
-            />
+          <span 
+            className="star-action-btn"
+            title={isStarred ? "Remove from Watchlist" : "Add to Watchlist"}
+            onClick={handleToggleWatchlist}
+          >
+            <IoStarSharp className={isStarred ? "star-icon-gold" : "star-icon-grey"} />
           </span>
         );
       }, 
     },
-    { field: "id", headerName: "Rank", width: 110 },
-    // Clickable company name to navigate to CmpFS page
-    { field: "c_name", headerName: "Company", width: 215, 
-      renderCell: (params) => {
-        return(
-            <span
-            style={{ color: "#033e3aff", cursor: "pointer" }} 
-            onClick={() => navigate(`/CmpFS/${params.row.id}`)} // Navigate to CmpFS page with company ID
-            >
-            {params.value}
-            </span>
-        );
-      }
+    { 
+      field: "rank", 
+      headerName: "Rank", 
+      width: 90, 
+      align: "center", 
+      headerAlign: "center",
+      renderCell: (params) => <span style={{ fontWeight: "700", color: "#1cb5ab" }}>#{params.value || params.row.id}</span>
     },
-    { field: "symbol", headerName: "Symbol", width: 135 },
-    { field: "country", headerName: "Country", width: 145 },
-    { field: "price_usd", headerName: "Price (USD)", width: 175 },
-    { field: "market_cap", headerName: "Market Cap", width: 200 },
-    { field: "sector", headerName: "Sector", width: 125 }
-    ];
+    { 
+      field: "c_name", 
+      headerName: "Company", 
+      flex: 1.2, 
+      minWidth: 200,
+      renderCell: (params) => (
+        <span
+          className="stock-company-link" 
+          onClick={() => navigate(`/CmpFS/${params.row.id}`)}
+        >
+          {params.value}
+        </span>
+      )
+    },
+    { field: "symbol", headerName: "Symbol", width: 120 },
+    { field: "country", headerName: "Country", width: 130 },
+    { 
+      field: "price_usd", 
+      headerName: "Price (USD)", 
+      width: 140,
+      valueFormatter: (value) => value ? `$${Number(value).toFixed(2)}` : "N/A"
+    },
+    { field: "market_cap", headerName: "Market Cap", flex: 1, minWidth: 160 },
+    { field: "sector", headerName: "Sector", flex: 1, minWidth: 140 }
+  ];
 
-    return (
-    <>
-    <div  style={{ height: 640, width: 1260, position:'fixed', fontfamily: 'Montserrat',
-          /*m-l for not mixing with navbar, t&l for placing of DataGrid div*/
-          marginLeft: "160px",top:'22px', left:'65px', padding:'10px', overflow: 'hidden',
-          /*styling of DataGrid div*/
-          border:'5px solid #1cb5abff', borderRadius:'19px', boxSizing:'border-box', 
-          /* Glassmorphism effect */
-          background: 'rgba(255, 255, 255, 0.15)',   // transparent white
-          backdropFilter: 'blur(10px)',              // frosted glass blur
-          WebkitBackdropFilter: 'blur(10px)',        // Safari support
-          /* Shadow on all sides , r-l-b-t */
-          boxShadow:'10px 0 15px rgba(62, 59, 59, 1),-10px 0 15px rgba(62, 60, 60, 1), 0 10px 15px rgba(0,0,0,0.25), 0 -10px 15px rgba(0,0,0,0.25)'    
-          }} 
-          className='data-table'>
-            
-        {/* DataGrid component from MUI for displaying all companies data from DB */}
-        <DataGrid
-          rows={companies}
-          columns={columns}
-          rowHeight={50}
-          initialState={{
-            pagination: { paginationModel: { pageSize: 10 } },
-            sorting: {
-            sortModel: [{ field: "id", sort: "asc" }],
-                  },
-          }}
-          pageSizeOptions={[10]}
-          sx={{
-            fontSize: 16,
-            fontWeight: 540,
-            color: "#021413ff",
-            border: "2px solid #16988fff",
-            boxSizing: "border-box",  
-            
-            "& .MuiDataGrid-columnHeaders":{
-              fontSize: 18, fontWeight: 'bolder', 
-              color: '#000000ff'  
-            },
+  return (
+    <div className="stocklist-container">
+      <div className="stocklist-card">
+        <div className="stocklist-header">
+          <h2><IoTrendingUp /> Listed Companies</h2>
 
-            "& .MuiDataGrid-row": {
-            backgroundColor: "rgba(255, 255, 255, 1)",
-            },
-          }}
-        />      
+          {/* LIVE SEARCH INPUT BAR */}
+          <div className="stock-search-wrapper">
+            <IoSearch className="search-icon-svg" />
+            <input
+              type="text"
+              placeholder="Search company, symbol, or sector..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+            />
+          </div>
+
+          <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+            <button 
+              className="refresh-ranks-btn" 
+              onClick={fetchStockList}
+              disabled={refreshing}
+              title="Re-sort companies by live market cap"
+            >
+              <IoRefresh className={refreshing ? "spin-icon" : ""} /> {refreshing ? "Updating..." : "Live Ranks"}
+            </button>
+
+            <span className="stock-count-badge">
+              {filteredCompanies.length} / {companies.length} Companies
+            </span>
+          </div>
+        </div>
+
+        {loading ? (
+          <p style={{ textAlign: "center", color: "#94a3b8", padding: "40px" }}>Loading Stock Market Companies & Live Ranks...</p>
+        ) : (
+          <DataGrid
+            className="stocklist-datagrid"
+            rows={filteredCompanies}
+            columns={columns}
+            rowHeight={52}
+            initialState={{
+              pagination: { paginationModel: { pageSize: 10 } },
+              sorting: { sortModel: [{ field: "rank", sort: "asc" }] },
+            }}
+            pageSizeOptions={[10, 25, 50]}
+            autoHeight
+          />
+        )}
+      </div>
     </div>
-    </>
-  )
+  );
 };
 
 export default StockList;

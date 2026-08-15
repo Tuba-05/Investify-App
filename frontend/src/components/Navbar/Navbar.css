@@ -1,81 +1,373 @@
 *{
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 
-.single-line{
-    position: fixed;
-    background-color: rgb(0, 0, 0);
-    width: 100%;
-    height: 15px;
-    border-radius: 1px;
-    z-index: 1000; /* ensures it stays on top of other elements */
-}
-.nav-bar{
-    position: fixed;
-    border-radius: 2px;
-    border-right:3px solid ;
-    background-color: rgb(0, 0, 0);
-    padding: 15px 10px; /* t-b,  l-r*/
-    width: 200px;
-    height: 100vh;
-     z-index: 1000; /* ensures it stays on top of other elements */
-}
-/* ------------------------------------------------------- */
-/*target <ul> element of class nav-links*/
-/* ------------------------------------------------------- */
-ul.nav-links{
+body {
     margin: 0;
-    list-style: none; /* remove bullets */
-    padding: 35px 15px; /* t-b,  l-r*/
-    background-color: rgb(24, 24, 24);
-    height: 100vh;
-    width: 190px;
-    border-top: 3px solid;
-    border-left: 3px solid;
-    border-radius: 3px;
-    align-items: center;
+    padding: 0;
+    background-image: linear-gradient(
+        rgb(106, 106, 109), 
+        rgba(10, 10, 10, 0.36)), 
+        url("../../assets/trading-2.png");
+    box-shadow: inset 0 0 80px rgb(198, 253, 239);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: aliceblue;
+}
+
+.single-line {
     position: fixed;
+    background: linear-gradient(90deg, #1cb5ab, #ff9800, #1cb5ab);
+    width: 100%;
+    height: 4px;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    box-shadow: 0 0 10px rgba(28, 181, 171, 0.6);
 }
-/* ------------------------------------------------------- */
-/*target <ul> element of class nav-links then select all <li> inside <ul>*/
-/* ------------------------------------------------------- */
-ul.nav-links li {
-  margin-bottom: 15px; /* spacing between items */
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 210px;
+    height: 100vh;
+    background: rgba(15, 23, 42, 0.95);
+    border-right: 1.5px solid rgba(28, 181, 171, 0.4);
+    box-shadow: 5px 0 25px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(16px);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 14px;
 }
-/* ------------------------------------------------------- */
-/*Target all <a> (anchor links) that are inside a <li>*/
-/* ------------------------------------------------------- */
-ul.nav-links li a{
-    font-weight: 500;
-    cursor: pointer;
-    text-decoration: none; /* remove underline from texts*/
-    display: inline-flex; /* jo underline show hogi wo text se lambi ni hogi*/
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1cb5ab;
+    margin-bottom: 30px;
+    padding-left: 8px;
+    display: flex;
     align-items: center;
-    gap: 5px; /* gap b/w text & icons*/
-    color: rgb(255, 255, 255); /* default text color */
-    font-size: 20px;
-    position: relative; /* needed for ::after positioning */
-}
-/* ------------------------------------------------------- */
-/*::before → adds content before the element’s content.
-::after → adds content after the element’s content.*/
-/* ------------------------------------------------------- */
-ul.nav-links li a::after {
-    content: " ";
-    position: absolute;       /* place relative to link */
-    left: 0;                 /* line start hidden */
-    bottom: -2px;             /* line just below text */
-    width: 0;                 /* line start hidden */
-    height: 2px;              /* line thickness */
-    background: white;        /* underline color */
-    transition: width 0.3s ease-in-out;
+    gap: 8px;
+    letter-spacing: -0.5px;
+    text-shadow: 0 0 10px rgba(28, 181, 171, 0.4);
 }
 
-ul.nav-links li a:hover{
-    color: rgb(184, 27, 27);   /* text color on hover */
+.logo-symbol {
+    font-size: 1.6rem;
 }
 
-ul.nav-links li a:hover::after {
-    background: rgb(9, 170, 87); /* underline color on hover */
-    width: 100%;   /* expands underline on hover */
+ul.nav-links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+}
+
+ul.nav-links li {
+    margin: 0;
+}
+
+ul.nav-links li a {
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #cbd5e1;
+    font-size: 1.02rem;
+    padding: 12px 14px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+ul.nav-links li a:hover {
+    color: #1cb5ab;
+    background: rgba(28, 181, 171, 0.12);
+    transform: translateX(4px);
+}
+
+ul.nav-links li a.active {
+    color: #ffffff;
+    background: linear-gradient(135deg, rgba(28, 181, 171, 0.35), rgba(15, 23, 42, 0.9));
+    border-left: 4px solid #1cb5ab;
+    box-shadow: 0 4px 15px rgba(28, 181, 171, 0.25);
+    font-weight: 700;
+}
+
+ul.nav-links li.logout-li {
+    margin-top: auto;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.user-session-badge {
+    background: rgba(30, 41, 59, 0.8);
+    border: 1px solid rgba(28, 181, 171, 0.35);
+    border-radius: 12px;
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.user-session-badge:hover {
+    background: rgba(28, 181, 171, 0.2);
+    border-color: #1cb5ab;
+    box-shadow: 0 0 15px rgba(28, 181, 171, 0.3);
+    transform: translateY(-1px);
+}
+
+.user-session-avatar {
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(135deg, #1cb5ab, #ff9800);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 0.95rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.user-session-info {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.user-session-name {
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.user-session-email {
+    color: #94a3b8;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.logout-btn {
+    width: 100%;
+    background: rgba(239, 68, 68, 0.12);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    border-radius: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #ef4444;
+    font-size: 1rem;
+    padding: 11px 14px;
+    transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+    background: rgba(239, 68, 68, 0.25);
+    border-color: #ef4444;
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
+    transform: translateY(-2px);
+}
+
+/* User Profile Modal Backdrop & Glass Card */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(8px);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.profile-modal-card {
+    background: #0f172a;
+    border: 2px solid #1cb5ab;
+    border-radius: 24px;
+    padding: 35px 30px;
+    width: 100%;
+    max-width: 440px;
+    position: relative;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    animation: modalPop 0.3s ease;
+}
+
+@keyframes modalPop {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.close-modal-btn {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    background: #1e293b;
+    border: none;
+    color: #cbd5e1;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.close-modal-btn:hover {
+    background: #ef4444;
+    color: #ffffff;
+}
+
+.profile-modal-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.profile-avatar-lg {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1cb5ab, #ff9800);
+    color: #ffffff;
+    font-size: 2.2rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 14px auto;
+    box-shadow: 0 0 20px rgba(28, 181, 171, 0.4);
+}
+
+.profile-modal-header h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0 0 4px 0;
+    color: #ffffff;
+}
+
+.profile-email-sub {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    margin: 0 0 12px 0;
+}
+
+.profile-status-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(34, 197, 94, 0.15);
+    border: 1px solid #22c55e;
+    color: #22c55e;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.profile-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.profile-stat-box {
+    background: #1e293b;
+    border: 1px solid rgba(28, 181, 171, 0.25);
+    border-radius: 12px;
+    padding: 12px 8px;
+    text-align: center;
+}
+
+.stat-label {
+    font-size: 0.72rem;
+    color: #94a3b8;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.stat-val {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #1cb5ab;
+    margin: 0;
+}
+
+.profile-actions-row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile-action-btn {
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.25s ease;
+}
+
+.profile-action-btn.primary {
+    background: linear-gradient(135deg, #1cb5ab, #0f766e);
+    color: #ffffff;
+}
+
+.profile-action-btn.primary:hover {
+    background: linear-gradient(135deg, #ff9800, #d97706);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 152, 0, 0.4);
+}
+
+.profile-action-btn.secondary {
+    background: #1e293b;
+    color: #cbd5e1;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.profile-action-btn.secondary:hover {
+    background: #334155;
+    color: #ffffff;
 }

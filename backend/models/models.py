@@ -56,7 +56,3 @@ class Watchlist(db.Model):
     company_id = db.Column(db.Integer, db.ForeignKey('companies.id'))
     created_at = db.Column(db.DateTime, default=db.func.now(), onupdate=db.func.now())
 
-with app.app_context(): 
-    '''tells Flask "I want to use app features in this standalone script" and gives you access to 
-                database operations and other Flask functionality.'''
-    pass

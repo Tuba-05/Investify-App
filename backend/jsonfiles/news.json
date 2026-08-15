@@ -1,135 +1,93 @@
 [
     {
-        "source": "Vox",
-        "author": "Sean Illing",
-        "title": "Why every website you used to love is getting worse - vox.com",
-        "description": "The reason every website you used to love now stinks.",
-        "url": "https://www.vox.com/technology/465922/enshittification-cory-doctorow-amazon-google-facebook"
+        "source": "Barron's",
+        "author": "Patrick O’Donnell",
+        "title": "SpaceX Stock Drops as Musk’s Rockets Face a Fresh Rival - Barron's",
+        "description": "SpaceX stock has gained around 19% in the week since the first tranche of shares were unlocked last Thursday and another release is coming next week.",
+        "url": "https://www.barrons.com/articles/spacex-stock-price-unlocked-rival-52f9fc3a"
     },
     {
-        "source": "Bloomberg",
-        "author": "Hallie Gu, James Mayger",
-        "title": "China to Make ‘Substantial’ US Soybean Purchases, Bessent Says - Bloomberg.com",
-        "description": "China will make “substantial” purchases of US soybeans, Treasury Secretary Scott Bessent said Sunday after talks with Chinese counterparts, in a sign that the relations are thawing ahead of a possible leaders’ meeting.",
-        "url": "https://www.bloomberg.com/news/articles/2025-10-26/china-to-make-substantial-us-soybean-purchases-bessent-says"
+        "source": "Associated Press",
+        "author": "Anne D'Innocenzio",
+        "title": "US retail sales slump unexpectedly and sharply after a summer tax-refund boost fades - AP News",
+        "description": "Americans unexpectedly cut their spending in July by the biggest drop since May 2025, raising doubts about the resiliency of consumers who have kept spending and powering the economy despite the rising costs of daily expenses. Retail sales slipped 0.6% last m…",
+        "url": "https://apnews.com/article/retail-inflation-consumer-sentiment-economy-3e2bc5807d7396b8e6c5f599941cb2a9"
     },
     {
-        "source": "Investopedia",
-        "author": "Terry Lane",
-        "title": "What to Expect in Markets This Week: Fed Interest-Rate Decision; Earnings From Apple, Microsoft, Meta, Amazon, Alphabet - Investopedia",
-        "description": "Coming up: FOMC interest rate decision, earnings from Apple, Microsoft, Meta, Amazon, Alphabet, and more.",
-        "url": "https://www.investopedia.com/what-to-expect-in-markets-this-week-fed-interest-rate-decision-earnings-from-apple-microsoft-meta-amazon-alphabet-11835986"
+        "source": "MarketWatch",
+        "author": "Tomi Kilgore, Barbara Kollmeyer, Joseph Adinolfi, Nora Redmond, Jules Rimmer",
+        "title": "Stock Market Today: Dow lower as stocks see muted open; S&P 500, Nasdaq head for winning weeks - MarketWatch",
+        "description": "Follow along here for all of the U.S. market's Friday action.",
+        "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-and-nasdaq-poised-for-a-struggle-with-retail-sales-data-ahead"
     },
     {
         "source": "CNBC",
-        "author": "Sawdah Bhaimiya",
-        "title": "Meta’s co-founder says being a CEO for 13 years was exhausting: I 'put on this face day after day' - CNBC",
-        "description": "\"I'd intended to be more of a independent or head of engineering,\" Dustin Moskovitz, Asana's co-founder and chairman said about his time at the software firm.",
-        "url": "https://www.cnbc.com/2025/10/26/metas-co-founder-says-being-a-ceo-for-13-years-was-exhausting.html"
+        "author": "Lillian Rizzo",
+        "title": "Disney CEO Josh D'Amaro tells CNBC parks were 'big surprise' in last quarter, company has 'clarity' and 'stability' - CNBC",
+        "description": "New CEO Josh D'Amaro has said his strategy for continued growth at Disney is centered around storytelling, intellectual property and technology.",
+        "url": "https://www.cnbc.com/2026/08/14/disney-ceo-josh-damaro-d23-expo.html"
     },
     {
-        "source": "Teslarati",
-        "author": "Joey Klender",
-        "title": "Tesla Full Self-Driving got a minor feature that’s a massive improvement - Teslarati",
-        "description": "",
-        "url": "https://www.teslarati.com/tesla-full-self-driving-more-seamless-little-known-feature/"
+        "source": "The Hill",
+        "author": "Michael Bartiromo, Addy Bink",
+        "title": "FDA assigns highest-risk Class I status for recall of nearly 1.6 million cartons of eggs - The Hill",
+        "description": "A Class I recall indicates “a situation in which there is a reasonable probability that the use of or exposure to a violative product will cause serious adverse health consequences or death,\" according to the FDA.",
+        "url": "https://thehill.com/policy/healthcare/6029894-fda-assigns-highest-risk-class-i-status-for-recall-of-nearly-1-6-million-cartons-of-eggs/"
     },
     {
-        "source": "The Wall Street Journal",
-        "author": "John Keilman, Jemal R. Brinson",
-        "title": "The ‘Hands Problem’ Holding Back the Humanoid Revolution - The Wall Street Journal",
-        "description": "Researchers face huge challenges in creating robotic hands equal to the real thing, but they’re getting closer. One big question: How many fingers?",
-        "url": "https://www.wsj.com/tech/the-hands-problem-holding-back-the-humanoid-revolution-c1aa6123"
+        "source": "CNBC",
+        "author": "Diana Olick",
+        "title": "Property Play: Housing investors say this is their worst market in at least 3 years - CNBC",
+        "description": "Mortgage rates hit a recent low at the end of February but rose sharply at the start of the war with Iran. They are now at their highest level in over a year.",
+        "url": "https://www.cnbc.com/2026/08/14/housing-investors-say-this-is-their-worst-market-in-at-least-3-years.html"
     },
     {
-        "source": "NBC News",
-        "author": "Phil Helsel",
-        "title": "Hormel is recalling 5 million pounds of ready-to-eat frozen chicken over metal concerns - NBC News",
-        "description": "Food giant Hormel is recalling nearly 5 million pounds of chicken products after complaints that pieces of metal were found in food, officials said Saturday",
-        "url": "https://www.nbcnews.com/news/us-news/hormel-recalling-5-million-pounds-ready-eat-frozen-chicken-metal-conce-rcna239777"
+        "source": "Yahoo Entertainment",
+        "author": "Julie Hyman",
+        "title": "The AI build-out has a problem that $1 trillion in cash can't fix - Yahoo Finance",
+        "description": "Forecasts are rising for how much money Big Tech will throw at the AI data center build-out this year. But money may not get the job done if chips, skilled l...",
+        "url": "https://finance.yahoo.com/technology/article/the-ai-build-out-has-a-problem-that-1-trillion-in-cash-cant-fix-134114624.html"
     },
     {
-        "source": "CoinDesk",
-        "author": "Jesse Hamilton",
-        "title": "Trump Names SEC Crypto Task Force Head Selig as Next Nominee to Run U.S. CFTC - CoinDesk",
-        "description": "If confirmed, current SEC official Mike Selig would take over the U.S. commodities watchdog as it's poised to be given wide authority over crypto.",
-        "url": "https://www.coindesk.com/policy/2025/10/25/frame-trump-names-sec-crypto-task-force-head-selig-as-next-nominee-to-run-u-s-cftc"
+        "source": "BBC News",
+        "author": "Finance & Tech Desk",
+        "title": "Builders unearth €9m gold stash sealed in walls of Belgian property - BBC",
+        "description": "Construction workers found the stash in the walls of a cellar while drilling to lay sewage pipes.",
+        "url": "https://www.bbc.com/news/articles/c5ydzg0dnz7o"
     },
     {
-        "source": "Bloomberg",
-        "author": "María Paula Mijares Torres",
-        "title": "ExxonMobil Sues California, Claims New Green Laws Violate Speech - Bloomberg.com",
-        "description": "ExxonMobil Corp. has sued California, arguing that two new state laws violate the First Amendment by trying to force it to agree to a certain climate viewpoint, and conflict with federal regulations.",
-        "url": "https://www.bloomberg.com/news/articles/2025-10-25/exxonmobil-sues-california-claims-new-green-laws-violate-speech"
+        "source": "Forbes",
+        "author": "Alicia Park",
+        "title": "Bill Gates-Owned Caribbean Resort Is In Disrepair, Suit Alleges - Forbes",
+        "description": "Homeowners at Four Seasons Resort Nevis say the owner let the five-star property fall into disrepair: missing pool ties, trash on golf course and nonfunctioning fitness equipment are some of their complaints.",
+        "url": "https://www.forbes.com/sites/aliciapark/2026/08/14/bill-gates-owned-four-seasons-resort-sued-for-100-million-by-disgruntled-members/"
     },
     {
-        "source": "TheStreet",
-        "author": "Fernanda Tronco",
-        "title": "Target announces a major change affecting its entire business - Yahoo Finance",
-        "description": "Over the last year, Target has found itself at the center of intense backlash and boycotts due to a series of controversial business decisions that verge on ...",
-        "url": "https://www.thestreet.com/retail/target-announces-a-major-change-affecting-its-entire-business"
+        "source": "The Washington Post",
+        "author": "Riley Beggin, Cat Zakrzewski",
+        "title": "Truth Social’s sale of fast access to Trump posts draws legal concerns - The Washington Post",
+        "description": "A lawsuit filed this week alleges that the product is unconstitutional, and other experts warn it could violate securities laws.",
+        "url": "https://www.washingtonpost.com/politics/2026/08/14/truth-socials-sale-fast-access-trump-posts-draws-legal-concerns/"
     },
     {
-        "source": "Axios",
-        "author": "Sam Sabin",
-        "title": "AI is about to supercharge cyberattacks - Axios",
-        "description": "It's a ticking time bomb facing U.S. companies",
-        "url": "https://www.axios.com/2025/10/25/ai-is-about-to-supercharge-cyberattacks"
+        "source": "Fox News",
+        "author": "Finance & Tech Desk",
+        "title": "Treasure hunters strike gold after years of disappointment with find worth a fortune - Fox News",
+        "description": "Hobbyists Alan Daniels and Andy Crammond unearthed three Bronze Age gold bracelets near Carlisle, England, dating to 1100 B.C. The items are now under British Museum review.",
+        "url": "https://www.foxnews.com/travel/treasure-hunters-strike-gold-years-disappointment-find-worth-fortune"
     },
     {
-        "source": "Fortune",
-        "author": "Ken Sweet, The Associated Press",
-        "title": "JPMorgan balks at legal tab for fraudsters and says Javice's lawyers treat it 'like a blank check' - Fortune",
-        "description": "A court previously ruled JPMorgan was required to advance Javice and Amar for any legal fees, which was part of the bank’s agreement when Frank was acquired in 2021.",
-        "url": "https://fortune.com/2025/10/25/jpmorgan-115-million-legal-tab-frank-fraud-charlie-javice-olivier-amar/"
+        "source": "Notus.org",
+        "author": "Jeff Stein",
+        "title": "Rogue AI Agents Are Alarming Researchers More Than Ever - News of the United States - NOTUS",
+        "description": "A string of hacks is fueling a new sense of urgency to regulate the technology. “I have never seen so much concern,” one former industry consultant said.",
+        "url": "https://www.notus.org/technology/rogue-ai-agents-hacks-alarming-researchers"
     },
     {
-        "source": "TheStreet",
-        "author": "Tony Owusu, Celine Provini",
-        "title": "Elon Musk’s top 3 shocking quotes from Telsa Q3 earnings call - TheStreet",
-        "description": "Elon Musk channeled author Philip K. Dick in his most recent earnings call conversation.",
-        "url": "https://www.thestreet.com/investing/earnings/elon-musks-top-3-shocking-quotes-from-telsa-q3-earnings-call"
-    },
-    {
-        "source": "24/7 Wall St.",
-        "author": "Rich Duprey",
-        "title": "Nancy Pelosi Is Crushing The S&P 500 And These Are Her 3 Best Positions - Yahoo Finance",
-        "description": "Warren Buffett may be considered the greatest investor of our time, but even he can’t touch the prowess of California congresswoman Nancy Pelosi (D-CA). As...",
-        "url": "https://247wallst.com/investing/2025/10/25/nancy-pelosi-is-crushing-the-sp-500-and-these-are-her-3-best-positions/"
-    },
-    {
-        "source": "Gizmodo.com",
-        "author": "Lucas Ropek",
-        "title": "Tesla’s ‘Mad Max’ Mode is Now Being Investigated by U.S. Regulators - Gizmodo",
-        "description": "Social media users have complained that Teslas using the mode named after a lead-footed dystopian drifter were exceeding the speed limit.",
-        "url": "https://gizmodo.com/tesla-mad-max-investigated-2000677005"
-    },
-    {
-        "source": "Thebanner.com",
-        "author": "Nori Leybengrub",
-        "title": "Feds find almost two-dozen ‘skimmers’ designed to steal credit cards at Baltimore area retailers - The Baltimore Banner",
-        "description": "The U.S. Secret Service, in collaboration with local law enforcement, spent time in and around Baltimore, checking over 3,000 card readers, gas station pumps and ATMs looking for illegal skimming devices.",
-        "url": "https://www.thebanner.com/economy/secret-service-credit-card-skimmer-baltimore-area-retailers-CYYNFNA5LVHZZJYUTBOIUKPUTM/"
-    },
-    {
-        "source": "TheStreet",
-        "author": "Mary Helen Gillespie, Dana Sullivan Kilroy",
-        "title": "New CPI data resets December Fed interest rate cut - TheStreet",
-        "description": "Economists say softer CPI data gives the Federal Reserve breathing room as labor markets weaken.",
-        "url": "https://www.thestreet.com/fed/new-cpi-data-resets-december-fed-interest-rate-cut"
-    },
-    {
-        "source": "SFGate",
-        "author": "Fiona Lee",
-        "title": "Cruise ships are seeing a record year for outbreaks - SFGATE",
-        "description": "The number of outbreaks on cruise ships has exceeded the number from 2024, which was in itself a record year.",
-        "url": "https://www.sfgate.com/travel/article/cruise-ships-seeing-record-year-outbreaks-21118728.php"
-    },
-    {
-        "source": "Gizmodo.com",
-        "author": "Lucas Ropek",
-        "title": "New Trump Administration Energy Rule Would Enable Data Centers with ‘Large Loads’ - Gizmodo",
-        "description": "The \"urgent\" regulatory amendment from the Energy Department would benefit AI companies.",
-        "url": "https://gizmodo.com/ai-large-loads-2000676957"
+        "source": "Seeking Alpha",
+        "author": "Samuel Smith",
+        "title": "My Near-Perfect $1 Million Retirement Portfolio - Seeking Alpha",
+        "description": "Seven-bucket retirement portfolio blueprint with specific picks for reliable income, attractive yield, and sustainable dividend growth. Read what investors need to know.",
+        "url": "https://seekingalpha.com/article/4936680-my-near-perfect-1-million-retirement-portfolio"
     }
 ]
