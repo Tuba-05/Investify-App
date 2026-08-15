@@ -131,64 +131,81 @@ frontend/
 
 ### 1. High-Level Full-Stack System Architecture
 
-```mermaid
-graph TD
-    User([👤 User / Browser]) -->|HTTPS Port 5173| ReactFrontend[💻 React 19 Frontend - Vite]
-    
-    subgraph Frontend Components
-        ReactFrontend --> Nav[Navbar & User Profile Modal]
-        ReactFrontend --> StockGrid[StockList & Market Cap Ranks]
-        ReactFrontend --> CmpFS[CmpFS & Recharts Trend Sliders]
-        ReactFrontend --> Exports[jsPDF Report & CSV Exporter]
-        ReactFrontend --> Watchlist[WatchList & Live News Carousel]
-        ReactFrontend --> HelpTicket[Help Center & Support Ticket Form]
-        ReactFrontend --> AuthGuard[ProtectedRoute Session Guard]
-    end
+```text
+========================================================================================
+                      INVESTIFY FULL-STACK SYSTEM ARCHITECTURE
+========================================================================================
 
-    ReactFrontend -->|REST API Calls / Port 5000| FlaskBackend[⚙️ Flask REST API Server]
-
-    subgraph Backend Services & Memory Cache
-        FlaskBackend --> Router[Flask Blueprints Routes]
-        FlaskBackend --> MemoryCache[(⚡ 5-Min Memory TTL Cache)]
-        FlaskBackend --> OTPService[SMTP Mailer & OTP Generator]
-    end
-
-    FlaskBackend -->|SQLAlchemy ORM| SupabaseDB[(🗄️ Supabase PostgreSQL Cloud DB)]
-    FlaskBackend -->|Live Telemetry Fetch| YahooFinance[📈 Yahoo Finance yfinance API]
-    OTPService -->|TLS Port 587| GmailSMTP[📧 Gmail SMTP Server]
+                             [ 👤 User / Browser ]
+                                       │
+                                (Port 5173 - HTTP)
+                                       ▼
+                  +-----------------------------------------+
+                  |      💻 React 19 Frontend (Vite)        |
+                  |-----------------------------------------|
+                  | • Navbar & Glassmorphic Session Modal   |
+                  | • StockList (Live Market Cap Ranks)     |
+                  | • CmpFS (Recharts Intraday & 10-Yr)     |
+                  | • Document Exports (jsPDF & CSV)        |
+                  | • WatchList & Live RSS News Carousel    |
+                  | • Help Support Center & Ticket Form     |
+                  | • ProtectedRoute Session Guard          |
+                  +-----------------------------------------+
+                                       │
+                              (Port 5000 - REST API)
+                                       ▼
+                  +-----------------------------------------+
+                  |     ⚙️ Flask REST API Server Backend    |
+                  |-----------------------------------------|
+                  | • Flask Blueprint Routes (Auth/Stock)   |
+                  | • ⚡ 5-Minute In-Memory TTL Cache Engine |
+                  | • Werkzeug Password Hashing             |
+                  | • Background Thread Dispatcher          |
+                  +-----------------------------------------+
+                       │               │               │
+     (SQLAlchemy ORM)  │               │ (Live Fetch)  │ (TLS Port 587)
+                       ▼               ▼               ▼
+           +-----------------------+ +--------------+ +-------------------+
+           | 🗄️ Supabase PostgreSQL| | 📈 Yahoo     | | 📧 Gmail SMTP     |
+           | Cloud Database        | | Finance API  | | Email Server      |
+           | (Users, Companies, FS,| | (yfinance)   | | (OTP & Support  |
+           | Watchlist, OTP Codes) | |              | | Ticket Dispatch)|
+           +-----------------------+ +--------------+ +-------------------+
+========================================================================================
 ```
 
 ### 2. Authentication & 2-Minute OTP Verification Sequence
 
-```mermaid
-sequenceDiagram
-    autonumber
-    actor User
-    participant React as React Frontend
-    participant Flask as Flask REST API
-    participant DB as Supabase PostgreSQL
-    participant SMTP as Gmail SMTP
+```text
+========================================================================================
+               🔐 AUTHENTICATION & 2-MINUTE OTP PASSWORD RESET FLOW
+========================================================================================
 
-    User->>React: Click "Forgot Password?" & enter email
-    React->>Flask: POST /api/auth/veri-code-fpassword
-    Flask->>Flask: Generate 6-char OTP & set expired_at (+2 min)
-    Flask->>DB: Save verification record in forgot_password_details
-    Flask->>SMTP: Dispatch OTP email (TLS Port 587)
-    SMTP-->>User: Deliver 6-digit OTP email to Inbox
-    React->>User: Redirect to VeriCode Page (Live 120s Timer starts)
-    User->>React: Enter OTP code & click "Verify OTP Code"
-    React->>Flask: POST /api/auth/check-veri-code
-    alt Now > Expired_At (2 Minutes Exceeded)
-        Flask-->>React: 400 Expired (Prompt user to click "Resend Code")
-    else Code Valid & Active
-        Flask-->>React: 200 OK (Set Newpassword=true in localStorage)
-        React->>User: Redirect to Login Page with Guidance Banner
-        User->>React: Enter Email & NEW Password -> Click "Sign In"
-        React->>Flask: POST /api/auth/login (ChangePassword=true)
-        Flask->>DB: Update user password hash in Supabase
-        Flask-->>React: 200 OK & User Data
-        React-->>User: Log in & Redirect to Home Dashboard (/HmPg)
-    end
+   [User]            [React Frontend]         [Flask Backend]        [Supabase DB]        [Gmail SMTP]
+     │                      │                        │                     │                 │
+ 1.  │─── Click "Forgot" ──►│                        │                     │                 │
+     │    Enter Email       │                        │                     │                 │
+ 2.  │                      │── POST /veri-code ────►│                     │                 │
+ 3.  │                      │                        │── Save Code ───────►│                 │
+ 4.  │                      │                        │── Dispatch Email ────────────────────►│
+ 5.  │                      │                        │                                       │── Send OTP ──► User Inbox
+ 6.  │◄── Redirect to VeriCode Page (Live 120s Timer Starts) ────────────────────────────────│
+ 7.  │─── Enter OTP Code ──►│                        │                     │                 │
+ 8.  │                      │── POST /check-code ───►│                     │                 │
+     │                      │                        │                     │                 │
+     │    ┌─────────────────┴────────────────────────┴─────────────────────┴──────────────┐  │
+     │    │  Backend Expiration & Validity Guard:                                         │  │
+     │    │  • If Now > Expired_At (2 Min Exceeded) ──► Return 400 "Code Expired"         │  │
+     │    │  • If Code Valid ─────────────────────────► Return 200 OK & Flag Mode          │  │
+     │    └─────────────────┬────────────────────────┬─────────────────────┬──────────────┘  │
+     │                      │                        │                     │                 │
+ 9.  │◄── Redirect to Login Page with Success Guidance Banner ────────────────────────────│
+10.  │─── Enter Email & ───►│                        │                     │                 │
+     │    NEW Password      │── POST /login ────────►│                     │                 │
+11.  │                      │   (ChangePassword=true)│── Update Hash ─────►│                 │
+12.  │                      │◄── Return User Data ───│                     │                 │
+13.  │◄── Login Successful! Redirect to Home Dashboard (/HmPg) ───────────────────────────│
+========================================================================================
 ```
 
 ---
