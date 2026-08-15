@@ -11,8 +11,6 @@
 
 **Investify** is a production-grade full-stack financial market analytics platform providing real-time stock market telemetry, dynamic market cap rankings, multi-year historical trend visualizations, automated financial report exports (PDF & CSV), and personalized user watchlists.
 
-Originally conceived as a **Database Management Systems (DBMS)** academic project, Investify has evolved into a feature-rich trading telemetry ecosystem backed by **Supabase PostgreSQL Cloud Database**, Yahoo Finance live data pipelines, and a high-performance **5-minute in-memory TTL caching engine**.
-
 ---
 
 ## 📑 Table of Contents
