@@ -11,8 +11,7 @@ import {
   IoLayers,
   IoSparkles,
   IoLogoLinkedin,
-  IoMail,
-  IoCheckmarkDoneCircle
+  IoMail
 } from 'react-icons/io5';
 import './AboutUs.css';
 
@@ -69,7 +68,7 @@ const AboutUs = () => {
           <div className="capability-card">
             <IoServer className="cap-icon" />
             <h3>Relational Watchlist</h3>
-            <p>Personalized stock watchlist management per user stored in PostgreSQL with SQLAlchemy ORM query optimization.</p>
+            <p>Personalized stock watchlist management per user stored in Supabase PostgreSQL with SQLAlchemy ORM query optimization.</p>
           </div>
 
           <div className="capability-card">
@@ -99,7 +98,7 @@ const AboutUs = () => {
           <div className="tech-card">
             <IoServer className="tech-icon db-icon" />
             <h3>Database System</h3>
-            <p>PostgreSQL relational database storing users, password verification records, company metadata, and watchlists.</p>
+            <p>Supabase PostgreSQL cloud relational database storing users, password verification records, company metadata, and watchlists.</p>
           </div>
         </div>
       </motion.div>
@@ -109,11 +108,18 @@ const AboutUs = () => {
         <div className="academic-card">
           <IoSchool className="academic-icon" />
           <div>
-            <h3>🎓 Academic Context</h3>
+            <h3>🎓 DBMS Academic Origin & Evolution</h3>
             <p>
-              Developed as part of the <strong>Computer & Information Systems Engineering</strong> curriculum 
-              at <strong>NED University of Engineering & Technology (NEDUET)</strong> to demonstrate full-stack architecture, 
-              live API integration, and relational database planning.
+              Investify was originally developed as an academic learning project for a 
+              <strong> Database Management Systems (DBMS)</strong> university course at 
+              <strong> NED University of Engineering & Technology (NEDUET)</strong>. The core objective 
+              was to master relational database design, table entity relationships, foreign key constraints, and 
+              SQL ORM operations.
+            </p>
+            <p style={{ marginTop: "12px", color: "#cbd5e1", fontSize: "0.92rem", lineHeight: "1.5" }}>
+              Following the DBMS foundation, the platform underwent production-grade enhancements — integrating 
+              live Yahoo Finance market telemetry, 5-minute memory caching, Supabase cloud PostgreSQL migration, 
+              interactive Recharts visualization, PDF/CSV report exports, and a modern glassmorphic dark interface.
             </p>
           </div>
         </div>

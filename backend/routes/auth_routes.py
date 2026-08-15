@@ -113,3 +113,21 @@ def check_veri_code():
         print(" Code not verified. ")
         return jsonify({"success" : False, "message" : "Wrong Verification code : ("})
 
+
+# ********* 3- SUBMIT SUPPORT TICKET (DISPATCH GMAIL EMAIL VIA SMTP) *********
+@auth_bp.route("/submit-support-ticket", methods=["POST"])
+def submit_support_ticket():
+    data = request.get_json() or {}
+    name = data.get("name")
+    email = data.get("email")
+    category = data.get("category", "General Query")
+    message = data.get("message")
+
+    if not name or not email or not message:
+        return jsonify({"success": False, "message": "Name, email, and message are required."}), 400
+
+    # Dispatch email in background thread so API responds instantly
+    Thread(target=ottp.send_support_query, args=(name, email, category, message)).start()
+
+    return jsonify({"success": True, "message": "Support query ticket sent to Gmail successfully!"})
+

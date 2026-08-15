@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { MdArrowRight } from "react-icons/md";
+import { jsPDF } from "jspdf";
 import {
   AreaChart,
   Area,
@@ -16,7 +16,7 @@ import {
   ResponsiveContainer
 } from "recharts";
 import { IoIosArrowDropleftCircle, IoIosArrowDroprightCircle } from "react-icons/io";
-import { IoTrendingUp, IoBusiness, IoStatsChart, IoInformationCircle } from "react-icons/io5";
+import { IoTrendingUp, IoBusiness, IoStatsChart, IoInformationCircle, IoDownloadOutline, IoDocumentTextOutline } from "react-icons/io5";
 import "./CmpFs.css";
 
 const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:5000";
@@ -68,6 +68,120 @@ function CmpFS() {
         .catch((err) => console.error("Error 20-yr graph fetch:", err));
     }
   }, [data?.symbol]);
+
+  // CSV Export Functionality
+  const exportCSV = () => {
+    if (!data) return;
+    const latest = data.financials?.[0] || {};
+    const headers = ["Company Name", "Symbol", "Sector", "Country", "Price (USD)", "Market Cap", "Revenue", "Net Income", "Total Assets", "Total Liabilities", "Equity", "Report Date"];
+    const row = [
+      `"${data.c_name}"`,
+      `"${data.symbol}"`,
+      `"${data.sector}"`,
+      `"${data.country}"`,
+      `"${data.price_usd || ''}"`,
+      `"${data.market_cap || ''}"`,
+      `"${latest.revenue || ''}"`,
+      `"${latest.income || ''}"`,
+      `"${latest.assets || ''}"`,
+      `"${latest.liabilities || ''}"`,
+      `"${latest.equity || ''}"`,
+      `"${latest.date || ''}"`
+    ];
+
+    const csvContent = "data:text/csv;charset=utf-8," + [headers.join(","), row.join(",")].join("\n");
+    const encodedUri = encodeURI(csvContent);
+    const link = document.createElement("a");
+    link.setAttribute("href", encodedUri);
+    link.setAttribute("download", `${data.symbol}_Financial_Report.csv`);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  // PDF Export Functionality
+  const exportPDF = () => {
+    if (!data) return;
+    const latest = data.financials?.[0] || {};
+    const doc = new jsPDF();
+
+    // Dark Header Banner
+    doc.setFillColor(15, 23, 42);
+    doc.rect(0, 0, 210, 38, "F");
+
+    // Title
+    doc.setTextColor(28, 181, 171);
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(22);
+    doc.text("INVESTIFY FINANCIAL REPORT", 14, 20);
+
+    doc.setTextColor(255, 255, 255);
+    doc.setFontSize(12);
+    doc.text(`${data.c_name} (${data.symbol})`, 14, 30);
+
+    doc.setFontSize(9);
+    doc.setTextColor(148, 163, 184);
+    doc.text(`Generated on: ${new Date().toLocaleDateString()}`, 150, 30);
+
+    // Section 1: Overview & Metrics
+    doc.setTextColor(15, 23, 42);
+    doc.setFontSize(14);
+    doc.setFont("helvetica", "bold");
+    doc.text("1. Market Telemetry Overview", 14, 50);
+
+    doc.setFontSize(11);
+    
+    let y = 60;
+    const metrics = [
+      ["Stock Symbol:", data.symbol],
+      ["Industry Sector:", data.sector],
+      ["Country / HQ:", data.country],
+      ["Current Share Price:", `$${Number(data.price_usd || 0).toFixed(2)} USD`],
+      ["Market Capitalization:", `$${data.market_cap ? Number(data.market_cap).toLocaleString() : "N/A"}`],
+      ["Total Annual Revenue:", `$${Number(latest.revenue || 0).toLocaleString()} USD`],
+      ["Net Income / Profit:", `$${Number(latest.income || 0).toLocaleString()} USD (${latest.profit || 0}%)`],
+      ["Total Assets:", `$${Number(latest.assets || 0).toLocaleString()} USD`],
+      ["Total Liabilities:", `$${Number(latest.liabilities || 0).toLocaleString()} USD`],
+      ["Shareholder Equity:", `$${Number(latest.equity || 0).toLocaleString()} USD`],
+      ["Report Telemetry Date:", latest.date || "N/A"]
+    ];
+
+    metrics.forEach(([label, val]) => {
+      doc.setFont("helvetica", "bold");
+      doc.text(label, 14, y);
+      doc.setFont("helvetica", "normal");
+      doc.text(String(val), 80, y);
+      y += 9;
+    });
+
+    // Separator Line
+    doc.setDrawColor(28, 181, 171);
+    doc.setLineWidth(0.5);
+    doc.line(14, y + 5, 196, y + 5);
+
+    // Section 2: Analyst Summary Note
+    y += 18;
+    doc.setFontSize(14);
+    doc.setFont("helvetica", "bold");
+    doc.setTextColor(15, 23, 42);
+    doc.text("2. Executive Summary Note", 14, y);
+
+    y += 10;
+    doc.setFontSize(10);
+    doc.setFont("helvetica", "italic");
+    doc.setTextColor(71, 85, 105);
+    const summaryText = `This document provides real-time audited financial telemetry for ${data.c_name} (${data.symbol}). All prices and market valuation metrics are updated via live telemetry algorithms on Investify Platform.`;
+    const splitText = doc.splitTextToSize(summaryText, 180);
+    doc.text(splitText, 14, y);
+
+    // Footer
+    doc.setFontSize(9);
+    doc.setFont("helvetica", "normal");
+    doc.setTextColor(148, 163, 184);
+    doc.text("Investify Financial Technologies Inc. • Confidential Investor Report", 14, 285);
+
+    doc.save(`${data.symbol}_Financial_Report.pdf`);
+  };
 
   const chart1nextSlide = () => {
     setChart1CurrentIndex((prev) => (prev === 2 ? 0 : prev + 1));
@@ -242,18 +356,30 @@ function CmpFS() {
   return (
     <div className="cmpfs-container">
       <div className="cmpfs-card">
-        {/* Company Header */}
-        <div className="cmpfs-header">
-          {data.logo ? (
-            <img src={`data:image/png;base64,${data.logo}`} alt="Logo" className="cmpfs-logo" />
-          ) : (
-            <IoBusiness style={{ fontSize: "3rem", color: "#1cb5ab" }} />
-          )}
-          <div>
-            <h1>{data.c_name} ({data.symbol})</h1>
-            <span style={{ color: "#94a3b8", fontSize: "0.95rem" }}>
-              Sector: <strong style={{ color: "#1cb5ab" }}>{data.sector}</strong> • Country: <strong>{data.country}</strong>
-            </span>
+        {/* Company Header with Export Buttons */}
+        <div className="cmpfs-header" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "15px" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "15px" }}>
+            {data.logo ? (
+              <img src={`data:image/png;base64,${data.logo}`} alt="Logo" className="cmpfs-logo" />
+            ) : (
+              <IoBusiness style={{ fontSize: "3rem", color: "#1cb5ab" }} />
+            )}
+            <div>
+              <h1>{data.c_name} ({data.symbol})</h1>
+              <span style={{ color: "#94a3b8", fontSize: "0.95rem" }}>
+                Sector: <strong style={{ color: "#1cb5ab" }}>{data.sector}</strong> • Country: <strong>{data.country}</strong>
+              </span>
+            </div>
+          </div>
+
+          {/* Export Action Controls */}
+          <div className="export-buttons-group">
+            <button className="export-btn csv" onClick={exportCSV} title="Export Report as CSV Spreadsheet">
+              <IoDownloadOutline /> Export CSV
+            </button>
+            <button className="export-btn pdf" onClick={exportPDF} title="Download Report as PDF Document">
+              <IoDocumentTextOutline /> Download PDF Report
+            </button>
           </div>
         </div>
 

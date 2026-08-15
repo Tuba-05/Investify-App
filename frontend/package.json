@@ -19,6 +19,7 @@
     "boxicons": "^2.1.4",
     "chart.js": "^4.5.1",
     "icons": "^1.0.0",
+    "jspdf": "^4.2.1",
     "lottie-react": "^2.4.1",
     "motion": "^12.23.13",
     "plotly.js": "^3.1.1",

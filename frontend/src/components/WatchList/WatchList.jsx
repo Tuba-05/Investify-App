@@ -11,7 +11,8 @@ const WatchList = () => {
   const navigate = useNavigate();
   const [rows, setRows] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [userName, setUserName] = useState("User");
+  const sessionUserName = localStorage.getItem("userName") || "Investor";
+  const [userName, setUserName] = useState(sessionUserName);
   const userId = localStorage.getItem("userId");
   
   const [dailyNews, setDailyNews] = useState([]);
@@ -47,7 +48,8 @@ const WatchList = () => {
       .then((res) => res.json())
       .then((data) => {
         if (data.success) {
-          setUserName(data.username);
+          const activeName = localStorage.getItem("userName") || data.username || "Investor";
+          setUserName(activeName);
           const mapped = data.companies.map((item, idx) => ({
             id: item.id,
             c_name: item.c_name,
