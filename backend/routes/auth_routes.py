@@ -50,19 +50,24 @@ def login():
     if not user:    # if user not exists in DB
         return jsonify({"success": False, "message": "User not found"}), 404 
     
-    if not check_password_hash(user.password, password):   # if password not matches with DB passowrd
+    # Password Reset Mode
+    if change_password == "true" or change_password is True:
+        if check_password_hash(user.password, password):
+            return jsonify({"success": False, "message": "New password cannot be the same as your old password."}), 400
+        
+        # Update password in Supabase DB
+        user.password = generate_password_hash(password)
+        db.session.commit()
+        print("User password updated & logged in successfully")
+        return jsonify({
+            "success": True, 
+            "message": "Password reset successful! Welcome to Investify.",
+            "user": {"id": user.id, "name": user.name, "email": user.email}
+        }), 200
+
+    # Standard Login Password Check
+    if not check_password_hash(user.password, password):   # if password not matches with DB password
         return jsonify({"success": False, "message": "Invalid password"}), 401
-    
-    if change_password:
-        if user.password == password: 
-            return jsonify({"success": False, "message": "New password can not be Old password" })
-        else:
-            User.query.filter_by(email=email).update({"password": generate_password_hash(password)})
-            db.session.commit()
-            print("User logged in with new password.")
-            return jsonify({"success": True, "message": "Login successful with new password!",
-                        "user": {"id": user.id, "name": user.name, "email": user.email}
-                        }), 200
     
     print("User logged in") # add for checking purposes
     return jsonify({"success": True, "message": "Login successful!",

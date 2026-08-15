@@ -69,6 +69,7 @@ const LoginSignUp = () => {
         const data = await response.json();
 
         if (response.ok && data.success) {
+          localStorage.removeItem("Newpassword");
           localStorage.setItem("userId", data.user.id);
           localStorage.setItem("userName", data.user.name);
           localStorage.setItem("userEmail", data.user.email);
@@ -176,6 +177,25 @@ const LoginSignUp = () => {
               }
             </p>
           </div>
+
+          {/* OTP Verification Success Guidance Banner */}
+          {Newpassword === "true" && !errorMsg && (
+            <div style={{
+              padding: '12px 16px',
+              borderRadius: '10px',
+              background: 'rgba(34, 197, 94, 0.2)',
+              color: '#86efac',
+              border: '1px solid #22c55e',
+              fontSize: '0.9rem',
+              fontWeight: '600',
+              marginBottom: '16px',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '10px'
+            }}>
+              <span>🎉 OTP Code Verified! Please enter your email & your NEW password below, then click "Sign In" to update your password and log in.</span>
+            </div>
+          )}
 
           {/* Valid Error Alert Banner */}
           {errorMsg && (
