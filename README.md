@@ -19,9 +19,10 @@
 3. [Folder Structure](#-folder-structure)
 4. [System Architecture & Data Flow Diagrams](#%EF%B8%8F-system-architecture--data-flow-diagrams)
 5. [Database Architecture & Supabase](#-database-architecture--supabase)
-6. [Getting Started & Local Setup](#-getting-started--local-setup)
-7. [Academic Context & DBMS Origin Story](#-academic-context--dbms-origin-story)
-8. [Author & Contact](#-author--contact)
+6. [REST API Endpoints Specification](#-rest-api-endpoints-specification)
+7. [Getting Started & Local Setup](#-getting-started--local-setup)
+8. [Academic Context & DBMS Origin Story](#-academic-context--dbms-origin-story)
+9. [Author & Contact](#-author--contact)
 
 ---
 
@@ -219,6 +220,56 @@ Investify operates on a cloud-hosted **Supabase PostgreSQL** database with SQLAl
 - **`users`**: Manages user credentials (hashed passwords via Werkzeug), usernames, and registration timestamps.
 - **`watchlist`**: Relational mapping between user IDs and bookmarked company IDs.
 - **`forgot_password_details`**: Stores generated 6-digit OTP verification codes, expiration timestamps, and request counters.
+
+---
+
+## 🔌 REST API Endpoints Specification
+
+### 🔐 1. Authentication & Security Endpoints (`/api/auth`)
+
+| Method | Endpoint | Description | Sample Request Body | Sample Response |
+|---|---|---|---|---|
+| `POST` | `/api/auth/login` | Authenticates user credentials or updates password in reset mode | `{"email": "user@example.com", "password": "newpass123", "ChangePassword": "true"}` | `{"success": true, "user": {"id": 1, "name": "Tuba", "email": "user@example.com"}}` |
+| `POST` | `/api/auth/signup` | Registers new user and hashes password in Supabase DB | `{"username": "Tuba", "email": "user@example.com", "password": "secretpass"}` | `{"success": true, "message": "User registered successfully"}` |
+| `POST` | `/api/auth/veri-code-fpassword` | Generates 6-digit OTP code & dispatches email via Gmail SMTP | `{"email": "user@example.com"}` | `{"success": true, "message": "Code sent to email"}` |
+| `POST` | `/api/auth/check-veri-code` | Validates 6-digit OTP code against 2-minute expiration window | `{"email": "user@example.com", "veriCode": "A9B2X7"}` | `{"success": true, "message": "Code Verified Successfully!"}` |
+| `POST` | `/api/auth/submit-support-ticket` | Dispatches support ticket to admin Gmail via SMTP | `{"name": "Tuba", "email": "user@example.com", "category": "General Query", "message": "Hello!"}` | `{"success": true, "message": "Support ticket sent successfully!"}` |
+
+---
+
+### 📈 2. Companies & Stock Telemetry Endpoints (`/api/companies`)
+
+| Method | Endpoint | Description | URL Parameters | Sample Response |
+|---|---|---|---|---|
+| `GET` | `/api/companies/companies` | Fetches live stock quotes, market caps, 5-min memory TTL cache, and rankings | None | `[{"id": 1, "symbol": "NVDA", "name": "NVIDIA", "price": 130.5, "market_cap": 3200000000000}]` |
+| `GET` | `/api/companies/company/<int:id>` | Fetches company profile, income statements, assets, liabilities & logo | `id` (Company ID) | `{"id": 1, "symbol": "NVDA", "revenue": "$60.9B", "net_income": "$29.7B"}` |
+
+---
+
+### 📊 3. Analytics & Recharts Trend Endpoints (`/api/analytics`)
+
+| Method | Endpoint | Description | URL Parameters | Sample Response |
+|---|---|---|---|---|
+| `GET` | `/api/analytics/historical-data-last-thirtyDAYS/<symbol>` | Fetches 30-Day intraday price, volume & volatility series | `symbol` (e.g. `NVDA`) | `{"dates": ["2026-07-01", ...], "close": [128.4, 130.5], "volume": [45000000, ...]}` |
+| `GET` | `/api/analytics/historical-data-last-twentyYRS/<symbol>` | Fetches 10-Year historical performance cycle series | `symbol` (e.g. `AAPL`) | `{"dates": ["2016-01-01", ...], "close": [24.2, 185.0]}` |
+
+---
+
+### ⭐ 4. Watchlist Management Endpoints (`/api/watchlist`)
+
+| Method | Endpoint | Description | URL Parameters | Sample Response |
+|---|---|---|---|---|
+| `GET` | `/api/watchlist/watchlist/<user_id>` | Fetches bookmarked companies for specified user | `user_id` | `[{"id": 1, "company_id": 10, "symbol": "AAPL"}]` |
+| `POST` | `/api/watchlist/watchlist/<user_id>/<company_id>` | Adds company to user's personal watchlist | `user_id`, `company_id` | `{"success": true, "message": "Added to Watchlist"}` |
+| `DELETE` | `/api/watchlist/watchlist/<user_id>/<company_id>` | Removes company from user's watchlist | `user_id`, `company_id` | `{"success": true, "message": "Removed from Watchlist"}` |
+
+---
+
+### 📰 5. Financial News Aggregator Endpoints (`/api/news`)
+
+| Method | Endpoint | Description | URL Parameters | Sample Response |
+|---|---|---|---|---|
+| `GET` | `/api/news/fetch-daily-news` | Fetches real-time Tech & Finance RSS news headlines carousel | None | `[{"title": "NVIDIA Unveils Next-Gen AI Chip", "link": "https://...", "pubDate": "2026-08-15"}]` |
 
 ---
 
