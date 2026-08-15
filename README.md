@@ -367,4 +367,3 @@ Post-course, the platform underwent production-grade architectural enhancements 
 
 - **LinkedIn**: [Tuba Naushad Profile](https://linkedin.com/in/tuba-naushad-6a4552253)
 - **Email**: [tubabintenaushad@gmail.com](mailto:tubabintenaushad@gmail.com)
-- **GitHub**: [Tuba-05 / Investify-App](https://github.com/Tuba-05/Investify-App)
