@@ -160,35 +160,53 @@ Application will run on `http://localhost:5173`.
 
 ## 📂 Folder Structure
 
+### ⚙️ Backend Structure (`/backend`)
+
 ```text
-Investify-App/
-├── backend/
-│   ├── database/             # Database initialization & connection manager
-│   ├── jsonfiles/            # Telemetry reference datasets
-│   ├── models/               # SQLAlchemy ORM models (User, Company, Watchlist, etc.)
-│   ├── ottp/                 # OTP generation & SMTP mail dispatch logic
-│   ├── routes/               # API Blueprints (auth, company, watchlist, news, graphs)
-│   ├── .env                  # Environment variables & Supabase connection URI
-│   └── app.py                # Main Flask Application Entry point
-├── frontend/
-│   ├── public/               # Static assets & icons
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── AboutUs/      # About Us page & DBMS evolution story
-│   │   │   ├── CmpFS/        # Financial Statements, Recharts & PDF/CSV exports
-│   │   │   ├── Help/         # Expanded FAQ support center & ticket submission
-│   │   │   ├── HomePg/       # Interactive Home Dashboard
-│   │   │   ├── LoginSignUp/  # Auth forms & inline glassmorphism error alerts
-│   │   │   ├── Navbar/       # Frosted glass sidebar & User Profile Modal
-│   │   │   ├── ProtectedRoute.jsx # Route guarding session wrapper
-│   │   │   ├── StockList/    # Live market cap ranking & real-time search
-│   │   │   ├── VeriCode/     # OTP verification form
-│   │   │   └── WatchList/    # Bookmarked stocks & live news carousel
-│   │   ├── App.jsx           # Application Router & Protected Routes
-│   │   └── main.jsx          # React DOM entry
-│   ├── package.json          # Frontend packages & build scripts
-│   └── vite.config.js        # Vite dev server configuration
-└── README.md                 # Project README Documentation
+backend/
+├── database/
+│   └── database.py          # Supabase PostgreSQL connection & DB initializer
+├── jsonfiles/
+│   ├── companies.json       # Company metadata reference dataset
+│   ├── last20yrs_historical_data.json
+│   └── last30days_historical_data.json
+├── models/
+│   └── models.py            # SQLAlchemy ORM Models (User, Company, FinancialStatement, Watchlist, ForgotPassword)
+├── ottp/
+│   └── ottp.py              # 6-digit OTP generator & SMTP mail dispatch
+├── routes/
+│   ├── auth_routes.py       # Signup, Login, & Password Reset API
+│   ├── company_routes.py    # StockList quotes, 5-min memory cache, & company details API
+│   ├── graphs.py            # 30-Day intraday & 10-Year historical Recharts graph series API
+│   ├── news.py              # Live Tech & Finance RSS headlines API
+│   └── watchlist.py         # User watchlist bookmarking API
+├── .env                     # Supabase PostgreSQL URI & SMTP credentials
+├── .env.example             # Backend environment template
+└── app.py                   # Main Flask application entry point & CORS configuration
+```
+
+### 💻 Frontend Structure (`/frontend`)
+
+```text
+frontend/
+├── public/                  # Public assets & icon files
+├── src/
+│   ├── assets/              # App images (signature trading-2.png background)
+│   ├── components/
+│   │   ├── AboutUs/         # About Us page & DBMS academic evolution story
+│   │   ├── CmpFS/           # Financial Statements, Recharts sliders, & PDF/CSV report exports
+│   │   ├── Help/            # Support center with expanded FAQs & contact form
+│   │   ├── HomePg/          # Interactive Home Dashboard
+│   │   ├── LoginSignUp/     # Authentication page & inline glassmorphism error alerts
+│   │   ├── Navbar/          # Frosted glass sidebar & User Profile Modal badge
+│   │   ├── ProtectedRoute.jsx # Session route guard wrapper
+│   │   ├── StockList/       # Market Cap dynamic ranking table & live search bar
+│   │   ├── VeriCode/        # 6-digit OTP verification code input form
+│   │   └── WatchList/       # Bookmarked stocks grid & live news carousel
+│   ├── App.jsx              # Application router & protected route guard layout
+│   └── main.jsx             # React 19 entry mounting point
+├── package.json             # Frontend packages & build scripts (React 19, Recharts, jsPDF, MUI)
+└── vite.config.js           # Vite dev server configuration & port locking (5173)
 ```
 
 ---
