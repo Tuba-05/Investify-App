@@ -14,15 +14,15 @@
 ---
 
 ## 📑 Table of Contents
-1. [Core Features & Innovations](#-core-features--innovations)
-2. [Technology Stack](#%EF%B8%8F-technology-stack)
-3. [Folder Structure](#-folder-structure)
-4. [System Architecture & Data Flow Diagrams](#%EF%B8%8F-system-architecture--data-flow-diagrams)
-5. [Database Architecture & Supabase](#-database-architecture--supabase)
-6. [REST API Endpoints Specification](#-rest-api-endpoints-specification)
-7. [Getting Started & Local Setup](#-getting-started--local-setup)
-8. [Academic Context & DBMS Origin Story](#-academic-context--dbms-origin-story)
-9. [Author & Contact](#-author--contact)
+- [✨ Core Features & Innovations](#-core-features--innovations)
+- [🛠️ Technology Stack](#%EF%B8%8F-technology-stack)
+- [📂 Folder Structure](#-folder-structure)
+- [🏗️ System Architecture & Data Flow Diagrams](#%EF%B8%8F-system-architecture--data-flow-diagrams)
+- [🗄️ Database Architecture & Supabase](#-database-architecture--supabase)
+- [🔌 REST API Endpoints Specification](#-rest-api-endpoints-specification)
+- [🚀 Getting Started & Local Setup](#-getting-started--local-setup)
+- [🎓 Academic Context & DBMS Origin Story](#-academic-context--dbms-origin-story)
+- [🤝 Author & Contact](#-author--contact)
 
 ---
 
