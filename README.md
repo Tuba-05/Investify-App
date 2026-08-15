@@ -1,169 +1,211 @@
-
-# 📈 Investify
+# 📈 Investify - Full-Stack Financial Market Telemetry Platform
 
 <p align="center">
-  <img src="https://img.shields.io/badge/React.js-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
   <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask" />
-  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=mui&logoColor=white" alt="Material-UI" />
+  <img src="https://img.shields.io/badge/Supabase_PostgreSQL-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase" />
   <img src="https://img.shields.io/badge/yfinance-1F1F1F?style=for-the-badge&logo=yahoo&logoColor=red" alt="yfinance" />
+  <img src="https://img.shields.io/badge/Recharts-22B5BF?style=for-the-badge&logo=chartdotjs&logoColor=white" alt="Recharts" />
+  <img src="https://img.shields.io/badge/jsPDF-FF0000?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="jsPDF" />
 </p>
 
-Investify is a full-stack financial web application providing real-time stock market insights, comprehensive company data, historical financial statements, and personalized user watchlists.
+**Investify** is a production-grade full-stack financial market analytics platform providing real-time stock market telemetry, dynamic market cap rankings, multi-year historical trend visualizations, automated financial report exports (PDF & CSV), and personalized user watchlists.
+
+Originally conceived as a **Database Management Systems (DBMS)** academic project, Investify has evolved into a feature-rich trading telemetry ecosystem backed by **Supabase PostgreSQL Cloud Database**, Yahoo Finance live data pipelines, and a high-performance **5-minute in-memory TTL caching engine**.
 
 ---
 
 ## 📑 Table of Contents
-1. [Key Features](#-key-features)
-2. [Technologies Used](#%EF%B8%8F-technologies-used)
-3. [Folder Structure](#-folder-structure)
-4. [Getting Started & Local Setup](#-getting-started--local-setup)
-5. [Interface Preview](#-interface-preview)
-6. [Key Takeaways](#-key-takeaways)
-7. [Author](#-author)
+1. [Core Features & Innovations](#-core-features--innovations)
+2. [Technology Stack](#%EF%B8%8F-technology-stack)
+3. [Database Architecture & Supabase](#-database-architecture--supabase)
+4. [System Architecture](#-system-architecture)
+5. [Getting Started & Installation](#-getting-started--installation)
+6. [Folder Structure](#-folder-structure)
+7. [Academic Context & Evolution](#-academic-context--evolution)
+8. [Author & Contact](#-author--contact)
 
 ---
 
-## ✨ Key Features
+## ✨ Core Features & Innovations
 
-- **Secure Authentication:** User signup, login, and password reset verified via **OTP (One-Time Password)** email integration.
-- **Live Market Data:** Integrates external APIs and `yfinance` to fetch real-time stock rates, historical charts, and statements.
-- **Interactive Visualization:** Dynamic stock graphs showcasing **30-day performance** and **long-term trends** using Recharts.
-- **Personalized Watchlist:** Custom stock list management per user stored in a relational schema.
-- **Data Pipelines:** Scheduled background tasks to parse and refresh stock telemetry data.
+### ⚡ 1. Live Telemetry & 5-Minute Zero-Latency Memory Cache
+- **Real-Time Quotes**: Fetches live share prices, market capitalizations, annual revenues, net incomes, assets, and liabilities via `yfinance`.
+- **0ms Response Latency**: Implements a 5-minute (300s) server-side memory TTL cache (`STOCKLIST_CACHE_TIME`) so page transitions load instantly without network bottlenecks.
+
+### 🏆 2. Dynamic Market Cap Re-Ranking Engine
+- **Live Auto-Sorting**: Companies are dynamically ranked by real-time Market Capitalization descending (#1 NVIDIA, #2 Apple, #3 Google...).
+- **60-Second Auto-Polling & Manual Refresh**: Ranks update live every 5 minutes or on demand via the **`🔄 Live Ranks`** button.
+
+### 📊 3. Interactive Trend Visualization & Chart Sliders
+- **30-Day Intraday Performance**: Dynamic Recharts slider displaying Stock Price Momentum (Open vs Close), Price Range Volatility (High vs Low), and Volume Telemetry.
+- **10-Year Historical Cycle**: Multi-year trajectory sliders tracking historical price boundaries and institutional volume accumulation.
+
+### 📄 4. One-Click PDF & CSV Financial Report Exports
+- **`📄 Download PDF Report`**: Generates a branded executive financial audit PDF using `jsPDF` containing share prices, market caps, income statements, and analyst summary notes.
+- **`📊 Export CSV`**: Downloads raw structured CSV spreadsheet data for offline Excel/Python analysis.
+
+### 📰 5. Live Tech & Finance News Feed Aggregator
+- Live RSS news feed carousel on the WatchList page with auto-sliding headlines, source tags, author metadata, and direct article links.
+
+### 🛡️ 6. Session Management, Protection & User Profile Modal
+- **Route Protection (`ProtectedRoute.jsx`)**: Guarded application routes (`/HmPg`, `/StockList`, `/WatchList`, `/Help`, `/AboutUs`, `/CmpFS`) preventing unauthorized access.
+- **Session Persistence**: Active sessions automatically redirect returning users directly to `/HmPg`.
+- **User Profile Modal**: Interactive sidebar session badge rendering user initials avatar, email badge, saved watchlist stats, and security status.
+
+### 📧 7. SMTP OTP Email Verification
+- 6-digit cryptographically generated OTP codes dispatched via Gmail SMTP for secure password recovery with a 2-minute expiration window.
+
+### 🎨 8. Premium Dark Glassmorphism UI
+- Unified dark slate theme (`#0f172a`), signature world trading map background (`trading-2.png`), glowing cyan accent borders (`#1cb5ab`), high-contrast typography, and gold star watchlist badges.
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Technology Stack
 
-- **Backend:** Flask, Flask-SQLAlchemy (PostgreSQL ORM), Werkzeug Security, SMTP (`smtplib` for OTPs), `yfinance`, Pandas, NumPy
-- **Frontend:** React, React Router, Material-UI (`@mui/x-data-grid`), Recharts, Framer Motion, Lottie React, React Icons
-- **Database:** PostgreSQL
-- **Dev Tools:** VS Code, Git/GitHub, Postman
+| Layer | Technologies & Libraries |
+|---|---|
+| **Frontend Framework** | React 19, Vite, React Router DOM v6 |
+| **UI & Styling** | Vanilla CSS3, Dark Glassmorphism, Material-UI (`@mui/x-data-grid`), Boxicons, React Icons |
+| **Data Visualization** | Recharts, Chart.js, ApexCharts, Plotly.js, Framer Motion |
+| **Document Export** | `jsPDF`, `html2canvas` |
+| **Backend Framework** | Python 3.12, Flask, Flask-CORS, Flask-SQLAlchemy ORM |
+| **Data Processing** | `yfinance`, Pandas, NumPy, Werkzeug Security, `psycopg2-binary` |
+| **Database** | Supabase PostgreSQL Cloud Database |
+| **Mail Dispatch** | Python `smtplib` over TLS (Gmail App Password) |
+
+---
+
+## 🗄️ Database Architecture & Supabase
+
+Investify operates on a cloud-hosted **Supabase PostgreSQL** database with SQLAlchemy ORM mappings:
+
+- **`companies`** (1,106 records): Stores company symbols, names, sectors, countries, market caps, and live USD prices (`price(USD)`).
+- **`financial_statement`** (1,079 records): Stores annual revenue, net income, profit margin, total assets, total liabilities, equity, and telemetry report dates.
+- **`users`**: Manages user credentials (hashed passwords via Werkzeug), usernames, and registration timestamps.
+- **`watchlist`**: Relational mapping between user IDs and bookmarked company IDs.
+- **`forgot_password_details`**: Stores generated 6-digit OTP verification codes, expiration timestamps, and request counters.
+
+---
+
+## 🚀 Getting Started & Installation
+
+### Prerequisites
+- **Node.js**: v18+ & `npm`
+- **Python**: v3.10+
+- **Supabase Account / Connection String**
+- **Gmail SMTP App Password** (for OTP dispatch)
+
+---
+
+### 1. Backend Setup (Flask REST API)
+
+```bash
+# 1. Navigate to backend
+cd backend
+
+# 2. Create virtual environment
+python -m venv venv
+
+# Windows activate:
+.\venv\Scripts\activate
+# Mac/Linux activate:
+source venv/bin/activate
+
+# 3. Install Python dependencies
+pip install flask flask-cors flask-sqlalchemy psycopg2-binary yfinance pandas numpy requests python-dotenv
+
+# 4. Configure .env file
+cp .env.example .env
+```
+
+Edit `backend/.env`:
+```env
+FLASK_APP=app.py
+FLASK_ENV=development
+PORT=5000
+SECRET_KEY=your_investify_secret_key
+
+# Supabase PostgreSQL Connection String
+DATABASE_URL=postgresql://postgres.your_ref:your_password@db.your_ref.supabase.co:6543/postgres
+
+# SMTP Email Parameters
+SMTP_SENDER_EMAIL=your_email@gmail.com
+SMTP_APP_PASSWORD=your_16_char_app_password
+```
+
+Run backend server:
+```bash
+python app.py
+```
+
+---
+
+### 2. Frontend Setup (React & Vite)
+
+```bash
+# 1. Navigate to frontend
+cd ../frontend
+
+# 2. Install dependencies
+npm install
+
+# 3. Launch Vite dev server
+npm run dev
+```
+
+Application will run on `http://localhost:5173`.
 
 ---
 
 ## 📂 Folder Structure
 
 ```text
-Investify/
-├── backend/                  # Flask Backend Application
-│   ├── database/             # DB initialization and schemas
-│   ├── jsonfiles/            # Static JSON files / configuration
-│   ├── logs/                 # System and error logs
-│   ├── models/               # SQLAlchemy models (User, Stocks, Watchlist)
-│   ├── ottp/                 # OTP verification and email dispatch logic
-│   ├── routes/               # API blueprint routes (Auth, Stocks, Watchlist)
-│   ├── tests/                # Server-side testing scripts
-│   ├── testsamples/          # Sample tests mock data
-│   ├── txt_files/            # Text resources
-│   ├── updates/              # Background scheduler / cron scripts
-│   └── app.py                # Flask main entry application
-├── frontend/                 # React Frontend Application (Vite)
-│   ├── public/               # Public assets folder
-│   ├── src/                  # React components, pages & state management
-│   ├── eslint.config.js      # Linter configurations
-│   ├── index.html            # Core entry HTML
-│   ├── package-lock.json
-│   ├── package.json          # Frontend scripts & modules dependencies
-│   └── vite.config.js        # Vite configurations
-├── Investify Web App.docx    # Project documentation file
-├── .gitignore
-└── README.md                 # Main README file
+Investify-App/
+├── backend/
+│   ├── database/             # Database initialization & connection manager
+│   ├── jsonfiles/            # Telemetry reference datasets
+│   ├── models/               # SQLAlchemy ORM models (User, Company, Watchlist, etc.)
+│   ├── ottp/                 # OTP generation & SMTP mail dispatch logic
+│   ├── routes/               # API Blueprints (auth, company, watchlist, news, graphs)
+│   ├── .env                  # Environment variables & Supabase connection URI
+│   └── app.py                # Main Flask Application Entry point
+├── frontend/
+│   ├── public/               # Static assets & icons
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── AboutUs/      # About Us page & DBMS evolution story
+│   │   │   ├── CmpFS/        # Financial Statements, Recharts & PDF/CSV exports
+│   │   │   ├── Help/         # Expanded FAQ support center & ticket submission
+│   │   │   ├── HomePg/       # Interactive Home Dashboard
+│   │   │   ├── LoginSignUp/  # Auth forms & inline glassmorphism error alerts
+│   │   │   ├── Navbar/       # Frosted glass sidebar & User Profile Modal
+│   │   │   ├── ProtectedRoute.jsx # Route guarding session wrapper
+│   │   │   ├── StockList/    # Live market cap ranking & real-time search
+│   │   │   ├── VeriCode/     # OTP verification form
+│   │   │   └── WatchList/    # Bookmarked stocks & live news carousel
+│   │   ├── App.jsx           # Application Router & Protected Routes
+│   │   └── main.jsx          # React DOM entry
+│   ├── package.json          # Frontend packages & build scripts
+│   └── vite.config.js        # Vite dev server configuration
+└── README.md                 # Project README Documentation
 ```
 
 ---
 
-## 🚀 Getting Started & Local Setup
+## 🎓 Academic Context & Evolution
 
-### Prerequisites
-- Python 3.8+
-- Node.js (v16+)
-- PostgreSQL Database
-- SMTP credentials (Gmail App Password) for sending OTP emails
+Investify was originally developed as an academic learning project for a **Database Management Systems (DBMS)** university course at **NED University of Engineering & Technology (NEDUET)**. The initial focus was understanding relational database design, table entity relationships, foreign key constraints, and SQL ORM queries.
 
-### 🖥️ 1. Backend Setup (Flask)
-
-1. Navigate to the backend directory:
-   ```bash
-   cd backend
-   ```
-2. Create and activate a Python virtual environment:
-   ```bash
-   # On Windows
-   python -m venv venv
-   .\venv\Scripts\activate
-
-   # On macOS/Linux
-   python3 -m venv venv
-   source venv/bin/activate
-   ```
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Set up environment variables for PostgreSQL connection and SMTP parameters.
-5. Launch the backend server:
-   ```bash
-   python app.py
-   ```
-
-### 💻 2. Frontend Setup (React/Vite)
-
-1. Navigate to the frontend directory:
-   ```bash
-   cd ../frontend
-   ```
-2. Install the node packages:
-   ```bash
-   npm install
-   ```
-3. Run the development server:
-   ```bash
-   npm run dev
-   ```
+Post-course, the platform underwent production-grade architectural enhancements — migrating to **Supabase PostgreSQL Cloud DB**, integrating **live Yahoo Finance telemetry**, implementing **5-minute memory caching**, developing **PDF/CSV document generators**, and crafting a signature **Glassmorphic Dark Interface**.
 
 ---
 
-## 📸 Interface Preview
+## 🤝 Author & Contact
 
-<p align="center">
-  <i>(UI will be diaplayed soon)</i>
-</p>
+**Tuba Naushad**  
+*Computer & Information Systems (CIS) Engineering Student @ NEDUET*
 
----
-
-## 🧠 Key Takeaways
-Developing Investify provided hands-on experience in:
-* **RESTful Design:** Building clean REST API patterns using Flask Blueprints.
-* **Component Optimization:** Crafting modular React states and hooks for asynchronous data loading.
-* **Data Processing:** Operating on market records using Pandas and NumPy.
-* **Database Optimization:** Managing custom Watchlist relational tables in PostgreSQL via SQLAlchemy ORM.
-
----
-
-## 🎓 Academic Context
-This project was developed as part of the **Computer & Information Systems Engineering** curriculum at **NED University of Engineering and Technology** to demonstrate:
-* Full-stack application architecture.
-* Real-world data integration with live APIs.
-* Relational database planning.
-
----
-
-## 🤝 Author
-
-<p align="left">
-  <b>Tuba Naushad</b><br>
-  <i>CIS Engineering Student @ NEDUET</i>
-</p>
-
-<p align="left">
-  <a href="https://linkedin.com/in/tuba-naushad-6a4552253" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  &nbsp;
-  <a href="mailto:tubabintenaushad@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-</p>
-```
+- **LinkedIn**: [Tuba Naushad Profile](https://linkedin.com/in/tuba-naushad-6a4552253)
+- **Email**: [tubabintenaushad@gmail.com](mailto:tubabintenaushad@gmail.com)
+- **GitHub**: [Tuba-05 / Investify-App](https://github.com/Tuba-05/Investify-App)
